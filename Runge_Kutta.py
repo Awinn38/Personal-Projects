@@ -94,4 +94,4 @@ def Lyaponov(e_folding_time):
 eft = eFolding(xa,xb)
 Lyaponov(eft)        
 
-#   a(0,1.0,20.0)
+#   a(0,1.0,20.0) 
