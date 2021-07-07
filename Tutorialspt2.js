@@ -18,6 +18,6 @@ Student.prototype.learn = function(subject)
     console.log(this.name + " " + "just learned"+ " " + subject)
 }
 var me = new Student()
-me.initialize("Antonio23")
+me.initialize("Antonio,23")
 me.learn("Inheritance")
-//me.describe()
+

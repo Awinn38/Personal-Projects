@@ -3,6 +3,13 @@
 
 //    });
 //});
+class Calculator{
+
+    add(a,b){
+        return a + b;
+    
+    }
+}
 
 describe('Calculate addition', function(){
     
