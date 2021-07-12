@@ -7,7 +7,7 @@ def Runge_Kutta(x0, y0, z0, sigma = 10.0, rho = 28.0, beta = (8.0/3.0), n_steps 
     x = np.zeros(n_steps)
     y = np.zeros(n_steps)
     z = np.zeros(n_steps)
-    t = np.zeros(n_steps)
+    t = np.zeros(n_steps) 
     
     #initial Conditions
     x[0] = x0
@@ -89,7 +89,7 @@ def Lyaponov(e_folding_time):
     t = e_folding_time
     le = 1 /t
     print("The Lyaponov Exponent is: ",le)
-        
+ 
         
 eft = eFolding(xa,xb)
 Lyaponov(eft)        
