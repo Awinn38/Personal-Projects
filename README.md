@@ -1,1 +1,1 @@
-# Place Where personal projects go
+# Place where personal projects go
