@@ -16,8 +16,6 @@ Tref = 273.15
 T = 333.15
 Tc1 = 512.5
 Tc2 = 647.27
-Vl1 = 114
-Vl2 = 56
 R = 83.14
 Tr1 = T/Tc1
 Tr2 = T/Tc2
@@ -31,3 +29,4 @@ xguess = [5,5]
 # Wilson Constants
 Zc1 = 0.224
 Zc2 = 0.230
+GEM_Wilson = np.zeros(12)
