@@ -26,6 +26,7 @@ GammaE2 = np.zeros(12)
 GEE = np.zeros(12)
 VlMeth = 114
 VlWate = 56
+xguess = [5,5]
 
 # Wilson Constants
 Zc1 = 0.224
