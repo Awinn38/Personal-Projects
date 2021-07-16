@@ -33,4 +33,5 @@ PDew = np.zeros(12)
 Zc1 = 0.224
 Zc2 = 0.230
 GEM_Wilson = np.zeros(12)
+PBubbleMW = np.zeros(12)
 
