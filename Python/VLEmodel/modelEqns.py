@@ -20,6 +20,18 @@ def Wilson_GibbsEx():
     Constants.GEM_Wilson[1:11] = (-Constants.x1[1:11] *
                                   np.log(Constants.x1[1:11] + Alpha1 *
                                          Constants.x2[1:11]) - Constants.x2[1:11] *
-                                         np.log(Constants.x2[1:11] + Alpha2 * Constants.x1[1:11]))
+                                  np.log(Constants.x2[1:11] + Alpha2 * Constants.x1[1:11]))
     return Constants.GEM_Wilson
+
+
 Wilson_GibbsEx()
+
+
+def Calculation_Gamma():
+    GammaM1 = np.exp(-np.log(Constants.x1 + Alpha1*Constants.x2) + Constants.x2*((Alpha1 /
+                                                                                  (Constants.x1 + Alpha1*Constants.x2)) - (Alpha2/(Constants.x2+Alpha2*Constants.x1))))
+    GammaM2 = np.exp(-np.log(Constants.x2 + Alpha2*Constants.x1) - Constants.x1*((Alpha1 /
+                                                                                  (Constants.x1 + Alpha1*Constants.x2)) - (Alpha2/(Constants.x2+Alpha2*Constants.x1))))
+
+
+Calculation_Gamma()
