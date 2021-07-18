@@ -6,7 +6,7 @@ import antoniesEqn
 def Experamental_Gamma(P, x1, x2, y1E, y2E, PsatMeth, PsatWate):
     Constants.GammaE1[1:11] = (y1E*P)/(x1*PsatMeth)
     Constants.GammaE2[1:11] = ((y2E*P)/(x2*PsatWate))
-
+    return Constants.GammaE1[1:11], Constants.GammaE2[1:11]
 
 Experamental_Gamma(Constants.P[1:11], Constants.x1[1:11], Constants.x2[1:11],
                    Constants.y1E[1:11], Constants.y2E[1:11], antoniesEqn.PsatMeth, antoniesEqn.PsatWate)

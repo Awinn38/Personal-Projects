@@ -3,14 +3,19 @@ import Constants
 import SatLiquRacket
 import objMinimization
 import antoniesEqn
+import experimentalEqns
 
+[GammaE1,GammE2] = experimentalEqns.Experamental_Gamma(Constants.P[1:11], Constants.x1[1:11], Constants.x2[1:11],
+                   Constants.y1E[1:11], Constants.y2E[1:11], antoniesEqn.PsatMeth, antoniesEqn.PsatWate)
+y1M = (Constants.x1 *Constants.GammaE1*antoniesEqn.PsatMeth)/Constants.PBubble
+y2M = 1 - y1M
 
 def Wilson_Constants():
     Wil_Constants = objMinimization.optimize_Results()
-    VlMeth, VlWate = SatLiquRacket.SatLiqVolumeRacket(
-        Constants.VlMeth, Constants.VlWate, Constants.Zc1, Constants.Zc2, Constants.Tr1, Constants.Tr2)
-    Alph1 = (VlWate/VlMeth)*np.exp(-Wil_Constants[0]/(Constants.R*Constants.T))
-    Alph2 = (VlMeth/VlWate)*np.exp(-Wil_Constants[1]/(Constants.R*Constants.T))
+    Vl1, Vl2 = SatLiquRacket.SatLiqVolumeRacket(
+        Constants.Vl1, Constants.Vl2, Constants.Zc1, Constants.Zc2, Constants.Tr1, Constants.Tr2)
+    Alph1 = (Vl2/Vl1)*np.exp(-Wil_Constants[0]/(Constants.R*Constants.T))
+    Alph2 = (Vl1/Vl2)*np.exp(-Wil_Constants[1]/(Constants.R*Constants.T))
     return Alph1, Alph2
 
 
@@ -40,15 +45,25 @@ GammaM1, GammaM2 = Calculation_Gamma(
     Constants.x1, Constants.x2, Alpha1, Alpha2)
 
 
-def Model_Bubble(x1, x2, GammaM1, GammaM2):
-    Constants.PBubbleMW[0] = antoniesEqn.PsatWate
-    Constants.PBubbleMW[11] = antoniesEqn.PsatMeth
+def Model_Bubble(x1, x2, GammaM1, GammaM2, Psat1, Psat2):
+    Constants.PBubbleMW[0] = Psat2
+    Constants.PBubbleMW[11] = Psat1
     Constants.PBubbleMW[1:11] = x1*GammaM1 * \
-        antoniesEqn.PsatMeth + \
-        x2*GammaM2*antoniesEqn.PsatWate
+        Psat1 + \
+        x2*GammaM2*Psat2
     return Constants.PBubbleMW
 
 
-Model_Bubble(Constants.x1[1:11],Constants.x2[1:11],GammaM1[1:11],GammaM2[1:11])
+Model_Bubble(Constants.x1[1:11], Constants.x2[1:11],
+             GammaM1[1:11], GammaM2[1:11],antoniesEqn.PsatMeth,antoniesEqn.PsatWate)
 
-# Need Model dew
+
+def Model_Dew(y1, y2, Psat1, Psat2):
+    Constants.PDewM[0] = Psat2
+    Constants.PDewM[11] = Psat1
+    Constants.PDewM[1:11] = 1 / ((y1[1:11]/Psat1) + (y2[1:11]/Psat2))
+    return Constants.PDewM
+
+
+Model_Dew(y1M, y2M,
+          antoniesEqn.PsatMeth, antoniesEqn.PsatWate)

@@ -23,15 +23,16 @@ Tr2 = T/Tc2
 GammaE1 = np.zeros(12)
 GammaE2 = np.zeros(12)
 GEE = np.zeros(12)
-VlMeth = 114
-VlWate = 56
+Vl1 = 114
+Vl2 = 56
 xguess = [5, 5]
 PBubble = np.zeros(12)
 PDew = np.zeros(12)
+
 
 # Wilson Constants
 Zc1 = 0.224
 Zc2 = 0.230
 GEM_Wilson = np.zeros(12)
 PBubbleMW = np.zeros(12)
-
+PDewM = np.zeros(12)

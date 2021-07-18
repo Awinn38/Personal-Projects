@@ -7,5 +7,5 @@ def SatLiqVolumeRacket(Vl1, Vl2, Zc1, Zc2, Tr1, Tr2):
     return VlsatMeth, VlsatWate
 
 
-SatLiqVolumeRacket(Constants.VlMeth, Constants.VlWate,
+SatLiqVolumeRacket(Constants.Vl1, Constants.Vl2,
                    Constants.Zc1, Constants.Zc2, Constants.Tr1, Constants.Tr2)
