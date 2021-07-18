@@ -1,5 +1,5 @@
 import numpy as np
-import Constants
+import ConstantsWilson
 import SatLiquRacket
 import experimentalEqns
 import scipy.optimize as optimize
@@ -7,17 +7,17 @@ import scipy.optimize as optimize
 
 def Minimization(opt):
     Vl1, Vl2 = SatLiquRacket.SatLiqVolumeRacket(
-        Constants.Vl1, Constants.Vl2, Constants.Zc1, Constants.Zc2, Constants.Tr1, Constants.Tr2)
+        ConstantsWilson.Vl1_Wilson, ConstantsWilson.Vl2_Wilson, ConstantsWilson.ZcMeth_Willson, ConstantsWilson.ZcWate_Willson, ConstantsWilson.Tr1, ConstantsWilson.Tr2)
     GEE = experimentalEqns.Experamental_GRT(
-        Constants.x1[1:11], Constants.x2[1:11], Constants.GammaE1[1:11], Constants.GammaE2[1:11])
-    return (np.sum((((-Constants.x1[1:11] * (np.log(Constants.x1[1:11]
-                                                    + ((Vl2/Vl1) * np.exp(-opt[0]/(Constants.R*Constants.T))) * Constants.x2[1:11])))
-                     - (Constants.x2[1:11] * (np.log(Constants.x2[1:11]
-                                                     + ((Vl1/Vl2) * np.exp(-opt[1]/(Constants.R*Constants.T))) * Constants.x1[1:11]))))
-                    - GEE[1:11]) / (GEE[1:11])) ** 2) / (len(Constants.P)-2)
+        ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1], ConstantsWilson.x2_Willson [1:ConstantsWilson.end-1], ConstantsWilson.GammaE1_Willson[1:ConstantsWilson.end-1], ConstantsWilson.GammaE2_Willson[1:ConstantsWilson.end-1])
+    return (np.sum((((-ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1] * (np.log(ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1]
+                                                    + ((Vl2/Vl1) * np.exp(-opt[0]/(ConstantsWilson.R*ConstantsWilson.T_Willson))) * ConstantsWilson.x2_Willson [1:ConstantsWilson.end-1])))
+                     - (ConstantsWilson.x2_Willson [1:ConstantsWilson.end-1] * (np.log(ConstantsWilson.x2_Willson [1:ConstantsWilson.end-1]
+                                                     + ((Vl1/Vl2) * np.exp(-opt[1]/(ConstantsWilson.R*ConstantsWilson.T_Willson))) * ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1]))))
+                    - GEE[1:ConstantsWilson.end-1]) / (GEE[1:ConstantsWilson.end-1])) ** 2) / (len(ConstantsWilson.P_Willson)-2)
 
 
-result = optimize.minimize(Minimization, Constants.xguess,
+result = optimize.minimize(Minimization, ConstantsWilson.xguess,
                            method='nelder-mead', options={'xatol': 1e-8, 'disp': False})
 
 
