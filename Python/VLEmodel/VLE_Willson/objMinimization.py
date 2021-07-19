@@ -7,7 +7,7 @@ import scipy.optimize as optimize
 
 def Minimization(opt):
     Vl1, Vl2 = SatLiquRacket.SatLiqVolumeRacket(
-        ConstantsWilson.Vl1_Wilson, ConstantsWilson.Vl2_Wilson, ConstantsWilson.ZcMeth_Willson, ConstantsWilson.ZcWate_Willson, ConstantsWilson.Tr1, ConstantsWilson.Tr2)
+        ConstantsWilson.Vl1_Wilson, ConstantsWilson.Vl2_Wilson, ConstantsWilson.Zc1, ConstantsWilson.Zc2, ConstantsWilson.Tr1, ConstantsWilson.Tr2)
     GEE = experimentalEqns.Experamental_GRT(
         ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1], ConstantsWilson.x2_Willson [1:ConstantsWilson.end-1], ConstantsWilson.GammaE1_Willson[1:ConstantsWilson.end-1], ConstantsWilson.GammaE2_Willson[1:ConstantsWilson.end-1])
     return (np.sum((((-ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1] * (np.log(ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1]

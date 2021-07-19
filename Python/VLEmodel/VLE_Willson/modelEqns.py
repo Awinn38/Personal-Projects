@@ -12,7 +12,7 @@ y2M = 1 - y1M
 def Wilson_Constants():
     Wil_Constants = objMinimization.optimize_Results()
     Vl1, Vl2 = SatLiquRacket.SatLiqVolumeRacket(
-        ConstantsWilson.Vl1_Wilson, ConstantsWilson.Vl2_Wilson, ConstantsWilson.ZcMeth_Willson, ConstantsWilson.ZcWate_Willson, ConstantsWilson.Tr1, ConstantsWilson.Tr2)
+        ConstantsWilson.Vl1_Wilson, ConstantsWilson.Vl2_Wilson, ConstantsWilson.Zc1, ConstantsWilson.Zc2, ConstantsWilson.Tr1, ConstantsWilson.Tr2)
     Alph1 = (Vl2/Vl1) * \
         np.exp(-Wil_Constants[0]/(ConstantsWilson.R*ConstantsWilson.T_Willson))
     Alph2 = (Vl1/Vl2) * \
@@ -49,7 +49,7 @@ Calculation_Gamma(
 
 def Model_Bubble(x1, x2, GammaM1, GammaM2, Psat1, Psat2):
     ConstantsWilson.PBubbleM_Willson[0] = Psat2
-    ConstantsWilson.PBubbleM_Willson[11] = Psat1
+    ConstantsWilson.PBubbleM_Willson[ConstantsWilson.end-1] = Psat1
     ConstantsWilson.PBubbleM_Willson[1:ConstantsWilson.end-1] = x1*GammaM1 * \
         Psat1 + \
         x2*GammaM2*Psat2

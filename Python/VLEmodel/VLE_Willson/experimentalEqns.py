@@ -13,8 +13,8 @@ Experamental_Gamma(ConstantsWilson.P_Willson[1:ConstantsWilson.end-1], Constants
 
 
 def Experamental_GRT(x1, x2, GammaE1, GammaE2):
-    ConstantsWilson.GEE_Willson[1:ConstantsWilson.end-1] = (x1*np.log(GammaE1)) + (x2*np.log(GammaE2))
-    return ConstantsWilson.GEE_Willson
+    ConstantsWilson.GEE[1:ConstantsWilson.end-1] = (x1*np.log(GammaE1)) + (x2*np.log(GammaE2))
+    return ConstantsWilson.GEE
 
 
 Experamental_GRT(ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1], ConstantsWilson.x2_Willson [1:ConstantsWilson.end-1],
@@ -23,7 +23,7 @@ Experamental_GRT(ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1], ConstantsW
 
 def Experimental_Bubble(x1, x2, GammaE1, GammaE2, PsatMeth, PsatWate):
     ConstantsWilson.PBubble_Willson[0] = antoniesEqn.PsatWate
-    ConstantsWilson.PBubble_Willson[11] = antoniesEqn.PsatMeth
+    ConstantsWilson.PBubble_Willson[ConstantsWilson.end-1] = antoniesEqn.PsatMeth
     ConstantsWilson.PBubble_Willson[1:ConstantsWilson.end-1] = x1*GammaE1*PsatMeth + x2*GammaE2*PsatWate
     return ConstantsWilson.PBubble_Willson
 
@@ -34,7 +34,7 @@ Experimental_Bubble(ConstantsWilson.x1_Willson[1:ConstantsWilson.end-1], Constan
 
 def Experimental_Dew(y1E, y2E, PsatMeth, PsatWate):
     ConstantsWilson.PDew_Willson[0] = antoniesEqn.PsatWate
-    ConstantsWilson.PDew_Willson[11] = antoniesEqn.PsatMeth
+    ConstantsWilson.PDew_Willson[ConstantsWilson.end-1] = antoniesEqn.PsatMeth
     ConstantsWilson.PDew_Willson[1:ConstantsWilson.end-1] = 1/(((y1E)/PsatMeth) + (y2E/PsatWate))
     return ConstantsWilson.PDew_Willson
 
