@@ -1,7 +1,9 @@
+### Plots ###
 # using Plots
 # pyplot()
 # plot(rand(4,4))
 
+### DifferentialEquations ###
 # import Pkg; Pkg.add("DifferentialEquations")
 # using DifferentialEquations
 # f(u,p,t) = 1.01*u
@@ -10,6 +12,7 @@
 # prob = ODEProblem(f,u0,tspan)
 # sol = solve(prob,Tsit5())
 
+### Optim ###
 # Pkg.add("Optim")
 # using Optim
 # rosenbrock(x) =  (1.0 - x[1])^2 + 100.0 * (x[2] - x[1]^2)^2
@@ -19,9 +22,14 @@
 # SymPy.simplify(sin(x)^2 + cos(x)^2)	
 # SymPy.factor(x^2 + 2x+ 1)
 
+### CalculusWithJulia ###
 # using CalculusWithJulia
 # using Plots
 # plotly()
 
 # position(t) = 60*t
 # plot(position,0,3)
+
+### LaTeXStrings ###
+# using LaTeXStrings
+# L" 2.55e{-6} \ \ \frac{mol}{m^3} "
