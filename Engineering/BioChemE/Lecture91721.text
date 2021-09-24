@@ -1,0 +1,20 @@
+### E: Enzyme, S: Substrate, P: Product
+[E+S] <=> ES => E+P #k1 forward Rxn(1), #k2 backward Rxn(2), #k3 forward Rxn(3)
+v = d[P]/dt = d[S]/dt = k3[ES]  
+d[ES]/dt = 0
+k1[E][S] = k2[ES] + k3[ES]
+k1[E][S] = (k2 + k3)[ES]
+Etotal = [E] + [ES]
+[ES] = k1[E][S]/(k2 + k3)
+[E] = Etotal - [ES]
+[ES](k2 + k3) = k1([Etotal] - [ES])[S]
+# Rearrange 
+[ES] = k1[Etotal][S]/((k2 + k3 + k1)[S])
+v = k3[ES] = k1[Etotal][S]k3/((k2 + k3 + k1)[S])
+v = k3[Etotal][S]/((k2 + k3)/k1) + [S])
+v = Vmax[S]/(km + [S])
+v = Vmax/(km*[S]) #first order
+V = Vmax[S] #zeroth order
+## Large km means low affinity for binding (more substrate needed) visa versa
+
+## In class problem 
