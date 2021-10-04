@@ -99,27 +99,35 @@
 # [x.stem for x in p.glob('*.py')]
 
 ### DataFrame Example ###
-def Example(x):
-    print(x +"L")
-    return x + "L"
+# def Example(x):
+#     print(x +"L")
+#     return x + "L"
 
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 
-x = [{'user':"A",'filler':"B"},{'user':"B",'filler':"B"},{'user':"C",'filler':"B"},{'user':"D",'filler':"B"}]
-user_data = {}
-fields = ["user","filler"]
+# x = [{'user':"A",'filler':"B"},{'user':"B",'filler':"B"},{'user':"C",'filler':"B"},{'user':"D",'filler':"B"}]
+# user_data = {}
+# fields = ["user","filler"]
 
-for field in fields:
-  user_data[field] = []
-  for d in x:
-    user_data[field].append(d[field])
+# for field in fields:
+#   user_data[field] = []
+#   for d in x:
+#     user_data[field].append(d[field])
 
 # df = pd.DataFrame.from_dict(user_data,orient='index')
-df = pd.DataFrame.from_dict(user_data)
+# df = pd.DataFrame.from_dict(user_data)
 # print(df)
 # print(df.loc[3].at['user'])
 # print(df.apply(Example,axis = 0))
 # print(df.apply(np.sum,axis = 1))
 # z = df.apply(Example,axis = 1)
 # print(z.loc[0].at['filler'])
+
+import numpy as np
+from sympy.solvers import solve
+from sympy import Symbol
+x = Symbol('x')
+
+Z = 1- ((np.exp(15.8366-(2697.55/(x-48.78))))/760)*0.5 + ((np.exp(15.9426-(3120.29/(x-63.63))))/760)*0.5
+print(solve(Z,x))
