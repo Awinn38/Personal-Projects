@@ -33,3 +33,16 @@
 ### LaTeXStrings ###
 # using LaTeXStrings
 # L" 2.55e{-6} \ \ \frac{mol}{m^3} "
+
+
+### PyCall ###
+# using PyCall; using SymPy
+# py"""
+# import math
+# from sympy.solvers import solve
+# from sympy import Symbol
+# x = Symbol('x')
+
+# Z = (0.1)*(481.6) + (x)*(155.9) + (0.9-x)*(48.2)-138
+# print(solve(Z,x))
+# """

@@ -124,10 +124,12 @@
 # z = df.apply(Example,axis = 1)
 # print(z.loc[0].at['filler'])
 
-import numpy as np
-from sympy.solvers import solve
-from sympy import Symbol
-x = Symbol('x')
+# import numpy as np
+# from sympy.solvers import solve
+# from sympy import Symbol
+# x = Symbol('x')
 
-Z = 1- ((np.exp(15.8366-(2697.55/(x-48.78))))/760)*0.5 + ((np.exp(15.9426-(3120.29/(x-63.63))))/760)*0.5
-print(solve(Z,x))
+# Z = 1- ((np.exp(15.8366-(2697.55/(x-48.78))))/760)*0.5 + ((np.exp(15.9426-(3120.29/(x-63.63))))/760)*0.5
+# print(solve(Z,x))
+
+
