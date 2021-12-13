@@ -131,5 +131,18 @@
 
 # Z = 1- ((np.exp(15.8366-(2697.55/(x-48.78))))/760)*0.5 + ((np.exp(15.9426-(3120.29/(x-63.63))))/760)*0.5
 # print(solve(Z,x))
+###
 
+### Interpolation Code ###
+# y2 = float(input("Enter y2"))
+# y1 = float(input("Enter y1"))
+# x2 = float(input("Enter x2"))
+# x1 = float(input("Enter x1"))
+# ysoln = float(input("Soln y"))
 
+# def Interpolation(soln):
+#     return [((y2 - y1)/(x2 - x1)) - ((y2 - ysoln)/(x2 - soln[0]))]
+
+# sol = optimize.anderson(Interpolation,[0])
+# sol
+###
