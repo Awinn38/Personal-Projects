@@ -1,0 +1,272 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'cards\/split'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 38, in get\n    return json.loads(_CACHE[key])\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 312, in loads\n    s.__class__.__name__))\nTypeError: the JSON object must be str, not 'dict'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 38, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 699, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 32, in __init__\n    if self.name in cards.get_split():\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 480, in get_split\n    return cache.get('cards\/split')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 40, in get\n    return _CACHE[key]\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 85, in __getitem__\n    return self.__missing__(key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 80, in __missing__\n    value = self.__missing(key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 110, in __missing\n    raise KeyError(key)\nKeyError: 'cards\/split'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 843, in nightly\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 728, in make_commanders\n    pool.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nKeyError: 'cards\/split'\n",
+        "ts": "1543133638.023500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Nov 25 08:15:06 UTC 2018\n\n```",
+        "ts": "1543133640.023600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Nov 25 08:15:07 UTC 2018\n\n```",
+        "ts": "1543133641.023700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1543175940.023800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1543175940.023900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1543179538.024000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1543183139.024100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1543183139.024200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1543183139.024300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1543197536.024400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1543197536.024500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has been updated!",
+        "ts": "1543197537.024600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1543201137.024700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/top\/g.html has been updated!",
+        "ts": "1543201137.024800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/cards\/capsize.html has been updated!",
+        "ts": "1543204737.024900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 24183) - 26\/Nov\/2018:05:30:01\n('157.55.39.161', 5180) - 26\/Nov\/2018:05:28:52\n('157.55.39.62', 3741) - 26\/Nov\/2018:05:29:58\n('207.46.13.51', 3719) - 26\/Nov\/2018:05:29:52\n('207.46.13.157', 3644) - 26\/Nov\/2018:05:29:53\n('136.243.37.219', 1807) - 25\/Nov\/2018:15:04:05\n('5.255.250.1', 1716) - 26\/Nov\/2018:05:20:57\n('40.77.167.160', 1710) - 25\/Nov\/2018:13:53:53\n('40.77.167.83', 1670) - 25\/Nov\/2018:13:49:57\n('40.77.167.82', 1663) - 25\/Nov\/2018:13:51:48\n('77.88.47.5', 1624) - 26\/Nov\/2018:05:01:26\n('144.76.2.149', 1444) - 26\/Nov\/2018:04:21:33\n('204.2.255.145', 1050) - 26\/Nov\/2018:05:06:58\n('141.8.143.147', 956) - 26\/Nov\/2018:04:44:59\n('5.255.250.180', 888) - 26\/Nov\/2018:05:20:24\n('178.154.244.186', 834) - 26\/Nov\/2018:05:19:03\n('13.56.138.136', 768) - 26\/Nov\/2018:05:29:11\n('18.215.117.151', 723) - 26\/Nov\/2018:04:00:34\n('66.249.73.92', 690) - 26\/Nov\/2018:05:22:12\n('46.229.168.134', 675) - 26\/Nov\/2018:05:26:23\n('66.249.73.86', 654) - 26\/Nov\/2018:05:21:59\n('46.229.168.136', 638) - 26\/Nov\/2018:05:28:51\n('46.229.168.131', 628) - 26\/Nov\/2018:05:29:02\n('46.229.168.148', 615) - 26\/Nov\/2018:05:28:49\n('46.229.168.147', 614) - 26\/Nov\/2018:05:29:11\n\n```",
+        "ts": "1543210132.025000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nMon Nov 26 06:22:59 UTC 2018\n\n```",
+        "ts": "1543213309.025100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Nov 26 06:23:00 UTC 2018\n\n```",
+        "ts": "1543213310.025200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "260c64bc-3a5d-48bb-87bb-d7be86bf0b04",
+        "type": "message",
+        "text": "stopping nightly for now",
+        "user": "U28TLDP0R",
+        "ts": "1543213600.025400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "dccc9be4-8daf-4878-894c-1e1550210164",
+        "type": "message",
+        "text": "so that it doesnt push weird ad spacing out",
+        "user": "U28TLDP0R",
+        "ts": "1543213608.025600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Nov 26 07:17:36 UTC 2018\n\n```",
+        "ts": "1543216586.025700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

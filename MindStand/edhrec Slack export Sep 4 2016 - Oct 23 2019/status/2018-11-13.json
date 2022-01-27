@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'CardView' object has no attribute 'tcgplayer'\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 859, in nightly\n    make_meld_cards()\n  File \".\/nightly.py\", line 779, in make_meld_cards\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 76, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 156, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 44, in cardview_generate\n    if self.cardkingdom or self.tcgplayer:\nAttributeError: 'CardView' object has no attribute 'tcgplayer'\n",
+        "ts": "1542134064.013900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ntcgplayer\/lavinia of the tenth\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 858, in nightly\n    make_split_cards()\n  File \".\/nightly.py\", line 823, in make_split_cards\n    make_card(card['left'])\n  File \".\/nightly.py\", line 472, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 69, in getcards\n    cardlists = get_cardlists(data, topcommanders=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 274, in get_cardlists\n    directory=directory))\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardkingdom = tcgplayer.get(self.cards[0].name)\n  File \"\/home\/ubuntu\/edhrec\/core\/tcgplayer.py\", line 102, in get\n    return cache.get('tcgplayer\/' + name)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 54, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: tcgplayer\/lavinia of the tenth\n",
+        "ts": "1542134122.014000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1542157190.014100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1542157191.014200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 33707) - 14\/Nov\/2018:05:30:01\n('73.70.162.212', 12607) - 13\/Nov\/2018:20:06:46\n('66.249.69.10', 8317) - 14\/Nov\/2018:05:28:51\n('66.249.69.11', 7061) - 14\/Nov\/2018:05:24:51\n('66.249.69.15', 6247) - 14\/Nov\/2018:05:23:19\n('40.77.167.144', 4966) - 14\/Nov\/2018:05:29:56\n('37.9.87.143', 3366) - 14\/Nov\/2018:05:26:25\n('66.249.69.31', 2858) - 14\/Nov\/2018:01:39:32\n('207.46.13.76', 2620) - 13\/Nov\/2018:17:57:05\n('40.77.167.40', 2563) - 13\/Nov\/2018:18:16:35\n('46.4.119.70', 2343) - 13\/Nov\/2018:21:48:03\n('66.249.75.25', 2069) - 14\/Nov\/2018:05:29:52\n('77.88.47.5', 2054) - 14\/Nov\/2018:05:27:13\n('157.55.39.66', 2018) - 14\/Nov\/2018:05:29:49\n('157.55.39.116', 1945) - 14\/Nov\/2018:05:30:00\n('208.110.93.78', 1916) - 13\/Nov\/2018:07:50:07\n('13.57.51.147', 1876) - 14\/Nov\/2018:05:29:24\n('40.77.167.5', 1861) - 14\/Nov\/2018:05:29:32\n('207.46.13.58', 1850) - 13\/Nov\/2018:17:57:10\n('13.56.253.194', 1726) - 14\/Nov\/2018:05:28:23\n('66.249.75.28', 1722) - 14\/Nov\/2018:05:17:46\n('77.88.47.43', 1486) - 14\/Nov\/2018:03:20:30\n('52.87.111.39', 1449) - 14\/Nov\/2018:05:29:15\n('66.249.75.31', 1367) - 14\/Nov\/2018:05:26:37\n('216.244.66.232', 1312) - 14\/Nov\/2018:05:29:29\n\n```",
+        "ts": "1542173384.014300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

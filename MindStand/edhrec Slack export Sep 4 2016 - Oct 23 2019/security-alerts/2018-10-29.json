@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1540849035.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-1000656",
+                "id": 1,
+                "title_link": "https:\/\/github.com\/pallets\/flask\/pull\/2691",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "The Pallets Project flask version Before 0.12.3 contains a CWE-20: Improper Input Validation vulnerability in flask that can result in Large amount of memory usage possibly leading to denial of service. This attack appear to be exploitable via Attacker provides JSON data in incorrect encoding. This vulnerability appears to have been fixed in 0.12.3.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-1000656"
+            }
+        ]
+    }
+]

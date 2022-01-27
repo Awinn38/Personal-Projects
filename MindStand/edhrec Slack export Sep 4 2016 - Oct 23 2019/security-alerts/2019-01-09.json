@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1547084235.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-16203",
+                "id": 1,
+                "title_link": "https:\/\/jvn.jp\/en\/jp\/JVN13199224\/index.html",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "PgpoolAdmin 4.0 and earlier allows remote attackers to bypass the login authentication and obtain the administrative privilege of the PostgreSQL database via unspecified vectors.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-16203"
+            }
+        ]
+    }
+]

@@ -1,0 +1,622 @@
+[
+    {
+        "type": "message",
+        "text": "im not sure how i want to handle the multiple lands problem",
+        "user": "U286Q175Y",
+        "ts": "1493910542.960704",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "one option is to change everything to counts, so the database table for cards will go from URL,card to URL,count,card",
+        "user": "U286Q175Y",
+        "ts": "1493910569.976218",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "the other option is to duplicate it each time",
+        "user": "U286Q175Y",
+        "ts": "1493910575.979037",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so if you have 22 forests, we’ll create 22 separate line entries, one per forest",
+        "user": "U286Q175Y",
+        "ts": "1493910588.987386",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "both of those approaches fuck shit up",
+        "user": "U286Q175Y",
+        "ts": "1493910601.994172",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i’m almost tempted to handle it how we handled partners for a little bit… which is create a separate table that is URL,count,card (cardswithcounts)",
+        "user": "U286Q175Y",
+        "ts": "1493910633.012675",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we can leave the legacy code for now that hits the old table without fucking anything up, and if we develop anything new that needs to know the counts we can go off the new table",
+        "user": "U286Q175Y",
+        "ts": "1493910660.027566",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "and when we save a deck to the database, we can save it in both places",
+        "user": "U286Q175Y",
+        "ts": "1493910673.035267",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "actually, now that i think about it, we can just add the counts column to the existing table… we’ll just have the old code ignore that new column. that’ll take like 30 minutes to change in database.py",
+        "user": "U286Q175Y",
+        "ts": "1493910703.052859",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "that sounds good to me",
+        "user": "U28TLDP0R",
+        "ts": "1493915097.541202",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "there's nothing wrong with doing what we did for partners though, if we need to do that for other things",
+        "user": "U28TLDP0R",
+        "ts": "1493915123.554651",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i dont like having two different code paths for doing the same thing",
+        "user": "U286Q175Y",
+        "ts": "1493915142.564563",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "but it wasnt that big of a deal",
+        "user": "U286Q175Y",
+        "ts": "1493915146.566515",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> so my idea on the rules\/commander thing. I want to add a section to the page that basically outlines the commander rules and has the different ban lists",
+        "user": "U286Q175Y",
+        "ts": "1493915274.634749",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i asked sheldon if we can copy\/paste from <http:\/\/mtgcommander.net|mtgcommander.net>",
+        "user": "U286Q175Y",
+        "ts": "1493915288.641939",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "what i’m thinking is a dropdown from the navbar (not sure what the top level name is, can’t think of a good one).\nTop item is Commander Rules (directly links to a copy\/paste of <http:\/\/mtgcommander.net|mtgcommander.net>)\nNext is Ban Lists, which expands into Original Ban List, MTGO Ban List, French Ban List",
+        "user": "U286Q175Y",
+        "ts": "1493915361.679959",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "then in those ban lists i think we use a CardList to list out the cards",
+        "user": "U286Q175Y",
+        "ts": "1493915372.685614",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ALSO, i think we should change “BANNED” to show which ban list its banned in on the page",
+        "user": "U286Q175Y",
+        "ts": "1493915396.697534",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Like Prophet of Kruphix is banned in french and OG commander but not mtgo",
+        "user": "U286Q175Y",
+        "ts": "1493915412.706329",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm curious what made you start wanting to host commander rules on the website?",
+        "user": "U28TLDP0R",
+        "ts": "1493915561.783294",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i read an article this morning about new players coming into the format and trying to figure out the rules and the banlist",
+        "user": "U286Q175Y",
+        "ts": "1493915584.795444",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "and this was a problem once before when wizards posted the banlist on their website and never updated it",
+        "user": "U286Q175Y",
+        "ts": "1493915602.804689",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<http:\/\/mtgcommander.net|mtgcommander.net> seems like some shitty fanfiction website",
+        "user": "U286Q175Y",
+        "ts": "1493915608.807844",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so by doing this, which shouldn’t be that much work, we can help people figure out what the real deal is",
+        "user": "U286Q175Y",
+        "ts": "1493915623.815405",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "maybe give some longevity to the OG banlist, which i’m personally interested in",
+        "user": "U286Q175Y",
+        "ts": "1493915642.825260",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "okay sure",
+        "user": "U28TLDP0R",
+        "ts": "1493915748.878819",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/opensource.org\/licenses\/academic.php>",
+        "user": "U286Q175Y",
+        "ts": "1493922593.727507",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "looks like we can copy\/paste it with attribution",
+        "user": "U286Q175Y",
+        "ts": "1493922603.733808",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "oh I didn’t realize you removed labels from the recommendations page",
+        "user": "U28TLDP0R",
+        "ts": "1493935064.617948",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "seems pretty empty now imo",
+        "user": "U28TLDP0R",
+        "ts": "1493935075.621820",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yeah thats what made it slow as shit",
+        "user": "U286Q175Y",
+        "ts": "1493935656.817486",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

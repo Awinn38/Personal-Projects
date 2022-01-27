@@ -1,0 +1,14 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[25\/Dec\/2018:04:16:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 579, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/animar, soul of elements\n```",
+        "ts": "1545711389.008000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

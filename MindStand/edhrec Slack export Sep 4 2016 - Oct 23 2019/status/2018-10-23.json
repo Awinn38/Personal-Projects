@@ -1,0 +1,83 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nExpecting value: line 1 column 1 (char 0)\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 774, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 726, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 706, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 706, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 20, in __init__\n    scryfall_card = scryfall.card(card['name'])\n  File \"\/home\/ubuntu\/edhrec\/core\/scryfall.py\", line 166, in card\n    card = fetch_card(name)\n  File \"\/home\/ubuntu\/edhrec\/core\/scryfall.py\", line 228, in fetch_card\n    response = r.json()\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/models.py\", line 892, in json\n    return complexjson.loads(self.text, **kwargs)\n  File \"\/usr\/lib\/python3.4\/json\/__init__.py\", line 318, in loads\n    return _default_decoder.decode(s)\n  File \"\/usr\/lib\/python3.4\/json\/decoder.py\", line 343, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"\/usr\/lib\/python3.4\/json\/decoder.py\", line 361, in raw_decode\n    raise ValueError(errmsg(\"Expecting value\", s, err.value)) from None\nValueError: Expecting value: line 1 column 1 (char 0)\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nValueError: Expecting value: line 1 column 1 (char 0)\n",
+        "ts": "1540310498.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nTue Oct 23 16:02:28 UTC 2018\n\n```",
+        "ts": "1540310499.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Oct 23 16:02:30 UTC 2018\n\n```",
+        "ts": "1540310501.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n[Errno 32] Broken pipe\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 774, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 726, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 714, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 62, in make_page\n    print('make_page: {}'.format(filename))\nBrokenPipeError: [Errno 32] Broken pipe\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nBrokenPipeError: [Errno 32] Broken pipe\n",
+        "ts": "1540334679.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "0b6209b5-ba7b-42c0-8ffe-abbcaa8d5504",
+        "type": "message",
+        "text": "stopping nightly for a day or so",
+        "user": "U28TLDP0R",
+        "ts": "1540334680.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 42142) - 24\/Oct\/2018:05:30:01\n('157.55.39.168', 6175) - 24\/Oct\/2018:05:30:02\n('207.46.13.169', 6085) - 24\/Oct\/2018:05:30:02\n('207.46.13.45', 6052) - 24\/Oct\/2018:05:29:49\n('207.46.13.40', 4115) - 23\/Oct\/2018:22:19:41\n('37.9.87.143', 2361) - 24\/Oct\/2018:05:28:59\n('88.99.250.15', 2354) - 24\/Oct\/2018:05:16:10\n('40.77.167.125', 2020) - 24\/Oct\/2018:05:29:50\n('66.249.64.210', 1305) - 24\/Oct\/2018:05:29:21\n('66.249.64.214', 1282) - 24\/Oct\/2018:05:29:51\n('216.244.66.232', 1209) - 24\/Oct\/2018:05:29:33\n('66.249.64.207', 1171) - 24\/Oct\/2018:05:28:37\n('66.249.64.202', 1154) - 24\/Oct\/2018:05:21:33\n('100.43.85.118', 1130) - 24\/Oct\/2018:01:06:36\n('106.120.173.150', 881) - 23\/Oct\/2018:23:59:23\n('148.64.56.73', 800) - 24\/Oct\/2018:05:29:14\n('37.9.87.182', 740) - 23\/Oct\/2018:11:06:49\n('100.43.85.100', 715) - 23\/Oct\/2018:11:06:51\n('148.64.56.66', 707) - 24\/Oct\/2018:05:19:41\n('148.64.56.67', 688) - 24\/Oct\/2018:05:27:20\n('148.64.56.72', 673) - 24\/Oct\/2018:05:29:24\n('148.64.56.70', 667) - 24\/Oct\/2018:05:28:02\n('148.64.56.69', 654) - 24\/Oct\/2018:05:29:59\n('37.9.87.201', 642) - 24\/Oct\/2018:00:34:57\n('13.57.57.87', 573) - 24\/Oct\/2018:05:23:24\n\n```",
+        "ts": "1540358950.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

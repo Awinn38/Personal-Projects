@@ -1,0 +1,755 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:00:02,347 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 19, in &lt;module&gt;\n    import edhrec.core.wordpress as wordpress\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 19, in &lt;module&gt;\n    import edhrec.core.cards as cards\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 109\n    ('mana of ' in oracle and 'convoke' not in oracle):\n                                                      ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1566806372.020500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:00:06,057 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/usr\/lib\/python3.5\/importlib\/__init__.py\", line 166, in reload\n    _bootstrap._exec(spec, module)\n  File \"&lt;frozen importlib._bootstrap&gt;\", line 626, in _exec\n  File \"&lt;frozen importlib._bootstrap_external&gt;\", line 661, in exec_module\n  File \"&lt;frozen importlib._bootstrap_external&gt;\", line 767, in get_code\n  File \"&lt;frozen importlib._bootstrap_external&gt;\", line 727, in source_to_code\n  File \"&lt;frozen importlib._bootstrap&gt;\", line 222, in _call_with_frames_removed\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 109\n    ('mana of ' in oracle and 'convoke' not in oracle):\n                                                      ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1566806376.020600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:04:53,595 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cards._is_mana_making_artifact(cards.get('Charmed Pendant))\n                                                              ^\nSyntaxError: EOL while scanning string literal\n```",
+        "ts": "1566806663.020700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 1 dynamic.py running. Before we had 2.",
+        "ts": "1566806674.020800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................F\n======================================================================\nFAIL: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 461, in test_recentArticle\n    self.assertTrue(days &lt; 3)\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 30 tests in 7.759s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1566806679.020900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:12:37,484 INFO backup.py took 0:12:35.156242\n```",
+        "ts": "1566807127.021000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:27:22,318 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'origin' is not defined\n```",
+        "ts": "1566808012.021100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:28:10,168 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    if commander['unofficial']:\nTypeError: string indices must be integers\n```",
+        "ts": "1566808060.021200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:29:58,807 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 440, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 167, in get_decks\n    positives = [database.get_commander(cardnames)]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 773, in get_commander\n    return get_partnercommander(*commander)\nTypeError: get_partnercommander() missing 1 required positional argument: 'commander2'\n```",
+        "ts": "1566808168.021300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:33:07,442 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    if commander['unofficial']:\nTypeError: string indices must be integers\n```",
+        "ts": "1566808357.021400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:36:23,655 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    #if commander['unofficial']:\nTypeError: string indices must be integers\n```",
+        "ts": "1566808554.021500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:37:06,010 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    #if commander['unofficial']:\nTypeError: string indices must be integers\n```",
+        "ts": "1566808596.021600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:37:25,310 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    except KeyError:\nTypeError: string indices must be integers\n```",
+        "ts": "1566808615.021700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:39:02,783 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 511, in getcommanders\n    commanders = cards.get_commanders_by_colorid(list(colors.upper()))\nAttributeError: 'list' object has no attribute 'upper'\n```",
+        "ts": "1566808712.021800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:40:55,535 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'nightly' is not defined\n```",
+        "ts": "1566808825.021900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:41:10,364 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    except KeyError:\nTypeError: string indices must be integers\n```",
+        "ts": "1566808840.022000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:49:27,521 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'web.nightly' has no attribute 'amek_commanders_colors'\n```",
+        "ts": "1566809337.022100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:56:31,379 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 526, in getcommanders\n    if commander['unofficial']:\nTypeError: string indices must be integers\n```",
+        "ts": "1566809762.022200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:57:52,563 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 525, in getcommanders\n    label = '{0} decks'.format(datamap[(commander, None)]['Frequency'])\nKeyError: ('Jedit Ojanen', None)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 528, in getcommanders\n    if commander['unofficial']:\nTypeError: string indices must be integers\n```",
+        "ts": "1566809842.022300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 08:59:55,004 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 525, in getcommanders\n    label = '{0} decks'.format(datamap[(commander, None)]['Frequency'])\nKeyError: ('Ur-Drago', None)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 136, in make_commanders_colors\n    cmdrs = origin.getcommanders(colors=colorabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 528, in getcommanders\n    if commander['unofficial'] is True:\nTypeError: string indices must be integers\n```",
+        "ts": "1566809964.022400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "01faead0-3bd7-4730-a7fd-f18abbb29e65",
+        "type": "message",
+        "text": "too sleepy. undid.",
+        "user": "U3MTAQBE1",
+        "ts": "1566810148.022600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................F\n======================================================================\nFAIL: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 461, in test_recentArticle\n    self.assertTrue(days &lt; 3)\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 30 tests in 1.392s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1566813872.022700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] We now have 2 dynamic.py running. Before we had 1.",
+        "ts": "1566813873.022800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.020s\n\nOK\n\n```",
+        "ts": "1566821071.022900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 6.826s\n\nOK\n\n```",
+        "ts": "1566828277.023000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.427s\n\nOK\n\n```",
+        "ts": "1566835472.023100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 27.793s\n\nOK\n\n```",
+        "ts": "1566842697.023200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1566846274.023300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1566846274.023400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1566846275.023500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 20:03:37,868 INFO cards.py took 0:03:32.463053\n```",
+        "ts": "1566849787.023600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1566849795.023700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 7.018s\n\nOK\n\n```",
+        "ts": "1566849877.023800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 20:32:35,694 INFO archidekt.py took 0:27:58.706861\n```",
+        "ts": "1566851524.023900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 21:00:38,356 INFO deckstats.py took 0:26:02.263111\n```",
+        "ts": "1566853207.024000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1566853473.024100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1566853473.024200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1566853473.024300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/top\/g.html has been updated!",
+        "ts": "1566853473.024400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 21:51:10,297 INFO mtggoldfish.py took 0:30:13.393157\n```",
+        "ts": "1566856239.024500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.274s\n\nOK\n\n```",
+        "ts": "1566857071.024600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1566857073.024700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1566857073.024800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/cards\/capsize.html has been updated!",
+        "ts": "1566857073.024900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 22:39:43,810 INFO update_deckswithprices.py took 0:31:46.338241\nNew deck count from past 2 days: \n- deckstats: 546\n- MTGGoldfish: 562\n- Other: 0\n- Archidekt: 585\n```",
+        "ts": "1566859153.025000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1566862775.025100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-26 23:40:07,056 INFO nightly.py took 3:36:20.346199\n```",
+        "ts": "1566862776.025200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1566864272.025300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1566864272.025400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 29.340s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1566864299.025500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 00:09:44,641 INFO cards.py took 0:09:39.840678\n```",
+        "ts": "1566864553.025600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 00:37:52,434 INFO archidekt.py took 0:25:58.432861\n```",
+        "ts": "1566866241.025700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 01:05:41,720 INFO deckstats.py took 0:25:49.475317\n```",
+        "ts": "1566867910.025800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 01:54:51,544 INFO mtggoldfish.py took 0:28:50.474907\n```",
+        "ts": "1566870860.025900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 02:00:07,538 ERROR Status code 500 from <https:\/\/www.youtube.com\/feeds\/videos.xml?playlist_id=PLNUt1Yvbhz4-t9dCp8bO7ixaKVGHA6Wh5>\n```",
+        "ts": "1566871178.026000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 1.554s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1566871471.026100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 02:40:18,860 INFO update_deckswithprices.py took 0:29:26.211597\nNew deck count from past 2 days: \n- MTGGoldfish: 341\n- deckstats: 348\n- Archidekt: 384\n- Other: 0\n```",
+        "ts": "1566873587.026200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1566873592.026300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF...........................F.\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n======================================================================\nFAIL: test_random (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 467, in test_random\n    self.assertNotEqual(-1, data.find('Enchantment'.encode()))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 5.924s\n\nFAILED (failures=2)\n\n```",
+        "ts": "1566878675.026400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1566885596.026500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-27 06:00:28,854 INFO nightly.py took 3:20:04.430629\n```",
+        "ts": "1566885597.026600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 24.537s\n\nOK\n\n```",
+        "ts": "1566885894.026700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

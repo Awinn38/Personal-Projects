@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1566833835.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-15534",
+                "id": 1,
+                "title_link": "https:\/\/github.com\/folio-org\/raml-module-builder\/pull\/501",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Raml-Module-Builder 26.4.0 allows SQL Injection in PostgresClient.update.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-15534"
+            }
+        ]
+    }
+]

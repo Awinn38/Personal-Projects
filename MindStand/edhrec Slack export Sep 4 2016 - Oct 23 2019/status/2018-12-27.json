@@ -1,0 +1,389 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1545897602.010200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[27\/Dec\/2018:09:38:30] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 579, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/the mimeoplasm\n```",
+        "ts": "1545903507.010300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[27\/Dec\/2018:13:11:20] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 579, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/zur the enchanter\n```",
+        "ts": "1545916277.010400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-27 15:09:45,437 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 270, in update_all\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 270, in &lt;listcomp&gt;\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 102, in _parse_post\n    media = get_media(post['featured_media'])\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 180, in get_media\n    return cache.get('wp\/by-id\/media\/{}'.format(mid))\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: wp\/by-id\/media\/26631\n```",
+        "ts": "1545923382.010500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1545933599.010600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1545937199.010700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has been updated!",
+        "ts": "1545937200.010800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/top\/g.html has been updated!",
+        "ts": "1545940799.010900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/cards\/capsize.html has been updated!",
+        "ts": "1545944400.011000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[27\/Dec\/2018:22:17:02] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 579, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n```",
+        "ts": "1545949017.011100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[27\/Dec\/2018:22:17:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 579, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n```",
+        "ts": "1545949041.011200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-27 23:47:58,012 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 294, in recv_into\n    return self.connection.recv_into(*args, **kwargs)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1625, in recv_into\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1448, in _raise_ssl_error\n    raise SysCallError(errno, errorcode.get(errno))\nOpenSSL.SSL.SysCallError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 360, in _error_catcher\n    yield\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 666, in read_chunked\n    self._update_chunk_length()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 598, in _update_chunk_length\n    line = self._fp.fp.readline()\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 575, in readinto\n    return self._sock.recv_into(b)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 299, in recv_into\n    raise SocketError(str(e))\nOSError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 750, in generate\n    for chunk in self.raw.stream(chunk_size, decode_content=True):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 490, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 694, in read_chunked\n    self._original_response.close()\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 378, in _error_catcher\n    raise ProtocolError('Connection broken: %r' % e, e)\nurllib3.exceptions.ProtocolError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 265, in update_all\n    _get_multipage('posts')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 33, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 686, in send\n    r.content\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 828, in content\n    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 753, in generate\n    raise ChunkedEncodingError(e)\nrequests.exceptions.ChunkedEncodingError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n```",
+        "ts": "1545954473.011300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[28\/Dec\/2018:00:07:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 579, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n```",
+        "ts": "1545955641.011400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-28 00:29:46,053 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 955, in &lt;module&gt;\n    nightly()\n  File \".\/nightly.py\", line 841, in nightly\n    make_transform_cards()\n  File \".\/nightly.py\", line 721, in make_transform_cards\n    for card in origin.get_transform_cards():\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 82, in get_transform_cards\n    dcards = set([c['names'] for c in list(cards.get_transform().values())])\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1545956981.011500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-28 04:21:23,502 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 955, in &lt;module&gt;\n    nightly()\n  File \".\/nightly.py\", line 843, in nightly\n    make_meld_cards()\n  File \".\/nightly.py\", line 737, in make_meld_cards\n    for card in origin.get_meld_cards():\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 105, in get_meld_cards\n    dcards = set([c['names'][:3] for c in cards.get_meld().values()])\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1545970878.011600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-28 05:26:02,615 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 1, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 26, in &lt;module&gt;\n    import edhrec.core.wordpress as wordpress\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 18, in &lt;module&gt;\n    import edhrec.config as config\nImportError: No module named 'edhrec.config'\n```",
+        "ts": "1545974757.011700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-28 05:30:02,684 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 18, in &lt;module&gt;\n    import edhrec.config as config\nImportError: No module named 'edhrec.config'\n```",
+        "ts": "1545974997.011800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-28 05:43:52,654 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/wordpress.py\", line 18, in &lt;module&gt;\n    import edhrec.config as config\nImportError: No module named 'edhrec.config'\n```",
+        "ts": "1545975827.011900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "7c5b6230-7a19-4642-ba55-52b8a972b90e",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1545975863.012100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1545976797.012200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[28\/Dec\/2018:06:01:38] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 78, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 175, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 83, in cardview_generate\n    return templates.render('card', repls)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates.py\", line 33, in render\n    with open(os.path.join(os.path.dirname(__file__), 'public\/css\/rev-manifest.json')) as f:\nFileNotFoundError: [Errno 2] No such file or directory: '\/home\/ubuntu\/edhrec\/web\/public\/css\/rev-manifest.json'\n```",
+        "ts": "1545976893.012300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[28\/Dec\/2018:06:01:49] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 78, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 175, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 83, in cardview_generate\n    return templates.render('card', repls)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates.py\", line 33, in render\n    with open(os.path.join(os.path.dirname(__file__), 'public\/css\/rev-manifest.json')) as f:\nFileNotFoundError: [Errno 2] No such file or directory: '\/home\/ubuntu\/edhrec\/web\/public\/css\/rev-manifest.json'\n```",
+        "ts": "1545976903.012400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[28\/Dec\/2018:06:02:01] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 78, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 175, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 83, in cardview_generate\n    return templates.render('card', repls)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates.py\", line 33, in render\n    with open(os.path.join(os.path.dirname(__file__), 'public\/css\/rev-manifest.json')) as f:\nFileNotFoundError: [Errno 2] No such file or directory: '\/home\/ubuntu\/edhrec\/web\/public\/css\/rev-manifest.json'\n```",
+        "ts": "1545976916.012500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[28\/Dec\/2018:06:03:27] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 78, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 175, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 83, in cardview_generate\n    return templates.render('card', repls)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates.py\", line 33, in render\n    with open(os.path.join(os.path.dirname(__file__), 'public\/css\/rev-manifest.json')) as f:\nFileNotFoundError: [Errno 2] No such file or directory: '\/home\/ubuntu\/edhrec\/web\/public\/css\/rev-manifest.json'\n```",
+        "ts": "1545977002.012600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[28\/Dec\/2018:06:03:41] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 78, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 175, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 83, in cardview_generate\n    return templates.render('card', repls)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates.py\", line 33, in render\n    with open(os.path.join(os.path.dirname(__file__), 'public\/css\/rev-manifest.json')) as f:\nFileNotFoundError: [Errno 2] No such file or directory: '\/home\/ubuntu\/edhrec\/web\/public\/css\/rev-manifest.json'\n```",
+        "ts": "1545977016.012700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "d409e8ff-3bf0-4e47-9d21-cbf22eb42f54",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1545977035.012900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Dec 28 06:14:56 UTC 2018\n\n```",
+        "ts": "1545977691.013000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nFri Dec 28 07:19:00 UTC 2018\n\n```",
+        "ts": "1545981534.013100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "7c8fed31-b26f-4968-b394-60be482c3bc9",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1545982373.013300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Dec 28 07:33:00 UTC 2018\n\n```",
+        "ts": "1545982374.013400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

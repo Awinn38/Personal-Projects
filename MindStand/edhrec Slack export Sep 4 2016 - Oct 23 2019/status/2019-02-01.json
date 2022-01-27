@@ -1,0 +1,314 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ndeck not found\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 742, in get_deck\n    return decks[0]\nIndexError: list index out of range\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \".\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \".\/nightly.py\", line 684, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \".\/nightly.py\", line 594, in make_deck\n    info = database.get_deck(url)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 744, in get_deck\n    raise ValueError('deck not found')\nValueError: deck not found\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 828, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \".\/nightly.py\", line 720, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nValueError: deck not found\n",
+        "ts": "1549020466.018900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 11:29:02,835 ERROR deck not found\n2019-02-01 11:29:02,848 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 742, in get_deck\n    return decks[0]\nIndexError: list index out of range\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \".\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \".\/nightly.py\", line 684, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \".\/nightly.py\", line 594, in make_deck\n    info = database.get_deck(url)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 744, in get_deck\n    raise ValueError('deck not found')\nValueError: deck not found\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 828, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \".\/nightly.py\", line 720, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nValueError: deck not found\n\n```",
+        "ts": "1549020466.019000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1549033126.019100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1549051135.019200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 22:23:49,235 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 3, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 38\n    pass\n       ^\nIndentationError: unindent does not match any outer indentation level\n```",
+        "ts": "1549059751.019300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 22:24:06,461 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 3, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 144\n    else:\n       ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549059768.019400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 22:24:55,562 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 5, in &lt;module&gt;\n    nightly.make_commander('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 143, in make_page\n    description = '{0} Recommendations: '.format(format_name) + ', '.join(first6cards)\nNameError: name 'format_name' is not defined\n```",
+        "ts": "1549059817.019500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 22:28:05,559 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 5, in &lt;module&gt;\n    nightly.make_commander('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 235, in make_page\n    f.write(templates.render(container_html, repls))\nNameError: name 'container_html' is not defined\n```",
+        "ts": "1549060007.019600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 22:30:49,508 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 5, in &lt;module&gt;\n    nightly.make_commander('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    input_dict = dict(name=name, title=title, **kwargs)\nNameError: name 'kwargs' is not defined\n```",
+        "ts": "1549060171.019700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 22:31:36,958 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 5, in &lt;module&gt;\n    nightly.make_commander('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    input_dict = dict(name, title, repls=repls, layout=layout, header=header, card=card, description=description, panels=panels, recentdecks=recentdecks, cardlists=cardlists, dynamic=dynamic, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\nTypeError: dict expected at most 1 arguments, got 2\n```",
+        "ts": "1549060219.019800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 23:20:52,492 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nImportError: No module named 'Jinja2'\n```",
+        "ts": "1549063174.019900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 23:32:59,990 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 12, in &lt;module&gt;\n    from jinja2 import Environment, PackageLoader, select_autoescape\nImportError: cannot import name 'select_autoescape'\n```",
+        "ts": "1549063902.020000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 23:33:27,867 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 235, in make_page\n    template = env.get_template('container.html')\nNameError: name 'env' is not defined\n```",
+        "ts": "1549063929.020100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 23:51:08,577 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 235, in make_page\n    repls['stylecss'] = manifest['styles.css']\nKeyError: 'styles.css'\n```",
+        "ts": "1549064990.020200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 23:51:32,266 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 235, in make_page\n    repls['stylecss'] = manifest['style.css']\nKeyError: 'style.css'\n```",
+        "ts": "1549065014.020300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-01 23:53:28,448 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 236, in make_page\n    repls['stylecss'] = json.load(f)['style.css']\nKeyError: 'style.css'\n```",
+        "ts": "1549065130.020400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1549065526.020500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:03:09,790 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 93, in make_page\n    content = emplate.render(layout, repls) if layout else template.render('default', repls)\nUnboundLocalError: local variable 'template' referenced before assignment\n```",
+        "ts": "1549065711.020600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:14:52,947 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 20, in &lt;module&gt;\n    from edhrec.web.panels import make_panels\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 110\n    'class': class_ or '',\n           ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549066414.020700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:15:05,240 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 20, in &lt;module&gt;\n    from edhrec.web.panels import make_panels\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 111\n    'rows': ''.join([make_panel_row(**r)` for r in rows]),\n                                        ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549066427.020800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:15:49,794 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 20, in &lt;module&gt;\n    from edhrec.web.panels import make_panels\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 110\n    class=class_ or '',\n        ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549066471.020900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:16:33,425 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 20, in &lt;module&gt;\n    from edhrec.web.panels import make_panels\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 109\n    rows = ''.join([make_panel_row(**r)` for r in rows])\n                                       ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549066515.021000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:17:02,460 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 80, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 174, in make_panels\n    rows = [{'value': cardview_generate(cardview) + ''.join(urls)}]\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 82, in cardview_generate\n    return ENV.get_templates('card.html').render(repls)\nNameError: name 'ENV' is not defined\n```",
+        "ts": "1549066544.021100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:29:00,279 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 566, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 459, in make_panels\n    'value': deck_preview_html(deck, showcommander=url.startswith('cards'))\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 114, in deck_preview_html\n    preview.append(ENV.get_template('recentdeckrow.html').render('deck'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 964, in render\n    vars = dict(*args, **kwargs)\nValueError: dictionary update sequence element #0 has length 1; 2 is required\n```",
+        "ts": "1549067262.021200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-02 00:36:08,365 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 6, in &lt;module&gt;\n    nightly.make_500()\nAttributeError: module 'nightly' has no attribute 'make_500'\n```",
+        "ts": "1549067690.021300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1549079927.021400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

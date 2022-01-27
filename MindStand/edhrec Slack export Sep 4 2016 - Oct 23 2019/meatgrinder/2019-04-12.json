@@ -1,0 +1,153 @@
+[
+    {
+        "client_msg_id": "66f213d4-2104-4809-b325-32b2d8dcde27",
+        "type": "message",
+        "text": "<@UEFG14S5A> I just pushed a bunch of changes, they’re on ulrich and color indexes on dev now",
+        "user": "U28TLDP0R",
+        "ts": "1555125656.010200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6dd5b749-643c-411d-b24f-ee245fab1545",
+        "type": "message",
+        "text": "all card objects on edhrec follow the same schema now, and I can add more fields whenever necessary, or expose any additional scryfall data",
+        "user": "U28TLDP0R",
+        "ts": "1555125835.012900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d95ead79-3ce9-4a04-9226-2702993fd58f",
+        "type": "message",
+        "text": "(the only exceptions being, right now the data is a combination of old format and new format, but I’ll remove old format once everything is moved over and tested)",
+        "user": "U28TLDP0R",
+        "ts": "1555125884.013900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "029af77c-f11b-4160-b4df-7690e78b86d0",
+        "type": "message",
+        "text": "I had to temporarily switch over to a different set of js scripts so most of the website is not going to respect better.js updates for the next ~5 hours, but ulrich and commander color indexes  should",
+        "user": "U28TLDP0R",
+        "ts": "1555125942.014900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "aa28461b-2dc0-4b1c-90bf-819c7c04cee7",
+        "type": "message",
+        "text": "I changed it so that links point to \/cards\/ if it’s a card and \/commanders\/ if it’s a commander in the clipboard",
+        "user": "U28TLDP0R",
+        "ts": "1555125991.015400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U28TLDP0R",
+            "ts": "1555125998.000000"
+        }
+    },
+    {
+        "client_msg_id": "aa33a55b-9b50-45fb-bd26-3a54299c7d28",
+        "type": "message",
+        "text": "the only current bug I know of is, transform cards (probably meld too?) have the full name when added to the clipboard.  you can just check if card.layout is transform\/meld and use the first card’s name for these, I tried but ran into js errors but I assume it’s no big deal.",
+        "user": "U28TLDP0R",
+        "ts": "1555126254.018900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "13e5c66a-87dc-45d6-b160-5836365a08ae",
+        "type": "message",
+        "text": "so when you get a chance take a look at ulrich and commander color pages, and lmk if you have any questions",
+        "user": "U28TLDP0R",
+        "ts": "1555126337.020100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

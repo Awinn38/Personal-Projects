@@ -1,0 +1,539 @@
+[
+    {
+        "type": "message",
+        "text": "can’t figure out why this box isn’t using its swap",
+        "user": "U28TLDP0R",
+        "ts": "1498678638.296693",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Maybe i made it with no swap? Lol",
+        "user": "U286Q175Y",
+        "ts": "1498678766.339147",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "you did",
+        "user": "U28TLDP0R",
+        "ts": "1498678859.369775",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "but I gave it swap",
+        "user": "U28TLDP0R",
+        "ts": "1498678863.370941",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\n[ec2-user@ip-172-30-1-197 ~]$ cat \/proc\/sys\/vm\/swappiness\n100\n[ec2-user@ip-172-30-1-197 ~]$ ll -d \/swapfile\n-rw------- 1 root root 4294967296 Jun 22 05:09 \/swapfile\n[ec2-user@ip-172-30-1-197 ~]$ free -m\n             total       used       free     shared    buffers     cached\nMem:          3954       3595        359          0        153       1319\n-\/+ buffers\/cache:       2123       1831\nSwap:         4095          1       4094\n[ec2-user@ip-172-30-1-197 ~]$ swapon --show\nNAME      TYPE SIZE USED PRIO\n\/swapfile file   4G 1.4M   -1\n```",
+        "user": "U28TLDP0R",
+        "ts": "1498678897.382411",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "even with max swappiness",
+        "user": "U28TLDP0R",
+        "ts": "1498678908.385813",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "whatever, I’ll just change swappiness back to 60 and raise the alert threshold, maybe it’s fine",
+        "user": "U28TLDP0R",
+        "ts": "1498679105.449882",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "“problem solved”",
+        "user": "U28TLDP0R",
+        "ts": "1498679278.507112",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "had a big jump in NetworkOut around 4 am, I think maybe split card local images aren’t being handled properly",
+        "user": "U28TLDP0R",
+        "ts": "1498679592.612852",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "alright, new laptop seems to be doing the things I need it to do, I think I'll need to send you guys a new ssh key to let me log in",
+        "user": "U3RJ9VDRT",
+        "ts": "1498681121.131584",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F60JJSFRP",
+                "created": 1498681800,
+                "timestamp": 1498681800,
+                "name": "edhrec.pub",
+                "title": "edhrec.pub",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U3RJ9VDRT",
+                "editable": true,
+                "size": 415,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-F60JJSFRP\/edhrec.pub?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-F60JJSFRP\/download\/edhrec.pub?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U3RJ9VDRT\/F60JJSFRP\/edhrec.pub",
+                "permalink_public": "https:\/\/slack-files.com\/T286HM2F3-F60JJSFRP-65b242d59e",
+                "edit_link": "https:\/\/edhrec.slack.com\/files\/U3RJ9VDRT\/F60JJSFRP\/edhrec.pub\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U3RJ9VDRT",
+        "display_as_bot": false,
+        "ts": "1498681801.359883"
+    },
+    {
+        "type": "message",
+        "text": "patrick: added",
+        "user": "U28TLDP0R",
+        "ts": "1498682189.492750",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "thank you sir",
+        "user": "U3RJ9VDRT",
+        "ts": "1498682198.495519",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "and it works :heart:",
+        "user": "U3RJ9VDRT",
+        "ts": "1498682241.509789",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "wtf",
+        "user": "U28TLDP0R",
+        "ts": "1498683153.814318",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\nmake_page: \/usr\/share\/nginx\/html\/sets\/dtk.html\nmake_page: \/usr\/share\/nginx\/html\/sets\/frf.html\nmake_page: \/usr\/share\/nginx\/html\/sets\/c14.html\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"nightly.py\", line 167, in make_sets\n    setcards, setreprints = origin.getcards(mtgset=setabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 36, in getcards\n    sorted_set_reprints = sorted([(c, len(database.get_card(c))) for c in set_reprints],\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 226, in get_card\n    return out\n  File \"\/usr\/lib\/python2.7\/contextlib.py\", line 24, in __exit__\n    self.gen.next()\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 31, in _getcursor\n    con.commit()\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n```",
+        "user": "U28TLDP0R",
+        "ts": "1498683161.817236",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I think I saw <@U28TLDP0R> mention he was reading up\/working on docker?",
+        "user": "U3RJ9VDRT",
+        "ts": "1498683914.070916",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yup",
+        "user": "U28TLDP0R",
+        "ts": "1498683925.074732",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so, servatrice has an option to use a Docker shell, think I should give it a go or should I wait on that?",
+        "user": "U3RJ9VDRT",
+        "ts": "1498683998.097366",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I’d go for it",
+        "user": "U28TLDP0R",
+        "ts": "1498684118.133921",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "alright, I just checked and I don't see docker installed on the box",
+        "user": "U3RJ9VDRT",
+        "ts": "1498684160.146821",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "woot all images work",
+        "user": "U28TLDP0R",
+        "ts": "1498685145.435221",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "probably the last HOU update before mtgjson updates",
+        "user": "U28TLDP0R",
+        "ts": "1498685184.446179",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "cool patrick, i think docker would be a good learning experience for you as well",
+        "user": "U286Q175Y",
+        "ts": "1498687426.035160",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "the cool thing about docker is its portable, so my suggestion is you make the docker instance on your local box and then try to move it over to the instance",
+        "user": "U286Q175Y",
+        "ts": "1498687439.038155",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "that's what I was thinking",
+        "user": "U3RJ9VDRT",
+        "ts": "1498687451.041154",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

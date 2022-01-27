@@ -1,0 +1,182 @@
+[
+    {
+        "type": "message",
+        "text": "not to ourselves for next spoiler:\n\nwe need to set the spoiler date to the actual release of the set (and maybe add a couple of days for buffer) NOT the day we did the spoilers. What happened is once we replaced the spoiler set with mtgjson, the age of the set changed. THere were a bunch of decks which were “too old” and was messing with the denominator in all the tally pages",
+        "user": "U286Q175Y",
+        "ts": "1503674938.000542",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i manually fixed the dates in the database and the pages are generating correctly now",
+        "user": "U286Q175Y",
+        "ts": "1503675023.000484",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "running nightly now to update the pages",
+        "user": "U286Q175Y",
+        "ts": "1503675031.000299",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "looks like `populate_usagescores.sh` hasn’t been doing anything… running manually now. not sure why. symptom of this was c17 cards have synergy = to usage",
+        "user": "U286Q175Y",
+        "ts": "1503675634.000432",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i made a new script called `allnightly.sh` that bundled up all of the shit",
+        "user": "U286Q175Y",
+        "ts": "1503714216.000033",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\ndate | python \/home\/ubuntu\/edhrec\/core\/slackalert.py status \"master nightly stated!\"\npython \/home\/ubuntu\/edhrec\/web\/mtgsalvation.py &amp;&amp;\npython \/home\/ubuntu\/edhrec\/web\/mtggoldfish.py &amp;&amp;\n\/home\/ubuntu\/edhrec\/web\/tappedout.py &amp;&amp;\n\/home\/ubuntu\/edhrec\/batch\/update_ckprices.sh &amp;&amp;\n\/home\/ubuntu\/edhrec\/batch\/populate_usagescores.sh &amp;&amp;\n\/home\/ubuntu\/edhrec\/web\/nightly.py &amp;&amp;\n\/home\/ubuntu\/edhrec\/core\/recommendations.py &amp;&amp;\ndate | python \/home\/ubuntu\/edhrec\/core\/slackalert.py status \"master nightly completed!\" ||\ndate | python \/home\/ubuntu\/edhrec\/core\/slackalert.py status \"MASTER NIGHTLY FAILED !!!!!! :poop:\"\n```",
+        "user": "U286Q175Y",
+        "ts": "1503714225.000039",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "because they tie off each other — things like populate usage scores and recmomendations only make sense to run after we do a scrape",
+        "user": "U286Q175Y",
+        "ts": "1503714241.000013",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i also fixed a bug in populate_sagescores.sql … added a `COMMIT` at the end. Not sure how this script ever worked without this",
+        "user": "U286Q175Y",
+        "ts": "1503714312.000008",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "might not be ideal that nightly won't run if anything before it breaks",
+        "user": "U28TLDP0R",
+        "ts": "1503722840.000054",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

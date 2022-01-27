@@ -1,0 +1,14 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'NoneType' object has no attribute 'toJSON'\nTraceback (most recent call last):\n  File \"nightly.py\", line 472, in &lt;module&gt;\n    make_404()\n  File \"nightly.py\", line 32, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 32, in make_page\n    'card': card.toJSON(),\nAttributeError: 'NoneType' object has no attribute 'toJSON'\n",
+        "ts": "1520736209.000074",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

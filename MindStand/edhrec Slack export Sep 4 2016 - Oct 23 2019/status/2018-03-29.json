@@ -1,0 +1,146 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[heartbeat] Could not connect to <http:\/\/edhrec.com>!!",
+        "ts": "1522346491.000349",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B5XEYB5S4"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ntuple index out of range\nTraceback (most recent call last):\n  File \"nightly.py\", line 642, in brawl\n    make_top_index(brawl=True)\n  File \"nightly.py\", line 95, in make_top_index\n    cardlists = CardList(origin.gettop(brawl=brawl), 'Top Cards')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 651, in gettop\n    directory='cards') for d in data]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 651, in &lt;listcomp&gt;\n    directory='cards') for d in data]\nIndexError: tuple index out of range\n",
+        "ts": "1522376471.000068",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"nightly.py\", line 643, in brawl\n    make_top_colors(brawl=True)\n  File \"nightly.py\", line 152, in make_top_colors\n    cardlists = CardList(origin.gettop(colorid=colorabbr,  brawl=brawl), 'Top {0} Cards')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 663, in gettop\n    print(data[0])\nIndexError: list index out of range\n",
+        "ts": "1522376607.000106",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"nightly.py\", line 643, in brawl\n    make_top_colors(brawl=True)\n  File \"nightly.py\", line 152, in make_top_colors\n    cardlists = CardList(origin.gettop(colorid=colorabbr,  brawl=brawl), 'Top {0} Cards')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 663, in gettop\n    print(data[0])\nIndexError: list index out of range\n",
+        "ts": "1522376652.000058",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nstring indices must be integers\nTraceback (most recent call last):\n  File \"nightly.py\", line 653, in brawl\n    make_brawl_cards()\n  File \"nightly.py\", line 509, in make_brawl_cards\n    if not cards.in_standard(card['name']):\nTypeError: string indices must be integers\n",
+        "ts": "1522376977.000064",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlocal variable 'bad_recs' referenced before assignment\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 662, in brawl\n    make_brawl_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 547, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 532, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 477, in make_deck\n    if not bad_recs:\nUnboundLocalError: local variable 'bad_recs' referenced before assignment\n",
+        "ts": "1522379098.000119",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nstring indices must be integers\nTraceback (most recent call last):\n  File \"nightly.py\", line 663, in brawl\n    make_brawl_commanders_index()\n  File \"nightly.py\", line 70, in make_brawl_commanders_index\n    brawlcommanders = origin.getbrawlcommanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 493, in getbrawlcommanders\n    directory='commanders') for c in coms]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 493, in &lt;listcomp&gt;\n    directory='commanders') for c in coms]\nTypeError: string indices must be integers\n",
+        "ts": "1522382290.000019",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ntoo many values to unpack (expected 2)\nTraceback (most recent call last):\n  File \"nightly.py\", line 663, in brawl\n    make_brawl_commanders_index()\n  File \"nightly.py\", line 70, in make_brawl_commanders_index\n    brawlcommanders = origin.getbrawlcommanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 489, in getbrawlcommanders\n    coms = sorted([ k for k, v in cards.get_brawl_commanders()], key= lambda x: comranked.index(x) if x in comranked else 9999)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 489, in &lt;listcomp&gt;\n    coms = sorted([ k for k, v in cards.get_brawl_commanders()], key= lambda x: comranked.index(x) if x in comranked else 9999)\nValueError: too many values to unpack (expected 2)\n",
+        "ts": "1522382336.000155",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nstring indices must be integers\nTraceback (most recent call last):\n  File \"nightly.py\", line 663, in brawl\n    make_brawl_commanders_index()\n  File \"nightly.py\", line 70, in make_brawl_commanders_index\n    brawlcommanders = origin.getbrawlcommanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 493, in getbrawlcommanders\n    directory='commanders') for c in coms]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 493, in &lt;listcomp&gt;\n    directory='commanders') for c in coms]\nTypeError: string indices must be integers\n",
+        "ts": "1522382381.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nstring indices must be integers\nTraceback (most recent call last):\n  File \"nightly.py\", line 663, in brawl\n    make_brawl_commanders_index()\n  File \"nightly.py\", line 70, in make_brawl_commanders_index\n    brawlcommanders = origin.getbrawlcommanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 495, in getbrawlcommanders\n    directory='commanders') for c in coms]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 495, in &lt;listcomp&gt;\n    directory='commanders') for c in coms]\nTypeError: string indices must be integers\n",
+        "ts": "1522382420.000187",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nstring indices must be integers\nTraceback (most recent call last):\n  File \"nightly.py\", line 663, in brawl\n    make_brawl_commanders_index()\n  File \"nightly.py\", line 70, in make_brawl_commanders_index\n    brawlcommanders = origin.getbrawlcommanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 495, in getbrawlcommanders\n    directory='commanders') for c in coms]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 495, in &lt;listcomp&gt;\n    directory='commanders') for c in coms]\nTypeError: string indices must be integers\n",
+        "ts": "1522382448.000134",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nname 'dd' is not defined\nTraceback (most recent call last):\n  File \"nightly.py\", line 663, in brawl\n    make_brawl_commanders_index()\n  File \"nightly.py\", line 70, in make_brawl_commanders_index\n    brawlcommanders = origin.getbrawlcommanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 489, in getbrawlcommanders\n    in_coms = set([ dd['name'] for d in coms ])\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 489, in &lt;listcomp&gt;\n    in_coms = set([ dd['name'] for d in coms ])\nNameError: name 'dd' is not defined\n",
+        "ts": "1522382573.000053",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

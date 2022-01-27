@@ -1,0 +1,662 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1530806318.000273",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1530809918.000452",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nThu Jul  5 17:08:39 UTC 2018\n\n```",
+        "ts": "1530810434.000365",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1530813518.000133",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nargument of type 'NoneType' is not iterable\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 765, in brawl\n    make_brawl_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 630, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 616, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 409, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 377, in getcommanders\n    cardlists = get_cardlists(data)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in get_cardlists\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in &lt;listcomp&gt;\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\nTypeError: argument of type 'NoneType' is not iterable\n",
+        "ts": "1530818756.000151",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nargument of type 'NoneType' is not iterable\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 728, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 642, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 409, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 377, in getcommanders\n    cardlists = get_cardlists(data)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in get_cardlists\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in &lt;listcomp&gt;\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\nTypeError: argument of type 'NoneType' is not iterable\n",
+        "ts": "1530818762.000324",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nThu Jul  5 19:27:29 UTC 2018\n\n```",
+        "ts": "1530818764.000108",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "86d8bae2-c6d9-43de-b416-38719b0e904a",
+        "type": "message",
+        "text": "sigh",
+        "user": "U286Q175Y",
+        "ts": "1530821893.000115",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nargument of type 'NoneType' is not iterable\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 765, in brawl\n    make_brawl_commanders()\n  File \".\/nightly.py\", line 630, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \".\/nightly.py\", line 616, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\n  File \".\/nightly.py\", line 409, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 377, in getcommanders\n    cardlists = get_cardlists(data)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in get_cardlists\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in &lt;listcomp&gt;\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\nTypeError: argument of type 'NoneType' is not iterable\n",
+        "ts": "1530822269.000026",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nargument of type 'NoneType' is not iterable\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 728, in edhrec\n    make_commanders()\n  File \".\/nightly.py\", line 642, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \".\/nightly.py\", line 409, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 377, in getcommanders\n    cardlists = get_cardlists(data)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in get_cardlists\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 236, in &lt;listcomp&gt;\n    data['Cards'][section] = [x for x in data['Cards'][section] if x['Card'] in notcards]\nTypeError: argument of type 'NoneType' is not iterable\n",
+        "ts": "1530822274.000097",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "a07bafad-9244-47f0-925c-02a22de79a6d",
+        "type": "message",
+        "text": "sometimes there is no Signature",
+        "user": "U3MTAQBE1",
+        "ts": "1530822325.000320",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "91a38b48-b907-4671-a777-811aecb91c26",
+        "type": "message",
+        "text": "why is this breaking now though",
+        "user": "U286Q175Y",
+        "ts": "1530822398.000165",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3a848aa7-6a3e-48cf-8102-59d8895f410e",
+        "type": "message",
+        "text": "that's me",
+        "user": "U28TLDP0R",
+        "ts": "1530822462.000152",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "91257104-78f4-4a90-a457-e31738d394ab",
+        "type": "message",
+        "text": "odd that Omnath would have no Signature",
+        "user": "U3MTAQBE1",
+        "ts": "1530822465.000103",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a1b668aa-eb56-4c5b-a48e-0245573f72ba",
+        "type": "message",
+        "text": "trying to figure out why something was written some way",
+        "user": "U28TLDP0R",
+        "ts": "1530822469.000268",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cf405df8-a824-4bfc-9f1f-887d24d0e931",
+        "type": "message",
+        "text": "you want to fix it or do i need to figure it out?",
+        "user": "U286Q175Y",
+        "ts": "1530822484.000338",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "883c3ef0-aa00-4964-bf9a-cd332e62f5d6",
+        "type": "message",
+        "text": "I got it",
+        "user": "U28TLDP0R",
+        "ts": "1530822490.000373",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "82f2f55c-b902-4728-85ef-d5c19de05a45",
+        "type": "message",
+        "text": "k im out of origin",
+        "user": "U286Q175Y",
+        "ts": "1530822494.000345",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "adbabba9-802a-4888-8549-65a233f74b56",
+        "type": "message",
+        "text": "you know better to question how i wrote some code",
+        "user": "U286Q175Y",
+        "ts": "1530822506.000265",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e031b4b0-f002-4ffd-8cc8-05d1bf211400",
+        "type": "message",
+        "text": "when I see stuff that's iterating over a bunch of stuff that it doesn't need to be I try to fix it if the code's not too obfuscated",
+        "user": "U28TLDP0R",
+        "ts": "1530822761.000178",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9f99940e-209c-44ec-a799-87355c064ff8",
+        "type": "message",
+        "text": "sometimes I end up wrong about it but more often than that I just didn't account for one particular case",
+        "user": "U28TLDP0R",
+        "ts": "1530822776.000347",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "46384683-7de5-438e-adcb-27facdeb4964",
+        "type": "message",
+        "text": "which is what this is",
+        "user": "U28TLDP0R",
+        "ts": "1530822781.000089",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "71c81908-da85-4d73-9900-af2732fb9239",
+        "type": "message",
+        "text": "quick fix",
+        "user": "U28TLDP0R",
+        "ts": "1530822849.000126",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "49fd34d4-e16c-457e-9bf6-15aa16e507a6",
+        "type": "message",
+        "text": "just trollin",
+        "user": "U286Q175Y",
+        "ts": "1530822877.000110",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ba067191-f71d-42c8-8e0f-c9acc24253e4",
+        "type": "message",
+        "text": "should be good to restart nightly",
+        "user": "U28TLDP0R",
+        "ts": "1530822910.000396",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7a6b0d6b-35ae-4829-a20f-e29209eeea9b",
+        "type": "message",
+        "text": "seems to be getting further this time",
+        "user": "U286Q175Y",
+        "ts": "1530822970.000223",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e8aca48b-6ae3-40b3-b834-d725ac0c32fb",
+        "type": "message",
+        "text": "looks good",
+        "user": "U286Q175Y",
+        "ts": "1530822973.000292",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist indices must be integers, not str\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 728, in edhrec\n    make_commanders()\n  File \".\/nightly.py\", line 646, in make_commanders\n    del commanders[a]\nTypeError: list indices must be integers, not str\n",
+        "ts": "1530827170.000105",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1530827918.000036",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "6b61788e-0bf6-46ab-9388-382da8f8825f",
+        "type": "message",
+        "text": "a dict got sorted into a list",
+        "user": "U28TLDP0R",
+        "ts": "1530833235.000146",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fefa0987-6fdd-430b-8e7e-c694196225a1",
+        "type": "message",
+        "text": "not sure if we need to sort commanders in make_commanders anyway",
+        "user": "U28TLDP0R",
+        "ts": "1530833259.000062",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "A15A6D41-E141-4862-81A2-3276CB4CFC41",
+        "type": "message",
+        "text": "Oh yeah i just added that. Oops",
+        "user": "U286Q175Y",
+        "ts": "1530837448.000151",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "54D7D79C-3D7E-4572-8BBB-91B45D37D6AC",
+        "type": "message",
+        "text": "Itll help see where nightly is",
+        "user": "U286Q175Y",
+        "ts": "1530837456.000163",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "90755CF7-DF3C-4057-B679-7B04D145704F",
+        "type": "message",
+        "text": "Incan remove it",
+        "user": "U286Q175Y",
+        "ts": "1530837464.000039",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "DBC9EC01-49D5-484C-B29F-177F3AFE7CE9",
+        "type": "message",
+        "text": "Like if its sorted you can see its almost done if its at z’a",
+        "user": "U286Q175Y",
+        "ts": "1530837492.000121",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1530849517.000003",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('54.157.3.180', 'test'), 56972)\n(('52.53.222.28', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 21205)\n(('66.249.70.8', 'Mediapartners-Google'), 18819)\n(('88.99.250.15', 'Mozilla\/5.0 (compatible; BLEXBot\/1.0; +<http:\/\/webmeup-crawler.com\/>)'), 17688)\n(('52.52.164.177', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 17021)\n(('52.57.220.92', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 11422)\n(('34.235.158.211', 'Mozilla\/5.0 (compatible; VoluumDSP-content-bot\/2.0; <mailto:+dsp-dev@codewise.com|+dsp-dev@codewise.com>)'), 11363)\n(('18.206.249.27', 'Mozilla\/5.0 (compatible; VoluumDSP-content-bot\/2.0; <mailto:+dsp-dev@codewise.com|+dsp-dev@codewise.com>)'), 11266)\n(('75.98.9.249', 'Mozilla\/5.0 (compatible; NetSeer crawler\/2.0; +<http:\/\/www.netseer.com\/crawler.html;> <mailto:crawler@netseer.com|crawler@netseer.com>)'), 9838)\n(('54.84.233.35', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 9742)\n(('52.201.241.132', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 9280)\n(('45.63.9.176', 'python-requests\/2.18.1'), 9255)\n(('202.14.12.94', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.84 Safari\/537.36'), 8190)\n(('148.64.56.72', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 8177)\n(('148.64.56.68', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 8083)\n(('148.64.56.76', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 8076)\n(('148.64.56.65', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 8072)\n(('148.64.56.73', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 8029)\n(('148.64.56.74', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 7593)\n(('169.48.218.38', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.113 Safari\/537.36'), 7500)\n(('148.64.56.75', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 7445)\n(('148.64.56.64', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 7415)\n(('148.64.56.79', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 7256)\n(('184.72.115.35', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 6909)\n(('52.71.155.178', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 6837)\n\n```",
+        "ts": "1530854953.000142",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,378 @@
+[
+    {
+        "client_msg_id": "f2c7076f-3e6c-4960-b5d0-73231b44b49f",
+        "type": "message",
+        "text": "<@U28TLDP0R> I'm assuming you removed skiparticles from make_commander for some reason, unfortunately all the functions that use that pass through the parameter so it follows through on the command. you'll have to grep through and remove all the instnaces of it. I added a dummy variable for skiparticles back into make_commander so that it runs",
+        "user": "U286Q175Y",
+        "ts": "1540131396.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FDJA3HVS5",
+                "created": 1540134075,
+                "timestamp": 1540134075,
+                "name": "Image from iOS.png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U286Q175Y",
+                "editable": false,
+                "size": 633414,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FDJA3HVS5\/image_from_ios.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FDJA3HVS5\/download\/image_from_ios.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_64.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_80.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_360.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_480.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_160.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_720.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_800.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_960.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FDJA3HVS5-94f41f5c8f\/image_from_ios_1024.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1242,
+                "original_h": 2208,
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U286Q175Y\/FDJA3HVS5\/image_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T286HM2F3-FDJA3HVS5-b80ef9251f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U286Q175Y",
+        "display_as_bot": false,
+        "upload_reply_to": "55143D0E-CDA3-46A0-8A2A-A11C47173374",
+        "ts": "1540134079.000100"
+    },
+    {
+        "client_msg_id": "DD03060B-CCA5-4BDA-88EA-854BA5439BEA",
+        "type": "message",
+        "text": "<@U28TLDP0R> ^ i havent tried to replicate",
+        "user": "U286Q175Y",
+        "ts": "1540134096.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "B8793116-CC07-40C3-8C04-7850D351632E",
+        "type": "message",
+        "text": "Also, i thought we had a friendlier 500 screen now?",
+        "user": "U286Q175Y",
+        "ts": "1540134117.000200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "128e0036-3088-46f2-b864-9deda437bcc3",
+        "type": "message",
+        "text": "sorry, I tested `make_commander` and `make_cards`, but not `_make_commanders_p`",
+        "user": "U28TLDP0R",
+        "ts": "1540139744.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "32baa503-011b-452a-b44c-575091dec224",
+        "type": "message",
+        "text": "did you see my trello comment from yesterday?",
+        "user": "U28TLDP0R",
+        "ts": "1540139777.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c1c439f8-91b5-4976-9b4b-7ad0695ac0db",
+        "type": "message",
+        "text": "i definitely saw the custom 500 screen earlier this week, but dynamic.py was just returning `\"500\"`.  it’s now using the friendlier one.",
+        "user": "U28TLDP0R",
+        "ts": "1540141642.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540142775.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card 0 decks bug added to list EDHREC Bugs on board edhrec.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "0 decks bug",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/IrHolzwo",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540142929.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts updated the description of 0 decks bug.",
+                "text": "occasionally when using advanced filters (maybe also during nightly?) 0 decks will be returned when it shouldn't be.\n\nas an example: <https:\/\/edhrec.com\/commanders\/meren-of-clan-nel-toth?f=in%3DBayou%3Bin%3DDemonic+Tutor%3Bin%3DCaustic+Caterpillar%3Bin%3DNature%27s+Claim%3Bc%3Agt%3D15>\nbut if you up it to creatures &gt; 16, it returns decks\n(these results are cached right now, at least)\n\nthe problem is likely on the web\/ side because `origin.getcommanders(card='Meren of Clan Nel Toth', filtin=['Bayou', 'Demonic Tutor', 'Caustic Caterpillar', \"Nature's Claim\"], filters=[(['creature'], 'gt', 15)])` succeeds with decks every time.  probably some error is getting swallowed up somewhere.",
+                "pretext": "Updated the description of *<https:\/\/trello.com\/c\/IrHolzwo|0 decks bug>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540142945.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts updated the description of 0 decks bug.",
+                "text": "occasionally when using advanced filters (maybe also during nightly?) 0 decks will be returned when it shouldn't be.\n\nas an example: <https:\/\/edhrec.com\/commanders\/meren-of-clan-nel-toth?f=in%3DBayou%3Bin%3DDemonic+Tutor%3Bin%3DCaustic+Caterpillar%3Bin%3DNature%27s+Claim%3Bc%3Agt%3D15>\nbut if you up it to creatures &gt; 16, it returns decks\n(these results are cached right now, at least)\n\nthe problem is likely on the web\/ side because ```origin.getcommanders(card='Meren of Clan Nel Toth', filtin=['Bayou', 'Demonic Tutor', 'Caustic Caterpillar', \"Nature's Claim\"], filters=[(['creature'], 'gt', 15)])``` succeeds with decks every time.  probably some error is getting swallowed up somewhere.",
+                "pretext": "Updated the description of *<https:\/\/trello.com\/c\/IrHolzwo|0 decks bug>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4c0b563a-9efc-4d4d-b886-fe0a0382b038",
+        "type": "message",
+        "text": "the 500s are fixed, just documenting something else going on",
+        "user": "U28TLDP0R",
+        "ts": "1540142990.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540144273.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Create KMS keys for encrypting database usernames\/passwords or API keys or other secret material and encrypt from EDHREC Let's Do Soon to Done in Oct '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/dSF9QNtQ|Create KMS keys for encrypting database usernames\/passwords or API keys or other secret material and encrypt>* from *EDHREC Let's Do Soon* to *Done in Oct '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540144333.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on Create KMS keys for encrypting database usernames\/passwords or API keys or other secret material and encrypt: \"secret keys have been moved to ~\/edhrec\/config.py, which is not committed to git.  will have to do some cleanup to remove them from git logs, but this is fine for now.  may want to update database credentials.\"",
+                "text": "secret keys have been moved to ~\/edhrec\/config.py, which is not committed to git.  will have to do some cleanup to remove them from git logs, but this is fine for now.  may want to update database credentials.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/dSF9QNtQ|Create KMS keys for encrypting database usernames\/passwords or API keys or other secret material and encrypt>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540144439.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on No application configuration stored on ephemeral instance storage: \"some modules still have random files in ~ and in \/tmp, but everything is backed up.  maybe move more things to cache module soon.\"",
+                "text": "some modules still have random files in ~ and in \/tmp, but everything is backed up.  maybe move more things to cache module soon.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/lydaaBMR|No application configuration stored on ephemeral instance storage>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540144443.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card No application configuration stored on ephemeral instance storage from Doing to Done in Oct '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/lydaaBMR|No application configuration stored on ephemeral instance storage>* from *Doing* to *Done in Oct '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

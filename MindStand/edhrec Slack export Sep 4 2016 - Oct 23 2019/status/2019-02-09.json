@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[09\/Feb\/2019:16:59:43] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 222, in make_page\n    try:\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 446, in get_sets\n    return cache.get('cards\/sets')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/sets'\n```",
+        "ts": "1549731481.036300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[09\/Feb\/2019:22:48:28] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 77, in index\n    temp = cache.get('api\/daily').copy()\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cardhoarder\/phyrexian arena'\n```",
+        "ts": "1549752406.036400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-10 00:55:21,101 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-10 00:55:21,102 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1549760018.036500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-10 00:58:42,275 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-10 00:58:42,276 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1549760219.036600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-10 01:13:00,382 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-10 01:13:00,382 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1549761077.036700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-10 01:16:25,176 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-10 01:16:25,177 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1549761282.036800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

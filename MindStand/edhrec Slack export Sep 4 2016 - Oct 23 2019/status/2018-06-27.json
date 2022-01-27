@@ -1,0 +1,131 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n('Connection aborted.', BadStatusLine(\"''\",))\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 601, in urlopen\n    chunked=chunked)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"&lt;string&gt;\", line 2, in raise_from\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"\/usr\/lib\/python3.4\/http\/client.py\", line 1208, in getresponse\n    response.begin()\n  File \"\/usr\/lib\/python3.4\/http\/client.py\", line 380, in begin\n    version, status, reason = self._read_status()\n  File \"\/usr\/lib\/python3.4\/http\/client.py\", line 350, in _read_status\n    raise BadStatusLine(line)\nhttp.client.BadStatusLine: ''\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/adapters.py\", line 440, in send\n    timeout=timeout\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 639, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/util\/retry.py\", line 357, in increment\n    raise six.reraise(type(error), error, _stacktrace)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/packages\/six.py\", line 685, in reraise\n    raise value.with_traceback(tb)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 601, in urlopen\n    chunked=chunked)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"&lt;string&gt;\", line 2, in raise_from\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/urllib3\/connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"\/usr\/lib\/python3.4\/http\/client.py\", line 1208, in getresponse\n    response.begin()\n  File \"\/usr\/lib\/python3.4\/http\/client.py\", line 380, in begin\n    version, status, reason = self._read_status()\n  File \"\/usr\/lib\/python3.4\/http\/client.py\", line 350, in _read_status\n    raise BadStatusLine(line)\nurllib3.exceptions.ProtocolError: ('Connection aborted.', BadStatusLine(\"''\",))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 769, in brawl\n    make_top_types(brawl=True)\n  File \".\/nightly.py\", line 627, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \".\/nightly.py\", line 613, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\n  File \".\/nightly.py\", line 417, in make_commander\n    articles = [(x['title'], x['link']) for x in wordpress.get_commander(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 109, in get_commander\n    return get_articles_by_commander()[cmdr]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 77, in get_articles_by_commander\n    articles = [parse_post(p) for p in get_posts()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 77, in &lt;listcomp&gt;\n    articles = [parse_post(p) for p in get_posts()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 184, in parse_post\n    tags.append(get_tag(tid))\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 136, in get_tag\n    return get_tags()[tid]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 140, in get_tags\n    return {t['id']: t for t in _get_multipage('tags')}\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 36, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/api.py\", line 72, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/api.py\", line 58, in request\n    return session.request(method=method, url=url, **kwargs)",
+        "ts": "1530115128.000081",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/sessions.py\", line 508, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/sessions.py\", line 640, in send\n    history = [resp for resp in gen] if allow_redirects else []\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/sessions.py\", line 640, in &lt;listcomp&gt;\n    history = [resp for resp in gen] if allow_redirects else []\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/sessions.py\", line 218, in resolve_redirects\n    **adapter_kwargs\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/sessions.py\", line 618, in send\n    r = adapter.send(request, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/requests\/adapters.py\", line 490, in send\n    raise ConnectionError(err, request=request)\nrequests.exceptions.ConnectionError: ('Connection aborted.', BadStatusLine(\"''\",))\n",
+        "ts": "1530115128.000082",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Jun 27 16:00:07 UTC 2018\n\n```",
+        "ts": "1530115158.000050",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 757, in brawl\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 61, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1530124665.000037",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 720, in edhrec\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 61, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1530124665.000404",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nWed Jun 27 18:38:39 UTC 2018\n\n```",
+        "ts": "1530124666.000485",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "a684b515-01b6-4d92-9d07-a056e4d93628",
+        "type": "message",
+        "text": "ded",
+        "user": "U286Q175Y",
+        "ts": "1530124720.000178",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1530161949.000108",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('18.207.112.249', 'MauiBot (<mailto:crawler.feedback+wc@gmail.com|crawler.feedback+wc@gmail.com>)'), 34639)\n(('54.157.3.180', 'test'), 33914)\n(('66.249.66.1', 'Mediapartners-Google'), 12073)\n(('88.99.250.15', 'Mozilla\/5.0 (compatible; BLEXBot\/1.0; +<http:\/\/webmeup-crawler.com\/>)'), 10393)\n(('23.101.169.3', 'Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0;  Trident\/5.0)'), 8989)\n(('23.101.169.3', 'Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident\/5.0;  Trident\/5.0)'), 8424)\n(('202.14.12.94', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.84 Safari\/537.36'), 7712)\n(('34.228.225.77', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 7017)\n(('13.57.15.33', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 5870)\n(('45.63.9.176', 'python-requests\/2.18.1'), 5521)\n(('17.58.101.101', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.2.5 (KHTML, like Gecko) Version\/8.0.2 Safari\/600.2.5 (Applebot\/0.1; +<http:\/\/www.apple.com\/go\/applebot>)'), 5284)\n(('75.98.9.249', 'Mozilla\/5.0 (compatible; NetSeer crawler\/2.0; +<http:\/\/www.netseer.com\/crawler.html;> <mailto:crawler@netseer.com|crawler@netseer.com>)'), 5120)\n(('148.64.56.72', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 5104)\n(('148.64.56.75', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 4669)\n(('169.48.218.38', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.113 Safari\/537.36'), 4656)\n(('148.64.56.76', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 4637)\n(('148.64.56.64', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 4517)\n(('148.64.56.73', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 4469)\n(('148.64.56.68', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 4438)\n(('184.72.115.35', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 4384)\n(('148.64.56.79', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 4000)\n(('148.64.56.69', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 3930)\n(('148.64.56.65', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 3918)\n(('148.64.56.71', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 3796)\n(('148.64.56.74', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 3714)\n\n```",
+        "ts": "1530163769.000147",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1530169148.000244",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,471 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-20 08:06:44,224 INFO backup.py took 0:06:42.454848\n```",
+        "ts": "1555747558.065500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1555747618.065600",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.79791931E8 (20\/04\/19 08:01:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-04-20T08:06:57.702+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-04-20T08:06:57.724Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.79791931E8 (20\/04\/19 08:01:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-04-20T08:06:57.702+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-04-20T08:06:57.724Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-20 12:05:51,212 INFO New Trending 2019-04-20\n{\"name\": \"Herald of the Pantheon\", \"s\": [0, 11, 10, 10, 19, 16, 20], \"z\": 1.1775407854519693}\n{\"name\": \"Contagion Clasp\", \"s\": [0, 6, 11, 8, 15, 17, 16], \"z\": 1.167708491495074}\n{\"name\": \"Dowsing Dagger\", \"s\": [0, 9, 11, 9, 24, 14, 21], \"z\": 1.1586432865317535}\n{\"name\": \"Sterling Grove\", \"s\": [0, 9, 6, 13, 17, 14, 20], \"z\": 1.1538386711145836}\n{\"name\": \"Gateway Plaza\", \"s\": [0, 10, 15, 15, 28, 19, 21], \"z\": 1.1476103103018473}\n{\"name\": \"Thought Collapse\", \"s\": [0, 2, 2, 3, 6, 6, 7], \"z\": 1.1434289871539054}\n{\"name\": \"Dread Summons\", \"s\": [0, 6, 3, 7, 12, 10, 10], \"z\": 1.1406570966034117}\n{\"name\": \"Temple of Plenty\", \"s\": [0, 20, 19, 21, 33, 24, 35], \"z\": 1.1404748937092781}\n{\"name\": \"Jungle Hollow\", \"s\": [0, 19, 20, 23, 27, 29, 37], \"z\": 1.1373523236233858}\n{\"name\": \"Temple of Abandon\", \"s\": [0, 15, 15, 23, 34, 21, 30], \"z\": 1.1367217807435088}\n2019-04-20 12:05:51,225 INFO daily.py took 4:05:47.200165\n```",
+        "ts": "1555761905.065700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1555790234.065800",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"Articles NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"Articles NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [1.00237986E7 (20\/04\/19 19:42:00)] was greater than or equal to the threshold (5000000.0).\",\"StateChangeTime\":\"2019-04-20T19:57:13.421+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-653f72f6\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5000000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-04-20T19:57:13.466Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"Articles NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"Articles NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [1.00237986E7 (20\/04\/19 19:42:00)] was greater than or equal to the threshold (5000000.0).\",\"StateChangeTime\":\"2019-04-20T19:57:13.421+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-653f72f6\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5000000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-04-20T19:57:13.466Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d5f646b4-bddb-4cea-9b46-a867e8882fe6",
+        "type": "message",
+        "text": "funny lol, i just logged into the box",
+        "user": "U286Q175Y",
+        "ts": "1555790373.066100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-20 20:28:16,186 INFO archidekt.py took 0:26:24.064741\n```",
+        "ts": "1555792050.066200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 00:00:29,441 ERROR kindly stranger missing from cardkingdom prices json\n2019-04-21 00:00:29,441 ERROR screeching bat missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR uninvited geist missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR gatstaf shepherd missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR elusive tormentor missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR ravenous demon missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR grizzled angler missing from cardkingdom prices json\n2019-04-21 00:00:29,442 ERROR villagers of estwald missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR hanweir watchkeep missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR autumnal gloom missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR daring sleuth missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR convicted killer missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR solitary hunter missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR soul seizer missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR loyal cathar missing from cardkingdom prices json\n2019-04-21 00:00:29,443 ERROR hinterland logger missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR civilized scholar missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR hinterland hermit missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR grizzled outcasts missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR town gossipmonger missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR aberrant researcher missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR gatstaf arsonists missing from cardkingdom prices json\n2019-04-21 00:00:29,444 ERROR cloistered youth missing from cardkingdom prices json\n```",
+        "ts": "1555804783.066300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 00:10:05,803 ERROR tcgplayer error: Oops! We've encountered an error.\n```",
+        "ts": "1555805359.066400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 00:18:20,402 INFO cards.py took 0:18:15.817835\n```",
+        "ts": "1555805853.066500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 00:44:27,596 INFO archidekt.py took 0:24:11.494394\n```",
+        "ts": "1555807421.066600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 01:02:44,830 WARNING Chaos Orb from Strategy, Schmategy in <https:\/\/deckstats.net\/decks\/89195\/769724-jeskai-chaos\/en>\n```",
+        "ts": "1555808518.066700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 01:09:06,257 WARNING Chaos Orb from Planar Celebration in <https:\/\/deckstats.net\/decks\/28248\/598231-atraxa-super-counters-edh-v9-0\/en>\n```",
+        "ts": "1555808899.066800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 01:10:24,178 WARNING Chaos Orb from AWOL in <https:\/\/deckstats.net\/decks\/99604\/1033385-isperia-supreme-judge\/en>\n```",
+        "ts": "1555808977.066900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 01:18:22,146 INFO deckstats.py took 0:31:57.099616\n```",
+        "ts": "1555809455.067000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:08:50,812 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'Open Histility'\n```",
+        "ts": "1555812484.067100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:09:06,878 INFO mtggoldfish.py took 0:30:00.961870\n```",
+        "ts": "1555812500.067200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:16:41,749 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 0\n```",
+        "ts": "1555812955.067300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:23:26,349 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 462, in make_precons\n    for setcode, precons in precon_by_set.keys():\nValueError: too many values to unpack (expected 2)\n```",
+        "ts": "1555813359.067400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:24:40,987 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 467, in make_precons\n    ) for precon in precons]\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 467, in &lt;listcomp&gt;\n    ) for precon in precons]\nTypeError: string indices must be integers\n```",
+        "ts": "1555813434.067500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:29:43,481 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 0\n```",
+        "ts": "1555813736.067600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:36:59,752 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 469, in get_set\n    return cache.get('cards\/sets')[code]\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1555814173.067700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:37:06,164 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: get_sets() takes 0 positional arguments but 1 was given\n```",
+        "ts": "1555814179.067800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:37:12,076 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1555814185.067900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:37:25,100 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nAttributeError: 'list' object has no attribute 'keys'\n```",
+        "ts": "1555814198.068000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:38:54,940 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'nightly' has no attribute 'make_precon'\n```",
+        "ts": "1555814288.068100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:39:05,202 INFO update_deckswithprices.py took 0:29:56.165140\n```",
+        "ts": "1555814298.068200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:39:06,370 INFO New deck count from past 2 days: \n- deckstats: 311\n- MTGGoldfish: 239\n- Archidekt: 338\n- Other: 0\n```",
+        "ts": "1555814299.068300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1555814301.068400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:48:06,939 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\n  File \"&lt;console&gt;\", line 1, in &lt;listcomp&gt;\nAttributeError: 'tuple' object has no attribute 'keys'\n```",
+        "ts": "1555814840.068500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:49:25,335 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 64, in runsource\n    code = self.compile(source, filename, symbol)\n  File \"\/usr\/lib\/python3.5\/codeop.py\", line 168, in __call__\n    return _maybe_compile(self.compiler, source, filename, symbol)\n  File \"\/usr\/lib\/python3.5\/codeop.py\", line 99, in _maybe_compile\n    raise err1\n  File \"\/usr\/lib\/python3.5\/codeop.py\", line 87, in _maybe_compile\n    code1 = compiler(source + \"\\n\", filename, symbol)\n  File \"\/usr\/lib\/python3.5\/codeop.py\", line 133, in __call__\n    codeob = compile(source, filename, symbol, self.flags, 1)\n  File \"&lt;console&gt;\", line 1\n    [k for k, v in sorted(precon_by_set.items()))\n                                                ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1555814918.068600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:50:00,026 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nTypeError: &lt;lambda&gt;() missing 1 required positional argument: 'v'\n```",
+        "ts": "1555814953.068700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:50:08,848 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\n  File \"&lt;console&gt;\", line 1, in &lt;lambda&gt;\nTypeError: tuple indices must be integers or slices, not str\n```",
+        "ts": "1555814962.068800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:50:26,122 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\n  File \"&lt;console&gt;\", line 1, in &lt;lambda&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 469, in get_set\n    return cache.get('cards\/sets\/' + code)\nTypeError: Can't convert 'tuple' object to str implicitly\n```",
+        "ts": "1555814979.068900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 02:51:52,372 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nAttributeError: 'list' object has no attribute 'items'\n```",
+        "ts": "1555815065.069000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1555829723.069100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-21 06:56:11,286 INFO nightly.py took 4:17:02.367316\n```",
+        "ts": "1555829724.069200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

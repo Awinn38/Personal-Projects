@@ -1,0 +1,757 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1553069279.116400",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [4.509014974E8 (20\/03\/19 07:57:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-03-20T08:07:57.714+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-20T08:07:57.754Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [4.509014974E8 (20\/03\/19 07:57:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-03-20T08:07:57.714+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-20T08:07:57.754Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 08:28:11,911 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/core\/cards.py\", line 583, in &lt;module&gt;\n    _init()\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/core\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/core\/cards.py\", line 248, in _init_allcards\n    'cardhoarder': ch_prices[card],\nTypeError: unhashable type: 'dict'\n```",
+        "ts": "1553070269.116500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 10:42:18,739 ERROR api updater done\n```",
+        "ts": "1553078316.116600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 12:00:05,043 ERROR api updater starting\n```",
+        "ts": "1553082982.116700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 16:28:20,942 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 583, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 248, in _init_allcards\n    'cardhoarder': ch_prices[card],\nKeyError: 'Tunneler Wurm'\n```",
+        "ts": "1553099077.116800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 16:39:16,965 ERROR api updater done\n```",
+        "ts": "1553099733.116900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 16:44:16,187 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 584, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 238, in _init_allcards\n    cardhoarder.update()\n  File \"\/home\/ubuntu\/edhrec\/core\/cardhoarder.py\", line 38, in update\n    prices[unidecode(entry['name']).lower()] = entry\nNameError: name 'unidecode' is not defined\n```",
+        "ts": "1553100033.117000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 16:54:56,817 ERROR No Chaos Orb in tcgp prices?\n```",
+        "ts": "1553100673.117100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:06:33,371 ERROR No Chaos Orb in tcgp prices?\n2019-03-20 17:06:33,841 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 584, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 251, in _init_allcards\n    'tcgplayer': tcgp_prices[name]\nTypeError: 'str' object does not support item assignment\n```",
+        "ts": "1553101370.117200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:29:58,692 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'ch_prices' is not defined\n```",
+        "ts": "1553102775.117300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:43:10,138 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'name'\n```",
+        "ts": "1553103566.117400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:44:13,152 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 584, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 251, in _init_allcards\n    'tcgplayer': tcgp_prices[name]\nTypeError: 'str' object does not support item assignment\n```",
+        "ts": "1553103629.117500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:45:16,201 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 250, in _init_allcards\n    'cardhoarder': ch_prices[name],\nKeyError: 'thrash'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \".\/cards.py\", line 588, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 256, in _init_allcards\n    print(tcgp_prices[name])\nKeyError: 'thrash'\n```",
+        "ts": "1553103693.117600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:46:22,662 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/tcgplayer.py\", line 109, in get\n    return cache.get('prices\/tcgplayer')[unidecode(name).lower()]\nKeyError: 'thrash'\n```",
+        "ts": "1553103759.117700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:46:25,938 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/tcgplayer.py\", line 109, in get\n    return cache.get('prices\/tcgplayer')[unidecode(name).lower()]\nKeyError: 'thrash \/\/  threat'\n```",
+        "ts": "1553103762.117800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:50:05,403 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 590, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 251, in _init_allcards\n    'cardkingdom': ck_prices[name],\nTypeError: 'str' object does not support item assignment\n```",
+        "ts": "1553103982.117900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:54:24,596 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nTypeError: string indices must be integers\n```",
+        "ts": "1553104241.118000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:55:28,144 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 590, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 248, in _init_allcards\n    code.interact(local=dict(locals(), **globals()))\nNameError: name 'code' is not defined\n```",
+        "ts": "1553104305.118100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 17:56:09,952 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 590, in &lt;module&gt;\n    _init()\n  File \".\/cards.py\", line 38, in _init\n    _init_allcards()\n  File \".\/cards.py\", line 250, in _init_allcards\n    'cardhoarder': ch_prices[name],\nKeyError: 'fylgja'\n```",
+        "ts": "1553104346.118200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 18:00:04,901 ERROR api updater starting\n```",
+        "ts": "1553104581.118300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:00:17] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104594.118400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:00:20] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 87, in __init__\n    self.cardkingdom = self.cards[0]['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553104597.118500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:00:38] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 87, in __init__\n    self.cardkingdom = self.cards[0]['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553104615.118600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:00:41] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 87, in __init__\n    self.cardkingdom = self.cards[0]['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553104617.118700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:00:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104623.118800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:00:57] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104634.118900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:01:08] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104645.119000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:01:24] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104661.119100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:01:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104683.119200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:05] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104702.119300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104722.119400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:32] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104729.119500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:48] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104744.119600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:49] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104746.119700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:51] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 64, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 455, in getcommanders\n    cardlists = get_cardlists(data)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 337, in get_cardlists\n    directory='cards') for d in data['Cards'][cgroup]][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 337, in &lt;listcomp&gt;\n    directory='cards') for d in data['Cards'][cgroup]][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104747.119800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:02:53] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104750.119900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:03:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104782.120000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:03:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104792.120100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:03:43] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104800.120200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:04:05] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104822.120300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:04:31] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104848.120400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:04:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104849.120500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:04:42] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104858.120600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:05:19] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104896.120700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:05:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104910.120800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:05:34] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 87, in __init__\n    self.cardkingdom = self.cards[0]['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553104911.120900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:01] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104938.121000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:13] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n[20\/Mar\/2019:18:06:13] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104949.121100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:39] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 88, in __init__\n    self.tcgplayer = self.cards[0]['prices']['tcgplayer']\nKeyError: 'tcgplayer'\n```",
+        "ts": "1553104976.121200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 64, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1776, in tally\n    if card['Details']['prices']['cardkingdom']['price'] &lt; 1:\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553104982.121300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 87, in __init__\n    self.cardkingdom = self.cards[0]['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553104983.121400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:47] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104984.121500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:48] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 88, in __init__\n    self.tcgplayer = self.cards[0]['prices']['tcgplayer']\nKeyError: 'tcgplayer'\n```",
+        "ts": "1553104985.121600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:53] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104989.121700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:06:55] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.cardhoarder = self.cards[0]['prices']['cardhoarder']\nKeyError: 'cardhoarder'\n```",
+        "ts": "1553104992.121800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Mar\/2019:18:07:02] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 105, in index\n    return make_deck(kwargs['cardhash'])\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 406, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 87, in __init__\n    self.cardkingdom = self.cards[0]['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553105037.121900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "c9774809-1ced-41c7-be28-df6ec1dc846a",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1553105063.122100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-20 22:42:15,252 ERROR api updater done\n```",
+        "ts": "1553121511.122200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-21 00:00:03,756 ERROR api updater starting\n```",
+        "ts": "1553126179.122300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-21 04:42:00,358 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 100, in &lt;module&gt;\n    update_zscores()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 70, in update_zscores\n    trending = [get_shit(c['name'], dir='cards') for c in zscores]\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 70, in &lt;listcomp&gt;\n    trending = [get_shit(c['name'], dir='cards') for c in zscores]\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 20, in get_shit\n    ck_info = card['prices']['cardkingdom']\nKeyError: 'cardkingdom'\n```",
+        "ts": "1553143095.122400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-21 06:00:04,393 ERROR api updater starting\n```",
+        "ts": "1553147779.122500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

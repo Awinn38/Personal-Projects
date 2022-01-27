@@ -1,0 +1,121 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)",
+        "ts": "1544552538.050000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__",
+        "ts": "1544552538.050100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[11\/Dec\/2018:18:24:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 327, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 552, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n```",
+        "ts": "1544552538.050200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "a522c329-a4ee-4813-bbeb-3751ccc3aadc",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1544556731.050400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1544563975.050500",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 2 out of the last 2 datapoints [0.0 (11\/12\/18 21:31:00), 0.0 (11\/12\/18 21:30:00)] were less than the threshold (1.0) (minimum 2 datapoints for OK -&gt; ALARM transition).\",\"StateChangeTime\":\"2018-12-11T21:32:54.731+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\",\"name\":\"HealthCheckId\"}],\"Period\":60,\"EvaluationPeriods\":2,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-11T21:32:54.778Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 2 out of the last 2 datapoints [0.0 (11\/12\/18 21:31:00), 0.0 (11\/12\/18 21:30:00)] were less than the threshold (1.0) (minimum 2 datapoints for OK -&gt; ALARM transition).\",\"StateChangeTime\":\"2018-12-11T21:32:54.731+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\",\"name\":\"HealthCheckId\"}],\"Period\":60,\"EvaluationPeriods\":2,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-11T21:32:54.778Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-12 00:39:39,797 ERROR Somehow Squee's Revenge got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,797 ERROR Somehow Stitch in Time got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,798 ERROR Somehow Frenetic Efreet got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,798 ERROR Somehow Fabricate got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,799 ERROR Somehow Cyclonic Rift got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,799 ERROR Somehow Muddle the Mixture got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,799 ERROR Somehow Mystical Tutor got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,800 ERROR Somehow Frenetic Sliver got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,800 ERROR Somehow Whir of Invention got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,800 ERROR Somehow Academy Ruins got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,800 ERROR Somehow Reshape got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,801 ERROR Somehow Rapid Hybridization got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,801 ERROR Somehow Pact of Negation got into this set of recs ['R'] (cmdr matrix)\n2018-12-12 00:39:39,801 ERROR Somehow Tolaria West got into this set of recs ['R'] (cmdr matrix)\n```",
+        "ts": "1544575041.050600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Dec\/2018:04:50:50] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 569, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/zur the enchanter\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 571, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'zur the enchanter'\n```",
+        "ts": "1544590111.050700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Dec\/2018:04:51:09] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 569, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/zur the enchanter\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 571, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'zur the enchanter'\n```",
+        "ts": "1544590131.050800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

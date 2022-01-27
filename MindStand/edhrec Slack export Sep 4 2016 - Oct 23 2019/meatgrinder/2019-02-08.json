@@ -1,0 +1,239 @@
+[
+    {
+        "client_msg_id": "f1d56a59-e969-46ca-9735-9b82cf7dcf54",
+        "type": "message",
+        "text": "I get\n```\n{\n    \"errors\": [\n        \"Missing keys: name\"\n    ]\n}\n```",
+        "user": "UEFG14S5A",
+        "ts": "1549614864.360200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "45555609-859a-4920-b580-9ab447074d4b",
+        "type": "message",
+        "text": "add `\"name\":\"\"`",
+        "user": "U28TLDP0R",
+        "ts": "1549640426.361000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "ok_hand",
+                "users": [
+                    "UEFG14S5A"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57001397-e733-4c0f-95bf-4b41430e4012",
+        "type": "message",
+        "text": "I thought this whole `KeyError: 'cards\/commanders'` thing was benign but I looked into it again and found a small bug with how I’m using cachetools.TTLCache",
+        "user": "U28TLDP0R",
+        "ts": "1549652833.361900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7dcfd414-0cd5-46cc-9bd7-b0c18208d5b2",
+        "type": "message",
+        "text": "if you try to access an item in the TTLCache and it (just) expired, you can’t set its value in the same operation unless you manually clear out expired items",
+        "user": "U28TLDP0R",
+        "ts": "1549652943.363400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549665144.363600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on investigating email \"Deck Recommendations Not Updating\": \"nightly slowly but surely chugging along again, without me having to fix something every day, so I'll call this one a wrap for now\"",
+                "text": "nightly slowly but surely chugging along again, without me having to fix something every day, so I'll call this one a wrap for now",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/hJQLN3Pa|investigating email \"Deck Recommendations Not Updating\">*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549665147.363700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card investigating email \"Deck Recommendations Not Updating\" from Doing to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/hJQLN3Pa|investigating email \"Deck Recommendations Not Updating\">* from *Doing* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549685353.363900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card SEO added to list EDHREC New Features One Day... on board edhrec.",
+                "text": "In list *EDHREC New Features One Day...* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "SEO",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/o1m1nbYx",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549685434.364000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts updated the description of SEO.",
+                "text": "we have added a number of new pages since I added meta tags and such for SEO 2 years ago, and things haven't been maintained properly.  e.g. some meta description tags (which google uses for results) contain html garbage.  need to go through them all again at some point.",
+                "pretext": "Updated the description of *<https:\/\/trello.com\/c\/o1m1nbYx|SEO>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f12e9c78-9ab5-4012-a35a-929eba18c249",
+        "type": "message",
+        "text": "<@U28TLDP0R> can you add legalcommander to the recs endpoint?",
+        "user": "UEFG14S5A",
+        "ts": "1549687338.364300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d0717c1c-0659-4f87-b022-42c6662a9a4d",
+        "type": "message",
+        "text": "added",
+        "user": "U28TLDP0R",
+        "ts": "1549687667.364500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "UEFG14S5A"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

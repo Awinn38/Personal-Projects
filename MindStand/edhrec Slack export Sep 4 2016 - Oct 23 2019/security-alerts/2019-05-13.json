@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1557769035.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-18524",
+                "id": 1,
+                "title_link": "https:\/\/evernote.com\/intl\/en\/security\/updates",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Evernote 6.15 on Windows has an incorrectly repaired stored XSS vulnerability. An attacker can use this XSS issue to inject Node.js code under Present mode. After a victim opens an affected note under Present mode, the attacker can read the victim's files and achieve remote execution command on the victim's computer.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-18524"
+            }
+        ]
+    }
+]

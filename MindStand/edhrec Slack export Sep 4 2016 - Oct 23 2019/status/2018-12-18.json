@@ -1,0 +1,1626 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:06:50:24] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 297, in route\n    query3 = cards.name_to_url(query)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 535, in name_to_url\n    return cache.get('cards\/' + name)['url']\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:06:50:29] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 297, in route\n    query3 = cards.name_to_url(query)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 535, in name_to_url\n    return cache.get('cards\/' + name)['url']\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:20:38:22] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)",
+        "ts": "1545165497.176200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 35, in index\n    commander = cards.url_to_name('-'.join(kwargs['cmdr'].split('-')[:-2]))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 569, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:20:38:22] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165497.176300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:27] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165502.176400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:30] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165504.176500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:32] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165507.176600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:37] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165512.176700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:40] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:20:38:40] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165514.176800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:41] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:20:38:41] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 83, in random\n    url = cards.sanitize_url(random.choice(list(cards.get_commanders().keys())))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 364, in get_commanders\n    return cache.get('cards\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165515.176900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:42] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165517.177000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:45] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165519.177100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:47] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:20:38:47] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165521.177200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:50] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165524.177300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:52] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n[18\/Dec\/2018:20:38:52] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165526.177400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Dec\/2018:20:38:55] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 291, in route\n    commander_urls = cards.get_commander_urls()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 356, in get_commander_urls\n    return cache.get('cards\/urls\/commanders')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1545165529.177500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Dec 18 20:39:32 UTC 2018\n\n```",
+        "ts": "1545165573.177600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1545166801.177700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1545166802.177800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1545166802.177900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1545166803.178000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1545166803.178100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1545166803.178200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1545166804.178300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 2 dynamic.py running. Before we had 5.",
+        "ts": "1545166804.178400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nTue Dec 18 21:55:14 UTC 2018\n\n```",
+        "ts": "1545170114.178500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Dec 18 21:55:15 UTC 2018\n\n```",
+        "ts": "1545170115.178600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nTue Dec 18 23:10:03 UTC 2018\n\n```",
+        "ts": "1545174603.178700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Dec 18 23:10:04 UTC 2018\n\n```",
+        "ts": "1545174604.178800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Dec 18 23:18:05 UTC 2018\n\n```",
+        "ts": "1545175085.178900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[19\/Dec\/2018:01:09:36] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 569, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/sidisi, undead vizier\n```",
+        "ts": "1545181776.179000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-19 02:13:09,838 ERROR caught ck error - Rune-Tail's Essence\n```",
+        "ts": "1545185589.179100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-19 03:45:02,997 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 263, in update_all\n    _get_multipage('categories')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 41, in _get_multipage\n    cache.set('wp\/{}'.format(endpoint), out)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 86, in set\n    (key, value, expires)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: syntax error at or near \"SET\"\nLINE 4:                 SET log_statement = 'none'\n                        ^\n\n```",
+        "ts": "1545191102.179200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1545195421.179300",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"DiskSpaceUtilization\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"DiskSpaceUtilization\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [77.6227246852497 (19\/12\/18 04:52:00)] was greater than or equal to the threshold (50.0).\",\"StateChangeTime\":\"2018-12-19T04:57:00.042+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"DiskSpaceUtilization\",\"Namespace\":\"System\/Linux\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"\/\",\"name\":\"MountPath\"},{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"},{\"value\":\"\/dev\/xvda1\",\"name\":\"Filesystem\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":50.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-19T04:57:00.085Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"DiskSpaceUtilization\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"DiskSpaceUtilization\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [77.6227246852497 (19\/12\/18 04:52:00)] was greater than or equal to the threshold (50.0).\",\"StateChangeTime\":\"2018-12-19T04:57:00.042+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"DiskSpaceUtilization\",\"Namespace\":\"System\/Linux\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"\/\",\"name\":\"MountPath\"},{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"},{\"value\":\"\/dev\/xvda1\",\"name\":\"Filesystem\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":50.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-19T04:57:00.085Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bef838e6-9f92-4daa-9878-8dc5417ba598",
+        "type": "message",
+        "text": "excellent",
+        "user": "U28TLDP0R",
+        "ts": "1545195447.179500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 05:29:14 UTC 2018\n\n```",
+        "ts": "1545197353.179600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 05:29:15 UTC 2018\n\n```",
+        "ts": "1545197353.179700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 05:33:16 UTC 2018\n\n```",
+        "ts": "1545197595.179800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-19 05:51:36,539 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connection.py\", line 159, in _new_conn\n    (self._dns_host, self.port), self.timeout, **extra_kw)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/connection.py\", line 80, in create_connection\n    raise err\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/connection.py\", line 70, in create_connection\n    sock.connect(sa)\nConnectionRefusedError: [Errno 111] Connection refused\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 600, in urlopen\n    chunked=chunked)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 343, in _make_request\n    self._validate_conn(conn)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 839, in _validate_conn\n    conn.connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connection.py\", line 301, in connect\n    conn = self._new_conn()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connection.py\", line 168, in _new_conn\n    self, \"Failed to establish a new connection: %s\" % e)\nurllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x7fb343809710&gt;: Failed to establish a new connection: [Errno 111] Connection refused\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/adapters.py\", line 449, in send\n    timeout=timeout\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 638, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/retry.py\", line 398, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='<http:\/\/articles.edhrec.com|articles.edhrec.com>', port=443): Max retries exceeded with url: \/wp-json\/wp\/v2\/users?per_page=100&amp;page=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x7fb343809710&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 267, in update_all\n    _get_multipage('users')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 33, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/adapters.py\", line 516, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='<http:\/\/articles.edhrec.com|articles.edhrec.com>', port=443): Max retries exceeded with url: \/wp-json\/wp\/v2\/users?per_page=100&amp;page=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x7fb343809710&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))\n```",
+        "ts": "1545198695.179900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1545198895.180100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 2 out of the last 2 datapoints [0.0 (19\/12\/18 05:53:00), 0.0 (19\/12\/18 05:52:00)] were less than the threshold (1.0) (minimum 2 datapoints for OK -&gt; ALARM transition).\",\"StateChangeTime\":\"2018-12-19T05:54:54.763+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\",\"name\":\"HealthCheckId\"}],\"Period\":60,\"EvaluationPeriods\":2,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-19T05:54:54.792Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 2 out of the last 2 datapoints [0.0 (19\/12\/18 05:53:00), 0.0 (19\/12\/18 05:52:00)] were less than the threshold (1.0) (minimum 2 datapoints for OK -&gt; ALARM transition).\",\"StateChangeTime\":\"2018-12-19T05:54:54.763+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\",\"name\":\"HealthCheckId\"}],\"Period\":60,\"EvaluationPeriods\":2,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-19T05:54:54.792Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 1 dynamic.py running. Before we had 2.",
+        "ts": "1545199201.180200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] We now have 2 dynamic.py running. Before we had 1.",
+        "ts": "1545199241.180300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 06:46:22 UTC 2018\n\n```",
+        "ts": "1545201985.180400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 06:46:34 UTC 2018\n\n```",
+        "ts": "1545201995.180500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 06:46:36 UTC 2018\n\n```",
+        "ts": "1545201997.180600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 06:48:18 UTC 2018\n\n```",
+        "ts": "1545202096.180700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "5d58d560-7d74-40b1-8f85-5cad02fa503d",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1545202125.180900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 06:52:31 UTC 2018\n\n```",
+        "ts": "1545202349.181000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "asdf\n```\nWed Dec 19 06:53:20 UTC 2018\n\n```",
+        "ts": "1545202398.181100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1545202810.181200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1545202811.181300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1545202811.181400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1545202811.181500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1545202812.181600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1545202812.181700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1545202812.181800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] We now have 6 dynamic.py running. Before we had 5.",
+        "ts": "1545202813.181900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:16:36 UTC 2018\n\n```",
+        "ts": "1545203797.182000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:16:38 UTC 2018\n\n```",
+        "ts": "1545203798.182100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:16:40 UTC 2018\n\n```",
+        "ts": "1545203800.182200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:16:42 UTC 2018\n\n```",
+        "ts": "1545203802.182300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:17:18 UTC 2018\n\n```",
+        "ts": "1545203839.182400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:17:20 UTC 2018\n\n```",
+        "ts": "1545203840.182500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:17:22 UTC 2018\n\n```",
+        "ts": "1545203842.182600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:17:23 UTC 2018\n\n```",
+        "ts": "1545203844.182700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:17:46 UTC 2018\n\n```",
+        "ts": "1545203867.182800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:17:47 UTC 2018\n\n```",
+        "ts": "1545203868.182900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:17:49 UTC 2018\n\n```",
+        "ts": "1545203869.183000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:17:51 UTC 2018\n\n```",
+        "ts": "1545203871.183100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:18:11 UTC 2018\n\n```",
+        "ts": "1545203892.183200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:18:12 UTC 2018\n\n```",
+        "ts": "1545203893.183300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:18:14 UTC 2018\n\n```",
+        "ts": "1545203895.183400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:18:16 UTC 2018\n\n```",
+        "ts": "1545203897.183500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:18:32 UTC 2018\n\n```",
+        "ts": "1545203913.183600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:18:33 UTC 2018\n\n```",
+        "ts": "1545203914.183700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:18:35 UTC 2018\n\n```",
+        "ts": "1545203916.183800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:18:37 UTC 2018\n\n```",
+        "ts": "1545203917.183900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:18:53 UTC 2018\n\n```",
+        "ts": "1545203934.184000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:18:54 UTC 2018\n\n```",
+        "ts": "1545203935.184100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:18:56 UTC 2018\n\n```",
+        "ts": "1545203937.184200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:18:58 UTC 2018\n\n```",
+        "ts": "1545203939.184300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:19:14 UTC 2018\n\n```",
+        "ts": "1545203955.184400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:19:15 UTC 2018\n\n```",
+        "ts": "1545203955.184500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:19:17 UTC 2018\n\n```",
+        "ts": "1545203957.184600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:19:19 UTC 2018\n\n```",
+        "ts": "1545203959.184700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:19:33 UTC 2018\n\n```",
+        "ts": "1545203974.184800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:19:34 UTC 2018\n\n```",
+        "ts": "1545203975.184900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:19:36 UTC 2018\n\n```",
+        "ts": "1545203977.185000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Dec 19 07:19:38 UTC 2018\n\n```",
+        "ts": "1545203979.185100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Dec 19 07:19:54 UTC 2018\n\n```",
+        "ts": "1545203995.185200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:21:00 UTC 2018\n\n```",
+        "ts": "1545204061.185300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:22:09 UTC 2018\n\n```",
+        "ts": "1545204130.185400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:23:16 UTC 2018\n\n```",
+        "ts": "1545204197.185500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:24:24 UTC 2018\n\n```",
+        "ts": "1545204265.185600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:25:32 UTC 2018\n\n```",
+        "ts": "1545204333.185700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:26:39 UTC 2018\n\n```",
+        "ts": "1545204401.185800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:27:48 UTC 2018\n\n```",
+        "ts": "1545204469.185900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:28:54 UTC 2018\n\n```",
+        "ts": "1545204535.186000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:30:16 UTC 2018\n\n```",
+        "ts": "1545204617.186100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:31:54 UTC 2018\n\n```",
+        "ts": "1545204718.186200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:32:57 UTC 2018\n\n```",
+        "ts": "1545204780.186300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:34:01 UTC 2018\n\n```",
+        "ts": "1545204845.186400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:35:04 UTC 2018\n\n```",
+        "ts": "1545204907.186500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:36:41 UTC 2018\n\n```",
+        "ts": "1545205004.186600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:37:43 UTC 2018\n\n```",
+        "ts": "1545205067.186700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:38:49 UTC 2018\n\n```",
+        "ts": "1545205132.186800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:39:56 UTC 2018\n\n```",
+        "ts": "1545205200.186900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:41:01 UTC 2018\n\n```",
+        "ts": "1545205263.187000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:42:43 UTC 2018\n\n```",
+        "ts": "1545205367.187100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:43:46 UTC 2018\n\n```",
+        "ts": "1545205430.187200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:44:49 UTC 2018\n\n```",
+        "ts": "1545205493.187300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "edf1afe4-3131-412e-9c06-5c727630416e",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1545205527.187500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:45:58 UTC 2018\n\n```",
+        "ts": "1545205559.187600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Dec 19 07:46:59 UTC 2018\n\n```",
+        "ts": "1545205620.187700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:48:36 UTC 2018\n\n```",
+        "ts": "1545205719.187800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:49:39 UTC 2018\n\n```",
+        "ts": "1545205783.187900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "d33c13ea-0075-4028-bbb6-6c954ced2c1e",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1545205832.188100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "00b39b51-8112-49cb-ac61-40f030a317d6",
+        "type": "message",
+        "text": "crontest",
+        "user": "U28TLDP0R",
+        "ts": "1545205841.188400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:50:54 UTC 2018\n\n```",
+        "ts": "1545205855.188500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:52:14 UTC 2018\n\n```",
+        "ts": "1545205937.188600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:53:16 UTC 2018\n\n```",
+        "ts": "1545206000.188700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:54:19 UTC 2018\n\n```",
+        "ts": "1545206063.188800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "2d5948ed-1421-421b-a075-e706afa4bc76",
+        "type": "message",
+        "text": "poop test",
+        "user": "U28TLDP0R",
+        "ts": "1545206075.189000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:55:31 UTC 2018\n\n```",
+        "ts": "1545206132.189100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:56:55 UTC 2018\n\n```",
+        "ts": "1545206219.189200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "f9d5f4da-858c-4b3e-a894-795c07635a93",
+        "type": "message",
+        "text": "box test",
+        "user": "U28TLDP0R",
+        "ts": "1545206249.189500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:57:57 UTC 2018\n\n```",
+        "ts": "1545206281.189600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "8a2969b0-5ce9-4297-aeb8-48cf081e9392",
+        "type": "message",
+        "text": "one more",
+        "user": "U28TLDP0R",
+        "ts": "1545206306.189800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nWed Dec 19 07:58:59 UTC 2018\n\n```",
+        "ts": "1545206343.189900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

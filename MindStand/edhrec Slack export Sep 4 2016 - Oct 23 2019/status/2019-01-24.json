@@ -1,0 +1,197 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-24 14:11:34,925 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 292, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 284, in update_all\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 284, in &lt;listcomp&gt;\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 115, in _parse_post\n    media = get_media(post['featured_media'])\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 193, in get_media\n    return cache.get('wp\/by-id\/media\/{}'.format(mid))\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: wp\/by-id\/media\/27816\n```",
+        "ts": "1548339043.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1548340614.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1548340619.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1548351487.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-24 18:27:40,304 ERROR Error scraping <http:\/\/www.mtggoldfish.com\/deck\/1603880> eek - Hangarback Walker is not a legal commander\n```",
+        "ts": "1548354408.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-24 18:28:46,097 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 149, in &lt;module&gt;\n    get_new_decks(i)\n  File \".\/mtggoldfish.py\", line 122, in get_new_decks\n    database.save_deck(deck['commanders'][0], deck['cards'], deck['url'], cardcount=deck['cardcount'], dtable=dtable, ctable=ctable)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1434, in save_deck\n    'Deck with hash {} already exists! DUPLICATE!'.format(dhash))\nValueError: Deck with hash ee62f8d3939da98e0a71846e7579a69f already exists! DUPLICATE!\n```",
+        "ts": "1548354474.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-24 18:38:27,406 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 152, in &lt;module&gt;\n    get_new_decks(i)\n  File \".\/mtggoldfish.py\", line 138, in get_new_decks\n    ctable=ctable\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1434, in save_deck\n    'Deck with hash {} already exists! DUPLICATE!'.format(dhash))\nValueError: Deck with hash f0196d92ab3dbb320e04ad46ebffd7b4 already exists! DUPLICATE!\n```",
+        "ts": "1548355055.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "21614e41-55da-42e2-b7e9-042b3f600371",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1548355155.001900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1548364792.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \".\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath(__file__)))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1548366092.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-24 21:42:25,563 ERROR Command 'gulp' returned non-zero exit status 1\n2019-01-24 21:42:25,567 ERROR Traceback (most recent call last):\n  File \".\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \".\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath(__file__)))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n\n```",
+        "ts": "1548366092.002200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "1fcda961-e313-4bfc-969c-a2a97df6702a",
+        "type": "message",
+        "text": "man this thing breaks every time I try calling nightly from a different context",
+        "user": "U28TLDP0R",
+        "ts": "1548366119.002600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fd5a08f8-d189-47aa-a984-d0be4017bdb8",
+        "type": "message",
+        "text": "hahaha",
+        "user": "U286Q175Y",
+        "ts": "1548366221.002800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[25\/Jan\/2019:05:47:13] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 31, in get_shit\n    logging.debug('SDF %s', cardname)\nNameError: name 'logging' is not defined\n```",
+        "ts": "1548395180.002900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "client_msg_id": "fe9ce45c-2899-43f7-93de-71e6d4d15103",
+        "type": "message",
+        "text": "hey <@UEFG14S5A> just checking in, how's progress looking?",
+        "user": "U28TLDP0R",
+        "ts": "1551808515.010200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "F1A2A186-B73D-46BF-94EC-CA6272225777",
+        "type": "message",
+        "text": "Hey, still working on the mobile side of things - I have some of the styling done, just making sure images can be viewed in that view and that it all adapts nicely - I’ve been pretty busy with my full time work so I havent been able to dedicate as much time to this project (last commit was a week ago) but I probably only need 4-5 more hours of work to completely finish",
+        "user": "UEFG14S5A",
+        "ts": "1551808656.013100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5c569173-f690-4651-b30e-61d4233cb071",
+        "type": "message",
+        "text": "Sounds good, thanks for the update",
+        "user": "U28TLDP0R",
+        "ts": "1551810385.013400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d64ed558-5d94-4cb0-82bb-d01a718d4bee",
+        "type": "message",
+        "text": "So actually, I think I have the mobile stuff done - it would be great to get some feedback on that too if you guys have a standard way of testing it - I developed it on desktop and then tested it out a bit on my own phone and it looks good but getting any additional feedback would be great\n\nWhat's left on my list is just clearing out any developer logs and removing the code that I added to make it easier for me to test locally, in addition to addressing any feedback you might have\n\nSome points on what's still needed from you <@U28TLDP0R>:\n1. (Already discussed) Moving the render_cardview code from better.js into the main rendering files in order to avoid future conflicts and potentially add an 'add to decklist' button on a page's commander at some point in the future\n2. (New) The ads on mobile and desktop both partially overlap with the decklist - desktop isn't too bad but it might be good to move it up a bit just so it looks better - mobile on the other hand overlaps a fair amount, so we should figure out a way to make that look\/function better and I'll perform any necessary changes along with any feedback given for the mobile stuff",
+        "user": "UEFG14S5A",
+        "ts": "1551845011.018900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UEFG14S5A",
+            "ts": "1551845057.000000"
+        }
+    },
+    {
+        "client_msg_id": "216f0c42-b550-4444-971d-83198422456c",
+        "type": "message",
+        "text": "I'll take a look tomorrow.  don might have some feedback later but he's on vacation rest of the week",
+        "user": "U28TLDP0R",
+        "ts": "1551851809.019800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7f45cbe3-b575-41b4-8f40-a76d0f5c5910",
+        "type": "message",
+        "text": "oh ok, I'll ask him when he gets back",
+        "user": "UEFG14S5A",
+        "ts": "1551853676.020100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

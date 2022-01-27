@@ -1,0 +1,221 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[13\/Mar\/2019:07:10:23] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 104, in index\n    return make_deck(url)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 409, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 409, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 88, in __init__\n    self.tcgplayer = tcgplayer.get(self.cards[0].name)\n  File \"\/home\/ubuntu\/edhrec\/core\/tcgplayer.py\", line 112, in get\n    return cache.get('tcgplayer\/' + name)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 67, in get\n    raise NotInCache(key)\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 23, in _getcursor\n    yield con.cursor(cursor_factory=psycopg2.extras.DictCursor)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    _CACHE[key] = value\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 92, in __setitem__\n    cache_setitem(self, key, value)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 62, in __setitem__\n    self.popitem()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 202, in popitem\n    key = next(iter(self.__links))\nRuntimeError: OrderedDict mutated during iteration\n```",
+        "ts": "1552460823.046500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1552464779.046600",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [96.278615008814 (13\/03\/19 07:57:00)] was greater than or equal to the threshold (95.0).\",\"StateChangeTime\":\"2019-03-13T08:12:57.803+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":95.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-13T08:12:57.853Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [96.278615008814 (13\/03\/19 07:57:00)] was greater than or equal to the threshold (95.0).\",\"StateChangeTime\":\"2019-03-13T08:12:57.803+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":95.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-13T08:12:57.853Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1552468319.046700",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [95.53333333331263 (13\/03\/19 08:56:00)] was greater than or equal to the threshold (95.0).\",\"StateChangeTime\":\"2019-03-13T09:11:57.816+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":95.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-13T09:11:57.842Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [95.53333333331263 (13\/03\/19 08:56:00)] was greater than or equal to the threshold (95.0).\",\"StateChangeTime\":\"2019-03-13T09:11:57.816+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":95.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-13T09:11:57.842Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1552471979.046800",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [96.37366108639864 (13\/03\/19 09:57:00)] was greater than or equal to the threshold (95.0).\",\"StateChangeTime\":\"2019-03-13T10:12:57.787+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":95.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-13T10:12:57.821Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [96.37366108639864 (13\/03\/19 09:57:00)] was greater than or equal to the threshold (95.0).\",\"StateChangeTime\":\"2019-03-13T10:12:57.787+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":95.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-13T10:12:57.821Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1552475208.046900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-13 13:36:05,983 ERROR Status code 500 from <https:\/\/www.youtube.com\/feeds\/videos.xml?playlist_id=PLxW9gRbafuNzrHbBFUYHwOF0R_wuxEskl>\n```",
+        "ts": "1552483964.047000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-13 22:07:22,675 CRITICAL Uncaught exception\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 47, in _make_commanders_p\n    make_commander(cmdr, bytribe=True, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 607, in make_commander\n    tribelinks2=data['tribelinks2']\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 292, in make_page\n    styles_css = json.load(f)['styles.css']\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 268, in load\n    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 319, in loads\n    return _default_decoder.decode(s)\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 339, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 357, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 770, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(onlydecks=onlydecks, skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n```",
+        "ts": "1552514640.047100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-13 22:07:25,255 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 32, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 416\n    {'alt': 'Scryfall', 'external', True, 'href': cardview.scryfall_uri, 'value': 'This card on Scryfall'},\n                                  ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1552514643.047200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1552532500.047300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1552532500.047400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1552536099.047500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1552536099.047600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-14 06:00:14,986 CRITICAL Uncaught exception\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 42, in _make_commanders_p\n    make_commander(cmdr)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 607, in make_commander\n    tribelinks2=data['tribelinks2']\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 294, in make_page\n    styles_css = json.load(f)['styles.css']\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 268, in load\n    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 319, in loads\n    return _default_decoder.decode(s)\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 339, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 357, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 770, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(onlydecks=onlydecks, skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n```",
+        "ts": "1552543011.047700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "953da18f-91a0-4920-b740-63453f11ddce",
+        "type": "message",
+        "text": "grr",
+        "user": "U28TLDP0R",
+        "ts": "1552543049.047900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,230 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 08:13:37,875 INFO backup.py took 0:13:36.186809\n```",
+        "ts": "1563696737.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 20:27:53,140 INFO OATH archidekt.py took 0:25:51.242892\n```",
+        "ts": "1563740792.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 20:52:12,536 WARNING Chaos Orb from Westvale Cult Leader in <https:\/\/deckstats.net\/decks\/126396\/1330422-gideon-blackblade-oathbreaker\/en>\n```",
+        "ts": "1563742251.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 20:55:01,878 INFO OATH deckstats.py took 0:25:11.218209\n```",
+        "ts": "1563742420.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 21:09:37,373 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2079319>\n```",
+        "ts": "1563743296.000400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 21:22:02,853 INFO OATH mtggoldfish.py took 0:25:54.931342\n```",
+        "ts": "1563744041.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 21:27:31,668 INFO update_deckswithprices.py took 0:05:20.045404\n2019-07-21 21:27:31,686 INFO New deck count from past 2 days: \n- Archidekt: 65\n- deckstats: 50\n- MTGGoldfish: 37\n- Other: 0\n```",
+        "ts": "1563744370.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-21 22:42:26,547 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 685, in make_commander\n    data = origin.getcommanders(card=name, checktribe=checktribe, tribe=tribe, outof=outof, ss=ss, ob=ob)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 502, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 189, in get_decks\n    raise ValueError(\"get_decks bad commander\")\nValueError: get_decks bad commander\n```",
+        "ts": "1563748865.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 00:00:28,754 ERROR ulvenwald mystics missing from cardkingdom prices json\n2019-07-22 00:00:28,754 ERROR convicted killer missing from cardkingdom prices json\n2019-07-22 00:00:28,754 ERROR extricator of sin missing from cardkingdom prices json\n2019-07-22 00:00:28,754 ERROR villagers of estwald missing from cardkingdom prices json\n2019-07-22 00:00:28,754 ERROR autumnal gloom missing from cardkingdom prices json\n2019-07-22 00:00:28,754 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR thraben sentry missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR smoldering werewolf missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR aberrant researcher missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR lambholt elder missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR screeching bat missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR vildin-pack outcast missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR soul seizer missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR civilized scholar missing from cardkingdom prices json\n2019-07-22 00:00:28,755 ERROR chosen of markov missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR gatstaf arsonists missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR skin invasion missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR tormented pariah missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR hermit of the natterknolls missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR uninvited geist missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR solitary hunter missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR cloistered youth missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-07-22 00:00:28,756 ERROR hanweir watchkeep missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR ravenous demon missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR village ironsmith missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR elusive tormentor missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR gatstaf shepherd missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR hinterland hermit missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR kindly stranger missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR daring sleuth missing from cardkingdom prices json\n2019-07-22 00:00:28,757 ERROR grizzled angler missing from cardkingdom prices json\n```",
+        "ts": "1563753547.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 00:09:14,930 INFO cards.py took 0:09:10.161391\n```",
+        "ts": "1563754073.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 00:36:46,425 INFO OATH archidekt.py took 0:25:35.703291\n```",
+        "ts": "1563755725.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 01:01:07,113 WARNING Chaos Orb from Westvale Cult Leader in <https:\/\/deckstats.net\/decks\/126396\/1330422-gideon-blackblade-oathbreaker\/en>\n```",
+        "ts": "1563757185.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 01:03:49,862 INFO OATH deckstats.py took 0:25:06.108324\n```",
+        "ts": "1563757348.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 01:22:55,885 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2079319>\n```",
+        "ts": "1563758494.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 01:33:05,529 INFO OATH mtggoldfish.py took 0:28:03.845776\n```",
+        "ts": "1563759104.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 01:38:26,358 INFO update_deckswithprices.py took 0:05:12.020276\n2019-07-22 01:38:26,377 INFO New deck count from past 2 days: \n- MTGGoldfish: 20\n- deckstats: 47\n- Archidekt: 40\n- Other: 0\n```",
+        "ts": "1563759425.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563759428.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1563760368.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-22 01:54:10,557 INFO nightly.py took 0:15:40.423141\n```",
+        "ts": "1563760369.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

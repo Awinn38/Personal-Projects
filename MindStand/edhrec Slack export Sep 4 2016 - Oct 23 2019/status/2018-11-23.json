@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'cards\/split'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 38, in get\n    return json.loads(_CACHE[key])\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 312, in loads\n    s.__class__.__name__))\nTypeError: the JSON object must be str, not 'dict'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 472, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 69, in getcards\n    cardlists = get_cardlists(data, topcommanders=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 296, in get_cardlists\n    directory='cards') for d in data['Cards'][cgroup]][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 296, in &lt;listcomp&gt;\n    directory='cards') for d in data['Cards'][cgroup]][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 32, in __init__\n    if self.name in cards.get_split():\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 480, in get_split\n    return cache.get('cards\/split')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 40, in get\n    return _CACHE[key]\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 85, in __getitem__\n    return self.__missing__(key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 80, in __missing__\n    value = self.__missing(key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 110, in __missing\n    raise KeyError(key)\nKeyError: 'cards\/split'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 858, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 705, in make_cards\n    pool.map(make_card, cards.get_all(transform=False, split=False))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nKeyError: 'cards\/split'\n",
+        "ts": "1543001258.022300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nFri Nov 23 19:28:39 UTC 2018\n\n```",
+        "ts": "1543001260.022400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Nov 23 19:28:41 UTC 2018\n\n```",
+        "ts": "1543001261.022500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 24071) - 24\/Nov\/2018:05:29:55\n('40.77.167.83', 4965) - 24\/Nov\/2018:05:29:38\n('40.77.167.160', 4948) - 24\/Nov\/2018:05:29:48\n('40.77.167.82', 4870) - 24\/Nov\/2018:05:29:52\n('157.55.39.161', 4784) - 24\/Nov\/2018:05:30:00\n('5.255.250.180', 2088) - 24\/Nov\/2018:05:29:57\n('5.255.250.1', 1995) - 24\/Nov\/2018:05:29:59\n('77.88.47.5', 1533) - 24\/Nov\/2018:05:24:00\n('204.2.255.145', 871) - 24\/Nov\/2018:05:28:28\n('66.249.73.72', 774) - 24\/Nov\/2018:05:13:09\n('174.230.141.249', 734) - 24\/Nov\/2018:04:43:16\n('18.215.117.151', 674) - 24\/Nov\/2018:02:14:11\n('13.56.11.36', 616) - 24\/Nov\/2018:05:28:05\n('95.216.41.162', 598) - 23\/Nov\/2018:16:10:51\n('66.249.73.82', 584) - 24\/Nov\/2018:05:29:10\n('148.64.56.72', 580) - 24\/Nov\/2018:05:29:25\n('66.249.73.71', 578) - 24\/Nov\/2018:05:17:36\n('148.64.56.69', 576) - 24\/Nov\/2018:05:28:33\n('85.10.207.195', 566) - 24\/Nov\/2018:03:15:55\n('148.64.56.66', 551) - 24\/Nov\/2018:05:27:28\n('111.202.100.113', 544) - 24\/Nov\/2018:05:29:56\n('148.64.56.74', 538) - 24\/Nov\/2018:05:29:15\n('54.183.33.179', 536) - 24\/Nov\/2018:05:29:09\n('66.249.73.83', 533) - 24\/Nov\/2018:05:22:40\n('46.229.168.135', 530) - 24\/Nov\/2018:05:29:15\n\n```",
+        "ts": "1543037341.022600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

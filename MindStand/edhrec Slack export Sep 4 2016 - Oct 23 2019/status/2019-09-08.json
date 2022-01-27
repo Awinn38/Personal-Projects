@@ -1,0 +1,683 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 07:10:27,124 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/usr\/lib\/python3.5\/importlib\/__init__.py\", line 166, in reload\n    _bootstrap._exec(spec, module)\n  File \"&lt;frozen importlib._bootstrap&gt;\", line 626, in _exec\n  File \"&lt;frozen importlib._bootstrap_external&gt;\", line 661, in exec_module\n  File \"&lt;frozen importlib._bootstrap_external&gt;\", line 767, in get_code\n  File \"&lt;frozen importlib._bootstrap_external&gt;\", line 727, in source_to_code\n  File \"&lt;frozen importlib._bootstrap&gt;\", line 222, in _call_with_frames_removed\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 219\n    {'name': 'Utility Lands', 'type': 'Land'}, 'utility': True,\n                                                        ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1567926622.059700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 07:10:58,652 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 229, in make_top_types\n    week = origin.gettop(**kwargs, start_date=(date.today() - timedelta(7)))\nTypeError: gettop() got an unexpected keyword argument 'utilitycheck'\n```",
+        "ts": "1567926653.059800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 07:12:20,780 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 229, in make_top_types\n    week = origin.gettop(**kwargs, start_date=(date.today() - timedelta(7)))\nTypeError: gettop() got an unexpected keyword argument 'utilitycheck'\n```",
+        "ts": "1567926736.059900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 07:25:09,349 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'origin' is not defined\n```",
+        "ts": "1567927504.060000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 36.957s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567929933.060100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 08:13:19,202 INFO backup.py took 0:13:17.373594\n```",
+        "ts": "1567930394.060200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 08:14:18,128 INFO New Trending 2019-09-08\n{\"name\": \"Pyroblast\", \"s\": [0, 18, 17, 24, 29, 39, 43], \"z\": 1.2994154126485076}\n{\"name\": \"Nurturing Peatland\", \"s\": [0, 10, 16, 23, 25, 32, 35], \"z\": 1.2584633893888664}\n{\"name\": \"Arcane Signet\", \"s\": [0, 16, 15, 15, 22, 42, 37], \"z\": 1.2380555720203414}\n{\"name\": \"Squee, the Immortal\", \"s\": [0, 4, 7, 11, 17, 14, 17], \"z\": 1.2300259877757747}\n{\"name\": \"Goblin Bombardment\", \"s\": [0, 23, 20, 31, 43, 32, 42], \"z\": 1.2152846542799172}\n{\"name\": \"Taiga\", \"s\": [0, 18, 14, 10, 23, 29, 33], \"z\": 1.1958020218478955}\n{\"name\": \"Ancient Tomb\", \"s\": [0, 75, 79, 85, 97, 115, 102], \"z\": 1.1923391043370906}\n{\"name\": \"Bayou\", \"s\": [0, 13, 21, 19, 29, 29, 27], \"z\": 1.1861445833558089}\n{\"name\": \"Moldervine Reclamation\", \"s\": [0, 10, 11, 8, 20, 16, 23], \"z\": 1.1818127405647219}\n{\"name\": \"Vexing Shusher\", \"s\": [0, 5, 5, 7, 10, 12, 11], \"z\": 1.1656732367581473}\n```",
+        "ts": "1567930453.060300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 08:14:19,924 INFO daily.py took 0:14:15.602433\n```",
+        "ts": "1567930455.060400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 7.452s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567937103.060500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 12:03:47,400 INFO cards.py took 0:03:42.325042\n```",
+        "ts": "1567944222.060600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1567944231.060700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 1.380s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567944297.060800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'primary_type'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 546, in make_card\n    cardview = CardView(name, label=label)\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 60, in __init__\n    'primary_type': self['cards'][0]['primary_type'],\nKeyError: 'primary_type'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 976, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 820, in make_cards\n    pool.map(make_card, cards.get_all(transform=False, split=False))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nKeyError: 'primary_type'\n",
+        "ts": "1567947926.060900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 13:05:32,177 ERROR 'primary_type'\n2019-09-08 13:05:32,182 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 546, in make_card\n    cardview = CardView(name, label=label)\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 60, in __init__\n    'primary_type': self['cards'][0]['primary_type'],\nKeyError: 'primary_type'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 976, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 820, in make_cards\n    pool.map(make_card, cards.get_all(transform=False, split=False))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nKeyError: 'primary_type'\n\n2019-09-08 13:05:32,466 INFO nightly.py took 1:01:35.724848\n```",
+        "ts": "1567947927.061000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 2.809s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567951498.061100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 4.237s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567958700.061200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 1.570s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567965897.061300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 4.206s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567973100.061400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 20:29:00,991 INFO archidekt.py took 0:24:35.695467\n```",
+        "ts": "1567974535.061500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 20:57:08,507 INFO deckstats.py took 0:26:06.141644\n```",
+        "ts": "1567976222.061600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 21:46:22,858 INFO mtggoldfish.py took 0:28:57.569158\n```",
+        "ts": "1567979177.061700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 5.800s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567980301.061800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-08 22:34:13,521 INFO update_deckswithprices.py took 0:31:13.973300\nNew deck count from past 2 days: \n- Archidekt: 740\n- MTGGoldfish: 489\n- deckstats: 536\n- Other: 0\n```",
+        "ts": "1567982047.061900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 1.624s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567987496.062000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 1.833s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1567994696.062100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 02:47:09,645 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 690, in &lt;module&gt;\n    _init(fast)\n  File \".\/cards.py\", line 43, in _init\n    _init_allcards(fast=fast)\n  File \".\/cards.py\", line 314, in _init_allcards\n    partners =  {name: allcards[name] for name in constants.PARTNERS + bbd_partners}\n  File \".\/cards.py\", line 314, in &lt;dictcomp&gt;\n    partners =  {name: allcards[name] for name in constants.PARTNERS + bbd_partners}\nKeyError: 'Ikra Shidiqi, the Usurper'\n```",
+        "ts": "1567997223.062200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 02:48:56,422 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'pgp1'\n```",
+        "ts": "1567997330.062300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 02:50:18,799 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'pz2'\n```",
+        "ts": "1567997413.062400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 02:53:37,968 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'Ikra Shidiqi, the Usurper'\n```",
+        "ts": "1567997612.062500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:12:01,396 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 19, in &lt;module&gt;\n    import edhrec.core.wordpress as wordpress\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 19, in &lt;module&gt;\n    import edhrec.core.cards as cards\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 305\n    if name in allcards:\n     ^\nIndentationError: expected an indented block\n```",
+        "ts": "1567998715.062600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:17:59,936 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 699, in &lt;module&gt;\n    _init(fast)\n  File \".\/cards.py\", line 43, in _init\n    _init_allcards(fast=fast)\n  File \".\/cards.py\", line 310, in _init_allcards\n    if card['released_at'] &gt; allcards[name]['released_at']:\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1567999074.062700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:19:18,447 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 699, in &lt;module&gt;\n    _init(fast)\n  File \".\/cards.py\", line 43, in _init\n    _init_allcards(fast=fast)\n  File \".\/cards.py\", line 323, in _init_allcards\n    partners =  {name: allcards[name] for name in constants.PARTNERS + bbd_partners}\n  File \".\/cards.py\", line 323, in &lt;dictcomp&gt;\n    partners =  {name: allcards[name] for name in constants.PARTNERS + bbd_partners}\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1567999152.062800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:23:31,589 INFO cards.py took 0:03:42.019454\n```",
+        "ts": "1567999405.062900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:23:57,245 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cards.get('Ikra Shidiqi, the Usurper\n                                       ^\nSyntaxError: EOL while scanning string literal\n```",
+        "ts": "1567999431.063000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:32:14,880 INFO cards.py took 0:03:39.518272\n```",
+        "ts": "1567999929.063100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:48:17,698 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 708, in &lt;module&gt;\n    _init(fast)\n  File \".\/cards.py\", line 43, in _init\n    _init_allcards(fast=fast)\n  File \".\/cards.py\", line 328, in _init_allcards\n    new_card['sets'].add(card['set'])\nUnboundLocalError: local variable 'new_card' referenced before assignment\n```",
+        "ts": "1568000891.063200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:50:49,903 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/cards.py\", line 711, in &lt;module&gt;\n    _init(fast)\n  File \".\/cards.py\", line 43, in _init\n    _init_allcards(fast=fast)\n  File \".\/cards.py\", line 329, in _init_allcards\n    allcards_dict[name] = new_card\nUnboundLocalError: local variable 'new_card' referenced before assignment\n```",
+        "ts": "1568001043.063300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 03:54:42,036 INFO cards.py took 0:03:26.694553\n```",
+        "ts": "1568001276.063400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 1.641s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1568001897.063500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:09:51,895 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1568002185.063600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:28:10,344 INFO cards.py took 0:05:26.242159\n```",
+        "ts": "1568003284.063700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:28:39,486 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cards.get('Ikra Shidiqi, the Usurper']['set']\n                                         ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1568003313.063800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:38:40,123 INFO cards.py took 0:03:49.861667\n```",
+        "ts": "1568003914.063900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:46:30,689 INFO cards.py took 0:08:53.414976\n```",
+        "ts": "1568004384.064000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:46:52,993 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 496, in get\n    return cache.get('cards')[sanitize_url(name)]\nKeyError: 'ikra-shidiqi-the-usurper'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 499, in get\n    return cache.get('cards')['chaos-orb']\nKeyError: 'chaos-orb'\n```",
+        "ts": "1568004406.064100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:47:12,494 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 496, in get\n    return cache.get('cards')[sanitize_url(name)]\nKeyError: 'ikra-shidiqi-the-usurper'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 499, in get\n    return cache.get('cards')['chaos-orb']\nKeyError: 'chaos-orb'\n```",
+        "ts": "1568004426.064200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:47:19,589 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 496, in get\n    return cache.get('cards')[sanitize_url(name)]\nKeyError: 'island'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 499, in get\n    return cache.get('cards')['chaos-orb']\nKeyError: 'chaos-orb'\n```",
+        "ts": "1568004433.064300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:47:23,772 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 496, in get\n    return cache.get('cards')[sanitize_url(name)]\nKeyError: 'island'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 499, in get\n    return cache.get('cards')['chaos-orb']\nKeyError: 'chaos-orb'\n```",
+        "ts": "1568004437.064400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 04:53:39,612 INFO cards.py took 0:03:23.324066\n```",
+        "ts": "1568004813.064500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 05:48:01,056 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:01,056 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:01,057 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:01,057 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:01,057 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n```",
+        "ts": "1568008074.064600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[09\/Sep\/2019:05:48:01] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 88, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 456, in getcommanders\n    avgs = get_averages(card, data, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 359, in get_averages\n    avgs['basic'] = outof - average_decklist_length + min(1, len(data['ColorIdentity']))\nTypeError: object of type 'NoneType' has no len()\n```",
+        "ts": "1568008075.064700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 05:48:13,219 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,219 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,220 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,220 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,220 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,220 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,220 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,221 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,221 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,221 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,221 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n2019-09-09 05:48:13,221 ERROR Color identity mismatch Rowan Kenrith {'W'} ['R', 'U']\n```",
+        "ts": "1568008087.064800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[09\/Sep\/2019:05:48:13] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 88, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 456, in getcommanders\n    avgs = get_averages(card, data, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 359, in get_averages\n    avgs['basic'] = outof - average_decklist_length + min(1, len(data['ColorIdentity']))\nTypeError: object of type 'NoneType' has no len()\n```",
+        "ts": "1568008087.064900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "273dec19-f220-4d1a-9f60-ad2e2f626304",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1568008105.065100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-09-09 05:53:46,212 INFO cards.py took 0:03:33.297247\n```",
+        "ts": "1568008420.065200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n.............................E\n======================================================================\nERROR: test_recentArticle (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 459, in test_recentArticle\n    days = (datetime.datetime.today() -  datetime.datetime.strptime(date.decode(), '%b %d, %Y')).days\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 346, in _strptime\n    data_string[found.end():])\nValueError: unconverted data remains: \"\n\n----------------------------------------------------------------------\nRan 30 tests in 1.010s\n\nFAILED (errors=1)\n\n```",
+        "ts": "1568009096.065300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

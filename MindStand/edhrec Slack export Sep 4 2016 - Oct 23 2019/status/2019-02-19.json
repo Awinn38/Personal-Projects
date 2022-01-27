@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-19 08:14:10,309 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 161, in &lt;module&gt;\n    get_new_decks(i)\n  File \".\/mtggoldfish.py\", line 151, in get_new_decks\n    return last_page\nNameError: name 'last_page' is not defined\n```",
+        "ts": "1550563918.026800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-19 08:47:36,415 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/archidekt.py\", line 261, in &lt;module&gt;\n    is_last_page = get_new_decks(i)\n  File \".\/archidekt.py\", line 201, in get_new_decks\n    return is_too_old\nNameError: name 'is_too_old' is not defined\n```",
+        "ts": "1550565924.026900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-19 09:34:35,919 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/deckstats.py\", line 197, in &lt;module&gt;\n    get_new_decks(i)\n  File \".\/deckstats.py\", line 136, in get_new_decks\n    return days_ago &gt;= 15\nNameError: name 'days_ago' is not defined\n```",
+        "ts": "1550568743.027000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-19 10:12:08,654 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 274, in &lt;module&gt;\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 227, in get_entries\n    xml_pars = minidom.parseString(xml_data)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/minidom.py\", line 1968, in parseString\n    return expatbuilder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 925, in parseString\n    return builder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 223, in parseString\n    parser.Parse(string, True)\nxml.parsers.expat.ExpatError: not well-formed (invalid token): line 2, column 11\n```",
+        "ts": "1550570996.027100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

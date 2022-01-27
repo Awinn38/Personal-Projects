@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1567546635.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-14261",
+                "id": 1,
+                "title_link": "http:\/\/packetstormsecurity.com\/files\/153780\/ABUS-Secvest-3.01.01-Unchecked-Message-Transmission-Error-Condition.html",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "An issue was discovered on ABUS Secvest FUAA50000 3.01.01 devices. Due to an insufficient implementation of jamming detection, an attacker is able to suppress correctly received RF messages sent between wireless peripheral components, e.g., wireless detectors or remote controls, and the ABUS Secvest alarm central. An attacker is able to perform a \"reactive jamming\" attack. The reactive jamming simply detects the start of a RF message sent by a component of the ABUS Secvest wireless alarm system, for instance a wireless motion detector (FUBW50000) or a remote control (FUBE50014 or FUBE50015), and overlays it with random data before the original RF message ends. Thereby, the receiver (alarm central) is not able to properly decode the original transmitted signal. This enables an attacker to suppress correctly received RF messages of the wireless alarm system in an unauthorized manner, for instance status messages sent by a detector indicating an intrusion.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-14261"
+            }
+        ]
+    }
+]

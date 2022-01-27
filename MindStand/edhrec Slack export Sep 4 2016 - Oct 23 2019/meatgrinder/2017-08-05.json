@@ -1,0 +1,462 @@
+[
+    {
+        "type": "message",
+        "text": "Ohhh i think maybe i figured out the issue",
+        "user": "U286Q175Y",
+        "ts": "1501938300.470666",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Actually maybe not",
+        "user": "U286Q175Y",
+        "ts": "1501938345.473862",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok i found the gremlin",
+        "user": "U286Q175Y",
+        "ts": "1501943771.860537",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "looks like `update_ckprices.sh` hasn’t been running",
+        "user": "U286Q175Y",
+        "ts": "1501943790.861948",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "im running it manually now",
+        "user": "U286Q175Y",
+        "ts": "1501943805.862935",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "also, the reason we were getting weird percentages in some places was because most of the stats were getting pulled from the `decks` table and some of them were getting pulled from `deckswithprices` (the one we derive from `decks` by updating prices whenever `update_ckprices.sh` runs)",
+        "user": "U286Q175Y",
+        "ts": "1501944102.886414",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so the real bug is the split brain problem. i fixed that by changing `database.py` to only hit `deckswithprices`. The failure of update_ckprices.sh running just caused it to show up because of how far out of sync it was",
+        "user": "U286Q175Y",
+        "ts": "1501944139.889361",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "`update_ckprices.sh` has been failing. ever since i added the “theme” column to the database",
+        "user": "U286Q175Y",
+        "ts": "1501945349.989867",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i figured out the issue with our decks updating",
+        "user": "U286Q175Y",
+        "ts": "1501946024.045123",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "tappedout’s advanced search seems to be bugged, and when you search for commander decks it gives you ~1 month stale results",
+        "user": "U286Q175Y",
+        "ts": "1501946039.046380",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i sent an email to the tappedout guys to see what they say",
+        "user": "U286Q175Y",
+        "ts": "1501946783.107281",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "if they dont fix it my other approach works",
+        "user": "U286Q175Y",
+        "ts": "1501946789.107675",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah, that’s what I thought something like that was going on",
+        "user": "U3RJ9VDRT",
+        "ts": "1501954566.773187",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U6G90R56F> all of the ghave combos aer missing",
+        "user": "U286Q175Y",
+        "ts": "1501992898.274333",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "just heads up as i poke through this list",
+        "user": "U286Q175Y",
+        "ts": "1501992905.274785",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\n&gt;&gt;&gt; for c, d in database.get_decks(['<http:\/\/tappedout.net\/mtg-decks\/30-05-17-marath-enchantress\/>'])[0]['combos']:\n...     print c\n... \n('Marath, Will of the Wild', 'Earthcraft', \"Ashnod's Altar\")\n('Earthcraft', 'Squirrel Nest')\n```",
+        "user": "U286Q175Y",
+        "ts": "1501993085.284186",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "extracting combos from decks is done",
+        "user": "U286Q175Y",
+        "ts": "1501993103.285064",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\n&gt;&gt;&gt; p=database.tally(database.get_commander('Sidisi, Undead Vizier'))\n&gt;&gt;&gt; p['Combos']\n[(('Rings of Brighthearth', 'Basalt Monolith'), 114), (('Exquisite Blood', 'Sanguine Bond'), 44), (('Mikaeus, the Unhallowed', 'Triskelion'), 40), (('Rings of Brighthearth', 'Grim Monolith'), 38), (('Nim Deathmantle', \"Ashnod's Altar\", 'Grave Titan'), 32), (('Umbral Mantle', 'Magus of the Coffers'), 16), (('Helm of Obedience', 'Leyline of the Void'), 16), (('Nim Deathmantle', \"Ashnod's Altar\", 'Wurmcoil Engine'), 10), (('Gravecrawler', 'Phyrexian Altar', 'Vengeful Dead'), 9), (('Sword of the Paruns', 'Magus of the Coffers'), 6), (('Nim Deathmantle', \"Ashnod's Altar\", 'Myr Battlesphere'), 4), (('Exquisite Blood', 'Defiant Bloodlord'), 3), (('Isochron Scepter', 'Paradox Engine'), 2), (('Nim Deathmantle', \"Ashnod's Altar\", 'Skeletal Vampire'), 2), (('Blood Tribute', 'Sanguine Bond'), 2), (('Staff of Domination', 'Metalworker'), 1), (('Blood Tribute', 'Wound Reflection'), 1), (('Mikaeus, the Unhallowed', 'Workhorse'), 1), (('Paradox Engine', 'Decoction Module'), 1)]\n```\n\nintegrated in tally",
+        "user": "U286Q175Y",
+        "ts": "1501993408.299974",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\n&gt;&gt;&gt; p=database.tally(database.get_commander('Sidisi, Undead Vizier'))\n&gt;&gt;&gt; p['Combos']\n[{'PotentialDecks': 359, 'Frequency': 114, 'Popularity': 0.31754874651810583, 'Combo': ('Rings of Brighthearth', 'Basalt Monolith')}, {'PotentialDecks': 359, 'Frequency': 44, 'Popularity': 0.12256267409470752, 'Combo': ('Exquisite Blood', 'Sanguine Bond')}, {'PotentialDecks': 359, 'Frequency': 40, 'Popularity': 0.11142061281337047, 'Combo': ('Mikaeus, the Unhallowed', 'Triskelion')}, {'PotentialDecks': 359, 'Frequency': 38, 'Popularity': 0.10584958217270195, 'Combo': ('Rings of Brighthearth', 'Grim Monolith')}, {'PotentialDecks': 359, 'Frequency': 32, 'Popularity': 0.08913649025069638, 'Combo': ('Nim Deathmantle', \"Ashnod's Altar\", 'Grave Titan')}, {'PotentialDecks': 359, 'Frequency': 16, 'Popularity': 0.04456824512534819, 'Combo': ('Umbral Mantle', 'Magus of the Coffers')}, {'PotentialDecks': 359, 'Frequency': 16, 'Popularity': 0.04456824512534819, 'Combo': ('Helm of Obedience', 'Leyline of the Void')}, {'PotentialDecks': 359, 'Frequency': 10, 'Popularity': 0.027855153203342618, 'Combo': ('Nim Deathmantle', \"Ashnod's Altar\", 'Wurmcoil Engine')}, {'PotentialDecks': 75, 'Frequency': 2, 'Popularity': 0.02666666666666667, 'Combo': ('Isochron Scepter', 'Paradox Engine')}, {'PotentialDecks': 359, 'Frequency': 9, 'Popularity': 0.025069637883008356, 'Combo': ('Gravecrawler', 'Phyrexian Altar', 'Vengeful Dead')}, {'PotentialDecks': 359, 'Frequency': 6, 'Popularity': 0.016713091922005572, 'Combo': ('Sword of the Paruns', 'Magus of the Coffers')}, {'PotentialDecks': 248, 'Frequency': 3, 'Popularity': 0.012096774193548387, 'Combo': ('Exquisite Blood', 'Defiant Bloodlord')}]\n```",
+        "user": "U286Q175Y",
+        "ts": "1501994042.330545",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "^ taking into account the age of the combo",
+        "user": "U286Q175Y",
+        "ts": "1501994052.331011",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "`p=database.tally(database.get_cards(['Exquisite Blood', 'Sanguine Bond']))`",
+        "user": "U286Q175Y",
+        "ts": "1501994923.370580",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "added a `get_cards` function in database so we can grab decks that contain multiple cards",
+        "user": "U286Q175Y",
+        "ts": "1501994935.371660",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "im done for now, here is whats left:\n\n1. the data is in tally now, we just need to add it to the tally-based pages (commander, card, tribe, theme)\n2. create new multi-card pages for all cards that are grouped together as a combo\n\nalso:\n3. need ot implement “top combos” backend stuff",
+        "user": "U286Q175Y",
+        "ts": "1501995046.377201",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

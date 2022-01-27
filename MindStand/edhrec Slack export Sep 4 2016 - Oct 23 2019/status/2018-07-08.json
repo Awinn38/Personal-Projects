@@ -1,0 +1,152 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1531036707.000042",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1531040307.000034",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/top\/g.html has been updated!",
+        "ts": "1531043907.000055",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has been updated!",
+        "ts": "1531043908.000006",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Jul  8 13:13:51 UTC 2018\n\n```",
+        "ts": "1531055534.000047",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "60c17885-b1ab-412a-b91b-97ebbfe68588",
+        "type": "message",
+        "text": "woo",
+        "user": "U3MTAQBE1",
+        "ts": "1531056538.000060",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "154FDE72-2F4C-4D07-A0BA-B0C4BE377B96",
+        "type": "message",
+        "text": ":man_dancing:",
+        "user": "U286Q175Y",
+        "ts": "1531057706.000026",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Jul  9 02:36:33 UTC 2018\n\n```",
+        "ts": "1531103694.000124",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nint() argument must be a string, a bytes-like object or a number, not 'NoneType'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 618, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 411, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 377, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1463, in tally\n    [card['Card'] for card in out_cards], colorid=color_id)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1112, in get_usage_scores\n    } for k in cur.fetchall()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1112, in &lt;listcomp&gt;\n    } for k in cur.fetchall()]\nTypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 730, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 652, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nTypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'\n",
+        "ts": "1531113868.000022",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nMon Jul  9 05:26:08 UTC 2018\n\n```",
+        "ts": "1531113869.000081",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('54.157.3.180', 'test'), 91534)\n(('66.249.70.8', 'Mediapartners-Google'), 35772)\n(('52.52.164.177', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 26862)\n(('88.99.250.15', 'Mozilla\/5.0 (compatible; BLEXBot\/1.0; +<http:\/\/webmeup-crawler.com\/>)'), 26526)\n(('52.53.222.28', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 21205)\n(('52.57.220.92', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 18260)\n(('45.63.9.176', 'python-requests\/2.18.1'), 16224)\n(('75.98.9.249', 'Mozilla\/5.0 (compatible; NetSeer crawler\/2.0; +<http:\/\/www.netseer.com\/crawler.html;> <mailto:crawler@netseer.com|crawler@netseer.com>)'), 16170)\n(('18.206.249.27', 'Mozilla\/5.0 (compatible; VoluumDSP-content-bot\/2.0; <mailto:+dsp-dev@codewise.com|+dsp-dev@codewise.com>)'), 14140)\n(('34.235.158.211', 'Mozilla\/5.0 (compatible; VoluumDSP-content-bot\/2.0; <mailto:+dsp-dev@codewise.com|+dsp-dev@codewise.com>)'), 14032)\n(('148.64.56.76', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 13475)\n(('148.64.56.68', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 13345)\n(('148.64.56.72', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 13335)\n(('148.64.56.65', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 12856)\n(('66.249.70.17', 'Mediapartners-Google'), 12655)\n(('148.64.56.73', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 12614)\n(('148.64.56.79', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 12413)\n(('148.64.56.64', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 12325)\n(('13.57.12.126', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 12097)\n(('148.64.56.75', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 12084)\n(('148.64.56.69', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 11913)\n(('148.64.56.74', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 11822)\n(('148.64.56.71', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 11719)\n(('148.64.56.77', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 11668)\n(('169.48.218.38', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.113 Safari\/537.36'), 11649)\n\n```",
+        "ts": "1531114157.000002",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

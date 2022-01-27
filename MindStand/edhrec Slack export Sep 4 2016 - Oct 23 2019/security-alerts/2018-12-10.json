@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1544477835.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-3831",
+                "id": 1,
+                "title_link": "https:\/\/discuss.elastic.co\/t\/elastic-stack-6-4-1-and-5-6-12-security-update\/149035",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "elastic elasticsearch 5.6.0 5.6.1 5.6.2 5.6.3 5.6.4 5.6.5 5.6.6 5.6.7 5.6.8 5.6.9 5.6.10 5.6.11 5.6.13 6.0.0 6.0.1 6.1.0 6.1.1 6.1.2 6.1.3 6.1.4 6.2.0 6.2.1 6.2.2 6.2.3 6.2.4 6.3.0 6.3.1 6.3.2 6.4.0",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "Elasticsearch Alerting and Monitoring in versions before 6.4.1 or 5.6.12 have an information disclosure issue when secrets are configured via the API. The Elasticsearch _cluster\/settings API, when queried, could leak sensitive configuration information such as passwords, tokens, or usernames. This could allow an authenticated Elasticsearch user to improperly view these details.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-3831"
+            }
+        ]
+    }
+]

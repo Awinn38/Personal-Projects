@@ -1,0 +1,90 @@
+[
+    {
+        "user": "U28TLDP0R",
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1539206924.000200",
+        "text": "<@U28TLDP0R> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_add",
+        "text": "added an integration to this channel: <https:\/\/edhrec.slack.com\/services\/BDCKMD2P9|security-bot>",
+        "user": "U28TLDP0R",
+        "bot_id": "BDCKMD2P9",
+        "bot_link": "<https:\/\/edhrec.slack.com\/services\/BDCKMD2P9|security-bot>",
+        "ts": "1539206937.000100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1539214636.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-10915",
+                "id": 1,
+                "title_link": "http:\/\/www.securityfocus.com\/bid\/105054",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "postgresql postgresql 9.3.0 9.3.1 9.3.2 9.3.3 9.3.4 9.3.5 9.3.6 9.3.7 9.3.8 9.3.9 9.3.10 9.3.11 9.3.12 9.3.13 9.3.14 9.3.15 9.3.16 9.3.17 9.3.18 9.3.19 9.3.20 9.3.21 9.3.22 9.4.0 9.4.1 9.4.2 9.4.3 9.4.4 9.4.5 9.4.6 9.4.7 9.4.8 9.4.9 9.4.10 9.4.11 9.4.12 9.4.13 9.4.14 9.4.15 9.4.16 9.5.0 9.5.1 9.5.2 9.5.3 9.5.4 9.5.5 9.5.6 9.5.7 9.5.8 9.5.9 9.5.10 9.5.11 9.6.0 9.6.1 9.6.2 9.6.3 9.6.4 9.6.5 9.6.6 9.6.7 9.6.8 9.6.9 10.0 10.1 10.2 10.3 10.4 redhat openstack 12.0 13.0 virtualization 4.0 enterprise_linux_desktop 7.0 enterprise_linux_server 7.0 enterprise_linux_server_eus 7.5 enterprise_linux_workstation 7.0 canonical ubuntu_linux 14.04 16.04 18.04 debian debian_linux 8.0 9.0",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "A vulnerability was found in libpq, the default PostgreSQL client library where libpq failed to properly reset its internal state between connections. If an affected version of libpq was used with \"host\" or \"hostaddr\" connection parameters from untrusted input, attackers could bypass client-side connection security features, obtain access to higher privileged connections or potentially cause other impact through SQL injection, by causing the PQescape() functions to malfunction. Postgresql versions before 10.5, 9.6.10, 9.5.14, 9.4.19, and 9.3.24 are affected.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-10915"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1539214636.000200",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2016-8640",
+                "id": 1,
+                "title_link": "http:\/\/seclists.org\/oss-sec\/2016\/q4\/406",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "A SQL injection vulnerability in pycsw all versions before 2.0.2, 1.10.5 and 1.8.6 that leads to read and extract of any data from any table in the pycsw database that the database user has access to. Also on PostgreSQL (at least) it is possible to perform updates\/inserts\/deletes and database modifications to any table the database user has access to.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2016-8640"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "86768875-279b-436e-8be2-59a03d2e6ae0",
+        "type": "message",
+        "text": "hell yeah",
+        "user": "U28TLDP0R",
+        "ts": "1539227951.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

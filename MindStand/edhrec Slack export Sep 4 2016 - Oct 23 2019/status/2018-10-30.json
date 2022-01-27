@@ -1,0 +1,119 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1540925927.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1540929526.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1540929527.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nname 'sets' is not defined\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 927, in edhrec\n    make_404()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 39, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 166, in make_page\n    sets = [(s['code'], s['name'], s['released_at']) for s in cards.get_sets(sort=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 405, in get_sets\n    return sorted(list(sets.values()), key=lambda x: x['released_at'], reverse=True)\nNameError: name 'sets' is not defined\n",
+        "ts": "1540937506.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nTue Oct 30 22:13:07 UTC 2018\n\n```",
+        "ts": "1540937507.001900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \".\/web\/nightly.py\", line 925, in edhrec\n    make_typeahead()\n  File \".\/web\/nightly.py\", line 63, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1540937978.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "d154c0f3-4080-486d-a604-993f6124903b",
+        "type": "message",
+        "text": "should probably make it so that doesnt happen when running nightly outside of web\/",
+        "user": "U28TLDP0R",
+        "ts": "1540938023.002400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1540940326.002500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 23447) - 31\/Oct\/2018:05:30:01\n('40.77.167.172', 5042) - 31\/Oct\/2018:05:29:41\n('40.77.167.174', 4546) - 31\/Oct\/2018:04:58:36\n('157.55.39.152', 4410) - 31\/Oct\/2018:05:03:16\n('40.77.167.175', 4314) - 31\/Oct\/2018:04:23:15\n('37.9.87.143', 3273) - 31\/Oct\/2018:05:29:08\n('100.43.85.112', 2215) - 31\/Oct\/2018:05:29:51\n('73.70.162.212', 2214) - 30\/Oct\/2018:23:06:33\n('77.88.47.5', 2043) - 31\/Oct\/2018:03:24:54\n('37.9.87.208', 1570) - 30\/Oct\/2018:22:23:21\n('18.215.117.151', 1213) - 31\/Oct\/2018:00:26:37\n('77.88.47.10', 1191) - 31\/Oct\/2018:05:29:29\n('216.244.66.232', 1165) - 31\/Oct\/2018:05:28:25\n('93.158.161.126', 1051) - 30\/Oct\/2018:18:27:12\n('100.43.90.124', 980) - 30\/Oct\/2018:22:24:44\n('13.57.179.149', 774) - 31\/Oct\/2018:05:29:45\n('13.56.79.15', 733) - 31\/Oct\/2018:05:29:43\n('5.255.250.34', 682) - 31\/Oct\/2018:04:35:34\n('148.64.56.69', 671) - 31\/Oct\/2018:05:28:56\n('148.64.56.73', 670) - 31\/Oct\/2018:05:28:45\n('106.120.173.150', 663) - 30\/Oct\/2018:20:44:15\n('144.76.29.149', 648) - 30\/Oct\/2018:16:46:45\n('202.14.10.233', 635) - 31\/Oct\/2018:05:28:33\n('148.64.56.67', 622) - 31\/Oct\/2018:05:29:32\n('148.64.56.75', 619) - 31\/Oct\/2018:05:29:04\n\n```",
+        "ts": "1540963720.002600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,207 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 11:12:07,715 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 234, in get_entries\n    xml_pars = minidom.parseString(r.text)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/minidom.py\", line 1968, in parseString\n    return expatbuilder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 925, in parseString\n    return builder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 223, in parseString\n    parser.Parse(string, True)\nxml.parsers.expat.ExpatError: not well-formed (invalid token): line 2, column 11\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 284, in &lt;module&gt;\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 235, in get_entries\n    except xml.parsers.expat.ExpatError as e:\nNameError: name 'xml' is not defined\n```",
+        "ts": "1550747389.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1550751048.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 14:12:10,185 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 234, in get_entries\n    xml_pars = minidom.parseString(r.text)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/minidom.py\", line 1968, in parseString\n    return expatbuilder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 925, in parseString\n    return builder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 223, in parseString\n    parser.Parse(string, True)\nxml.parsers.expat.ExpatError: not well-formed (invalid token): line 2, column 11\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 284, in &lt;module&gt;\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 235, in get_entries\n    except xml.parsers.expat.ExpatError as e:\nNameError: name 'xml' is not defined\n```",
+        "ts": "1550758191.001900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 16:58:14,633 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-21 16:58:14,634 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1550768155.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 17:04:32,470 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-21 17:04:32,472 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1550768533.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 17:17:21,134 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-21 17:17:21,137 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1550769302.002200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 17:18:09,309 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-02-21 17:18:09,311 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1550769350.002300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 18:12:04,833 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 235, in get_entries\n    xml_pars = xml.dom.minidom.parseString(r.text)\nAttributeError: module 'xml.dom' has no attribute 'minidom'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 285, in &lt;module&gt;\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 236, in get_entries\n    except xml.parsers.expat.ExpatError as e:\nAttributeError: module 'xml.parsers' has no attribute 'expat'\n```",
+        "ts": "1550772585.002400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "ac47d577-e464-44f6-b83d-3a14426122a0",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1550772694.002600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 18:30:37,413 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/dynamic.py\", line 404, in &lt;module&gt;\n    'server.socket_port': int(sys.argv[1]),\nIndexError: list index out of range\n```",
+        "ts": "1550773698.002700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550774579.002800",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [91.31325310271427 (21\/02\/19 18:27:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-21T18:42:58.487+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-21T18:42:58.536Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [91.31325310271427 (21\/02\/19 18:27:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-21T18:42:58.487+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-21T18:42:58.536Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550776679.002900",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [92.35174353991873 (21\/02\/19 19:02:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-21T19:17:58.468+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-21T19:17:58.486Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [92.35174353991873 (21\/02\/19 19:02:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-21T19:17:58.468+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-21T19:17:58.486Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nconnection already closed\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 23, in _getcursor\n    yield con.cursor(cursor_factory=psycopg2.extras.DictCursor)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 52, in get\n    cur.execute(query, (key.lower(),))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: lost synchronization with server: got message type \"D\", length 98718866\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 720, in make_decks_cmdr\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 707, in make_deck\n    for ctitle, cgroup in cardgroups:\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 165, in make_page\n    } for s in cards.get_sets()[:5]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 448, in get_sets\n    return cache.get('cards\/sets')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 25, in _getcursor\n    con.commit()\npsycopg2.InterfaceError: connection already closed\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 870, in nightly\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 755, in make_commanders\n    try:\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\npsycopg2.InterfaceError: connection already closed\n",
+        "ts": "1550799109.003000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-22 01:34:10,346 ERROR connection already closed\n2019-02-22 01:34:10,351 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 23, in _getcursor\n    yield con.cursor(cursor_factory=psycopg2.extras.DictCursor)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 52, in get\n    cur.execute(query, (key.lower(),))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: lost synchronization with server: got message type \"D\", length 98718866\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 720, in make_decks_cmdr\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 707, in make_deck\n    for ctitle, cgroup in cardgroups:\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 165, in make_page\n    } for s in cards.get_sets()[:5]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 448, in get_sets\n    return cache.get('cards\/sets')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 25, in _getcursor\n    con.commit()\npsycopg2.InterfaceError: connection already closed\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 870, in nightly\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 755, in make_commanders\n    try:\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\npsycopg2.InterfaceError: connection already closed\n\n```",
+        "ts": "1550799110.003100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

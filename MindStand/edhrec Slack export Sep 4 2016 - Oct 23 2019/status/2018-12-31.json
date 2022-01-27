@@ -1,0 +1,170 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-31 08:11:41,733 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 257, in make_sets\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 126, in make_page\n    top6cards = [card.name.replace(',', '') for card in cardlists[0][:6]]\nIndexError: list index out of range\n```",
+        "ts": "1546243886.019800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1546246788.019900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Dec 31 09:08:24 UTC 2018\n\n```",
+        "ts": "1546247288.020000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nMon Dec 31 09:57:23 UTC 2018\n\n```",
+        "ts": "1546250228.020100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[31\/Dec\/2018:12:13:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 582, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/ezuri, renegade leader\n```",
+        "ts": "1546258411.020200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-31 17:25:15,226 ERROR ['Thousand-Year Storm', 'Time Stretch', 'Expropriate', \"Karn's Temporal Sundering\", 'Quasiduplicate', 'Temporal Mastery', 'Part the Waterveil', 'The Mirari Conjecture', 'Radical Idea', 'Niv-Mizzet, Parun', 'Nexus of Fate', 'Sol Ring', 'Time Warp', 'Walk the Aeons', 'Cyclonic Rift', 'Brainstorm', 'Steam Vents', 'Temporal Trespass', 'Beacon of Tomorrows', \"Sensei's Divining Top\", 'Stitch in Time', 'Temporal Manipulation', 'Temple of Epiphany', 'Ral Zarek', 'Reliquary Tower', 'Counterspell', 'Omniscience', 'Mystical Tutor', 'Plea for Power', 'Baral, Chief of Compliance', 'Thought Vessel', 'Izzet Signet', 'Sulfur Falls', 'Reverberate', 'Izzet Boilerworks', 'Evolving Wilds', 'Scalding Tarn', 'Terramorphic Expanse', 'Ponder', 'Goblin Electromancer', 'Increasing Vengeance', 'Shivan Reef', 'Command Tower', 'Cascade Bluffs', 'Jace, the Mind Sculptor', 'Mu Yanling', 'Timestream Navigator', \"River's Rebuke\", \"Lookout's Dispersal\", 'Search for Azcanta', 'Primal Amulet', 'Galvanoth', 'Temple of the False God', 'Personal Tutor', 'Preordain', 'Laboratory Maniac', 'Mystic Retrieval', 'Capture of Jingzhou', 'Lighthouse Chronologist', 'Volcanic Island', 'Fact or Fiction', 'Polluted Delta', 'Izzet Guildgate', 'Snapcaster Mage', \"Mizzix's Mastery\", 'Spirebluff Canal', 'Chandra, Torch of Defiance', 'Dack Fayden', 'Keranos, God of Storms', 'Myriad Landscape', \"Jace's Sanctum\", 'Pull from the Deep', 'Gilded Lotus', 'Thran Dynamo', 'Telling Time', 'Cryptic Command', 'Enter the Infinite', 'Dissipate', 'Mana Crypt', 'Rewind', 'Jace Beleren', 'Twincast', 'Lightning Bolt', 'Serum Visions', 'Frantic Search', 'Wheel of Fortune', 'Pact of Negation', 'Izzet Charm', 'Rite of Replication', 'Tezzeret the Seeker', 'Misty Rainforest', 'Izzet Chemister', 'Time Spiral', 'Swarm Intelligence', 'Counterflux', 'Archaeomancer', 'Mizzix of the Izmagnus', 'Commit', \"Jace, Vryn's Prodigy\", \"Commander's Sphere\", 'Young Pyromancer', 'Dissolve', 'Volcanic Vision', 'Dualcaster Mage', 'Dig Through Time', 'Swiftwater Cliffs', 'Glorious End', 'Thassa, God of the Sea', 'Phyrexian Metamorph', 'Last Chance', 'Trinket Mage', 'Flooded Strand', 'Time Stop', 'Blood Moon', 'Palinchron', 'Chandra, the Firebrand', 'Lotus Petal', 'Misdirection', 'Eye of the Storm', 'Tamiyo, the Moon Sage', 'Merchant Scroll', 'Sapphire Medallion', 'Isochron Scepter', 'Final Fortune', 'Arcanis the Omnipotent', \"Wayfarer's Bauble\", 'Epic Experiment', 'Psychic Spiral', 'Timetwister', \"Warrior's Oath\", 'Vedalken Orrery', 'Fabricate', 'Delver of Secrets', \"Mind's Desire\", 'Extraplanar Lens', \"Firemind's Foresight\", 'Show and Tell', 'Gamble', 'Mana Drain', 'Boseiju, Who Shelters All', 'Hinder', 'Force of Will', 'Muddle the Mixture', 'Kozilek, Butcher of Truth', 'Turnabout', 'Snow-Covered Island', 'Maze of Ith', 'Great Furnace', 'Scroll Rack', 'Wooded Foothills', 'Future Sight', 'Long-Term Plans', 'Pongify', 'Academy Ruins', 'Venser, Shaper Savant', 'High Tide', 'Rhystic Study', 'Magosi, the Waterveil', 'Seat of the Synod', \"Blue Sun's Zenith\", 'Arid Mesa', 'Bloodstained Mire', 'Saheeli Rai', 'Ash Barrens', 'Whir of Invention', 'Trophy Mage', \"Baral's Expertise\", 'Thing in the Ice', 'Pyre Hound', 'Overwhelming Denial', 'Thermo-Alchemist', 'Sphinx of the Final Word', 'Docent of Perfection', 'Highland Lake', 'Collective Defiance', 'Wandering Fumarole', 'Bedlam Reveler', 'Niblis of Frost', 'Aberrant Researcher', 'Brain in a Jar', 'Mystic Confluence', 'Molten Birth', 'Learn from the Past', \"Pyromancer's Goggles\", 'Teferi, Temporal Archmage', 'Jace, Telepath Unbound', 'Anticipate', 'Disdainful Stroke', 'Aqueous Form', 'Master the Way', 'Intellectual Offering', 'Supplant Form', 'Possibility Storm', 'Blue Elemental Blast', 'Darksteel Citadel', 'Evacuation', 'Pestermite', 'Mind Over Matter', 'Psychosis Crawler', 'Fog Bank'] int() argument must be a string, a bytes-like object or a number, not 'NoneType'\n```",
+        "ts": "1546277099.020300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1546289988.020400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1546304386.020500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-01 02:32:36,784 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-01 02:32:36,785 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1546309939.020600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-01 02:34:37,052 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-01 02:34:37,052 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1546310059.020700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-01 02:51:53,429 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-01 02:51:53,430 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1546311096.020800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-01 02:52:04,766 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-01 02:52:04,766 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1546311107.020900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[01\/Jan\/2019:04:37:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/recs.py\", line 160, in index\n    data = self.validate_deck(cherrypy.request.json)\n  File \"\/home\/ubuntu\/edhrec\/api\/recs.py\", line 123, in validate_deck\n    elif not cards.is_commander(parsed_name):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 506, in is_commander\n    #if brawl: BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: the haunt of hightower\n```",
+        "ts": "1546317428.021000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1546329584.021100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

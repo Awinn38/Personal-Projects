@@ -1,0 +1,598 @@
+[
+    {
+        "client_msg_id": "4e75fe49-8c78-4505-92df-d8a1bed5fbcc",
+        "type": "message",
+        "text": "<@U28TLDP0R> how hard would it be to host the edhrec pages out of aws instead of nginx",
+        "user": "U286Q175Y",
+        "ts": "1534965253.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fd012fd0-16c8-47e7-a1cf-3af76ca3059d",
+        "type": "message",
+        "text": "(s3)",
+        "user": "U286Q175Y",
+        "ts": "1534965258.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "dce99f5c-4cdb-4a5c-a47a-01319fbaf1c6",
+        "type": "message",
+        "text": "one possibility which I've mentioned before is producing .jsons for pages instead of the html, then hosting that in an s3 bucket and having one react template, which would take medium effort but would work well \/ is well scoped out",
+        "user": "U28TLDP0R",
+        "ts": "1534966720.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "11090ce8-a5f6-4f29-99df-61cc30ecc117",
+        "type": "message",
+        "text": "trying to figure out how we'd be able to replace our reverse proxy stuff if instead our html was in s3",
+        "user": "U28TLDP0R",
+        "ts": "1534966757.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "013f6fd4-3e26-4fb2-a1ef-6aae07ef26e0",
+        "type": "message",
+        "text": "seems like we could host our assets on s3 and proxy to it through our current nginx setup, code looks straightforward, no idea how good it is",
+        "user": "U28TLDP0R",
+        "ts": "1534966895.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a3f8fc4a-0b4e-4121-a464-0da1e7979667",
+        "type": "message",
+        "text": "would just have to set up the bucket, figure out the nginx config, update python scripts to push to s3.",
+        "user": "U28TLDP0R",
+        "ts": "1534966959.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ed08810c-e16a-4f19-b9fc-9089440baafb",
+        "type": "message",
+        "text": "i guess the nice thing about being out of s3 would be not interacting with nginx to service a request",
+        "user": "U286Q175Y",
+        "ts": "1534967050.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c8311ec0-aade-48e5-8f1a-901659eda070",
+        "type": "message",
+        "text": "if we had to proxy down that would kinda defeat the purpose and maybe increase our data usage cost?",
+        "user": "U286Q175Y",
+        "ts": "1534967064.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0f690edf-51e5-40fa-93d8-8b693bdb13b0",
+        "type": "message",
+        "text": "so right now what i'm thinking about",
+        "user": "U286Q175Y",
+        "ts": "1534967321.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "420b3897-60cc-4d08-8871-c2bb2a075f39",
+        "type": "message",
+        "text": "is replacing nightly and the recommendation matrix builder in Databricks \/ Spark -- i.e., doing it in a distributed fashion. The net result is we could probably have nightly complete in &lt;1 hour",
+        "user": "U286Q175Y",
+        "ts": "1534967352.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "4bb225df-ea5d-4ea7-9c0e-024961cbe255",
+        "type": "message",
+        "text": "also we'd be doing that in a serverless fashion",
+        "user": "U286Q175Y",
+        "ts": "1534967362.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "73d6cf22-be2a-4cc8-a822-a5cecb393fff",
+        "type": "message",
+        "text": "the way that would work is the source data (i.e., decks) would be in S3, then the spark jobs would write out the S3",
+        "user": "U286Q175Y",
+        "ts": "1534967383.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7047b336-288e-46bf-9393-2d4e09201f6a",
+        "type": "message",
+        "text": "could open up more advanced analytics overall for us as well",
+        "user": "U286Q175Y",
+        "ts": "1534967409.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e737bb64-0eb0-44df-aafa-31914bea2dd7",
+        "type": "message",
+        "text": "I think we could do it with cloudfront + s3",
+        "user": "U28TLDP0R",
+        "ts": "1534967485.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5fb7127f-d0a0-4de3-b735-6432f4cad0c8",
+        "type": "message",
+        "text": "at the same time what we have right now works, and getting nightly done faster isn't necessarily going to improve a whole lot for us",
+        "user": "U286Q175Y",
+        "ts": "1534967581.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "68947291-4dca-47ef-a397-86c51a6b2ed5",
+        "type": "message",
+        "text": "other than maybe deploying changes faster",
+        "user": "U286Q175Y",
+        "ts": "1534967588.000200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cfb8a0e0-4d32-40d5-82a4-f897e297cb39",
+        "type": "message",
+        "text": "reading cloudfront use cases:\n&gt; The key idea here is to use CloudFront as a proxy for both S3 (where your static assets are stored) and your EC2 instance, or your on premises Custom Origin server (where dynamic content is generated).\nsounds like what we'd want",
+        "user": "U28TLDP0R",
+        "ts": "1534967604.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c825e85c-90c2-4cdc-8428-b890cb97aa3a",
+        "type": "message",
+        "text": "intersting",
+        "user": "U286Q175Y",
+        "ts": "1534967614.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d0dac87e-3048-4c14-a66a-e0ed9f9ea3a8",
+        "type": "message",
+        "text": "maybe we should try to push some html up there and see if we can get it to work",
+        "user": "U286Q175Y",
+        "ts": "1534967624.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "539aa96d-aee0-4498-8678-7430fcdeae9a",
+        "type": "message",
+        "text": "might as well, looks promising",
+        "user": "U28TLDP0R",
+        "ts": "1534967679.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6b7d420a-5079-4bcb-b5a5-a3d9a778c7fd",
+        "type": "message",
+        "text": "i think the data charges are lower from s3 than from our ec2 instance",
+        "user": "U286Q175Y",
+        "ts": "1534967769.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "14f2ced3-82fb-4753-9044-bccc6b1bf899",
+        "type": "message",
+        "text": "yeah, should be faster serving content too",
+        "user": "U28TLDP0R",
+        "ts": "1534967849.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a258ab87-18eb-4d80-bd38-56dd0483f891",
+        "type": "message",
+        "text": "&gt;&gt;&gt; I consider myself an experienced player but I haven't been exposed to all the themes and variants available.   I love to just browse your site and have learned a bunch. However, I don't have a clue about what many of the themes are. While I can figure it out by looking at the cards, I would love a short description of the themes. I know some themes have a short description and some themes are SELF explanatory but I would love to see all themes defined not to mention explanations of education variants.  Keep up the awesome work!",
+        "user": "U286Q175Y",
+        "ts": "1534979619.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "486ac1ea-f1df-4518-9e66-9d6bb05af2e8",
+        "type": "message",
+        "text": "<@U3MTAQBE1> i think we should expand all the themes. here are my suggestions on what could be included: specific definition we use, what the theme of the deck is in more human terms (a sentence or two), maybe how it's different from other themes that are similar, etc.\n\nright now the current description blob is pretty basic. we might need some better formatting? idk <@U28TLDP0R>",
+        "user": "U286Q175Y",
+        "ts": "1534979688.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "65545fd2-6b68-4053-b125-355f9a525c36",
+        "type": "message",
+        "text": "you can do html and stuff inside the description if you need more advanced formatting, something might render weird at first but just a matter of messing with the css",
+        "user": "U28TLDP0R",
+        "ts": "1534979832.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f7fe66ce-d418-4496-bb35-4567eff30804",
+        "type": "message",
+        "text": "ah yeah",
+        "user": "U286Q175Y",
+        "ts": "1534979951.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1534981510.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "New card better theme descriptions added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "better theme descriptions",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/tdCGQKZU",
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1534981525.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess updated the description of better theme descriptions.",
+                "text": "here are my suggestions on what could be included: specific definition we use, what the theme of the deck is in more human terms (a sentence or two), maybe how it's different from other themes that are similar, etc.",
+                "pretext": "Updated the description of *<https:\/\/trello.com\/c\/tdCGQKZU|better theme descriptions>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

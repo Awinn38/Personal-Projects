@@ -1,0 +1,254 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nSat Dec  8 08:08:12 UTC 2018\n\n```",
+        "ts": "1544256369.031200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSat Dec  8 08:08:13 UTC 2018\n\n```",
+        "ts": "1544256371.031300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1544263083.031400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nSat Dec  8 10:22:46 UTC 2018\n\n```",
+        "ts": "1544264443.031500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSat Dec  8 10:22:47 UTC 2018\n\n```",
+        "ts": "1544264444.031600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[08\/Dec\/2018:10:43:54] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 599, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/zur the enchanter\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 601, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'zur the enchanter'\n```",
+        "ts": "1544265711.031700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[08\/Dec\/2018:10:44:23] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 599, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/zur the enchanter\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 601, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'zur the enchanter'\n```",
+        "ts": "1544265741.031800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nSat Dec  8 12:35:18 UTC 2018\n\n```",
+        "ts": "1544272395.031900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSat Dec  8 12:35:20 UTC 2018\n\n```",
+        "ts": "1544272396.032000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nSat Dec  8 14:49:24 UTC 2018\n\n```",
+        "ts": "1544280441.032100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSat Dec  8 14:49:26 UTC 2018\n\n```",
+        "ts": "1544280442.032200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1544288282.032300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MASTER NIGHTLY FAILED !!!!!! :poop:\n```\nSat Dec  8 17:03:58 UTC 2018\n\n```",
+        "ts": "1544288514.032400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSat Dec  8 17:03:59 UTC 2018\n\n```",
+        "ts": "1544288515.032500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1544317083.032600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1544324282.032700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1544324283.032800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1544324283.032900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1544324283.033000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-09 06:58:56,843 ERROR Somehow Island got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Master Biomancer got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Vorel of the Hull Clade got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Fathom Mage got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Simic Signet got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Temple of Mystery got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Hinterland Harbor got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Plaxcaster Frogling got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,844 ERROR Somehow Simic Growth Chamber got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Breeding Pool got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Thrummingbird got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Alchemist's Refuge got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Flooded Grove got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Rhystic Study got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Altered Ego got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Bioshift got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,845 ERROR Somehow Murkfiend Liege got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Curse of the Swine got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Nissa, Steward of Elements got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Lonely Sandbar got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Trygon Predator got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Kiora, Master of the Depths got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Thassa, God of the Sea got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Pact of Negation got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Pemmin's Aura got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,846 ERROR Somehow Kiora's Follower got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,847 ERROR Somehow Wash Out got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,847 ERROR Somehow Muddle the Mixture got into this set of recs ['G'] (cmdr matrix)\n2018-12-09 06:58:56,847 ERROR Somehow Aqueous Form got into this set of recs ['G'] (cmdr matrix)\n```",
+        "ts": "1544338610.033100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1544338683.033200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

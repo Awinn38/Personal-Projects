@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548425278.003000",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [3.132867428E8 (25\/01\/19 13:57:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-01-25T14:07:57.676+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-01-25T14:07:57.762Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [3.132867428E8 (25\/01\/19 13:57:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-01-25T14:07:57.676+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-01-25T14:07:57.762Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1548433747.003100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n[Errno 2] No such file or directory: 'aws cloudfront create-invalidation --distribution-id E2XEMXBOUM1CFI --paths \"\/*\"'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 840, in nightly\n    subprocess.check_call('aws cloudfront create-invalidation --distribution-id E2XEMXBOUM1CFI --paths \"\/*\"')\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 576, in check_call\n    retcode = call(*popenargs, **kwargs)\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 557, in call\n    with Popen(*popenargs, **kwargs) as p:\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 947, in __init__\n    restore_signals, start_new_session)\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 1551, in _execute_child\n    raise child_exception_type(errno_num, err_msg)\nFileNotFoundError: [Errno 2] No such file or directory: 'aws cloudfront create-invalidation --distribution-id E2XEMXBOUM1CFI --paths \"\/*\"'\n",
+        "ts": "1548472239.003200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-26 03:11:36,541 ERROR [Errno 2] No such file or directory: 'aws cloudfront create-invalidation --distribution-id E2XEMXBOUM1CFI --paths \"\/*\"'\n2019-01-26 03:11:36,544 ERROR Traceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 840, in nightly\n    subprocess.check_call('aws cloudfront create-invalidation --distribution-id E2XEMXBOUM1CFI --paths \"\/*\"')\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 576, in check_call\n    retcode = call(*popenargs, **kwargs)\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 557, in call\n    with Popen(*popenargs, **kwargs) as p:\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 947, in __init__\n    restore_signals, start_new_session)\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 1551, in _execute_child\n    raise child_exception_type(errno_num, err_msg)\nFileNotFoundError: [Errno 2] No such file or directory: 'aws cloudfront create-invalidation --distribution-id E2XEMXBOUM1CFI --paths \"\/*\"'\n\n```",
+        "ts": "1548472240.003300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "dd079e7f-a77d-4953-ba7a-01ea9748f0ea",
+        "type": "message",
+        "text": "close",
+        "user": "U28TLDP0R",
+        "ts": "1548472257.003500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

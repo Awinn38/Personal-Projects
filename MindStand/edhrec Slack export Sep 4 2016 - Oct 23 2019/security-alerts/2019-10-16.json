@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1571240234.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-17625",
+                "id": 1,
+                "title_link": "https:\/\/github.com\/ramboxapp\/community-edition\/issues\/2418",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "There is a stored XSS in Rambox 0.6.9 that can lead to code execution. The XSS is in the name field while adding\/editing a service. The problem occurs due to incorrect sanitization of the name field when being processed and stored. This allows a user to craft a payload for Node.js and Electron, such as an exec of OS commands within the onerror attribute of an IMG element.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-17625"
+            }
+        ]
+    }
+]

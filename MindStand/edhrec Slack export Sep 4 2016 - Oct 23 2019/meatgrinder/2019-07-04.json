@@ -1,0 +1,361 @@
+[
+    {
+        "client_msg_id": "0F4D77B3-97EF-4BEF-A334-DBEFD96595CE",
+        "type": "message",
+        "text": "Havent seen the new decks count in status in a few days",
+        "user": "U286Q175Y",
+        "ts": "1562246636.228900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "bf19ff87-cfe7-427a-9cc9-b5df6f87c0ed",
+        "type": "message",
+        "text": "I'll go ahead and re-run stuff, I've been keeping it off while trying to collect performance data",
+        "user": "U28TLDP0R",
+        "ts": "1562254457.229500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1562287943.229600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on monitor - ensure cron jobs are finishing: \"multiprocessing stuff commented out for now, I think it breaks flamegraph\"",
+                "text": "multiprocessing stuff commented out for now, I think it breaks flamegraph",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/PVkdlkfl|monitor - ensure cron jobs are finishing>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "252b5ff9-beb0-4427-b48f-c7a795c3e216",
+        "type": "message",
+        "text": "1. I would definitely take a look at inserting ads between the various card options like we had done previously, but this time use the renderVisible and refreshVisible options listed in the <http:\/\/docs.nitropay.com|docs.nitropay.com> section. This would allow you to still retain high viewability but gather some additional revenue from those long card pages. I’d do this for sure.\n\n2. On those ads, I would consider choosing all of the horizontal options to make sure you’re receiving the highest bid for the placements.\n\n3. I would also double check to make sure you’re doing this on the top leaderboard as well - most folks scroll past that anyway so it should’ve be a huge UX issue, but it’s up to you.\n\n4. I would consider adding another floating sidebar ad to the left side of the page since there’s some margin space there. We’ve seen folks on <http:\/\/fnbr.co|fnbr.co> and <http:\/\/tiermaker.com|tiermaker.com> use that additional sidebar placements to great effect.\n\n5. If you’re willing to give up some content space, you could increase those side margins to allow the 300x600 placements to fit, then you could make a bid for both 160x600, 300x250 and 300x600 placements.",
+        "user": "U286Q175Y",
+        "ts": "1562291742.229800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e219bea1-4d8b-4ce4-906e-24d13c93ab8b",
+        "type": "message",
+        "text": "<@U28TLDP0R> these were the ad suggestions the nitro guys made. are there any you want to nix right now or do we want to just make tickets for these so we can try them out?",
+        "user": "U286Q175Y",
+        "ts": "1562291764.230300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "14d14e1f-08d0-4177-b492-bb1f0571add4",
+        "type": "message",
+        "text": "they've suggested left sidebar many times.  our webpages are wider than <http:\/\/fnbr.co|fnbr.co> and <http:\/\/tiermaker.com|tiermaker.com>, so if I did add left sidebar, it would only be there are (very) widescreen displays.  so I'm not too keen on that one.",
+        "user": "U28TLDP0R",
+        "ts": "1562292031.231400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5071818c-ff61-403d-a018-df13b961688f",
+        "type": "message",
+        "text": "I dunno, I guess I could try it",
+        "user": "U28TLDP0R",
+        "ts": "1562292083.231700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "757a8470-5aac-4ba9-94b7-627f9650bd4a",
+        "type": "message",
+        "text": "4 and 5 together would probably be too much but we could start with 4",
+        "user": "U28TLDP0R",
+        "ts": "1562292109.232100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "48a3cf1e-3fda-4a2f-9132-95eb02eb12a8",
+        "type": "message",
+        "text": "any thoughts on how we can a\/b test?",
+        "user": "U286Q175Y",
+        "ts": "1562292473.232400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e52552b0-a454-4d7e-a734-9a29f6235da9",
+        "type": "message",
+        "text": "maybe rename all the ad units on the page with hte proposed new change to test-*",
+        "user": "U286Q175Y",
+        "ts": "1562292486.232800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "81aa1f9a-012c-433d-bce3-2b97385f2cc8",
+        "type": "message",
+        "text": "beta-* or whatever",
+        "user": "U286Q175Y",
+        "ts": "1562292492.233000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "763902b6-141e-44ec-907b-a6461ef8626c",
+        "type": "message",
+        "text": "our ad revenue is so jumpy day to day these days that i dont think we can figure it out just by looking at yesterday",
+        "user": "U286Q175Y",
+        "ts": "1562292509.233400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "22ccf3d5-2df7-45ca-9dc5-4901809b5804",
+        "type": "message",
+        "text": "not sure if there's enough data but we could try it out on oathbreaker first",
+        "user": "U28TLDP0R",
+        "ts": "1562294195.234000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e9184cce-aaa4-464a-a83e-259dcbcddc99",
+        "type": "message",
+        "text": "which I might do anyway.  it's kinda nice for testing new stuff",
+        "user": "U28TLDP0R",
+        "ts": "1562294235.234700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d5719a01-4e6d-4d51-965a-22980d91f124",
+        "type": "message",
+        "text": "or just random roll 10% of the pages",
+        "user": "U28TLDP0R",
+        "ts": "1562294260.235100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "db63537a-f460-4756-a57c-3d49735338f9",
+        "type": "message",
+        "text": "yeah id rather the random roll. ob ad numbers are different for some reason",
+        "user": "U286Q175Y",
+        "ts": "1562294402.235500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0f30ce13-969f-4b73-b14b-18bf7aef7673",
+        "type": "message",
+        "text": "like hte cpm is slightly different",
+        "user": "U286Q175Y",
+        "ts": "1562294408.235800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,158 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1529222393.000036",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1529251192.000054",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Jun 17 17:19:56 UTC 2018\n\n```",
+        "ts": "1529255985.000075",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'sampledeck'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 741, in brawl\n    make_brawl_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 607, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 593, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 400, in make_commander\n    ('c', unidecode('\\r\\n'.join(data['sampledeck']))),\nKeyError: 'sampledeck'\n",
+        "ts": "1529265953.000120",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1529269191.000093",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'sampledeck'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 593, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 400, in make_commander\n    ('c', unidecode('\\r\\n'.join(data['sampledeck']))),\nKeyError: 'sampledeck'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 704, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 622, in make_commanders\n    p.map(_make_commanders_p, list(cards.get_commanders())[::-1])\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nKeyError: 'sampledeck'\n",
+        "ts": "1529274397.000052",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Jun 17 22:26:51 UTC 2018\n\n```",
+        "ts": "1529274399.000041",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1529290791.000121",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1529294390.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1529294391.000049",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/top\/g.html has been updated!",
+        "ts": "1529297991.000104",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has been updated!",
+        "ts": "1529297991.000171",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('46.229.168.72', 'Mozilla\/5.0 (compatible; SemrushBot\/2~bl; +<http:\/\/www.semrush.com\/bot.html>)'), 15011)\n(('54.157.3.180', 'test'), 10906)\n(('66.249.66.1', 'Mediapartners-Google'), 5098)\n(('54.175.74.27', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 2876)\n(('72.182.62.241', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/11.1.1 Safari\/605.1.15'), 1977)\n(('52.52.164.177', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 1824)\n(('75.98.9.249', 'Mozilla\/5.0 (compatible; NetSeer crawler\/2.0; +<http:\/\/www.netseer.com\/crawler.html;> <mailto:crawler@netseer.com|crawler@netseer.com>)'), 1732)\n(('107.22.135.233', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 1448)\n(('67.149.2.185', 'Mozilla\/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko\/20100101 Firefox\/60.0'), 1353)\n(('54.86.66.252', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 1276)\n(('54.209.60.63', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 1229)\n(('54.183.157.236', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 1201)\n(('174.89.134.141', 'Mozilla\/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/11.0 Mobile\/15E148 Safari\/604.1'), 1200)\n(('45.63.9.176', 'python-requests\/2.18.1'), 1145)\n(('184.72.115.35', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 1058)\n(('54.86.30.139', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 1020)\n(('54.85.228.149', 'newspaper\/0.2.5'), 946)\n(('52.71.155.178', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 929)\n(('66.249.92.1', 'Mediapartners-Google'), 896)\n(('72.225.34.133', 'Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/66.0.3359.181 Safari\/537.36'), 869)\n(('45.36.0.111', 'Mozilla\/5.0 (iPad; CPU OS 11_0_2 like Mac OS X) AppleWebKit\/604.1.38 (KHTML, like Gecko) Version\/11.0 Mobile\/15A421 Safari\/604.1'), 861)\n(('148.64.56.72', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 852)\n(('87.123.204.148', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko\/20100101 Firefox\/60.0'), 837)\n(('148.64.56.79', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 833)\n(('148.64.56.68', 'Mozilla\/5.0 (compatible; GrapeshotCrawler\/2.0; +<http:\/\/www.grapeshot.co.uk\/crawler.php>)'), 824)\n\n```",
+        "ts": "1529299797.000011",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

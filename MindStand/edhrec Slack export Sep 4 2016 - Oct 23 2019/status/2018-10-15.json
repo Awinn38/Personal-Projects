@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nMon Oct 15 13:03:41 UTC 2018\n\n```",
+        "ts": "1539608606.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Oct 15 13:03:42 UTC 2018\n\n```",
+        "ts": "1539608607.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539644834.000100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"Articles NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"Articles NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [9241799.0 (15\/10\/18 22:52:00)] was greater than or equal to the threshold (5000000.0).\",\"StateChangeTime\":\"2018-10-15T23:07:13.437+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Dimensions\":[{\"name\":\"InstanceId\",\"value\":\"i-653f72f6\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5000000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-15T23:07:13.485Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"Articles NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"Articles NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [9241799.0 (15\/10\/18 22:52:00)] was greater than or equal to the threshold (5000000.0).\",\"StateChangeTime\":\"2018-10-15T23:07:13.437+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Dimensions\":[{\"name\":\"InstanceId\",\"value\":\"i-653f72f6\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5000000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-15T23:07:13.485Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('54.38.53.216', 36379) - 16\/Oct\/2018:05:30:02\n('37.9.87.143', 4893) - 16\/Oct\/2018:04:35:35\n('40.77.167.28', 3865) - 16\/Oct\/2018:02:09:49\n('157.55.39.209', 3566) - 16\/Oct\/2018:03:44:17\n('157.55.39.187', 3027) - 16\/Oct\/2018:03:59:22\n('157.55.39.240', 2498) - 15\/Oct\/2018:21:53:23\n('100.43.85.112', 2492) - 16\/Oct\/2018:04:23:44\n('94.130.16.50', 2310) - 16\/Oct\/2018:04:20:20\n('88.99.250.15', 1964) - 16\/Oct\/2018:04:58:42\n('77.88.47.10', 1908) - 16\/Oct\/2018:03:43:15\n('77.88.47.5', 1860) - 15\/Oct\/2018:20:26:29\n('157.55.39.223', 1370) - 16\/Oct\/2018:03:11:35\n('207.46.13.168', 1358) - 15\/Oct\/2018:15:12:03\n('37.9.87.178', 1222) - 15\/Oct\/2018:21:50:10\n('66.249.66.53', 1196) - 16\/Oct\/2018:02:23:49\n('66.249.66.56', 1035) - 16\/Oct\/2018:02:46:20\n('46.229.168.151', 932) - 16\/Oct\/2018:05:28:04\n('46.229.168.152', 929) - 16\/Oct\/2018:05:29:19\n('144.76.7.79', 887) - 15\/Oct\/2018:15:03:00\n('5.255.250.34', 880) - 16\/Oct\/2018:01:27:55\n('46.229.168.150', 879) - 16\/Oct\/2018:05:28:25\n('66.249.66.55', 867) - 16\/Oct\/2018:02:34:23\n('37.9.87.208', 839) - 15\/Oct\/2018:20:26:14\n('216.244.66.232', 827) - 16\/Oct\/2018:05:26:47\n('66.249.66.40', 820) - 16\/Oct\/2018:02:44:30\n\n```",
+        "ts": "1539667785.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

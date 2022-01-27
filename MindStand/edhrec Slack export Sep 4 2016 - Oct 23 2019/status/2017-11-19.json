@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Nov 19 12:33:35 UTC 2017\n\n```",
+        "ts": "1511094311.000004",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Nov 20 02:30:01 UTC 2017\n\n```",
+        "ts": "1511144494.000155",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nu\"Jace, Vryn's Prodigy \/\/ Jace, Telepath Unbound\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 502, in &lt;module&gt;\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 424, in make_commanders\n    p.map(_make_commanders_p, cards.get_commanders())\n  File \"\/usr\/lib\/python2.7\/multiprocessing\/pool.py\", line 251, in map\n    return self.map_async(func, iterable, chunksize).get()\n  File \"\/usr\/lib\/python2.7\/multiprocessing\/pool.py\", line 558, in get\n    raise self._value\nKeyError: u\"Jace, Vryn's Prodigy \/\/ Jace, Telepath Unbound\"\n",
+        "ts": "1511150380.000152",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nMon Nov 20 04:08:08 UTC 2017\n\n```",
+        "ts": "1511150381.000126",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'CardView' object has no attribute 'split'\nTraceback (most recent call last):\n  File \"nightly.py\", line 502, in &lt;module&gt;\n    make_commanders()\n  File \"nightly.py\", line 424, in make_commanders\n    p.map(_make_commanders_p, cards.get_commanders())\n  File \"\/usr\/lib\/python2.7\/multiprocessing\/pool.py\", line 251, in map\n    return self.map_async(func, iterable, chunksize).get()\n  File \"\/usr\/lib\/python2.7\/multiprocessing\/pool.py\", line 558, in get\n    raise self._value\nAttributeError: 'CardView' object has no attribute 'split'\n",
+        "ts": "1511155909.000059",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

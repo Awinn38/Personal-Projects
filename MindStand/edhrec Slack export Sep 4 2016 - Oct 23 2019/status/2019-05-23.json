@@ -1,0 +1,320 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 08:11:58,095 INFO backup.py took 0:11:55.563051\n```",
+        "ts": "1558599117.042800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1558599418.042900",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.79432794E8 (23\/05\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-05-23T08:16:57.678+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-05-23T08:16:57.753Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.79432794E8 (23\/05\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-05-23T08:16:57.678+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-05-23T08:16:57.753Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 10:50:06,692 INFO New Trending 2019-05-23\n{\"name\": \"Temple of Malice\", \"s\": [0, 16, 15, 17, 32, 28, 26], \"z\": 1.266566095474949}\n{\"name\": \"Niv-Mizzet, the Firemind\", \"s\": [0, 8, 10, 14, 29, 19, 22], \"z\": 1.2617024956770553}\n{\"name\": \"Arcane Denial\", \"s\": [0, 66, 56, 57, 87, 67, 105], \"z\": 1.2043453599988174}\n{\"name\": \"Sigil of the Empty Throne\", \"s\": [0, 10, 8, 13, 18, 17, 20], \"z\": 1.199864681663709}\n{\"name\": \"Eldrazi Displacer\", \"s\": [0, 9, 7, 10, 14, 17, 17], \"z\": 1.1908699685883142}\n{\"name\": \"Brainstorm\", \"s\": [0, 100, 91, 95, 113, 110, 155], \"z\": 1.1725146916141629}\n{\"name\": \"Dreadbore\", \"s\": [0, 8, 11, 12, 22, 19, 15], \"z\": 1.1695180000481908}\n{\"name\": \"Counterflux\", \"s\": [0, 14, 15, 20, 26, 22, 30], \"z\": 1.165292327083661}\n{\"name\": \"Rune-Scarred Demon\", \"s\": [0, 21, 17, 23, 31, 31, 29], \"z\": 1.1631995239528317}\n{\"name\": \"Indulgent Aristocrat\", \"s\": [0, 2, 5, 5, 10, 9, 9], \"z\": 1.1593497753920037}\n2019-05-23 10:50:06,705 INFO daily.py took 2:50:02.065346\n```",
+        "ts": "1558608606.043000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "fa69b982-92e0-4ed0-8c89-bcec7429650f",
+        "type": "message",
+        "text": "testing oathbreak archidekt scraping... does oathbreaker-dev logging still output here?",
+        "user": "U3MTAQBE1",
+        "ts": "1558615018.043700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U3MTAQBE1",
+            "ts": "1558615494.000000"
+        }
+    },
+    {
+        "client_msg_id": "0303aea7-3d9c-4548-b847-6a9f25ddde0f",
+        "type": "message",
+        "text": "let's find out",
+        "user": "U3MTAQBE1",
+        "ts": "1558615024.043900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 18:00:14,230 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 453, in wrap_socket\n    cnx.do_handshake()\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1716, in do_handshake\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1449, in _raise_ssl_error\n    raise SysCallError(-1, \"Unexpected EOF\")\nOpenSSL.SSL.SysCallError: (-1, 'Unexpected EOF')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 600, in urlopen\n    chunked=chunked)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 343, in _make_request\n    self._validate_conn(conn)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 839, in _validate_conn\n    conn.connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connection.py\", line 344, in connect\n    ssl_context=context)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/ssl_.py\", line 344, in ssl_wrap_socket\n    return context.wrap_socket(sock, server_hostname=server_hostname)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 459, in wrap_socket\n    raise ssl.SSLError('bad handshake: %r' % e)\nssl.SSLError: (\"bad handshake: SysCallError(-1, 'Unexpected EOF')\",)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/adapters.py\", line 449, in send\n    timeout=timeout\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 638, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/retry.py\", line 398, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='<http:\/\/www.youtube.com|www.youtube.com>', port=443): Max retries exceeded with url: \/feeds\/videos.xml?playlist_id=PLxW9gRbafuNzrHbBFUYHwOF0R_wuxEskl (Caused by SSLError(SSLError(\"bad handshake: SysCallError(-1, 'Unexpected EOF')\",),))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 362, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 338, in update\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 275, in get_entries\n    r = requests.get(url)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/adapters.py\", line 514, in send\n    raise SSLError(e, request=request)\nrequests.exceptions.SSLError: HTTPSConnectionPool(host='<http:\/\/www.youtube.com|www.youtube.com>', port=443): Max retries exceeded with url: \/feeds\/videos.xml?playlist_id=PLxW9gRbafuNzrHbBFUYHwOF0R_wuxEskl (Caused by SSLError(SSLError(\"bad handshake: SysCallError(-1, 'Unexpected EOF')\",),))\n```",
+        "ts": "1558634413.044100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:20:18,309 WARNING Chaos Orb from Infernal Spawn of Infernal Spawn of Evil in <https:\/\/archidekt.com\/decks\/84779>\n```",
+        "ts": "1558642817.044200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:23:34,227 WARNING Chaos Orb from Organ Harvest in <https:\/\/archidekt.com\/decks\/71018>\n```",
+        "ts": "1558643012.044300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:25:52,779 INFO archidekt.py took 0:23:58.176658\n```",
+        "ts": "1558643151.044400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:36:19,497 WARNING Chaos Orb from Ranger-Captain of Eos in <https:\/\/deckstats.net\/decks\/35484\/876140-honor-and-glory-bant-midrange\/en>\n```",
+        "ts": "1558643778.044500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:37:02,665 WARNING Chaos Orb from Good-Fortune Unicorn in <https:\/\/deckstats.net\/decks\/35484\/1056196-eternal-roots-abzan-counters\/en>\n```",
+        "ts": "1558643821.044600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:41:55,428 WARNING Chaos Orb from Dregscape Sliver in <https:\/\/deckstats.net\/decks\/70138\/1302281-sliver-hive\/en>\n```",
+        "ts": "1558644114.044700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:47:39,055 WARNING Chaos Orb from Angelic Rocket in <https:\/\/deckstats.net\/decks\/76023\/1299397-zap-tier-kaalia-of-the-scrapya\/en>\n```",
+        "ts": "1558644457.044800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:52:39,727 WARNING Chaos Orb from Scrapyard Recombiner in <https:\/\/deckstats.net\/decks\/23093\/148177-feldon-of-the-third-path-edh\/en>\n```",
+        "ts": "1558644758.044900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 20:53:33,155 INFO deckstats.py took 0:25:40.869113\n```",
+        "ts": "1558644811.045000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 21:43:09,352 INFO mtggoldfish.py took 0:29:19.564378\n```",
+        "ts": "1558647788.045100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-23 22:15:19,888 INFO update_deckswithprices.py took 0:20:13.535996\n```",
+        "ts": "1558649718.045200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-24 03:53:19,014 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    database.get_commander('Ashiok, Nightmare Weaver'_\n                                                     ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1558669997.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-24 03:53:24,769 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'database' has no attribute 'get_oathbreaker'\n```",
+        "ts": "1558670003.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "c0317fc3-4a3e-4fb4-9e86-34b87e84533d",
+        "type": "message",
+        "text": "holy shit",
+        "user": "U28TLDP0R",
+        "ts": "1558670011.000400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "bd4ba592-8754-467f-a678-a767de5bb04a",
+        "type": "message",
+        "text": "wrong box",
+        "user": "U28TLDP0R",
+        "ts": "1558670019.000600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-24 04:14:40,738 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'database' has no attribute '_DATE_TABLEZ'\n```",
+        "ts": "1558671279.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

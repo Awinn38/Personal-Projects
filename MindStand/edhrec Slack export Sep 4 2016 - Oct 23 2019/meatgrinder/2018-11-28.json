@@ -1,0 +1,146 @@
+[
+    {
+        "client_msg_id": "d4de4794-4f56-48e0-82dd-169d67e4b214",
+        "type": "message",
+        "text": "apparently i was running the wordpress updater every 4 min instead of every 15 min",
+        "user": "U28TLDP0R",
+        "ts": "1543440119.142800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543443358.142900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card comment out more brawl shit added to list EDHREC New Features One Day... on board edhrec.",
+                "text": "In list *EDHREC New Features One Day...* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "comment out more brawl shit",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/73ehfVzO",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543446017.143000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card cache cards.py added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "cache cards.py",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/ioFn3Msw",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543477152.143100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on better supervisor logging: \"logging has (mostly) been unified under python's logging module.  if you want something to get logged, just `import logging` and call `<http:\/\/logging.info|logging.info>, .debug, .warning, .eror, etc.)`.  logs are stored in \/var\/log\/edhrec and handled by logrotate (which is setup to store backups in S3).  error logs are uploaded to slack live.  there are currently four logs, since the cherrypy logs follow a different format.\n\ntwo new core modules - logger and watcher.  logger just initializes stuff and is only necessary for application entry points, which currently means api, dynamic and nightly.  watcher is a small script that posts error log updates to slack.\n\nneed to tidy up some of the formatting stuff, since it seems like some log messages don't have the asctime\/level header, and some are being printed twice.  also need to figure out how to handle batch\/ scripts with logging.\"",
+                "text": "logging has (mostly) been unified under python's logging module.  if you want something to get logged, just `import logging` and call `<http:\/\/logging.info|logging.info>, .debug, .warning, .eror, etc.)`.  logs are stored in \/var\/log\/edhrec and handled by logrotate (which is setup to store backups in S3).  error logs are uploaded to slack live.  there are currently four logs, since the cherrypy logs follow a different format.\n\ntwo new core modules - logger and watcher.  logger just initializes stuff and is only necessary for application entry points, which currently means api, dynamic and nightly.  watcher is a small script that posts error log updates to slack.\n\nneed to tidy up some of the formatting stuff, since it seems like some log messages don't have the asctime\/level header, and some are being printed twice.  also need to figure out how to handle batch\/ scripts with logging.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/UO2sdfwF|better supervisor logging>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543477195.143200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on lock down nginx CORs: \"no longer necessary\"",
+                "text": "no longer necessary",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/P7uV70IV|lock down nginx CORs>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543477196.143300",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts Archived the card lock down nginx CORs.",
+                "text": "Archived the card *<https:\/\/trello.com\/c\/P7uV70IV|lock down nginx CORs>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,290 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'tiny_container.html'\nTraceback (most recent call last):\n  File \"nightly.py\", line 716, in tiny\n    make_404()\n  File \"nightly.py\", line 36, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 238, in make_page\n    f.write(templates.get(container_html).safe_substitute(repls))\n  File \"\/home\/ubuntu\/edhrec\/web\/templates.py\", line 19, in get\n    return _TEMPLATES[name + '.html']\nKeyError: 'tiny_container.html'\n",
+        "ts": "1522549971.000069",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n_make_commanders_p() got an unexpected keyword argument 'tiny'\nTraceback (most recent call last):\n  File \"nightly.py\", line 719, in tiny\n    make_tiny_commanders()\n  File \"nightly.py\", line 575, in make_tiny_commanders\n    _make_commanders_p(commander, tiny=True)\nTypeError: _make_commanders_p() got an unexpected keyword argument 'tiny'\n",
+        "ts": "1522550020.000012",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html']' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"nightly.py\", line 724, in tiny\n    make_tiny_commanders()\n  File \"nightly.py\", line 580, in make_tiny_commanders\n    _make_commanders_p(commander, tiny=True)\n  File \"nightly.py\", line 562, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny)\n  File \"nightly.py\", line 410, in make_commander\n    tribelinks=tribelinks)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 240, in make_page\n    subprocess.check_call(['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', filename, '-o', filename])\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html']' returned non-zero exit status 1\n",
+        "ts": "1522550549.000050",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html']' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"nightly.py\", line 724, in tiny\n    make_tiny_commanders()\n  File \"nightly.py\", line 580, in make_tiny_commanders\n    _make_commanders_p(commander, tiny=True)\n  File \"nightly.py\", line 562, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny)\n  File \"nightly.py\", line 410, in make_commander\n    tribelinks=tribelinks)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 240, in make_page\n    subprocess.check_call(['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', filename, '-o', filename])\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html_tiny\/commanders\/pang-tong-young-phoenix.html']' returned non-zero exit status 1\n",
+        "ts": "1522550884.000061",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmake_sets() got an unexpected keyword argument 'tiny'\nTraceback (most recent call last):\n  File \"nightly.py\", line 729, in tiny\n    make_sets(tiny=True)\nTypeError: make_sets() got an unexpected keyword argument 'tiny'\n",
+        "ts": "1522552369.000066",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"nightly.py\", line 731, in tiny\n    make_sets()\n  File \"nightly.py\", line 206, in make_sets\n    cards.get(setcmdrs[0].name)['cmc']\nIndexError: list index out of range\n",
+        "ts": "1522552673.000043",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nname 'setmdrs' is not defined\nTraceback (most recent call last):\n  File \"nightly.py\", line 733, in tiny\n    make_sets(tiny=True)\n  File \"nightly.py\", line 208, in make_sets\n    setcmdrs = [ c for c in setmdrs if 'cmc' in cards.get(c.name) and cards.get(c.name)['cmc'] &lt;= 3 ]\nNameError: name 'setmdrs' is not defined\n",
+        "ts": "1522552823.000045",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/sets\/ptk.html', '-o', '\/usr\/share\/nginx\/html_tiny\/sets\/ptk.html']' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"nightly.py\", line 733, in tiny\n    make_sets(tiny=True)\n  File \"nightly.py\", line 250, in make_sets\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 240, in make_page\n    subprocess.check_call(['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', filename, '-o', filename])\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/sets\/ptk.html', '-o', '\/usr\/share\/nginx\/html_tiny\/sets\/ptk.html']' returned non-zero exit status 1\n",
+        "ts": "1522553068.000027",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/sets\/ptk.html', '-o', '\/usr\/share\/nginx\/html_tiny\/sets\/ptk.html']' returned non-zero exit status 1",
+        "ts": "1522553724.000001",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmake_top_index() got an unexpected keyword argument 'tiny'\nTraceback (most recent call last):\n  File \"nightly.py\", line 735, in tiny\n    make_top_index(tiny=True)\nTypeError: make_top_index() got an unexpected keyword argument 'tiny'\n",
+        "ts": "1522553783.000070",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/cards\/rumors-of-my-death---.html', '-o', '\/usr\/share\/nginx\/html_tiny\/cards\/rumors-of-my-death---.html']' returned non-zero exit status 1",
+        "ts": "1522554929.000007",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Apr  1 04:06:16 UTC 2018\n\n```",
+        "ts": "1522555520.000018",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'<http:\/\/www.mtggoldfish.com\/deck\/1004768>'\nTraceback (most recent call last):\n  File \"nightly.py\", line 700, in brawl\n    make_brawl_commanders()\n  File \"nightly.py\", line 580, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \"nightly.py\", line 565, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"nightly.py\", line 525, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\nKeyError: '<http:\/\/www.mtggoldfish.com\/deck\/1004768>'\n",
+        "ts": "1522555587.000058",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'<https:\/\/deckstats.net\/decks\/104744\/948629-nissa-soe-brawl\/en>'\nTraceback (most recent call last):\n  File \"nightly.py\", line 700, in brawl\n    make_brawl_commanders()\n  File \"nightly.py\", line 580, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \"nightly.py\", line 565, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"nightly.py\", line 525, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\nKeyError: '<https:\/\/deckstats.net\/decks\/104744\/948629-nissa-soe-brawl\/en>'\n",
+        "ts": "1522555601.000066",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/cards\/kongming-sleeping-dragon.html', '-o', '\/usr\/share\/nginx\/html_tiny\/cards\/kongming-sleeping-dragon.html']' returned non-zero exit status 1",
+        "ts": "1522555640.000054",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ndeck not found\nTraceback (most recent call last):\n  File \"nightly.py\", line 700, in brawl\n    make_brawl_commanders()\n  File \"nightly.py\", line 580, in make_brawl_commanders\n    _make_commanders_p(commander, brawl=True)\n  File \"nightly.py\", line 565, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"nightly.py\", line 525, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"nightly.py\", line 439, in make_deck\n    info = database.get_deck(url)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 535, in get_deck\n    raise ValueError('deck not found')\nValueError: deck not found\n",
+        "ts": "1522555652.000043",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Apr  1 04:14:07 UTC 2018\n\n```",
+        "ts": "1522555991.000031",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html_tiny\/cards\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html_tiny\/cards\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1522557386.000001",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmake_commander() got an unexpected keyword argument 'outof'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 573, in _make_commanders_p\n    make_commander(cmdr, bytribe=True, tribe=tribe, outof=outof)\nTypeError: make_commander() got an unexpected keyword argument 'outof'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 663, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 593, in make_commanders\n    p.map(_make_commanders_p, list(cards.get_commanders())[::-1])\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nTypeError: make_commander() got an unexpected keyword argument 'outof'\n",
+        "ts": "1522559091.000029",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Apr  1 05:05:49 UTC 2018\n\n```",
+        "ts": "1522559092.000029",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Apr  1 05:11:10 UTC 2018\n\n```",
+        "ts": "1522559413.000092",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/commanders\/pang-tong-young-phoenix.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/commanders\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html\/commanders\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1522565004.000047",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/decks\/pang-tong-young-phoenix.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/decks\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html\/decks\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1522565005.000034",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/listofdecks\/pang-tong-young-phoenix.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/listofdecks\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html\/listofdecks\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1522565006.000003",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

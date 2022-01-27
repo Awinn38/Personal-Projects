@@ -1,0 +1,222 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 08:10:28,179 INFO New Trending 2019-06-06\n{\"name\": \"Vivien, Champion of the Wilds\", \"s\": [0, 13, 11, 13, 23, 30, 24], \"z\": 1.2847477558235554}\n{\"name\": \"Bayou\", \"s\": [0, 14, 18, 20, 32, 31, 29], \"z\": 1.2845235155155763}\n{\"name\": \"Aetherize\", \"s\": [0, 15, 11, 17, 34, 36, 21], \"z\": 1.2587786829162855}\n{\"name\": \"Whispersilk Cloak\", \"s\": [0, 36, 33, 32, 54, 56, 46], \"z\": 1.2478239407143379}\n{\"name\": \"Archfiend of Despair\", \"s\": [0, 3, 5, 8, 12, 18, 13], \"z\": 1.2165686560895457}\n{\"name\": \"Sower of Discord\", \"s\": [0, 3, 3, 6, 9, 11, 12], \"z\": 1.2083846862714975}\n{\"name\": \"Warped Landscape\", \"s\": [0, 13, 12, 11, 21, 25, 20], \"z\": 1.2072709643719712}\n{\"name\": \"Savannah\", \"s\": [0, 14, 15, 18, 33, 29, 21], \"z\": 1.2070314936637119}\n{\"name\": \"Heroic Intervention\", \"s\": [0, 37, 45, 51, 67, 85, 50], \"z\": 1.206704964878903}\n{\"name\": \"Search for Azcanta\", \"s\": [0, 20, 12, 19, 25, 33, 28], \"z\": 1.1982605099782049}\n2019-06-06 08:10:28,194 INFO daily.py took 0:10:23.135001\n```",
+        "ts": "1559808605.011100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 08:12:50,766 INFO backup.py took 0:12:48.663163\n```",
+        "ts": "1559808748.011200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559809018.011300",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [9.237116306E8 (06\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-06T08:16:57.709+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-06T08:16:57.783Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [9.237116306E8 (06\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-06T08:16:57.709+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-06T08:16:57.783Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:36:27,720 ERROR hanweir watchkeep missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR grizzled outcasts missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR aberrant researcher missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR civilized scholar missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR autumnal gloom missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR kindly stranger missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR cloistered youth missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-06-06 18:36:27,722 ERROR daring sleuth missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR tormented pariah missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR uninvited geist missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR grizzled angler missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR chosen of markov missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR skin invasion missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR hinterland hermit missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR elusive tormentor missing from cardkingdom prices json\n2019-06-06 18:36:27,723 ERROR villagers of estwald missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR vildin-pack outcast missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR thraben sentry missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR screeching bat missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR extricator of sin missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR hinterland logger missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR soul seizer missing from cardkingdom prices json\n2019-06-06 18:36:27,724 ERROR convicted killer missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR accursed witch missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR solitary hunter missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR ravenous demon missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR lambholt elder missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR ulvenwald mystics missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR gatstaf arsonists missing from cardkingdom prices json\n2019-06-06 18:36:27,725 ERROR gatstaf shepherd missing from cardkingdom prices json\n```",
+        "ts": "1559846164.011400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:44:27,000 INFO cards.py took 0:08:26.896743\n```",
+        "ts": "1559846643.011500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:52:26,791 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 648, in make_commander\n    tribelinks=data['tribelinks']\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 185, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 259, in make_panels\n    outpanels['links'] = make_card_urls(cardview, url, tribelinks)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 157, in make_card_urls\n    blank_urls.append({'external': True, 'href': cardview['archidekt_uri'], 'value': 'Archidekt'})\nKeyError: 'archidekt_uri'\n```",
+        "ts": "1559847123.011600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 19:02:09,308 ERROR hanweir watchkeep missing from cardkingdom prices json\n2019-06-06 19:02:09,308 ERROR chosen of markov missing from cardkingdom prices json\n2019-06-06 19:02:09,308 ERROR lambholt elder missing from cardkingdom prices json\n2019-06-06 19:02:09,308 ERROR grizzled angler missing from cardkingdom prices json\n2019-06-06 19:02:09,308 ERROR hinterland hermit missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR ulvenwald mystics missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR solitary hunter missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR daring sleuth missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR hinterland logger missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-06-06 19:02:09,309 ERROR screeching bat missing from cardkingdom prices json\n2019-06-06 19:02:09,310 ERROR gatstaf shepherd missing from cardkingdom prices json\n2019-06-06 19:02:09,310 ERROR extricator of sin missing from cardkingdom prices json\n2019-06-06 19:02:09,310 ERROR convicted killer missing from cardkingdom prices json\n2019-06-06 19:02:09,310 ERROR skin invasion missing from cardkingdom prices json\n2019-06-06 19:02:09,310 ERROR soul seizer missing from cardkingdom prices json\n2019-06-06 19:02:09,310 ERROR elusive tormentor missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR tormented pariah missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR cloistered youth missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR gatstaf arsonists missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR villagers of estwald missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR aberrant researcher missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR thraben sentry missing from cardkingdom prices json\n2019-06-06 19:02:09,311 ERROR vildin-pack outcast missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR accursed witch missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR ravenous demon missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR grizzled outcasts missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR autumnal gloom missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR uninvited geist missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR civilized scholar missing from cardkingdom prices json\n2019-06-06 19:02:09,312 ERROR kindly stranger missing from cardkingdom prices json\n```",
+        "ts": "1559847705.011700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 19:05:41,179 INFO cards.py took 0:03:13.017772\n```",
+        "ts": "1559847917.011800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:26:58,904 INFO archidekt.py took 0:23:02.400791\n```",
+        "ts": "1559852795.011900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:36:19,546 WARNING Chaos Orb from Crow Storm in <https:\/\/deckstats.net\/decks\/105123\/1212946-mizzix-of-the-storm\/en>\n```",
+        "ts": "1559853356.012000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:54:55,563 INFO deckstats.py took 0:25:57.242999\n```",
+        "ts": "1559854472.012100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:22:35,027 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1978074>\n```",
+        "ts": "1559856131.012200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:24:42,275 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1974095>\n```",
+        "ts": "1559856258.012300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:44:12,183 INFO mtggoldfish.py took 0:29:00.728933\n```",
+        "ts": "1559857428.012400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:20:33,659 INFO update_deckswithprices.py took 0:23:49.968505\nNew deck count from past 2 days: \n- MTGGoldfish: 399\n- Other: 0\n- deckstats: 447\n- Archidekt: 528\n```",
+        "ts": "1559859610.012500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559884618.012600",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [1.1305717438E9 (07\/06\/19 05:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-07T05:16:57.739+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-07T05:16:57.802Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [1.1305717438E9 (07\/06\/19 05:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-07T05:16:57.739+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-07T05:16:57.802Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    }
+]

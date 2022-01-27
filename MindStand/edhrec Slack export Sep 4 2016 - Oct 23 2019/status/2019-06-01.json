@@ -1,0 +1,628 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 08:10:30,001 INFO New Trending 2019-06-01\n{\"name\": \"Titan's Strength\", \"s\": [0, 7, 6, 10, 16, 16, 15], \"z\": 1.2423009136532943}\n{\"name\": \"Crosis's Charm\", \"s\": [0, 4, 6, 7, 14, 13, 13], \"z\": 1.2405192661991942}\n{\"name\": \"Bident of Thassa\", \"s\": [0, 22, 24, 32, 41, 41, 37], \"z\": 1.2211445530405447}\n{\"name\": \"Otherworldly Journey\", \"s\": [0, 4, 2, 5, 11, 11, 9], \"z\": 1.2051468743092657}\n{\"name\": \"Yeva, Nature's Herald\", \"s\": [0, 14, 12, 11, 21, 23, 22], \"z\": 1.2050422761072723}\n{\"name\": \"Zada, Hedron Grinder\", \"s\": [0, 9, 7, 16, 20, 23, 17], \"z\": 1.1954015676754097}\n{\"name\": \"Ornithopter\", \"s\": [0, 7, 8, 14, 14, 24, 22], \"z\": 1.1922161416086974}\n{\"name\": \"Gods Willing\", \"s\": [0, 11, 11, 15, 21, 20, 19], \"z\": 1.1711465353987398}\n{\"name\": \"Guttersnipe\", \"s\": [0, 26, 25, 29, 38, 39, 38], \"z\": 1.1686687779617029}\n{\"name\": \"Shelter\", \"s\": [0, 8, 9, 14, 17, 18, 17], \"z\": 1.159551651041372}\n2019-06-01 08:10:30,015 INFO daily.py took 0:10:24.990760\n```",
+        "ts": "1559376615.008900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 08:13:29,514 INFO backup.py took 0:13:26.947206\n```",
+        "ts": "1559376795.009000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559377018.009100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.879650908E8 (01\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-01T08:16:57.686+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-01T08:16:57.752Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.879650908E8 (01\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-01T08:16:57.686+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-01T08:16:57.752Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 16:48:04,417 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559407669.009200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 17:00:05,032 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559408390.009300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 17:12:04,119 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559409109.009400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 17:24:03,727 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559409828.009500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 17:36:04,633 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559410549.009600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 17:48:03,395 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559411268.009700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 18:00:04,485 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559411989.009800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 18:12:04,259 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559412709.009900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 18:24:04,587 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559413429.010000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 18:36:04,215 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559414149.010100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 18:48:04,073 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559414869.010200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:00:04,888 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559415589.010300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:12:04,715 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559416309.010400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:24:04,770 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559417029.010500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:36:04,852 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559417749.010600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:48:04,119 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559418468.010700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:56:19,539 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559418964.010800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 19:58:49,815 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/youtubemonitor.py\", line 359, in &lt;module&gt;\n    update()\n  File \".\/youtubemonitor.py\", line 343, in update\n    resp.raise_for_status()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 940, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559419114.010900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:00:04,466 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 361, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 345, in update\n    resp.raise_for_status()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 940, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559419189.011000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:12:03,844 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559419908.011100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:23:47,568 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559420612.011200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:24:03,763 ERROR 500 Server Error: Internal Server Error for url: <https:\/\/articles.edhrec.com\/wp-json\/wp\/v2\/posts>\n```",
+        "ts": "1559420628.011300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:25:23,723 INFO archidekt.py took 0:23:26.028931\n```",
+        "ts": "1559420708.011400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:29:19,446 WARNING Chaos Orb from Box of Free-Range Goblins in <https:\/\/deckstats.net\/decks\/38159\/1312348--17-london-bridge-jund-silver-\/en>\n```",
+        "ts": "1559420944.011500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:37:17,442 WARNING Chaos Orb from Return from Extinction in <https:\/\/deckstats.net\/decks\/92277\/1311932-descent-into-goblintown\/en>\n```",
+        "ts": "1559421422.011600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:40:51,839 WARNING Chaos Orb from Kindslaver in <https:\/\/deckstats.net\/decks\/114325\/1297861-fblthp-lost-and-found\/en>\n```",
+        "ts": "1559421636.011700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:45:35,845 WARNING Chaos Orb from smoke shroud in <https:\/\/deckstats.net\/decks\/101828\/1270428-way-of-the-ninja\/en>\n```",
+        "ts": "1559421920.011800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:46:42,161 WARNING Chaos Orb from Mise in <https:\/\/deckstats.net\/decks\/27687\/559192-izzet-sorcery-instant-edh\/en>\n```",
+        "ts": "1559421986.011900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:51:38,742 WARNING Chaos Orb from Birthing Boughs in <https:\/\/deckstats.net\/decks\/105890\/1302688-ayula\/en>\n```",
+        "ts": "1559422283.012000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 20:53:10,730 INFO deckstats.py took 0:25:47.834998\n```",
+        "ts": "1559422375.012100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 21:35:00,062 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1963710>\n```",
+        "ts": "1559424884.012200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 21:42:41,096 INFO mtggoldfish.py took 0:29:13.307616\n```",
+        "ts": "1559425345.012300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-01 22:15:56,149 INFO update_deckswithprices.py took 0:20:54.410833\n```",
+        "ts": "1559427340.012400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:00:30,923 ERROR grizzled angler missing from cardkingdom prices json\n2019-06-02 00:00:30,923 ERROR daring sleuth missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR chosen of markov missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR hinterland hermit missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR ulvenwald mystics missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR thraben sentry missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR tangleclaw werewolf missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-06-02 00:00:30,924 ERROR elusive tormentor missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR grizzled outcasts missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR aberrant researcher missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR accursed witch missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR autumnal gloom missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR solitary hunter missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR soul seizer missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR convicted killer missing from cardkingdom prices json\n2019-06-02 00:00:30,925 ERROR screeching bat missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR uninvited geist missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR civilized scholar missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR villagers of estwald missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR kindly stranger missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR shrill howler missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR cloistered youth missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR ravenous demon missing from cardkingdom prices json\n2019-06-02 00:00:30,926 ERROR extricator of sin missing from cardkingdom prices json\n2019-06-02 00:00:30,927 ERROR skin invasion missing from cardkingdom prices json\n2019-06-02 00:00:30,927 ERROR gatstaf shepherd missing from cardkingdom prices json\n```",
+        "ts": "1559433615.012500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:08:36,844 INFO cards.py took 0:08:31.843173\n```",
+        "ts": "1559434101.012600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:17:21,897 WARNING Chaos Orb from Better Than One in <https:\/\/archidekt.com\/decks\/91466>\n```",
+        "ts": "1559434626.012700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:34:18,553 INFO archidekt.py took 0:23:42.892200\n```",
+        "ts": "1559435643.012800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:36:36,464 WARNING Chaos Orb from Urza, Academy Headmaster in <https:\/\/deckstats.net\/decks\/123760\/1312592-make-it-work\/en>\n```",
+        "ts": "1559435781.012900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:42:06,284 WARNING Chaos Orb from Box of Free-Range Goblins in <https:\/\/deckstats.net\/decks\/38159\/1312348--17-london-bridge-jund-silver-\/en>\n```",
+        "ts": "1559436110.013000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:53:18,973 WARNING Chaos Orb from Kindslaver in <https:\/\/deckstats.net\/decks\/114325\/1297861-fblthp-lost-and-found\/en>\n```",
+        "ts": "1559436783.013100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 00:58:56,647 WARNING Chaos Orb from Mise in <https:\/\/deckstats.net\/decks\/27687\/559192-izzet-sorcery-instant-edh\/en>\n```",
+        "ts": "1559437121.013200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 01:01:46,198 INFO deckstats.py took 0:25:29.194999\n```",
+        "ts": "1559437290.013300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 01:47:30,425 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1963710>\n```",
+        "ts": "1559440034.013400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 01:51:44,924 INFO mtggoldfish.py took 0:29:35.564225\n```",
+        "ts": "1559440289.013500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 02:25:07,650 INFO update_deckswithprices.py took 0:21:00.470060\n```",
+        "ts": "1559442292.013600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1559442296.013700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1559452441.013800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 05:14:17,770 INFO nightly.py took 2:49:05.568785\n```",
+        "ts": "1559452442.013900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

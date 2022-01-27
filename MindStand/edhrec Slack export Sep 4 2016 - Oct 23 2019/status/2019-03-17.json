@@ -1,0 +1,199 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1552810378.086400",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [4.160760478E8 (17\/03\/19 08:02:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-03-17T08:12:57.741+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-17T08:12:57.759Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [4.160760478E8 (17\/03\/19 08:02:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-03-17T08:12:57.741+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-17T08:12:57.759Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-17 08:56:21,396 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 286, in update_all\n    _update_tagnames()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 169, in _update_tagnames\n    [cache.set('wp\/by-tag\/cards\/{}'.format(name_to_tag(n)), n) for n in cards.get_all()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 169, in &lt;listcomp&gt;\n    [cache.set('wp\/by-tag\/cards\/{}'.format(name_to_tag(n)), n) for n in cards.get_all()]\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 86, in set\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not fork new process for connection: Cannot allocate memory\n\ncould not fork new process for connection: Cannot allocate memory\n\n2019-03-17 08:56:21,396 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 89, in set\n    (key, value, expires)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.IntegrityError: duplicate key value violates unique constraint \"cache_key_key\"\nDETAIL:  Key (key)=(wp\/by-id\/tags\/2925) already exists.\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 283, in update_all\n    _get_multipage('tags')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 63, in _get_multipage\n    cache.set('wp\/by-id\/{}\/{}'.format(endpoint, item['id']), item)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 93, in set\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not fork new process for connection: Cannot allocate memory\n\ncould not fork new process for connection: Cannot allocate memory\n\n```",
+        "ts": "1552812771.086500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "43995631-AEF8-43C0-AD49-9A0525EAE74F",
+        "type": "message",
+        "text": "<@U28TLDP0R> ^ not being able to fork is bad for a lot of reasons",
+        "user": "U286Q175Y",
+        "ts": "1552865700.087000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "83AB8ED7-53DE-46AD-87A3-D74A354A010F",
+        "type": "message",
+        "text": "Lol",
+        "user": "U286Q175Y",
+        "ts": "1552865703.087100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "B939A9BA-A964-45EC-8468-2CA43C65AFD1",
+        "type": "message",
+        "text": ":fire: we need to get the dumpster fire emoji in here",
+        "user": "U286Q175Y",
+        "ts": "1552865716.087500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "F440B4D4-8ACA-4B36-A85B-82204D37F92D",
+        "type": "message",
+        "text": "Ah that was at 5am not 5pm.",
+        "user": "U286Q175Y",
+        "ts": "1552865735.087900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "738bf49e-eb57-4be3-b41d-ad389f6bc5c3",
+        "type": "message",
+        "text": "probably ran oom while running updaters",
+        "user": "U28TLDP0R",
+        "ts": "1552865847.088400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "814f8a13-75d4-4e92-9208-db3d494d790d",
+        "type": "message",
+        "text": "fortunately the one that died was wordpress which runs frequently anyway",
+        "user": "U28TLDP0R",
+        "ts": "1552865858.088700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "00201dec-ba40-4887-a9a6-fe2f28668949",
+        "type": "message",
+        "text": "memory utilization is dangerously high now but... we'll see",
+        "user": "U28TLDP0R",
+        "ts": "1552866401.089400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-18 05:33:28,091 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'web' has no attribute 'getcommanders'\n```",
+        "ts": "1552886992.089500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

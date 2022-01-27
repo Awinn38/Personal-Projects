@@ -1,0 +1,580 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1565596020.000400",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"DiskSpaceUtilization\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"DiskSpaceUtilization\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [76.2768143069824 (12\/08\/19 07:41:00)] was greater than or equal to the threshold (75.0).\",\"StateChangeTime\":\"2019-08-12T07:46:59.346+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"DiskSpaceUtilization\",\"Namespace\":\"System\/Linux\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"\/\",\"name\":\"MountPath\"},{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"},{\"value\":\"\/dev\/xvda1\",\"name\":\"Filesystem\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":75.0,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-08-12T07:46:59.414Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"DiskSpaceUtilization\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"DiskSpaceUtilization\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [76.2768143069824 (12\/08\/19 07:41:00)] was greater than or equal to the threshold (75.0).\",\"StateChangeTime\":\"2019-08-12T07:46:59.346+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"DiskSpaceUtilization\",\"Namespace\":\"System\/Linux\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"\/\",\"name\":\"MountPath\"},{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"},{\"value\":\"\/dev\/xvda1\",\"name\":\"Filesystem\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":75.0,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-08-12T07:46:59.414Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 08:00:04,342 INFO New Trending 2019-08-12\n\n2019-08-12 08:00:04,354 INFO daily.py took 0:00:00.469459\n```",
+        "ts": "1565596779.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 08:08:50,937 INFO cards.py took 0:08:45.885557\n```",
+        "ts": "1565597321.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 08:12:59,785 INFO New Trending 2019-08-12\n{\"name\": \"Mimic Vat\", \"s\": [0, 17, 18, 25, 41, 47, 43], \"z\": 1.1677797717399723}\n{\"name\": \"Sundering Growth\", \"s\": [0, 4, 7, 17, 27, 30, 37], \"z\": 1.1613085288269458}\n{\"name\": \"Ghired's Belligerence\", \"s\": [0, 0, 1, 8, 17, 19, 21], \"z\": 1.1556893157862982}\n{\"name\": \"Growing Ranks\", \"s\": [0, 4, 5, 17, 28, 25, 31], \"z\": 1.1525868428474164}\n{\"name\": \"Rootborn Defenses\", \"s\": [0, 8, 9, 21, 29, 34, 39], \"z\": 1.1486919329086516}\n{\"name\": \"Sulfurous Springs\", \"s\": [0, 15, 18, 18, 34, 36, 38], \"z\": 1.1459560608350394}\n{\"name\": \"Angel of Sanctions\", \"s\": [0, 5, 1, 6, 18, 16, 16], \"z\": 1.1455414859758648}\n{\"name\": \"Trostani, Selesnya's Voice\", \"s\": [0, 4, 3, 14, 22, 29, 23], \"z\": 1.1434388106582623}\n{\"name\": \"Feldon of the Third Path\", \"s\": [0, 11, 12, 15, 25, 38, 32], \"z\": 1.1308674703701749}\n{\"name\": \"Vitu-Ghazi Guildmage\", \"s\": [0, 3, 1, 8, 14, 15, 17], \"z\": 1.128581517976018}\n2019-08-12 08:12:59,802 INFO daily.py took 0:12:54.931032\n```",
+        "ts": "1565597570.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 08:13:29,907 INFO backup.py took 0:13:27.793948\n```",
+        "ts": "1565597600.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 08:37:08,453 INFO archidekt.py took 0:22:31.547640\n```",
+        "ts": "1565599019.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 09:04:53,573 INFO deckstats.py took 0:25:44.356147\n```",
+        "ts": "1565600684.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 09:53:29,761 INFO mtggoldfish.py took 0:28:20.945841\n```",
+        "ts": "1565603600.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 10:36:46,559 INFO update_deckswithprices.py took 0:28:12.186910\nNew deck count from past 2 days: \n- Other: 0\n- deckstats: 395\n- MTGGoldfish: 413\n- Archidekt: 598\n```",
+        "ts": "1565606197.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 10:46:19,041 INFO cache_get_cards took 0:09:28.614854\n```",
+        "ts": "1565606769.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1565606772.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1565619119.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 14:12:10,428 INFO nightly.py took 3:25:47.425442\n```",
+        "ts": "1565619120.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\ntest\n\n```",
+        "ts": "1565630592.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n\n```",
+        "ts": "1565631431.000400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n\n```",
+        "ts": "1565634426.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n\n```",
+        "ts": "1565634496.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 0.861s\n\nOK\n\n```",
+        "ts": "1565634582.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 20:03:34,351 INFO cards.py took 0:03:28.984292\n```",
+        "ts": "1565640204.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1565640212.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n\/home\/ubuntu\/edhrec\/batch\/testing.py: 1: \/home\/ubuntu\/edhrec\/batch\/testing.py: import: not found\n\/home\/ubuntu\/edhrec\/batch\/testing.py: 2: \/home\/ubuntu\/edhrec\/batch\/testing.py: import: not found\n\/home\/ubuntu\/edhrec\/batch\/testing.py: 3: \/home\/ubuntu\/edhrec\/batch\/testing.py: import: not found\n\/home\/ubuntu\/edhrec\/batch\/testing.py: 5: \/home\/ubuntu\/edhrec\/batch\/testing.py: Syntax error: \"(\" unexpected\n\n```",
+        "ts": "1565640291.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.834s\n\nOK\n\n```",
+        "ts": "1565640384.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 20:29:24,143 INFO archidekt.py took 0:25:24.809195\n```",
+        "ts": "1565641753.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 20:57:14,509 INFO deckstats.py took 0:25:49.584321\n```",
+        "ts": "1565643424.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 21:47:08,728 INFO mtggoldfish.py took 0:29:36.642397\n```",
+        "ts": "1565646418.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.405s\n\nOK\n\n```",
+        "ts": "1565647492.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 22:33:40,332 INFO update_deckswithprices.py took 0:30:26.273526\nNew deck count from past 2 days: \n- deckstats: 512\n- Other: 0\n- Archidekt: 786\n- MTGGoldfish: 553\n```",
+        "ts": "1565649210.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1565653113.001900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 23:38:44,252 INFO nightly.py took 3:35:01.314643\n```",
+        "ts": "1565653113.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 23:54:16,802 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"&lt;stdin&gt;\", line 1, in &lt;lambda&gt;\nKeyError: 'edhrec_rank'\n```",
+        "ts": "1565654046.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 23:54:24,164 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: 'dict_values' object does not support indexing\n```",
+        "ts": "1565654053.002200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-12 23:59:43,190 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    for m in missing\n                   ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1565654373.002300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 00:00:54,972 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 3\n    print m\n          ^\nSyntaxError: Missing parentheses in call to 'print'\n```",
+        "ts": "1565654444.002400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 00:01:01,918 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 3, in &lt;module&gt;\nNameError: name 'prin' is not defined\n```",
+        "ts": "1565654451.002500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 00:01:21,037 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 2\n    if not len(list(database.get_card(m))):\n                                          ^\nIndentationError: expected an indented block\n```",
+        "ts": "1565654470.002600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 33.885s\n\nOK\n\n```",
+        "ts": "1565654724.002700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 00:09:11,588 INFO cards.py took 0:09:06.583165\n```",
+        "ts": "1565654941.002800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 00:38:12,831 INFO archidekt.py took 0:26:43.173232\n```",
+        "ts": "1565656682.002900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 01:05:46,654 INFO deckstats.py took 0:25:33.909465\n```",
+        "ts": "1565658336.003000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 01:55:14,421 INFO mtggoldfish.py took 0:29:07.212590\n```",
+        "ts": "1565661303.003100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.416s\n\nOK\n\n```",
+        "ts": "1565661891.003200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 02:38:53,857 INFO update_deckswithprices.py took 0:28:27.393188\nNew deck count from past 2 days: \n- Other: 0\n- deckstats: 307\n- Archidekt: 582\n- MTGGoldfish: 371\n```",
+        "ts": "1565663923.003300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1565663928.003400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n..............................\n----------------------------------------------------------------------\nRan 30 tests in 12.624s\n\nOK\n\n```",
+        "ts": "1565669102.003500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1565675892.003600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-08-13 05:58:24,023 INFO nightly.py took 3:19:24.997958\n```",
+        "ts": "1565675894.003700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 17, in test_Atarka\n    self.assertNotEqual(-1, middle.find('highsynergycards'.encode()))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 24.289s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1565676315.003800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

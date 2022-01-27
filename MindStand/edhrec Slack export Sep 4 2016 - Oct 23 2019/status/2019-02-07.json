@@ -1,0 +1,312 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1549527070.031400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1549562607.031500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 20:20:14,943 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 3, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 198\n    elif 'decks\/' in name:\n       ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549570718.031600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 20:20:35,826 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 5, in &lt;module&gt;\n    nightly.make_404()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 95, in make_404\n    make_page('404', '', template_name='404.html')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 174, in make_page\n    first6cards = [card.name.replace(',', '') for card in cardlists[0][:6]]\nTypeError: 'NoneType' object is not subscriptable\n```",
+        "ts": "1549570740.031700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 20:26:04,299 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 7, in &lt;module&gt;\n    nightly._make_commanders_p('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_commander(cmdr)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 574, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 203, in make_page\n    description = 'EDH \/ Commander Decklist: ' + ', '.join(first6cards)\nUnboundLocalError: local variable 'first6cards' referenced before assignment\n```",
+        "ts": "1549571068.031800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 20:36:29,565 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'decklist' is not defined\n```",
+        "ts": "1549571693.031900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 21:02:40,900 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 175, in make_page\n    first6cards = [card.name.replace(',', '') for card in cardlists[0][:6]]\nTypeError: 'NoneType' object is not subscriptable\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \".\/test.py\", line 5, in &lt;module&gt;\n    nightly.make_404()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 95, in make_404\n    make_page('404', '', template_name='404.html')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 178, in make_page\n    first6cards = [card.name.replace(',', '') for card in decklist[1:7]]\nUnboundLocalError: local variable 'decklist' referenced before assignment\n```",
+        "ts": "1549573264.032000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 21:08:20,161 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 7, in &lt;module&gt;\n    nightly._make_commanders_p('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_commander(cmdr)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 574, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 206, in make_page\n    description = 'EDH \/ Commander Decklist: ' + ', '.join(first6cards)\nUnboundLocalError: local variable 'first6cards' referenced before assignment\n```",
+        "ts": "1549573604.032100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549573979.032200",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [91.9854166666822 (07\/02\/19 20:57:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-07T21:12:58.505+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-07T21:12:58.539Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [91.9854166666822 (07\/02\/19 20:57:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-07T21:12:58.505+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-07T21:12:58.539Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 21:48:12,870 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 375\n    for cardname in [c for c in card['names'] if c !== card['name']]:\n                                                     ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549575996.032300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 21:48:34,389 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 461, in make_card\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 403, in make_panels\n    for cardname in [c for c in card['names'] if c != card['name']]:\nUnboundLocalError: local variable 'card' referenced before assignment\n```",
+        "ts": "1549576018.032400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[07\/Feb\/2019:22:04:26] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 175, in make_page\n    first6cards = [card.name.replace(',', '') for card in cardlists[0][:6]]\nIndexError: list index out of range\n```",
+        "ts": "1549576970.032500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 22:14:58,939 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 8, in &lt;module&gt;\n    nightly.card('Brisela, Voice of Nightmares')\nAttributeError: module 'nightly' has no attribute 'card'\n```",
+        "ts": "1549577602.032600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549577879.032700",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [92.98958333333334 (07\/02\/19 22:02:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-07T22:17:58.538+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-07T22:17:58.566Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [92.98958333333334 (07\/02\/19 22:02:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2019-02-07T22:17:58.538+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-02-07T22:17:58.566Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'container' is undefined\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 678, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 666, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 320, in make_page\n    return ENV.get_template('container.html').render(repls2)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/container.html\", line 5, in &lt;module&gt;\n    &lt;meta content=\"{{ container.description }}\" name=\"description\"&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'container' is undefined\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 824, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 713, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(onlydecks=onlydecks, skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njinja2.exceptions.UndefinedError: 'container' is undefined\n",
+        "ts": "1549578322.032800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-07 22:26:59,335 ERROR 'container' is undefined\n2019-02-07 22:26:59,339 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 678, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 666, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 320, in make_page\n    return ENV.get_template('container.html').render(repls2)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/container.html\", line 5, in &lt;module&gt;\n    &lt;meta content=\"{{ container.description }}\" name=\"description\"&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'container' is undefined\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 824, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 713, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(onlydecks=onlydecks, skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njinja2.exceptions.UndefinedError: 'container' is undefined\n\n```",
+        "ts": "1549578322.032900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[07\/Feb\/2019:22:27:51] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 318, in make_page\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/container.html\", line 5, in &lt;module&gt;\n    &lt;meta content=\"{{ container.description }}\" name=\"description\"&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'container' is undefined\n```",
+        "ts": "1549578374.033000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "c39245a5-3b41-42ad-9a71-97c77b991b0b",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1549578400.033200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[07\/Feb\/2019:22:39:06] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 291, in make_page\n    'title': title,\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 113, in load\n    source, filename, uptodate = self.get_source(environment, name)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 225, in get_source\n    raise TemplateNotFound(template)\njinja2.exceptions.TemplateNotFound: ads.html\n```",
+        "ts": "1549579050.033300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "09d690c7-8fed-43b0-97f6-7002ee1afabe",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1549579068.033500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1549586078.033600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[08\/Feb\/2019:01:32:08] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/commanders'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 222, in make_page\n    sets = cards.get_sets()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 446, in get_sets\n    return cache.get('cards\/sets')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 58, in get\n    _CACHE[key] = rec['value']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/commanders'\n```",
+        "ts": "1549589431.033700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

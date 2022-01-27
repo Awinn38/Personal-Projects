@@ -1,0 +1,182 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] Decks are now flowing again. Currently have 161118 decks, had 161117 decks",
+        "ts": "1499673590.506728",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] Decks are no longer flowing in. Currently have 161149 decks, had 161149 decks",
+        "ts": "1499691590.614722",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] Decks are now flowing again. Currently have 161158 decks, had 161149 decks",
+        "ts": "1499695192.505949",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 16 hours",
+        "ts": "1499713191.127705",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 16 hours",
+        "ts": "1499713191.127925",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 410, in &lt;module&gt;\n    make_commanders_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 152, in make_commanders_index\n    cardlists=[week, month, alltime])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 46, in make_page\n    repls['description'] = templates.get('content_week').safe_substitute({'data': make_top_chartjs_data()})\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 189, in make_top_chartjs_data\n    dates = str([x['date'].strftime('%m-%d') for x in views.commander_ranks(commanders[0], days_back=7)])\nIndexError: list index out of range\n",
+        "ts": "1499719423.350405",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 410, in &lt;module&gt;\n    make_commanders_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 152, in make_commanders_index\n    cardlists=[week, month, alltime])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 46, in make_page\n    repls['description'] = templates.get('content_week').safe_substitute({'data': make_top_chartjs_data()})\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 189, in make_top_chartjs_data\n    dates = str([x['date'].strftime('%m-%d') for x in views.commander_ranks(commanders[0], days_back=7)])\nIndexError: list index out of range\n",
+        "ts": "1499719427.352146",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 410, in &lt;module&gt;\n    make_commanders_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 152, in make_commanders_index\n    cardlists=[week, month, alltime])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 46, in make_page\n    repls['description'] = templates.get('content_week').safe_substitute({'data': make_top_chartjs_data()})\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 189, in make_top_chartjs_data\n    dates = str([x['date'].strftime('%m-%d') for x in views.commander_ranks(commanders[0], days_back=7)])\nIndexError: list index out of range\n",
+        "ts": "1499719431.354635",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 410, in &lt;module&gt;\n    make_commanders_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 152, in make_commanders_index\n    cardlists=[week, month, alltime])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 46, in make_page\n    repls['description'] = templates.get('content_week').safe_substitute({'data': make_top_chartjs_data()})\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 189, in make_top_chartjs_data\n    dates = str([x['date'].strftime('%m-%d') for x in views.commander_ranks(commanders[0], days_back=7)])\nIndexError: list index out of range\n",
+        "ts": "1499719436.356913",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] Decks are no longer flowing in. Currently have 161198 decks, had 161198 decks",
+        "ts": "1499723990.390091",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] Decks are now flowing again. Currently have 161211 decks, had 161198 decks",
+        "ts": "1499731190.442210",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] Decks are no longer flowing in. Currently have 161229 decks, had 161229 decks",
+        "ts": "1499749190.749191",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nlist index out of range\nTraceback (most recent call last):\n  File \"nightly.py\", line 410, in &lt;module&gt;\n    make_commanders_index()\n  File \"nightly.py\", line 152, in make_commanders_index\n    cardlists=[week, month, alltime])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 46, in make_page\n    repls['description'] = templates.get('content_week').safe_substitute({'data': make_top_chartjs_data()})\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 189, in make_top_chartjs_data\n    dates = str([x['date'].strftime('%m-%d') for x in views.commander_ranks(commanders[0], days_back=7)])\nIndexError: list index out of range\n",
+        "ts": "1499755411.898151",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] Decks are now flowing again. Currently have 161313 decks, had 161229 decks",
+        "ts": "1499756389.137075",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1499756389.137169",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

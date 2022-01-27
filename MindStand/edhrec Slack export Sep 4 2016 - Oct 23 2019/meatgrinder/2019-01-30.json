@@ -1,0 +1,942 @@
+[
+    {
+        "client_msg_id": "12fde076-58c4-4e4f-91d1-ffb4d024d3bf",
+        "type": "message",
+        "text": "<@UEFG14S5A> I just use react-loader",
+        "user": "U28TLDP0R",
+        "ts": "1548862397.269400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548887649.269500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on investigating email \"Deck Recommendations Not Updating\": \"finished wednesday 2:16 pm PT - took 40 hours\"",
+                "text": "finished wednesday 2:16 pm PT - took 40 hours",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/hJQLN3Pa|investigating email \"Deck Recommendations Not Updating\">*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548893042.269600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on [medium] Add Archidekt as a data feed: \"Added timestamp comparison.\narchidekt 'Sideboard' and 'Maybeboard' categories made valid decks look invalid after counting cards; skipping cards in those categories.\nScreening out decks that say they are something other than EDH (deckFormat:3).\nRe-running get_all_decks, then will add archidekt line to \/etc\/crontab.\"",
+                "text": "Added timestamp comparison.\narchidekt 'Sideboard' and 'Maybeboard' categories made valid decks look invalid after counting cards; skipping cards in those categories.\nScreening out decks that say they are something other than EDH (deckFormat:3).\nRe-running get_all_decks, then will add archidekt line to \/etc\/crontab.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/5FwzVOXO|[medium] Add Archidekt as a data feed>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c851e1dc-ef85-4f14-a893-883ad9b2c4a8",
+        "type": "message",
+        "text": "in crontab, should i schedule archidekt same time as mtggoldfish or deckstats or some 15 minute mark or otherwise?",
+        "user": "U3MTAQBE1",
+        "ts": "1548899612.270700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e645b26a-d915-4131-a9c1-e7797b22c85c",
+        "type": "message",
+        "text": "mtggoldfish and deckstats run in crontab now <@U28TLDP0R>?",
+        "user": "U286Q175Y",
+        "ts": "1548904395.271000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a19a316a-56bb-46b8-bdf9-333f118ce023",
+        "type": "message",
+        "text": "i had them in allnightly.sh so that they would run before the database update stuff",
+        "user": "U286Q175Y",
+        "ts": "1548904420.271400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9a2dd9f1-d67e-4c2b-8d91-f07ea381a1f3",
+        "type": "message",
+        "text": "same time is fine, do you know how long it takes to run?",
+        "user": "U28TLDP0R",
+        "ts": "1548908063.271900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "50fb82ff-4fcc-4199-9876-8374d7c6be0f",
+        "type": "message",
+        "text": "main reason I moved to cron is that the z-score calculations need new decks to get scraped every day and needs to run every day, but nightly takes longer than a day to run",
+        "user": "U28TLDP0R",
+        "ts": "1548908142.273200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "78c3dbb9-5b04-450c-bc81-f76b1b56a7f6",
+        "type": "message",
+        "text": "20 minutes",
+        "user": "U3MTAQBE1",
+        "ts": "1548908479.273400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5e9aa256-fe0c-4ff0-bdc4-e43ef3355e17",
+        "type": "message",
+        "text": "yeah that should be fine",
+        "user": "U28TLDP0R",
+        "ts": "1548908525.273700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "34229c06-62c9-434a-b7b7-a65faa333bfd",
+        "type": "message",
+        "text": "so update ckprices script needs to run directly after the scrapers",
+        "user": "U286Q175Y",
+        "ts": "1548909180.274200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "06cd0019-21b9-4f22-9507-39cdf025fbd4",
+        "type": "message",
+        "text": "or the rest of the pipeline does nothing",
+        "user": "U286Q175Y",
+        "ts": "1548909185.274400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ca0da24a-0d4c-4e50-aae3-9f423e40f935",
+        "type": "message",
+        "text": "yeah",
+        "user": "U28TLDP0R",
+        "ts": "1548909269.274700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "987e0387-4c72-4678-88e3-ee4196d21962",
+        "type": "message",
+        "text": "gotta get decks then make deckswithprices",
+        "user": "U28TLDP0R",
+        "ts": "1548909297.275000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "67ab4b20-0264-4d30-8338-bd90ce776230",
+        "type": "message",
+        "text": "so.... that's still happening?",
+        "user": "U286Q175Y",
+        "ts": "1548909427.275200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "dcbfb4fa-3d40-4093-bb9d-9971868a281c",
+        "type": "message",
+        "text": "update ckprices is in cron, yes",
+        "user": "U28TLDP0R",
+        "ts": "1548909445.275400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a1db4294-8dd0-4a52-af09-3037d15c6b83",
+        "type": "message",
+        "text": "didn't realize that was a question",
+        "user": "U28TLDP0R",
+        "ts": "1548909456.275800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f6b20131-2c37-44b4-ab97-6687ceba007d",
+        "type": "message",
+        "text": "right but it doesnt trigger based on the scrapers being done",
+        "user": "U286Q175Y",
+        "ts": "1548909457.276000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b2f016a9-77a4-4b84-8be1-ced3f84cc53a",
+        "type": "message",
+        "text": "you are giving me ptsd flashbacks from what we just went through djcity",
+        "user": "U286Q175Y",
+        "ts": "1548909480.276300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c2187d41-3818-4ae8-8c42-05b62356f8da",
+        "type": "message",
+        "text": "looking at cron you are assuming that the scrapers finish in an hour and a half before running update_ckprices",
+        "user": "U286Q175Y",
+        "ts": "1548909548.276900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b167bdcd-58ec-4021-9349-432abba89c5b",
+        "type": "message",
+        "text": "yes",
+        "user": "U28TLDP0R",
+        "ts": "1548909558.277100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7ee01bb5-9093-4e9d-ac06-fc3dd8e4cca7",
+        "type": "message",
+        "text": "actually not quite",
+        "user": "U286Q175Y",
+        "ts": "1548909574.277300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "096462ef-5859-4832-b1b5-fe18c6d7bc5b",
+        "type": "message",
+        "text": "```  30    11   *   *   * ubuntu \/home\/ubuntu\/edhrec\/batch\/deckstats.py\n  30    11   *   *   * ubuntu \/home\/ubuntu\/edhrec\/batch\/update_ckprices.py```",
+        "user": "U286Q175Y",
+        "ts": "1548909581.277500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "baad863c-65a4-4d0f-802c-d9bbcf5fe428",
+        "type": "message",
+        "text": "typo",
+        "user": "U28TLDP0R",
+        "ts": "1548909604.278000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "804331e2-2a0f-4d6a-a977-95ba98e59bd5",
+        "type": "message",
+        "text": "i mean either way i have a major problem with this",
+        "user": "U286Q175Y",
+        "ts": "1548909612.278400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c56d3803-12ef-4f6a-b006-fae2aae5eb90",
+        "type": "message",
+        "text": "the big bash script isn't great but it makes sure things run in sequence",
+        "user": "U286Q175Y",
+        "ts": "1548909628.278800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a3e69a72-6580-4012-a5ab-4572ba01cb73",
+        "type": "message",
+        "text": "ok then we can put those 3 things in a bash script",
+        "user": "U28TLDP0R",
+        "ts": "1548909645.279100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "20e9a470-9df3-4b07-a35b-b655a11b85f0",
+        "type": "message",
+        "text": "whats the current process for updating commanders and cards now?",
+        "user": "U286Q175Y",
+        "ts": "1548909902.280200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "10a75fbb-2d3e-40dd-9d90-8380c2e3dcd7",
+        "type": "message",
+        "text": "ive lost track",
+        "user": "U286Q175Y",
+        "ts": "1548909910.280500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "03973c25-eb0c-4a01-9c22-5e5d3c81047e",
+        "type": "message",
+        "text": "when they were in allnightly it was guaranteed to run after getprices. i understand that doesnt quite work with how slow shit is these days. but not necessarily ideal",
+        "user": "U286Q175Y",
+        "ts": "1548910008.281800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b0756fde-9368-43ad-a5c4-b816972167e7",
+        "type": "message",
+        "text": "api and dynamic and a few misc things are in supervisor",
+        "user": "U28TLDP0R",
+        "ts": "1548910056.282400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ba23d844-1abe-4aeb-a945-eb863b9cfb04",
+        "type": "message",
+        "text": "everything else begins in cron",
+        "user": "U28TLDP0R",
+        "ts": "1548910063.282600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f2ab76d1-fcff-41e7-8754-aa4bcf71006f",
+        "type": "message",
+        "text": "except nightly which is also in supervisor",
+        "user": "U28TLDP0R",
+        "ts": "1548910079.283000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "87af583e-c13d-4f87-89c1-f5bbf424d054",
+        "type": "message",
+        "text": "I'll put all the deck scrapers with update_ckprices into their own singular script",
+        "user": "U28TLDP0R",
+        "ts": "1548910181.284200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "969ca77f-71dc-4c27-931a-57a2c049cd84",
+        "type": "message",
+        "text": "move vacuum nd backup up, i dont think those need to be running with the others",
+        "user": "U286Q175Y",
+        "ts": "1548910208.284500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "19469aab-953f-4223-bf26-387a0fc18972",
+        "type": "message",
+        "text": "move them earlier?",
+        "user": "U28TLDP0R",
+        "ts": "1548910260.285100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "01441b82-d8f7-46b1-8ca6-9cb19cc4d2c6",
+        "type": "message",
+        "text": "yeah sure",
+        "user": "U286Q175Y",
+        "ts": "1548910318.285300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c4dbe598-d95f-4824-8c7f-260ad1bd7a04",
+        "type": "message",
+        "text": "like 7am",
+        "user": "U286Q175Y",
+        "ts": "1548910320.285500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "aeed5980-bac6-4d7a-a2a9-46743afee038",
+        "type": "message",
+        "text": "I added archidekt to the script as well",
+        "user": "U28TLDP0R",
+        "ts": "1548913810.285700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "51db18e7-cb17-4f50-9a19-25ea05db63d0",
+        "type": "message",
+        "text": "not sure what time zone the server is in but I think most tasks kick off at 3am EST",
+        "user": "U28TLDP0R",
+        "ts": "1548913872.286300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548915822.286400",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [low] when you click on \"Community Content\" on <http:\/\/articles.edhrec.com|articles.edhrec.com> it doesn't take you to community content, just sends you to the regular article feed. from EDHREC Bugs to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/N5jLJTKc|[low] when you click on \"Community Content\" on articles.edhrec.com it doesn't take you to community content, just sends you to the regular article feed.>* from *EDHREC Bugs* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548916041.286500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Remove prices from decklists, only generate decklists once from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/vZgIkpSA|Remove prices from decklists, only generate decklists once>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548916317.286600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on Remove prices from decklists, only generate decklists once: \"maybe a better plan is - nightly only generates new decks, and then a separate slower nightly works on rebuilding old pages\n\nreally this just makes me want to work more in the \"card price api\" direction, but that's far enough in unknown territory that I still think a more immediate measure is necessary\"",
+                "text": "maybe a better plan is - nightly only generates new decks, and then a separate slower nightly works on rebuilding old pages\n\nreally this just makes me want to work more in the \"card price api\" direction, but that's far enough in unknown territory that I still think a more immediate measure is necessary",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/vZgIkpSA|Remove prices from decklists, only generate decklists once>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1548918483.286700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on investigating email \"Deck Recommendations Not Updating\": \"starting at 11 PT wednesday to investigate new (temporary) slow\/fast nightly approach\"",
+                "text": "starting at 11 PT wednesday to investigate new (temporary) slow\/fast nightly approach",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/hJQLN3Pa|investigating email \"Deck Recommendations Not Updating\">*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

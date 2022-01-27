@@ -1,0 +1,142 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531099123.000082",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on search.tallyjson(**kwargs) return json of database.tally output: \"search.tallyjson handling more complex cases of possible commanders as input cards when no \"commander\" is explicitly given\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Exquisite Blood&amp;Sanguine Bond\", \"commander\": \"Shirei, Shizo's Caretaker\"})\n{'cards': 'Exquisite Blood&amp;Sanguine Bond', 'commander': \"Shirei, Shizo's Caretaker\"}\nInput cards\n['Exquisite Blood', 'Sanguine Bond']\ndecks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 6969\nCommanders: [\"Shirei, Shizo's Caretaker\"]\n+ Shirei, Shizo's Caretaker decks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 11\n= Total decks: 11\ndone tally\n&gt;&gt;&gt;\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Exquisite Blood&amp;Sanguine Bond&amp;Shirei, Shizo's Caretaker\"})\n{'cards': \"Exquisite Blood&amp;Sanguine Bond&amp;Shirei, Shizo's Caretaker\"}\nInput cards\n['Exquisite Blood', 'Sanguine Bond', \"Shirei, Shizo's Caretaker\"]\ndecks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 6969\nCommanders as input cards: [\"Shirei, Shizo's Caretaker\"]\ndecks w Shirei, Shizo's Caretaker &amp; ['Exquisite Blood', 'Sanguine Bond'] in 99: 8\n+ decks with all cards in 99: 8\nCommanders: [\"Shirei, Shizo's Caretaker\"]\n+ Shirei, Shizo's Caretaker decks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 11\n= Total decks: 19\ndone tally\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Splinter Twin\"})\n{'cards': 'Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Splinter Twin'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Splinter Twin']\ndecks with ['Splinter Twin'] in 99: 2441\nCommanders as input cards: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss']\ndecks w Kiki-Jiki, Mirror Breaker &amp; ['Splinter Twin'] in 99: 1686\ndecks w Krenko, Mob Boss &amp; ['Splinter Twin'] in 99: 228\n+ decks with all cards in 99: 179\nCommanders: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss']\n+ Kiki-Jiki, Mirror Breaker decks with Krenko, Mob Boss in 99: 17\n+ Krenko, Mob Boss decks with Kiki-Jiki, Mirror Breaker in 99: 88\n= Total decks: 284\ndone tally\n&gt;&gt;&gt;\n\"",
+                "text": "search.tallyjson handling more complex cases of possible commanders as input cards when no \"commander\" is explicitly given\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Exquisite Blood&amp;Sanguine Bond\", \"commander\": \"Shirei, Shizo's Caretaker\"})\n{'cards': 'Exquisite Blood&amp;Sanguine Bond', 'commander': \"Shirei, Shizo's Caretaker\"}\nInput cards\n['Exquisite Blood', 'Sanguine Bond']\ndecks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 6969\nCommanders: [\"Shirei, Shizo's Caretaker\"]\n+ Shirei, Shizo's Caretaker decks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 11\n= Total decks: 11\ndone tally\n&gt;&gt;&gt;\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Exquisite Blood&amp;Sanguine Bond&amp;Shirei, Shizo's Caretaker\"})\n{'cards': \"Exquisite Blood&amp;Sanguine Bond&amp;Shirei, Shizo's Caretaker\"}\nInput cards\n['Exquisite Blood', 'Sanguine Bond', \"Shirei, Shizo's Caretaker\"]\ndecks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 6969\nCommanders as input cards: [\"Shirei, Shizo's Caretaker\"]\ndecks w Shirei, Shizo's Caretaker &amp; ['Exquisite Blood', 'Sanguine Bond'] in 99: 8\n+ decks with all cards in 99: 8\nCommanders: [\"Shirei, Shizo's Caretaker\"]\n+ Shirei, Shizo's Caretaker decks with ['Exquisite Blood', 'Sanguine Bond'] in 99: 11\n= Total decks: 19\ndone tally\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Splinter Twin\"})\n{'cards': 'Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Splinter Twin'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Splinter Twin']\ndecks with ['Splinter Twin'] in 99: 2441\nCommanders as input cards: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss']\ndecks w Kiki-Jiki, Mirror Breaker &amp; ['Splinter Twin'] in 99: 1686\ndecks w Krenko, Mob Boss &amp; ['Splinter Twin'] in 99: 228\n+ decks with all cards in 99: 179\nCommanders: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss']\n+ Kiki-Jiki, Mirror Breaker decks with Krenko, Mob Boss in 99: 17\n+ Krenko, Mob Boss decks with Kiki-Jiki, Mirror Breaker in 99: 88\n= Total decks: 284\ndone tally\n&gt;&gt;&gt;\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/0kMyeWgR|search.tallyjson(**kwargs) return json of database.tally output>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531100752.000090",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner Archived the card Commander Anthology '18 logo is missing.",
+                "text": "Archived the card *<https:\/\/trello.com\/c\/0xZZ950m|Commander Anthology '18 logo is missing>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531100905.000139",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card Add a section under new cards for \"Recently Reprinted\". Unlike new cards, let's only show 4 of them though and make it so they have been reprinted in the past 2 months. added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "Add a section under new cards for \"Recently Reprinted\". Unlike new cards, let's only show 4 of them though and make it so they have been reprinted in the past 2 months.",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/9fYWodp4",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531100909.000010",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner moved the card Add a section under new cards for \"Recently Reprinted\". Unlike new cards, let's only show 4 of them though and make it so they have been reprinted in the past 2 months. from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/9fYWodp4|Add a section under new cards for \"Recently Reprinted\". Unlike new cards, let's only show 4 of them though and make it so they have been reprinted in the past 2 months.>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531103977.000026",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner moved the card Add a section under new cards for \"Recently Reprinted\". Unlike new cards, let's only show 4 of them though and make it so they have been reprinted in the past 2 months. from Doing to Done in July '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/9fYWodp4|Add a section under new cards for \"Recently Reprinted\". Unlike new cards, let's only show 4 of them though and make it so they have been reprinted in the past 2 months.>* from *Doing* to *Done in July '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531109364.000090",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card We need to add more cards to the signature skip list -- pretty much all the boring dual lands: <https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation> added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "We need to add more cards to the signature skip list -- pretty much all the boring dual lands: https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/zYka1jyX",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

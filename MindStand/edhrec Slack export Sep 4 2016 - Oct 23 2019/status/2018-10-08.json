@@ -1,0 +1,118 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539028195.000100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 2 out of the last 2 datapoints [0.0 (08\/10\/18 19:48:00), 0.0 (08\/10\/18 19:47:00)] were less than the threshold (1.0) (minimum 2 datapoints for OK -&gt; ALARM transition).\",\"StateChangeTime\":\"2018-10-08T19:49:54.776+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":2,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-08T19:49:54.799Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 2 out of the last 2 datapoints [0.0 (08\/10\/18 19:48:00), 0.0 (08\/10\/18 19:47:00)] were less than the threshold (1.0) (minimum 2 datapoints for OK -&gt; ALARM transition).\",\"StateChangeTime\":\"2018-10-08T19:49:54.776+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":2,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-08T19:49:54.799Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6b3ae253-b204-4236-80a8-a8ccce9c8115",
+        "type": "message",
+        "text": "didn’t expect articles. to use the same security groups as edhrec",
+        "user": "U28TLDP0R",
+        "ts": "1539028319.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "96e21140-4acd-4cca-9dbb-e7cfb4518365",
+        "type": "message",
+        "text": "it’s back now",
+        "user": "U28TLDP0R",
+        "ts": "1539028334.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nTue Oct  9 01:53:26 UTC 2018\n\n```",
+        "ts": "1539049998.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Oct  9 01:53:28 UTC 2018\n\n```",
+        "ts": "1539049999.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nTue Oct  9 03:25:53 UTC 2018\n\n```",
+        "ts": "1539055544.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('54.182.235.80', 'Amazon CloudFront'), 35406)   -  09\/Oct\/2018:05:26:36 +0000\n(('54.182.234.75', 'Amazon CloudFront'), 27996)   -  09\/Oct\/2018:05:21:32 +0000\n(('34.195.252.190', 'Amazon CloudFront'), 27197)   -  09\/Oct\/2018:05:30:03 +0000\n(('52.46.46.72', 'Amazon CloudFront'), 25599)   -  09\/Oct\/2018:05:28:56 +0000\n(('52.46.22.81', 'Amazon CloudFront'), 24261)   -  09\/Oct\/2018:05:28:22 +0000\n(('54.182.238.54', 'Amazon CloudFront'), 23747)   -  09\/Oct\/2018:05:28:50 +0000\n(('205.251.252.208', 'Amazon CloudFront'), 22593)   -  09\/Oct\/2018:05:22:29 +0000\n(('70.132.21.68', 'Amazon CloudFront'), 21355)   -  09\/Oct\/2018:05:25:42 +0000\n(('52.46.16.44', 'Amazon CloudFront'), 19682)   -  09\/Oct\/2018:05:29:16 +0000\n(('52.46.17.3', 'Amazon CloudFront'), 18672)   -  09\/Oct\/2018:05:27:15 +0000\n(('70.132.9.57', 'Amazon CloudFront'), 18523)   -  09\/Oct\/2018:05:29:31 +0000\n(('35.162.63.199', 'Amazon CloudFront'), 18269)   -  09\/Oct\/2018:05:29:45 +0000\n(('52.15.127.130', 'Amazon CloudFront'), 17865)   -  09\/Oct\/2018:05:30:02 +0000\n(('35.158.136.236', 'Amazon CloudFront'), 17443)   -  09\/Oct\/2018:05:29:57 +0000\n(('70.132.18.72', 'Amazon CloudFront'), 16801)   -  09\/Oct\/2018:05:28:54 +0000\n(('34.195.252.142', 'Amazon CloudFront'), 16360)   -  09\/Oct\/2018:05:29:50 +0000\n(('54.239.170.61', 'Amazon CloudFront'), 16354)   -  09\/Oct\/2018:05:24:19 +0000\n(('34.195.252.35', 'Amazon CloudFront'), 16048)   -  09\/Oct\/2018:05:30:04 +0000\n(('54.239.202.70', 'Amazon CloudFront'), 15936)   -  09\/Oct\/2018:05:27:55 +0000\n(('35.158.136.55', 'Amazon CloudFront'), 15771)   -  09\/Oct\/2018:05:30:04 +0000\n(('34.195.252.68', 'Amazon CloudFront'), 15583)   -  09\/Oct\/2018:05:29:57 +0000\n(('52.46.18.51', 'Amazon CloudFront'), 14991)   -  09\/Oct\/2018:05:21:17 +0000\n(('204.246.180.95', 'Amazon CloudFront'), 14605)   -  09\/Oct\/2018:05:22:18 +0000\n(('52.46.12.119', 'Amazon CloudFront'), 14435)   -  09\/Oct\/2018:05:21:17 +0000\n(('54.240.159.82', 'Amazon CloudFront'), 14212)   -  09\/Oct\/2018:05:28:59 +0000\n\n```",
+        "ts": "1539062994.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

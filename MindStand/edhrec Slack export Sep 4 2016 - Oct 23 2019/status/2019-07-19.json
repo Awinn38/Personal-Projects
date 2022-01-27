@@ -1,0 +1,863 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 07:12:50,594 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 89, in set\n    (key, value, expires)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.IntegrityError: duplicate key value violates unique constraint \"cache_key_key\"\nDETAIL:  Key (key)=(wp\/by-tag\/cards\/crovax the cursed) already exists.\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 23, in _getcursor\n    yield con.cursor(cursor_factory=psycopg2.extras.DictCursor)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 99, in set\n    ''', (value, expires, key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: terminating connection due to administrator command\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 286, in update_all\n    _update_tagnames()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 169, in _update_tagnames\n    [cache.set('wp\/by-tag\/cards\/{}'.format(name_to_tag(n)), n) for n in cards.get_all()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 169, in &lt;listcomp&gt;\n    [cache.set('wp\/by-tag\/cards\/{}'.format(name_to_tag(n)), n) for n in cards.get_all()]\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 99, in set\n    ''', (value, expires, key)\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 25, in _getcursor\n    con.commit()\npsycopg2.InterfaceError: connection already closed\n```",
+        "ts": "1563520345.002600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 07:12:53,949 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 22, in &lt;module&gt;\n    import edhrec.core.cards as cards\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 28, in &lt;module&gt;\n    _CARDS = cache.get('allcards')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n2019-07-19 07:12:53,949 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 22, in &lt;module&gt;\n    import edhrec.core.cards as cards\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 28, in &lt;module&gt;\n    _CARDS = cache.get('allcards')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n2019-07-19 07:12:54,356 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 22, in &lt;module&gt;\n    import edhrec.core.cards as cards\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 28, in &lt;module&gt;\n    _CARDS = cache.get('allcards')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)",
+        "ts": "1563520347.002700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect",
+        "ts": "1563520347.002800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1563520347.002900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "20c36723-e8d9-4c7e-bc1b-eb57d3cba3d4",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1563520349.003100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 07:13:27,161 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 657, in get_cmdr_rankings\n    '''.format(_TABLE_PREFIX))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: column \"deckswithprices.commander\" must appear in the GROUP BY clause or be used in an aggregate function\nLINE 2:             SELECT commander, COUNT(*)\n                           ^\n\n```",
+        "ts": "1563520380.003200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 07:15:21,271 INFO update_rankings.py took 0:00:07.040017\n```",
+        "ts": "1563520495.003300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 08:00:03,594 INFO New Trending 2019-07-19\n\n2019-07-19 08:00:03,600 INFO daily.py took 0:00:00.569406\n```",
+        "ts": "1563523190.003400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 08:09:27,006 INFO cards.py took 0:09:20.653629\n```",
+        "ts": "1563523740.003500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 08:11:37,378 INFO backup.py took 0:11:35.180580\n```",
+        "ts": "1563523871.003600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 08:27:50,986 INFO New Trending 2019-07-19\n{\"name\": \"Sliver Hive\", \"s\": [0, 4, 4, 5, 8, 9, 8], \"z\": 1.3768592470749519}\n{\"name\": \"Throes of Chaos\", \"s\": [0, 0, 2, 6, 7, 5, 9], \"z\": 1.2659856120738846}\n{\"name\": \"Revoke Existence\", \"s\": [0, 3, 1, 4, 5, 6, 7], \"z\": 1.2609766499825612}\n{\"name\": \"Vizkopa Guildmage\", \"s\": [0, 6, 7, 10, 9, 11, 13], \"z\": 1.2574334296829355}\n{\"name\": \"Spellbook\", \"s\": [0, 14, 13, 19, 19, 13, 37], \"z\": 1.2389940551574339}\n{\"name\": \"Vampire Nighthawk\", \"s\": [0, 19, 19, 17, 21, 24, 21], \"z\": 1.2069419120006375}\n{\"name\": \"Authority of the Consuls\", \"s\": [0, 16, 18, 21, 19, 21, 25], \"z\": 1.1998466213443033}\n{\"name\": \"Manaweft Sliver\", \"s\": [0, 7, 7, 7, 9, 10, 10], \"z\": 1.194579043979824}\n{\"name\": \"Into the North\", \"s\": [0, 3, 4, 5, 7, 7, 5], \"z\": 1.1674487877418311}\n{\"name\": \"Necrotic Sliver\", \"s\": [0, 4, 6, 8, 9, 8, 8], \"z\": 1.1567270172109925}\n2019-07-19 08:27:51,000 INFO daily.py took 0:27:45.592801\n```",
+        "ts": "1563524844.003700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 08:36:23,790 INFO archidekt.py took 0:23:24.770978\n```",
+        "ts": "1563525357.003800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 09:04:03,666 INFO deckstats.py took 0:25:39.946967\n```",
+        "ts": "1563527017.003900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 09:26:29,314 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2102260>\n```",
+        "ts": "1563528362.004000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 09:45:41,766 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2103992>\n```",
+        "ts": "1563529515.004100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 09:47:25,610 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2099264>\n```",
+        "ts": "1563529619.004200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 09:52:30,668 INFO mtggoldfish.py took 0:28:12.693882\n```",
+        "ts": "1563529924.004300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 11:07:01,336 INFO update_deckswithprices.py took 0:30:13.559783\nNew deck count from past 2 days: \n- MTGGoldfish: 653\n- Other: 0\n- deckstats: 449\n- Archidekt: 646\n```",
+        "ts": "1563534394.004400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 11:19:27,076 INFO cache_get_cards took 0:12:21.049520\n```",
+        "ts": "1563535140.004500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563535144.004600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1563546350.004700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 14:26:18,283 INFO nightly.py took 3:06:47.229422\n```",
+        "ts": "1563546351.004800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 16:06:12,382 ERROR Dynamic too many open files - restarting\n```",
+        "ts": "1563552345.004900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[19\/Jul\/2019:16:06:13] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/wordpress.py\", line 52, in index\n    'articles': wordpress.get_posts_by_category('articles')[:7],\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 210, in get_posts_by_category\n    return cache.get('wp\/by-category\/{}'.format(category))\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"\/var\/run\/postgresql\/.s.PGSQL.5432\"?\n\n```",
+        "ts": "1563552346.005000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 20:03:31,743 INFO cards.py took 0:03:26.608690\n```",
+        "ts": "1563566584.005100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563566592.005200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 20:28:25,508 INFO archidekt.py took 0:24:20.345697\n```",
+        "ts": "1563568078.005300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 501, in make_card\n    data = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 71, in getcards\n    data = database.tally(decks, card=card)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2088, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1074, in get_decks\n    ), urls[:fetch_size])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 939, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 782, in make_cards\n    pool.map(make_card, cards.get_all(transform=False, split=False))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n",
+        "ts": "1563569335.005400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 20:49:22,579 ERROR server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n2019-07-19 20:49:22,583 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 501, in make_card\n    data = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 71, in getcards\n    data = database.tally(decks, card=card)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2088, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1074, in get_decks\n    ), urls[:fetch_size])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 939, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 782, in make_cards\n    pool.map(make_card, cards.get_all(transform=False, split=False))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n\n2019-07-19 20:49:22,875 ERROR Dynamic too many open files - restarting\n2019-07-19 20:49:22,875 ERROR Dynamic too many open files - restarting\n2019-07-19 20:49:22,903 INFO nightly.py took 0:45:42.728651\n```",
+        "ts": "1563569335.005500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "bd64086e-d229-4196-b322-d2390ccc68a0",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1563569363.005700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 20:54:36,481 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 3, in &lt;module&gt;\nTypeError: execute() missing 1 required positional argument: 'query'\n```",
+        "ts": "1563569649.005800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 20:56:19,576 INFO deckstats.py took 0:25:54.593492\n```",
+        "ts": "1563569752.005900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 21:26:52,920 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2102260>\n```",
+        "ts": "1563571585.006000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 21:44:04,558 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2099264>\n```",
+        "ts": "1563572617.006100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 21:44:26,193 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2103992>\n```",
+        "ts": "1563572639.006200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 21:46:07,030 INFO mtggoldfish.py took 0:29:29.103463\n```",
+        "ts": "1563572739.006300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-19 22:53:36,525 INFO update_deckswithprices.py took 0:25:50.151353\nNew deck count from past 2 days: \n- Archidekt: 840\n- Other: 0\n- deckstats: 576\n- MTGGoldfish: 762\n```",
+        "ts": "1563576789.006400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 00:09:34,070 INFO cards.py took 0:09:29.113481\n```",
+        "ts": "1563581346.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 00:35:11,157 INFO archidekt.py took 0:23:35.403667\n```",
+        "ts": "1563582883.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 01:02:50,230 INFO deckstats.py took 0:25:39.764991\n```",
+        "ts": "1563584542.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 01:38:30,888 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2102260>\n```",
+        "ts": "1563586683.000400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 01:42:31,709 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2106964>\n```",
+        "ts": "1563586924.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 01:55:23,381 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2103992>\n```",
+        "ts": "1563587695.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 01:57:34,688 INFO mtggoldfish.py took 0:34:11.529148\n```",
+        "ts": "1563587827.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 03:04:45,443 INFO update_deckswithprices.py took 0:25:44.542968\nNew deck count from past 2 days: \n- MTGGoldfish: 305\n- Archidekt: 626\n- Other: 0\n- deckstats: 360\n```",
+        "ts": "1563591858.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563591863.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'Iona, Shield of Emeria'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 936, in nightly\n    make_tops()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 163, in make_tops\n    make_top_salt()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 208, in make_top_salt\n    cardlists=[origin.gettop(salt=True)],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 724, in gettop\n    ) for s in database.get_salt()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in get_salt\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in &lt;listcomp&gt;\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\nKeyError: 'Iona, Shield of Emeria'\n",
+        "ts": "1563593076.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 03:25:04,653 ERROR 'Iona, Shield of Emeria'\n2019-07-20 03:25:04,664 ERROR Traceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 936, in nightly\n    make_tops()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 163, in make_tops\n    make_top_salt()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 208, in make_top_salt\n    cardlists=[origin.gettop(salt=True)],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 724, in gettop\n    ) for s in database.get_salt()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in get_salt\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in &lt;listcomp&gt;\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\nKeyError: 'Iona, Shield of Emeria'\n\n2019-07-20 03:25:04,892 INFO nightly.py took 0:20:13.846056\n```",
+        "ts": "1563593077.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "cd977466-fd9c-49ef-9d39-cf741b0cd34f",
+        "type": "message",
+        "text": "lol",
+        "user": "U28TLDP0R",
+        "ts": "1563593110.001600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 03:48:09,341 INFO cards.py took 0:09:14.225154\n```",
+        "ts": "1563594461.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563594488.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "27226491-468f-4ad7-b5a0-9e5a6f429a1d",
+        "type": "message",
+        "text": "rip",
+        "user": "U286Q175Y",
+        "ts": "1563594897.002000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'Iona, Shield of Emeria'\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 936, in nightly\n    make_tops()\n  File \".\/nightly.py\", line 163, in make_tops\n    make_top_salt()\n  File \".\/nightly.py\", line 208, in make_top_salt\n    cardlists=[origin.gettop(salt=True)],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 724, in gettop\n    ) for s in database.get_salt()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in get_salt\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in &lt;listcomp&gt;\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\nKeyError: 'Iona, Shield of Emeria'\n",
+        "ts": "1563595698.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 04:08:46,202 ERROR 'Iona, Shield of Emeria'\n2019-07-20 04:08:46,208 ERROR Traceback (most recent call last):\n  File \".\/nightly.py\", line 936, in nightly\n    make_tops()\n  File \".\/nightly.py\", line 163, in make_tops\n    make_top_salt()\n  File \".\/nightly.py\", line 208, in make_top_salt\n    cardlists=[origin.gettop(salt=True)],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 724, in gettop\n    ) for s in database.get_salt()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in get_salt\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in &lt;listcomp&gt;\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\nKeyError: 'Iona, Shield of Emeria'\n\n2019-07-20 04:08:46,463 INFO nightly.py took 0:20:10.293958\n```",
+        "ts": "1563595698.002200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "6a7e8005-9813-4d11-bd2d-547092fbc54f",
+        "type": "message",
+        "text": "hmm",
+        "user": "U28TLDP0R",
+        "ts": "1563595750.002400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a38e33e1-cc8e-435d-9d42-50750681e213",
+        "type": "message",
+        "text": "we should probably remove all banned cards really",
+        "user": "U286Q175Y",
+        "ts": "1563595831.002600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8c91c7f2-738a-4357-816f-5d29060fb19e",
+        "type": "message",
+        "text": "or put back iona",
+        "user": "U286Q175Y",
+        "ts": "1563595858.002800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "79a2a28c-a3c8-4ed8-9241-7ba89769807e",
+        "type": "message",
+        "text": "haha",
+        "user": "U286Q175Y",
+        "ts": "1563595860.003000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "65597d89-4fa0-4d64-a953-4dbe4619c549",
+        "type": "message",
+        "text": "im up for whatever",
+        "user": "U286Q175Y",
+        "ts": "1563595863.003200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 04:19:15,910 INFO cards.py took 0:08:59.575173\n```",
+        "ts": "1563596328.003300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563596881.003400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'Iona, Shield of Emeria'\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 936, in nightly\n    make_tops()\n  File \".\/nightly.py\", line 163, in make_tops\n    make_top_salt()\n  File \".\/nightly.py\", line 208, in make_top_salt\n    cardlists=[origin.gettop(salt=True)],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 724, in gettop\n    ) for s in database.get_salt()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in get_salt\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in &lt;listcomp&gt;\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\nKeyError: 'Iona, Shield of Emeria'\n",
+        "ts": "1563598093.003500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 04:48:41,457 ERROR 'Iona, Shield of Emeria'\n2019-07-20 04:48:41,459 ERROR Traceback (most recent call last):\n  File \".\/nightly.py\", line 936, in nightly\n    make_tops()\n  File \".\/nightly.py\", line 163, in make_tops\n    make_top_salt()\n  File \".\/nightly.py\", line 208, in make_top_salt\n    cardlists=[origin.gettop(salt=True)],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 724, in gettop\n    ) for s in database.get_salt()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in get_salt\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1370, in &lt;listcomp&gt;\n    return [{'card': s, 'count': counts[s['name']]} for s in saltiest]\nKeyError: 'Iona, Shield of Emeria'\n\n2019-07-20 04:48:41,702 INFO nightly.py took 0:20:12.448402\n```",
+        "ts": "1563598093.003600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-20 05:45:39,246 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1563601511.003700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1563602073.003800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

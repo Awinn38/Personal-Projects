@@ -1,0 +1,396 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[heartbeat] Could not connect to <http:\/\/edhrec.com>!!",
+        "ts": "1507803824.000031",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B5XEYB5S4"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nThu Oct 12 14:29:17 UTC 2017\n\n```",
+        "ts": "1507818215.000251",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "text": "Got nightly down to 12 hrs",
+        "user": "U286Q175Y",
+        "ts": "1507834014.000351",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "From 30",
+        "user": "U286Q175Y",
+        "ts": "1507834033.000262",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Using a process pool of 4 to do cards",
+        "user": "U286Q175Y",
+        "ts": "1507834065.000451",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507846138.000002",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.76354948E7 (12\/10\/17 21:53:00)] was greater than or equal to the threshold (5.0E7).\",\"StateChangeTime\":\"2017-10-12T22:08:54.453+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"name\":\"InstanceId\",\"value\":\"i-0f7f3750e584e120e\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5.0E7,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-12T22:08:54.541Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.76354948E7 (12\/10\/17 21:53:00)] was greater than or equal to the threshold (5.0E7).\",\"StateChangeTime\":\"2017-10-12T22:08:54.453+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"name\":\"InstanceId\",\"value\":\"i-0f7f3750e584e120e\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5.0E7,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-12T22:08:54.541Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507853420.000063",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 00:09:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T00:10:16.599+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T00:10:16.663Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 00:09:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T00:10:16.599+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T00:10:16.663Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507854980.000085",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 00:35:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T00:36:16.606+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T00:36:16.699Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 00:35:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T00:36:16.606+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T00:36:16.699Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507856177.000095",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 00:55:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T00:56:16.590+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T00:56:16.628Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 00:55:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T00:56:16.590+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T00:56:16.628Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507857377.000090",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 01:15:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T01:16:16.603+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T01:16:16.681Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 01:15:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T01:16:16.603+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T01:16:16.681Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507858758.000007",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 01:38:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T01:39:16.594+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T01:39:16.672Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 01:38:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T01:39:16.594+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T01:39:16.672Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Oct 13 02:30:01 UTC 2017\n\n```",
+        "ts": "1507861456.000103",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507861519.000192",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 02:24:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T02:25:16.651+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T02:25:16.681Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 02:24:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T02:25:16.651+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T02:25:16.681Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> whats up with this ^",
+        "user": "U286Q175Y",
+        "ts": "1507861750.000003",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I dont even know what its alerting",
+        "user": "U286Q175Y",
+        "ts": "1507861760.000056",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507863919.000127",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 03:04:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T03:05:16.590+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T03:05:16.622Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 03:04:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T03:05:16.590+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T03:05:16.622Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507868000.000035",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 04:12:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T04:13:16.597+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T04:13:16.655Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2...\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"articles-edhrec-com-awsroute53-128a0aba-3ae2-49f9-a15a-8e164fc2a67e-Low-HealthCheckStatus\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [0.0 (13\/10\/17 04:12:00)] was less than the threshold (1.0).\",\"StateChangeTime\":\"2017-10-13T04:13:16.597+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"HealthCheckStatus\",\"Namespace\":\"AWS\/Route53\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"name\":\"HealthCheckId\",\"value\":\"128a0aba-3ae2-49f9-a15a-8e164fc2a67e\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2017-10-13T04:13:16.655Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nHTTP Error 400: Bad Request\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 490, in &lt;module&gt;\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 412, in make_commanders\n    make_commander(cmdr)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 331, in make_commander\n    articles = [(x['title'], x['link']) for x in wordpress.get_commander(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 108, in get_commander\n    return get_articles_by_commander()[cmdr]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 76, in get_articles_by_commander\n    articles = [parse_post(p) for p in get_posts()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 123, in get_posts\n    return _get_multipage('posts', limit=limit)\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 34, in _get_multipage\n    newcontent = json.loads(urllib2.urlopen(url).read())\n  File \"\/usr\/lib\/python2.7\/urllib2.py\", line 127, in urlopen\n    return _opener.open(url, data, timeout)\n  File \"\/usr\/lib\/python2.7\/urllib2.py\", line 410, in open\n    response = meth(req, response)\n  File \"\/usr\/lib\/python2.7\/urllib2.py\", line 523, in http_response\n    'http', request, response, code, msg, hdrs)\n  File \"\/usr\/lib\/python2.7\/urllib2.py\", line 448, in error\n    return self._call_chain(*args)\n  File \"\/usr\/lib\/python2.7\/urllib2.py\", line 382, in _call_chain\n    result = func(*args)\n  File \"\/usr\/lib\/python2.7\/urllib2.py\", line 531, in http_error_default\n    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)\nHTTPError: HTTP Error 400: Bad Request\n",
+        "ts": "1507868184.000069",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nFri Oct 13 04:22:09 UTC 2017\n\n```",
+        "ts": "1507868184.000166",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

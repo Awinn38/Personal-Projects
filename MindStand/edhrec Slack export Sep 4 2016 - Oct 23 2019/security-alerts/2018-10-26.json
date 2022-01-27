@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1540575435.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2007-4772",
+                "id": 1,
+                "title_link": "http:\/\/h20000.www2.hp.com\/bizsupport\/TechSupport\/Document.jsp?objectID=c01420154",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "canonical ubuntu_linux 6.06 6.10 7.04 7.10 debian debian_linux 3.1",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "The regular expression parser in TCL before 8.4.17, as used in PostgreSQL 8.2 before 8.2.6, 8.1 before 8.1.11, 8.0 before 8.0.15, and 7.4 before 7.4.19, allows context-dependent attackers to cause a denial of service (infinite loop) via a crafted regular expression.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2007-4772"
+            }
+        ]
+    }
+]

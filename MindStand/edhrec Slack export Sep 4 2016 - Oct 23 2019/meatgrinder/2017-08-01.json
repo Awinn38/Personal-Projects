@@ -1,0 +1,4293 @@
+[
+    {
+        "user": "U6G90R56F",
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1501583111.029575",
+        "text": "<@U6G90R56F> has joined the channel",
+        "inviter": "U286Q175Y"
+    },
+    {
+        "type": "message",
+        "text": "Fabian, this is where we talk about dev",
+        "user": "U286Q175Y",
+        "ts": "1501583130.035528",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ok, very nice! Hello everyone :slightly_smiling_face:",
+        "user": "U6G90R56F",
+        "ts": "1501583704.209094",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U6G90R56F> how do you want to go about doing this? the authors at edhrec hang out here and we have quite the audience in this slack. i was thinking we could start a google spreadsheet and crowdsource it from our colleagues?",
+        "user": "U286Q175Y",
+        "ts": "1501595099.389784",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm down for that",
+        "user": "U6G90R56F",
+        "ts": "1501596167.013304",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i think before doing that we need to come up with the columns we need-- and to know that we need to nail down the design of the feature a bit more",
+        "user": "U286Q175Y",
+        "ts": "1501596203.035059",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so the way this will work from the backend at least",
+        "user": "U286Q175Y",
+        "ts": "1501596407.160002",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\npostgres=# SELECT COUNT(*) FROM (SELECT url, COUNT(*) FROM (SELECT DISTINCT url, card FROM cards WHERE card='Sanguine Bond' OR card='Exquisite Blood') a GROUP BY url) b WHERE count=2;\n count \n-------\n  4608\n(1 row)\n\nTime: 25.996 ms\n```",
+        "user": "U286Q175Y",
+        "ts": "1501596411.162274",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we have all the data (around 160k decks right now) in a postgres database",
+        "user": "U286Q175Y",
+        "ts": "1501596419.167191",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok, sure. I think we can include the combos in the \"themes\" dropdown (which isn't visible on the homepage?). Just like with the actual themes, I suggest we group the combos into infinite life \/ mana \/ mill \/ damage \/ creatures and so on. When a visitor then goes into one of those categories, there are the most used one in that category (like sanguine bond\/exquisite blood in lifegain)",
+        "user": "U6G90R56F",
+        "ts": "1501596422.169052",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> i noticed that today too, the front page’s menu needs to be updated",
+        "user": "U286Q175Y",
+        "ts": "1501596524.230608",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "the front page is different now from the rest of the website",
+        "user": "U286Q175Y",
+        "ts": "1501596534.235873",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "btw, keattz is GMT-8, I’m GMT-5",
+        "user": "U286Q175Y",
+        "ts": "1501596609.280211",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so he’s still sleepin",
+        "user": "U286Q175Y",
+        "ts": "1501596615.283559",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hmm i like the idea of separating out the combos into categories",
+        "user": "U286Q175Y",
+        "ts": "1501596664.313203",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "do you think we should have one page with categories, or one separate page per category",
+        "user": "U286Q175Y",
+        "ts": "1501596682.322932",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "depends on how many combos we have",
+        "user": "U286Q175Y",
+        "ts": "1501596694.330052",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "seems like having one page per category would be good",
+        "user": "U286Q175Y",
+        "ts": "1501596705.336719",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I suggest a page like this: <https:\/\/edhrec.com\/themes>\n\nAnd then like this if you click on a category: <https:\/\/edhrec.com\/themes\/artifacts>",
+        "user": "U6G90R56F",
+        "ts": "1501596740.357191",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Themes",
+                "title_link": "https:\/\/edhrec.com\/themes",
+                "text": "Popular themes for decks in EDH\/Commander",
+                "fallback": "EDHREC - Themes",
+                "from_url": "https:\/\/edhrec.com\/themes",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1
+            },
+            {
+                "title": "EDHREC - Artifact",
+                "title_link": "https:\/\/edhrec.com\/themes\/artifacts",
+                "text": "Popular artifacts Theme EDH\/Commander commanders: Darksteel Citadel,Inventors' Fair,Darksteel Forge,Buried Ruin,Myr Battlesphere,Seat of the Synod",
+                "fallback": "EDHREC - Artifact",
+                "from_url": "https:\/\/edhrec.com\/themes\/artifacts",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 2
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Instead of themes it then is Combos and instead of \"Artifact\" it could be Infinite Mill",
+        "user": "U6G90R56F",
+        "ts": "1501596821.405898",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hmm",
+        "user": "U286Q175Y",
+        "ts": "1501596826.408994",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so the issue here is the artifacts page shows the decks that are classified as artifact decks",
+        "user": "U286Q175Y",
+        "ts": "1501596850.423107",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "are you suggesting we show decks that have one of many infinite mill combos?",
+        "user": "U286Q175Y",
+        "ts": "1501596862.430127",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "let’s call the Artifact page a “tally” page",
+        "user": "U286Q175Y",
+        "ts": "1501596882.442177",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "because it shows a summary of decks",
+        "user": "U286Q175Y",
+        "ts": "1501596888.445895",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U286Q175Y",
+            "ts": "1501596904.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "the tribal pages, commander pages, and card pages are tally pages",
+        "user": "U286Q175Y",
+        "ts": "1501596896.450795",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Actually (and I don't know if that's possible) I would have suggested that we look for certain combos (as in the code above) and then display the most used ones across all decks int eh category on the tally page.",
+        "user": "U6G90R56F",
+        "ts": "1501596961.491201",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah",
+        "user": "U286Q175Y",
+        "ts": "1501596969.495547",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "thats what im thinking",
+        "user": "U286Q175Y",
+        "ts": "1501596971.496740",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so here’s how it’ll look",
+        "user": "U286Q175Y",
+        "ts": "1501596974.498685",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "h\/o",
+        "user": "U286Q175Y",
+        "ts": "1501596997.512595",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok so the most basic way im thinking",
+        "user": "U286Q175Y",
+        "ts": "1501597003.516024",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "- Combo Page",
+        "user": "U286Q175Y",
+        "ts": "1501597007.518584",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "- Exquisite Bond \/ Explicit Blood (591 decks)\n    - Mike \/ Trike (143 decks)\n    - Basalt Monolith \/ Power Artifact (122 decks)",
+        "user": "U286Q175Y",
+        "ts": "1501597040.537858",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U286Q175Y",
+            "ts": "1501597048.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "exactlsy",
+        "user": "U6G90R56F",
+        "ts": "1501597051.544470",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "kk",
+        "user": "U286Q175Y",
+        "ts": "1501597053.545944",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "then when you click on that, you get a “tally”p age that shows the summary for all decks that contain Mike \/ Trike.",
+        "user": "U286Q175Y",
+        "ts": "1501597067.554032",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok, so the other option here that i like",
+        "user": "U286Q175Y",
+        "ts": "1501597080.562065",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "there are another type of page on edhrec",
+        "user": "U286Q175Y",
+        "ts": "1501597085.565335",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "there are the “top” lists",
+        "user": "U286Q175Y",
+        "ts": "1501597089.567727",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "like <https:\/\/edhrec.com\/top\/artifacts>",
+        "user": "U286Q175Y",
+        "ts": "1501597098.573320",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Top 100 Artifacts",
+                "title_link": "https:\/\/edhrec.com\/top\/artifacts",
+                "text": "EDH\/Commander Recommendations: ...",
+                "fallback": "EDHREC - Top 100 Artifacts",
+                "from_url": "https:\/\/edhrec.com\/top\/artifacts",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "and there we'd display the top combos across all decks and categories",
+        "user": "U6G90R56F",
+        "ts": "1501597122.588056",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "well they would show the same information",
+        "user": "U286Q175Y",
+        "ts": "1501597131.593527",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "they’d show Mike \/ Trike (143 decks) still",
+        "user": "U286Q175Y",
+        "ts": "1501597142.600185",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "the difference is i think we don’t generate tally pages for the combos",
+        "user": "U286Q175Y",
+        "ts": "1501597155.608052",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "just list the combos out",
+        "user": "U286Q175Y",
+        "ts": "1501597159.610185",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i don’t like that as much because i think people want to see which cmmanders play that combo",
+        "user": "U286Q175Y",
+        "ts": "1501597185.626307",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "agreed",
+        "user": "U6G90R56F",
+        "ts": "1501597192.630130",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "also you might have an “infinite death trigger” combo and see what other things are played w\/ it to close out the game",
+        "user": "U286Q175Y",
+        "ts": "1501597207.639887",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "kk",
+        "user": "U286Q175Y",
+        "ts": "1501597219.646745",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I think a general infinite \"ETB \/ dies \/ LTB\" combo is better. Blood Artist is a \"dies\" trigger but you can also win with Altar of the Brood through inf. ETB's. Usually all three (ETB\/dies\/LTB) happen during such a combo",
+        "user": "U6G90R56F",
+        "ts": "1501597366.737463",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah",
+        "user": "U286Q175Y",
+        "ts": "1501597375.743014",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "one thing i was thinking",
+        "user": "U286Q175Y",
+        "ts": "1501597379.745899",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "what about lumping together all game ending combos together?",
+        "user": "U286Q175Y",
+        "ts": "1501597387.750272",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "it doesn’t really matter what it does",
+        "user": "U286Q175Y",
+        "ts": "1501597396.756069",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "like i dont think it matters that mike and trike do damage, and that ex blood and sanguine bond drain life",
+        "user": "U286Q175Y",
+        "ts": "1501597425.774087",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U286Q175Y>, it might be backend stuff, but Steven had an idea for general site users to tag cards by archetype and combo piece. ",
+        "user": "U3QMCLQQG",
+        "ts": "1501597439.782708",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "8e4c39d8c950",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-14\/126921841136_8e4c39d8c950d030317f_72.jpg",
+            "first_name": "Dean",
+            "real_name": "Dean Gootee",
+            "display_name": "dean",
+            "team": "T286HM2F3",
+            "name": "dean",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah id love to get the user piece to this but that’s so far away",
+        "user": "U286Q175Y",
+        "ts": "1501597465.798544",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So, you imagine\n - Combo Page\n  - Most played combos across all decks\n   - Commanders that play that combo\n?",
+        "user": "U6G90R56F",
+        "ts": "1501597602.884372",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "well the last leaf would be a tally page",
+        "user": "U286Q175Y",
+        "ts": "1501597613.891078",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "it would show the commanders at the top, then below the signature\/top\/etc. cards",
+        "user": "U286Q175Y",
+        "ts": "1501597621.895983",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Right, I understand.",
+        "user": "U6G90R56F",
+        "ts": "1501597702.946275",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "one thing i’d like to ahve… and this would be a pain in the ass honestly, but probably worth it",
+        "user": "U286Q175Y",
+        "ts": "1501597742.971842",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i’d like to filter the combos by color identity",
+        "user": "U286Q175Y",
+        "ts": "1501597748.975637",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Well, this is a EDH resource page after all, I think it makes sense",
+        "user": "U6G90R56F",
+        "ts": "1501597782.997328",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "oh man i just had a good idea",
+        "user": "U286Q175Y",
+        "ts": "1501597787.000915",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "ear",
+                "users": [
+                    "U341ALJ7R",
+                    "U6G90R56F"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "let's hear it! :smile:",
+        "user": "U6G90R56F",
+        "ts": "1501597798.007722",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "whats a general with a ton of combos",
+        "user": "U286Q175Y",
+        "ts": "1501597812.017354",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I run Alesha with like 15",
+        "user": "U6G90R56F",
+        "ts": "1501597822.023393",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hmm",
+        "user": "U286Q175Y",
+        "ts": "1501597825.025207",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "something more traditional",
+        "user": "U286Q175Y",
+        "ts": "1501597829.028234",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "but lots of cards are similar",
+        "user": "U6G90R56F",
+        "ts": "1501597834.031100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Arcum Daggson",
+        "user": "U3QMCLQQG",
+        "ts": "1501597845.038391",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "8e4c39d8c950",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-14\/126921841136_8e4c39d8c950d030317f_72.jpg",
+            "first_name": "Dean",
+            "real_name": "Dean Gootee",
+            "display_name": "dean",
+            "team": "T286HM2F3",
+            "name": "dean",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "animar?",
+        "user": "U6G90R56F",
+        "ts": "1501597848.040032",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "arcum is a good one",
+        "user": "U286Q175Y",
+        "ts": "1501597852.042856",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "alright, so what we can do",
+        "user": "U286Q175Y",
+        "ts": "1501597870.054264",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "on all the pages",
+        "user": "U286Q175Y",
+        "ts": "1501597875.057450",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "arcume daggson, alesha, wahtever",
+        "user": "U286Q175Y",
+        "ts": "1501597880.060910",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i add this thing in the tally page generator thing that detects combos played in that deck",
+        "user": "U286Q175Y",
+        "ts": "1501597895.070192",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so we’d have a new section that shows the combos played in that deck",
+        "user": "U286Q175Y",
+        "ts": "1501597918.084902",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "maybe under signature cards",
+        "user": "U286Q175Y",
+        "ts": "1501597930.092483",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I've played with that thought arounf 10 mins ago as well. You can either do it under Signature cards or have a seperate section",
+        "user": "U6G90R56F",
+        "ts": "1501597949.104976",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so like, you’d have alesha page, then it would say    Mikeaus \/ Triskelion (12% of 252 decks, +23% synergy)",
+        "user": "U286Q175Y",
+        "ts": "1501597966.115383",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "that math doesn’t work but yeah",
+        "user": "U286Q175Y",
+        "ts": "1501597985.127012",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "right. I don't quite know how synergy works but I know what you mean",
+        "user": "U6G90R56F",
+        "ts": "1501597988.128872",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we could also add the combos to the color identity pages",
+        "user": "U286Q175Y",
+        "ts": "1501598037.159442",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/commanders\/wu>",
+        "user": "U286Q175Y",
+        "ts": "1501598038.160041",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Azorius",
+                "title_link": "https:\/\/edhrec.com\/commanders\/wu",
+                "text": "Popular Azorius commanders and decks for EDH\/Commander",
+                "fallback": "EDHREC - Azorius",
+                "from_url": "https:\/\/edhrec.com\/commanders\/wu",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "that might be overkill though",
+        "user": "U286Q175Y",
+        "ts": "1501598055.170337",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "maybe not",
+        "user": "U286Q175Y",
+        "ts": "1501598059.173280",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I actually think the General is enough. In the end I care what I can play in my Sharuum \/ Arcum deck and not in any other Esper\/Blue deck",
+        "user": "U6G90R56F",
+        "ts": "1501598107.203261",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah",
+        "user": "U286Q175Y",
+        "ts": "1501598113.206489",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "however i did wnat to figure out how to make infinite mana in my [[Kangee Aerie Keeper]] deck the other day",
+        "user": "U286Q175Y",
+        "ts": "1501598128.216149",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1501598129.216554",
+        "username": "Scryfall",
+        "bot_id": "B5J6VECD6",
+        "attachments": [
+            {
+                "fallback": "Kangee, Aerie Keeper {2}{W}{U} \/\/ Legendary Creature — Bird Wizard \/\/ Kicker {X}{2} (You may pay an additional {X}{2} as you cast this spell.) \/\/ Flying \/\/ When Kangee, Aerie Keeper enters the battlefield, if it was kicked, put X feather counters on it. \/\/ Other Bird creatures get +1\/+1 for each feather counter on Kangee, Aerie Keeper. \/\/ 2\/2",
+                "text": "Legendary Creature — Bird Wizard\nKicker {X}{2} _(You may pay an additional {X}{2} as you cast this spell.)_\nFlying\nWhen Kangee, Aerie Keeper enters the battlefield, if it was kicked, put X feather counters on it.\nOther Bird creatures get +1\/+1 for each feather counter on Kangee, Aerie Keeper.\n*2\/2*",
+                "title": "Kangee, Aerie Keeper {2}{W}{U}",
+                "id": 1,
+                "title_link": "https:\/\/scryfall.com\/card\/inv\/253?utm_campaign=srv-oSZMHCkERB&utm_content=text&utm_medium=bot&utm_source=slack",
+                "thumb_height": 204,
+                "thumb_width": 146,
+                "thumb_url": "https:\/\/img.scryfall.com\/cards\/small\/en\/inv\/253.jpg?1496787921",
+                "color": "6E3E74",
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "might not be many examples in there",
+        "user": "U286Q175Y",
+        "ts": "1501598134.220000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "True",
+        "user": "U6G90R56F",
+        "ts": "1501598149.228739",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "alright from an implementation perspective this is what im thinking",
+        "user": "U286Q175Y",
+        "ts": "1501598175.245332",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "to recap",
+        "user": "U286Q175Y",
+        "ts": "1501598176.245940",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i change `tally` to split out combos",
+        "user": "U286Q175Y",
+        "ts": "1501598185.251412",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we change the page to generate a new combos section",
+        "user": "U286Q175Y",
+        "ts": "1501598205.263695",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "(btw, combos iwll show up on tribal, theme, card, and commander pages)",
+        "user": "U286Q175Y",
+        "ts": "1501598219.273016",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we add a top combos section",
+        "user": "U286Q175Y",
+        "ts": "1501598235.282236",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we add combo specific pages (tally pages for specific combos)",
+        "user": "U286Q175Y",
+        "ts": "1501598245.288746",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i wonder how long it’ll take before the “edhrec is killing commander” mafia to come after us on this one",
+        "user": "U286Q175Y",
+        "ts": "1501598277.308901",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "joy",
+                "users": [
+                    "U6G90R56F"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Ok, this sounds good. So I'd do research into the top few hundred most played combos, so we can actually search for them?",
+        "user": "U6G90R56F",
+        "ts": "1501598348.354003",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah",
+        "user": "U286Q175Y",
+        "ts": "1501598358.360770",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "on the combo tally pages i want a description on how to execute the combo",
+        "user": "U286Q175Y",
+        "ts": "1501598373.370039",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "“play this first, then grab this, then do this”",
+        "user": "U286Q175Y",
+        "ts": "1501598378.372784",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "some of the combos like the protean hulk and boonweaver ones are pretty wild",
+        "user": "U286Q175Y",
+        "ts": "1501598386.378074",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Can do.",
+        "user": "U6G90R56F",
+        "ts": "1501598390.380991",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "you are familiar with json right?",
+        "user": "U286Q175Y",
+        "ts": "1501598408.392454",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How do you plan on displaying the combos?",
+        "user": "U6G90R56F",
+        "ts": "1501598409.392490",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "somewhat familiar yeah",
+        "user": "U6G90R56F",
+        "ts": "1501598422.400969",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F6GG2THM0",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "user": "U286Q175Y",
+        "display_as_bot": false,
+        "ts": "1501598440.413147"
+    },
+    {
+        "type": "message",
+        "text": "im thinking we’ll stack them",
+        "user": "U286Q175Y",
+        "ts": "1501598441.413289",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "then when you click on the bunch it’ll take you to the combo page",
+        "user": "U286Q175Y",
+        "ts": "1501598450.419159",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we’ve never stacked more than two cards but i think its doable",
+        "user": "U286Q175Y",
+        "ts": "1501598457.423510",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Oh! I didn't even think about that! Great idea",
+        "user": "U6G90R56F",
+        "ts": "1501598472.433127",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so here is the information i need",
+        "user": "U286Q175Y",
+        "ts": "1501598496.448319",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "- the cards that are part of the combo",
+        "user": "U286Q175Y",
+        "ts": "1501598502.452579",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U286Q175Y",
+            "ts": "1501598508.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "- the category of combo",
+        "user": "U286Q175Y",
+        "ts": "1501598515.460326",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "- a human description on how to execute the combo",
+        "user": "U286Q175Y",
+        "ts": "1501598523.465517",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I can do that. Is there like a cloud where I can put that stuff in a spreadsheet (like Google Drive)",
+        "user": "U6G90R56F",
+        "ts": "1501598603.515565",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah let me start it for ya",
+        "user": "U286Q175Y",
+        "ts": "1501598609.519478",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F6HK1D97Z",
+                "created": 1501598680,
+                "timestamp": 1501598680,
+                "name": "EDHREC Combos",
+                "title": "EDHREC Combos",
+                "mimetype": "application\/vnd.google-apps.spreadsheet",
+                "filetype": "gsheet",
+                "pretty_type": "GSuite Spreadsheet",
+                "user": "U286Q175Y",
+                "editable": false,
+                "size": 1246,
+                "mode": "external",
+                "is_external": true,
+                "external_type": "gdrive",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/docs.google.com\/spreadsheets\/d\/1C8VaXW7g9Z1em73-SLzGjHDb2JBBqWbJxgBg8YsMcf8\/edit?usp=sharing",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_64.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_80.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_360.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360_w": 254,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_480.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_480_w": 339,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_160.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_720.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720_w": 509,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_800.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1132,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_960.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_960_w": 678,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-F6HK1D97Z-8788f48b51\/edhrec_combos_1024.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_1024_w": 724,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1024,
+                "original_h": 1449,
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U286Q175Y\/F6HK1D97Z\/edhrec_combos",
+                "is_starred": false,
+                "external_id": "1C8VaXW7g9Z1em73-SLzGjHDb2JBBqWbJxgBg8YsMcf8",
+                "external_url": "https:\/\/docs.google.com\/spreadsheets\/d\/1C8VaXW7g9Z1em73-SLzGjHDb2JBBqWbJxgBg8YsMcf8\/edit?usp=sharing",
+                "has_rich_preview": true
+            }
+        ],
+        "upload": false,
+        "user": "U286Q175Y",
+        "display_as_bot": false,
+        "ts": "1501598680.564002",
+        "edited": {
+            "user": "U286Q175Y",
+            "ts": "1511020615.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thank you, that's how I imagined it",
+        "user": "U6G90R56F",
+        "ts": "1501598716.586909",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So, there are which \"Type of Combo\"? Game Ending, Infinte ETB\/Dies\/LTB?",
+        "user": "U6G90R56F",
+        "ts": "1501598811.646810",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah let’s come up with the categories",
+        "user": "U286Q175Y",
+        "ts": "1501598916.713822",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "infinite mana is one",
+        "user": "U286Q175Y",
+        "ts": "1501598926.720256",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "infinite card draw",
+        "user": "U286Q175Y",
+        "ts": "1501598931.723269",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "game ending",
+        "user": "U286Q175Y",
+        "ts": "1501598936.726872",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ETB\/Dies\/LTB is a good one",
+        "user": "U286Q175Y",
+        "ts": "1501598945.732660",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "infinite tokens",
+        "user": "U286Q175Y",
+        "ts": "1501599072.813926",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hmmmmmm",
+        "user": "U286Q175Y",
+        "ts": "1501599100.832124",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "these cross combo combos are weird",
+        "user": "U286Q175Y",
+        "ts": "1501599105.834849",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "like (Sword of the Paruns OR Umbral Mantle) x (any creature that taps for a lot mana)",
+        "user": "U286Q175Y",
+        "ts": "1501599124.847409",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "right",
+        "user": "U6G90R56F",
+        "ts": "1501599152.865002",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "with altar of dementia instead of goblin bombardment you can also win on the spot",
+        "user": "U6G90R56F",
+        "ts": "1501599184.885852",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i kind of want to just list them all out",
+        "user": "U286Q175Y",
+        "ts": "1501599194.892429",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I can do that",
+        "user": "U6G90R56F",
+        "ts": "1501599201.896651",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "it’ll be a pain in the ass but i think it’ll make it easier",
+        "user": "U286Q175Y",
+        "ts": "1501599203.898631",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Does \"Mill\" count as game ending?",
+        "user": "U6G90R56F",
+        "ts": "1501599286.952496",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Because technically you only win on that player's upkeep",
+        "user": "U6G90R56F",
+        "ts": "1501599311.969417",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i could go either way",
+        "user": "U286Q175Y",
+        "ts": "1501599330.981786",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "there is also self mill",
+        "user": "U286Q175Y",
+        "ts": "1501599339.987965",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "let’s keep it separate from game ending",
+        "user": "U286Q175Y",
+        "ts": "1501599373.010228",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "because you still need to handle eldrazi and stupid shit like that",
+        "user": "U286Q175Y",
+        "ts": "1501599380.014808",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok",
+        "user": "U6G90R56F",
+        "ts": "1501599387.019530",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Infinite Turns and Infinite Combat Steps?",
+        "user": "U6G90R56F",
+        "ts": "1501599481.080305",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "And how do we handle \"any creature\"?",
+        "user": "U6G90R56F",
+        "ts": "1501599513.101392",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U6G90R56F",
+            "ts": "1501599525.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "i like those combo categories",
+        "user": "U286Q175Y",
+        "ts": "1501599556.130186",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "look how i handled elvish archdruid + sword of the paruns",
+        "user": "U286Q175Y",
+        "ts": "1501599565.136192",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "basically in the description i said you need 4 elves",
+        "user": "U286Q175Y",
+        "ts": "1501599576.143059",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "very good",
+        "user": "U6G90R56F",
+        "ts": "1501599581.146935",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i think that’s ok when it doesn’t amtter what it is",
+        "user": "U286Q175Y",
+        "ts": "1501599583.147979",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok i figured it out",
+        "user": "U286Q175Y",
+        "ts": "1501599912.369585",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "we can have the cards separated by commas",
+        "user": "U286Q175Y",
+        "ts": "1501599922.376312",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "on each line",
+        "user": "U286Q175Y",
+        "ts": "1501599924.377095",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "if they are cross combos",
+        "user": "U286Q175Y",
+        "ts": "1501599928.379598",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "like\n\nElvish Archdruid;Metalworker\nSword of the Paruns;Umbral Mantle",
+        "user": "U286Q175Y",
+        "ts": "1501599984.416962",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "sure. What do you think if I make a copy of that spreadsheet and post that copy somewhere (like reddit), asking people to fill in the ones they can think of?",
+        "user": "U6G90R56F",
+        "ts": "1501600039.452771",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "nvm, I just read the other cahnnel",
+        "user": "U6G90R56F",
+        "ts": "1501600111.499098",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah bad idea right now",
+        "user": "U286Q175Y",
+        "ts": "1501600222.569433",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "check out the sword of paruns thing i did",
+        "user": "U286Q175Y",
+        "ts": "1501600229.573981",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "that’ll work out nicely",
+        "user": "U286Q175Y",
+        "ts": "1501600233.576608",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i can then explode it out programmatically",
+        "user": "U286Q175Y",
+        "ts": "1501600242.582168",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> this got buried probably, but can you fix the themes\/tribes on the front page?",
+        "user": "U286Q175Y",
+        "ts": "1501609646.133284",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "if it's easy",
+        "user": "U286Q175Y",
+        "ts": "1501609649.134648",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "im going to announce the feature on social medias",
+        "user": "U286Q175Y",
+        "ts": "1501609661.141585",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Mill also works by forcing folks to draw from and empty library, so you don't have to wait for upkeep.",
+        "user": "U3L7A68JC",
+        "ts": "1501609917.285193",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "da79cb17f3e0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-03\/122252173760_da79cb17f3e043b24d19_72.jpg",
+            "first_name": "Henry",
+            "real_name": "Henry Stukenborg",
+            "display_name": "hstukenborg",
+            "team": "T286HM2F3",
+            "name": "hstukenborg",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U3L7A68JC",
+            "ts": "1501609935.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U286Q175Y>, actually, it's not just the front page.",
+        "user": "U6G90R56F",
+        "ts": "1501609995.329320",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It happens on a few others as well i think",
+        "user": "U6G90R56F",
+        "ts": "1501610011.338727",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah",
+        "user": "U286Q175Y",
+        "ts": "1501610015.340884",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yes",
+        "user": "U28TLDP0R",
+        "ts": "1501610053.362666",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "top cards, recs, main page is all i see",
+        "user": "U286Q175Y",
+        "ts": "1501610062.367690",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i know some are broken but the front page should be done at least",
+        "user": "U286Q175Y",
+        "ts": "1501610082.379021",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "k those should all be updated",
+        "user": "U28TLDP0R",
+        "ts": "1501610676.732400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Looks good! :+1:",
+        "user": "U6G90R56F",
+        "ts": "1501610765.783539",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> do we still have the old instance running?",
+        "user": "U286Q175Y",
+        "ts": "1501622365.851360",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yes",
+        "user": "U28TLDP0R",
+        "ts": "1501622380.858286",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Some user just pointed me to <http:\/\/old.edhrec.com|old.edhrec.com>. How did he wven know about hat",
+        "user": "U286Q175Y",
+        "ts": "1501622390.862461",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Anyways that shit needs to be shut down :money_with_wings: ",
+        "user": "U286Q175Y",
+        "ts": "1501622411.872362",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "probably just guessed idk",
+        "user": "U28TLDP0R",
+        "ts": "1501622413.873375",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "sure",
+        "user": "U28TLDP0R",
+        "ts": "1501622416.874744",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I thiught you had shut it down by now",
+        "user": "U286Q175Y",
+        "ts": "1501622434.883126",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I guess we kept it up due to the instability",
+        "user": "U286Q175Y",
+        "ts": "1501622444.887768",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U6G90R56F> this list looks good. i think we need to continue filling out and refine it a bit. also the text needs to be edited",
+        "user": "U286Q175Y",
+        "ts": "1501637983.131197",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "however, this is more than enough to start working on the code for it",
+        "user": "U286Q175Y",
+        "ts": "1501638009.136121",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/themes\/spellslinger>",
+        "user": "U286Q175Y",
+        "ts": "1501639922.495002",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Spellslinger",
+                "title_link": "https:\/\/edhrec.com\/themes\/spellslinger",
+                "text": "Popular spellslinger Theme EDH\/Commander commanders: Refuse,Brainstorm,Mystic Retrieval,Preordain,Baral Chief of Compliance,Izzet Signet",
+                "fallback": "EDHREC - Spellslinger",
+                "from_url": "https:\/\/edhrec.com\/themes\/spellslinger",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "[[Refuse \/\/ Cooperate ]] still showing up near the top. i wonder whats causing this garbage",
+        "user": "U286Q175Y",
+        "ts": "1501639937.497539",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1501639938.497664",
+        "username": "Scryfall",
+        "bot_id": "B5J6VECD6",
+        "attachments": [
+            {
+                "fallback": "Refuse {3}{R} \/\/ Instant \/\/ Refuse deals damage to target spell's controller equal to that spell's converted mana cost. \/\/ --------- \/\/ Cooperate {2}{U} \/\/ Instant \/\/ Aftermath (Cast this spell only from your graveyard. Then exile it.) \/\/ Copy target instant or sorcery spell. You may choose new targets for the copy.",
+                "text": "Instant\nRefuse deals damage to target spell's controller equal to that spell's converted mana cost.\n---------\n*Cooperate {2}{U}*\nInstant\nAftermath _(Cast this spell only from your graveyard. Then exile it.)_\nCopy target instant or sorcery spell. You may choose new targets for the copy.",
+                "title": "Refuse {3}{R}",
+                "id": 1,
+                "title_link": "https:\/\/scryfall.com\/card\/hou\/156?utm_campaign=srv-oSZMHCkERB&utm_content=text&utm_medium=bot&utm_source=slack",
+                "thumb_height": 204,
+                "thumb_width": 146,
+                "thumb_url": "https:\/\/img.scryfall.com\/cards\/small\/en\/hou\/156.jpg?1498847567",
+                "color": "6E3E74",
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "<@U3RJ9VDRT> ive got a new project for ya",
+        "user": "U286Q175Y",
+        "ts": "1501643454.106803",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "it's tied to a real project at m&amp;k but i think it could be interesting here. so i want you to try it out so we can do it smoothly for a customer",
+        "user": "U286Q175Y",
+        "ts": "1501643475.109952",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "step 1. set up tableau\nstep 2. hook it into our database\nstep 3. ????",
+        "user": "U286Q175Y",
+        "ts": "1501643492.112550",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Okdoke, will look into it, ice at least heard of this before",
+        "user": "U3RJ9VDRT",
+        "ts": "1501646450.573969",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "do ou have a license or anything for it? it looks like a subscription service for it, we can do a 14 day trial for the desktop version to see what’s up",
+        "user": "U3RJ9VDRT",
+        "ts": "1501648067.835448",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "trial is good",
+        "user": "U286Q175Y",
+        "ts": "1501648112.842915",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i think tableau server has a trial",
+        "user": "U286Q175Y",
+        "ts": "1501648131.845811",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "actually its tableau online that has a trial",
+        "user": "U286Q175Y",
+        "ts": "1501648210.858686",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i wouldn’t mind trying that but i wonder how it gets data access",
+        "user": "U286Q175Y",
+        "ts": "1501648220.860108",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "that’ll be fun",
+        "user": "U286Q175Y",
+        "ts": "1501648221.860328",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "gotta be easier that using a hammer on data at the very least",
+        "user": "U3RJ9VDRT",
+        "ts": "1501648246.864302",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i think the easiest thing would be tableau desktop",
+        "user": "U286Q175Y",
+        "ts": "1501648356.880544",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "to try it out",
+        "user": "U286Q175Y",
+        "ts": "1501648358.880912",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "agreed",
+        "user": "U3RJ9VDRT",
+        "ts": "1501648366.882067",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "see if there is an ssh\/postgres option so we dont need to open the database to the world",
+        "user": "U286Q175Y",
+        "ts": "1501648472.897430",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "as a quick go over, the biggest downside seems to be that it doesn’t currently support linux as far as the server version goes, but there is alpha versions being tested it seems",
+        "user": "U3RJ9VDRT",
+        "ts": "1501648535.907298",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "fd8a230c4341",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-13\/128226473879_fd8a230c4341cff7c5a4_72.png",
+            "first_name": "Patrick",
+            "real_name": "Patrick Sippola",
+            "display_name": "patrick",
+            "team": "T286HM2F3",
+            "name": "patrick",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U286Q175Y> I've got a long day of work before me but once I get back, I'll start refining the database. Just some cleaning up and stuff. Is that alright?",
+        "user": "U6G90R56F",
+        "ts": "1501648680.929019",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "bd009828a2e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-08-01\/219850449441_bd009828a2e606112477_72.jpg",
+            "first_name": "Fabian",
+            "real_name": "Fabian Fässler",
+            "display_name": "fabian",
+            "team": "T286HM2F3",
+            "name": "fabian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "no rush. it’ll take me a week or two to get to using hte list anyways",
+        "user": "U286Q175Y",
+        "ts": "1501648987.975632",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

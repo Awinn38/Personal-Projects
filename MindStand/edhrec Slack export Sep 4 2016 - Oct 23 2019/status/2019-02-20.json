@@ -1,0 +1,218 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Feb\/2019:12:57:58] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 344, in get\nKeyError: 'vengeant-vampire'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1691, in tally\n    card_age = cards.get(card)['age']\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 346, in get\n    return None\nKeyError: 'chaos orb'\n```",
+        "ts": "1550667343.027300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-20 13:48:09,394 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 274, in &lt;module&gt;\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 227, in get_entries\n    xml_pars = minidom.parseString(xml_data)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/minidom.py\", line 1968, in parseString\n    return expatbuilder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 925, in parseString\n    return builder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 223, in parseString\n    parser.Parse(string, True)\nxml.parsers.expat.ExpatError: not well-formed (invalid token): line 2, column 11\n```",
+        "ts": "1550670353.027400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-20 17:04:16,147 ERROR Somehow Jungle Shrine got into this set of recs ['R', 'W'] (cmdr matrix)\n```",
+        "ts": "1550682120.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[20\/Feb\/2019:17:08:12] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 86, in random\n    url = cards.sanitize_url(random.choice(list(cards.get_commanders().keys())))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 380, in get_commanders\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/commanders'\n```",
+        "ts": "1550682356.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-20 18:12:07,187 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 274, in &lt;module&gt;\n    for entry in get_entries(playlist):\n  File \"\/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\", line 227, in get_entries\n    xml_pars = minidom.parseString(xml_data)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/minidom.py\", line 1968, in parseString\n    return expatbuilder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 925, in parseString\n    return builder.parseString(string)\n  File \"\/usr\/lib\/python3.5\/xml\/dom\/expatbuilder.py\", line 223, in parseString\n    parser.Parse(string, True)\nxml.parsers.expat.ExpatError: not well-formed (invalid token): line 2, column 11\n```",
+        "ts": "1550686191.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-20 23:36:44,805 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 161, in &lt;module&gt;\n    get_new_decks(i)\n  File \".\/mtggoldfish.py\", line 151, in get_new_decks\n    return last_page\nNameError: name 'last_page' is not defined\n```",
+        "ts": "1550705667.000400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-20 23:39:25,773 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'get_new_decks' is not defined\n```",
+        "ts": "1550705828.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 00:10:24,195 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/archidekt.py\", line 261, in &lt;module&gt;\n  File \".\/archidekt.py\", line 201, in get_new_decks\n    elif len(deck['commanders']) == 1:\nNameError: name 'is_too_old' is not defined\n```",
+        "ts": "1550707687.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 00:57:12,024 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/deckstats.py\", line 197, in &lt;module&gt;\n    get_new_decks(i)\n  File \".\/deckstats.py\", line 136, in get_new_decks\n    return days_ago &gt;= 15\nNameError: name 'days_ago' is not defined\n```",
+        "ts": "1550710494.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[21\/Feb\/2019:05:36:36] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 344, in get\nKeyError: 'immortal-phoenix'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1691, in tally\n    card_age = cards.get(card)['age']\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 346, in get\n    return None\nKeyError: 'chaos orb'\n```",
+        "ts": "1550727258.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[21\/Feb\/2019:05:36:37] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 344, in get\nKeyError: 'immortal-phoenix'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1691, in tally\n    card_age = cards.get(card)['age']\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 346, in get\n    return None\nKeyError: 'chaos orb'\n```",
+        "ts": "1550727259.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[21\/Feb\/2019:05:36:46] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 344, in get\nKeyError: 'immortal-phoenix'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1691, in tally\n    card_age = cards.get(card)['age']\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 346, in get\n    return None\nKeyError: 'chaos orb'\n```",
+        "ts": "1550727269.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 07:16:53,108 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'deck_ids' is not defined\n```",
+        "ts": "1550733275.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 07:25:03,288 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 145, in &lt;module&gt;\n    links = get_new_decks(i)\nNameError: name 'i' is not defined\n```",
+        "ts": "1550733765.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 07:25:13,329 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 145, in &lt;module&gt;\n    links = get_new_decks()\n  File \".\/mtggoldfish.py\", line 87, in get_new_decks\n    r = requests.get('<https:\/\/www.mtggoldfish.com\/deck\/custom\/{}?page={}#paper>'.format(dformat, page), headers={'User-Agent': USER_AGENT})\nNameError: name 'dformat' is not defined\n```",
+        "ts": "1550733775.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 07:37:52,959 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/deckstats.py\", line 173, in &lt;module&gt;\n    scrape_decks(links)\n  File \".\/deckstats.py\", line 158, in scrape_decks\n    for link in links:\nTypeError: 'NoneType' object is not iterable\n```",
+        "ts": "1550734535.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 07:41:24,773 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 351, in get\n    return _CARDS[sanitize_url(name)]\nKeyError: 'sword-of-dungeons-&amp;-dragons'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \".\/deckstats.py\", line 175, in &lt;module&gt;\n    scrape_decks(links)\n  File \".\/deckstats.py\", line 170, in scrape_decks\n    index_deck(deck)\n  File \".\/deckstats.py\", line 151, in index_deck\n    basiccount=basiccount\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1403, in save_deck\n    card_info = cards.get(card)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 353, in get\n    return _CARDS['chaos orb']\nKeyError: 'chaos orb'\n```",
+        "ts": "1550734746.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-21 07:50:37,459 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 351, in get\n    return _CARDS[sanitize_url(name)]\nKeyError: 'e'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \".\/mtggoldfish.py\", line 146, in &lt;module&gt;\n    scrape_decks(links)\n  File \".\/mtggoldfish.py\", line 133, in scrape_decks\n    ctable='cards'\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1454, in save_deck\n    age = max([cards.get(card)['age'] for card in cardset])\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1454, in &lt;listcomp&gt;\n    age = max([cards.get(card)['age'] for card in cardset])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 353, in get\n    return _CARDS['chaos-orb']\nKeyError: 'chaos orb'\n```",
+        "ts": "1550735299.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

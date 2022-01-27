@@ -1,0 +1,95 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1543269534.025800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'tcgplayer\/solemn simulacrum'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 38, in get\n    return json.loads(_CACHE[key])\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 312, in loads\n    s.__class__.__name__))\nTypeError: the JSON object must be str, not 'dict'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 848, in nightly\n    make_partner_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 795, in make_partner_commanders\n    make_decks_cmdr(commander)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 699, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in make_deck\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in &lt;listcomp&gt;\n    cardviews = [CardView(Card(c), directory='cards') for c in cgroup]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 86, in __init__\n    self.tcgplayer = tcgplayer.get(self.cards[0].name)\n  File \"\/home\/ubuntu\/edhrec\/core\/tcgplayer.py\", line 107, in get\n    return cache.get('tcgplayer\/' + name)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 40, in get\n    return _CACHE[key]\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 85, in __getitem__\n    return self.__missing__(key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 80, in __missing__\n    value = self.__missing(key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 110, in __missing\n    raise KeyError(key)\nKeyError: 'tcgplayer\/solemn simulacrum'\n",
+        "ts": "1543278830.025900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nTue Nov 27 00:35:05 UTC 2018\n\n```",
+        "ts": "1543278832.026000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Nov 27 00:35:06 UTC 2018\n\n```",
+        "ts": "1543278832.026100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1543280332.026200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "f848a538-7cee-4b14-a1b5-e3debd757576",
+        "type": "message",
+        "text": "^ noted",
+        "user": "U28TLDP0R",
+        "ts": "1543283319.026700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 32547) - 27\/Nov\/2018:05:29:59\n('157.55.39.62', 4951) - 27\/Nov\/2018:05:27:44\n('157.55.39.161', 4935) - 27\/Nov\/2018:05:30:00\n('207.46.13.51', 4920) - 27\/Nov\/2018:05:29:54\n('207.46.13.157', 4815) - 27\/Nov\/2018:05:29:56\n('5.255.250.1', 3097) - 27\/Nov\/2018:05:14:01\n('5.255.250.180', 1920) - 27\/Nov\/2018:05:28:21\n('178.154.244.170', 1485) - 27\/Nov\/2018:05:15:33\n('66.249.73.91', 1447) - 27\/Nov\/2018:05:28:04\n('66.249.73.72', 1387) - 27\/Nov\/2018:05:29:43\n('52.168.124.173', 1230) - 26\/Nov\/2018:07:22:54\n('13.56.138.136', 1124) - 27\/Nov\/2018:05:29:27\n('66.249.73.69', 1094) - 27\/Nov\/2018:05:07:03\n('66.249.73.74', 1030) - 27\/Nov\/2018:05:23:22\n('204.2.255.145', 1007) - 27\/Nov\/2018:04:08:06\n('96.49.182.3', 1006) - 26\/Nov\/2018:13:48:30\n('13.56.150.32', 960) - 27\/Nov\/2018:05:28:25\n('66.249.73.89', 917) - 27\/Nov\/2018:05:25:52\n('77.88.47.5', 898) - 27\/Nov\/2018:05:11:59\n('111.202.100.113', 861) - 27\/Nov\/2018:03:47:07\n('18.215.117.151', 815) - 26\/Nov\/2018:16:56:34\n('70.30.244.26', 784) - 27\/Nov\/2018:05:23:44\n('93.158.161.140', 765) - 27\/Nov\/2018:05:03:51\n('148.64.56.64', 747) - 27\/Nov\/2018:05:29:11\n('66.249.73.71', 738) - 27\/Nov\/2018:05:12:07\n\n```",
+        "ts": "1543296528.026800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

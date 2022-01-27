@@ -1,0 +1,268 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nset() got an unexpected keyword argument 'postgres'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 952, in edhrec\n    logger.error(traceback.format_exc())\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 233, in make_sets\n    setcards, setreprints = origin.getcards(mtgset=setabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 34, in getcards\n    sorted_set_reprints = sorted([(c, len(database.get_card(c))) for c in set_reprints],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 34, in &lt;listcomp&gt;\n    sorted_set_reprints = sorted([(c, len(database.get_card(c))) for c in set_reprints],\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 336, in get_card\n    cache.set(cachekey, out, .083, .24, postgres=False)\nTypeError: set() got an unexpected keyword argument 'postgres'\n",
+        "ts": "1540106888.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Oct 21 07:28:49 UTC 2018\n\n```",
+        "ts": "1540106890.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Oct 21 07:28:51 UTC 2018\n\n```",
+        "ts": "1540106891.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmake_commander() got an unexpected keyword argument 'skiparticles'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 775, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\nTypeError: make_commander() got an unexpected keyword argument 'skiparticles'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nTypeError: make_commander() got an unexpected keyword argument 'skiparticles'\n",
+        "ts": "1540114551.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Oct 21 09:36:32 UTC 2018\n\n```",
+        "ts": "1540114552.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Oct 21 09:36:33 UTC 2018\n\n```",
+        "ts": "1540114554.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmake_commander() got an unexpected keyword argument 'skiparticles'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 775, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\nTypeError: make_commander() got an unexpected keyword argument 'skiparticles'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nTypeError: make_commander() got an unexpected keyword argument 'skiparticles'\n",
+        "ts": "1540122118.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Oct 21 11:42:39 UTC 2018\n\n```",
+        "ts": "1540122119.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Oct 21 11:42:41 UTC 2018\n\n```",
+        "ts": "1540122121.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmake_commander() got an unexpected keyword argument 'skiparticles'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 775, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\nTypeError: make_commander() got an unexpected keyword argument 'skiparticles'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nTypeError: make_commander() got an unexpected keyword argument 'skiparticles'\n",
+        "ts": "1540129719.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Oct 21 13:49:20 UTC 2018\n\n```",
+        "ts": "1540129720.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Oct 21 13:49:22 UTC 2018\n\n```",
+        "ts": "1540129721.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1540141439.000100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [91.72906420765601 (21\/10\/18 16:48:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2018-10-21T17:03:58.495+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-21T17:03:58.532Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC CPU\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC CPU\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [91.72906420765601 (21\/10\/18 16:48:00)] was greater than or equal to the threshold (90.0).\",\"StateChangeTime\":\"2018-10-21T17:03:58.495+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":90.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-21T17:03:58.532Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1540144763.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1540144763.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1540144763.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1540148363.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 37388) - 22\/Oct\/2018:05:30:01\n('157.55.39.168', 5910) - 22\/Oct\/2018:05:29:35\n('40.77.167.16', 5791) - 22\/Oct\/2018:05:29:40\n('207.46.13.169', 5643) - 22\/Oct\/2018:05:29:59\n('207.46.13.40', 5324) - 22\/Oct\/2018:05:29:31\n('37.9.87.143', 3629) - 22\/Oct\/2018:05:29:59\n('66.249.64.42', 3545) - 22\/Oct\/2018:05:25:41\n('94.130.16.50', 3496) - 22\/Oct\/2018:03:51:14\n('66.249.64.54', 2659) - 22\/Oct\/2018:05:22:38\n('66.249.64.50', 2654) - 22\/Oct\/2018:05:29:42\n('66.249.64.47', 2619) - 22\/Oct\/2018:05:29:19\n('77.88.47.5', 1799) - 22\/Oct\/2018:05:29:55\n('88.99.250.15', 1763) - 22\/Oct\/2018:05:29:51\n('66.249.64.62', 1489) - 21\/Oct\/2018:16:10:02\n('18.215.117.151', 1179) - 21\/Oct\/2018:23:39:07\n('216.244.66.232', 1163) - 22\/Oct\/2018:05:29:37\n('95.91.223.191', 1059) - 21\/Oct\/2018:15:46:53\n('5.255.250.119', 888) - 22\/Oct\/2018:05:15:29\n('106.120.173.150', 883) - 22\/Oct\/2018:02:37:42\n('202.14.10.233', 872) - 22\/Oct\/2018:05:26:44\n('148.64.56.73', 754) - 22\/Oct\/2018:05:27:50\n('148.64.56.70', 735) - 22\/Oct\/2018:05:29:13\n('93.158.161.167', 734) - 21\/Oct\/2018:08:59:23\n('100.43.90.124', 720) - 22\/Oct\/2018:05:29:54\n('107.77.211.101', 718) - 22\/Oct\/2018:05:30:01\n\n```",
+        "ts": "1540186159.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nset() got an unexpected keyword argument 'postgres'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 935, in edhrec\n    make_sets()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 233, in make_sets\n    setcards, setreprints = origin.getcards(mtgset=setabbr)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 34, in getcards\n    sorted_set_reprints = sorted([(c, len(database.get_card(c))) for c in set_reprints],\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 34, in &lt;listcomp&gt;\n    sorted_set_reprints = sorted([(c, len(database.get_card(c))) for c in set_reprints],\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 336, in get_card\n    cache.set(cachekey, list(out))\nTypeError: set() got an unexpected keyword argument 'postgres'\n",
+        "ts": "1540187237.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nMon Oct 22 05:48:02 UTC 2018\n\n```",
+        "ts": "1540187238.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Oct 22 05:48:03 UTC 2018\n\n```",
+        "ts": "1540187240.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

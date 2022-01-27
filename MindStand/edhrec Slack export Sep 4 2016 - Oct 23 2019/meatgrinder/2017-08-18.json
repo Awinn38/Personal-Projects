@@ -1,0 +1,182 @@
+[
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> whats a good way to test post requests and sessions and shit",
+        "user": "U286Q175Y",
+        "ts": "1503112961.000022",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "looks like you can do curl --cookie",
+        "user": "U286Q175Y",
+        "ts": "1503112998.000029",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "man this fuckin thing is killin me",
+        "user": "U286Q175Y",
+        "ts": "1503113260.000033",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "`curl --cookie -H \"Content-Type: application\/json\" -X POST -d '{\"username\":\"user1\",\"password\":\"abcxyz\"}' <http:\/\/decks.edhrec.com:8080\/auth>`\n&gt;&gt;&gt;\n173.67.38.105 - - [19\/Aug\/2017 03:26:57] “POST \/auth HTTP\/1.1” 500 -\nTraceback (most recent call last):\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1997, in __call__\n    return self.wsgi_app(environ, start_response)\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1985, in wsgi_app\n    response = self.handle_exception(e)\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1540, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/_compat.py”, line 33, in reraise\n    raise value\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1982, in wsgi_app\n    response = self.full_dispatch_request()\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1614, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1517, in handle_user_exception\n    reraise(exc_type, exc_value, tb)\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/_compat.py”, line 33, in reraise\n    raise value\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1612, in full_dispatch_request\n    rv = self.dispatch_request()\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask\/app.py”, line 1598, in dispatch_request\n    return self.view_functions[rule.endpoint](**req.view_args)\n  File “\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/flask_jwt\/__init__.py”, line 115, in _default_auth_request_handler\n    username = data.get(current_app.config.get(‘JWT_AUTH_USERNAME_KEY’), None)\nAttributeError: ‘NoneType’ object has no attribute ‘get’",
+        "user": "U286Q175Y",
+        "ts": "1503113286.000013",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hmm --cookie was breaking it ¯\\_(ツ)_\/¯",
+        "user": "U286Q175Y",
+        "ts": "1503113318.000018",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\nIn [2]: import passwords\n\nIn [3]: u=passwords.User('don')\n\nIn [4]: u.set_password('ballsack')\n\nIn [5]: u.check_password('ballsack')\nOut[5]: True\n\nIn [6]: u.check_password('ballsack1')\nOut[6]: False\n\nIn [7]: u.delete_password()\n\nIn [8]: u.needs_password_reset()\nOut[8]: True\n```",
+        "user": "U286Q175Y",
+        "ts": "1503118155.000042",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "interface for “user” object out of the postgres database",
+        "user": "U286Q175Y",
+        "ts": "1503118187.000025",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "using properly salted and hashed passwords",
+        "user": "U286Q175Y",
+        "ts": "1503118198.000007",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "also got flask jwt working",
+        "user": "U286Q175Y",
+        "ts": "1503118221.000005",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

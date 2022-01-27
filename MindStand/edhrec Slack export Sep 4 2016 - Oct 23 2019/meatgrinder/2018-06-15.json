@@ -1,0 +1,758 @@
+[
+    {
+        "client_msg_id": "7784ad4a-c0c7-4c11-82aa-8333e782533b",
+        "type": "message",
+        "text": "```\nubuntu@ip-172-30-1-66:~\/edhrec\/batch$ cat \/etc\/crontab \n# \/etc\/crontab: system-wide crontab\n# Unlike any other crontab you don't have to run the `crontab'\n# command to install the new version when you edit this file\n# and files in \/etc\/cron.d. These files also have username fields,\n# that none of the other crontabs do.\n\nSHELL=\/bin\/sh\nPATH=\/usr\/local\/sbin:\/usr\/local\/bin:\/sbin:\/bin:\/usr\/sbin:\/usr\/bin\n\n##  m     h dom mon dow user command\n  17     *   *   *   * root    cd \/ &amp;&amp; run-parts --report \/etc\/cron.hourly\n  25     6   *   *   * root test -x \/usr\/sbin\/anacron || ( cd \/ &amp;&amp; run-parts --report \/etc\/cron.daily )\n  47     6   *   *   7 root test -x \/usr\/sbin\/anacron || ( cd \/ &amp;&amp; run-parts --report \/etc\/cron.weekly )\n  52     6   1   *   * root test -x \/usr\/sbin\/anacron || ( cd \/ &amp;&amp; run-parts --report \/etc\/cron.monthly )\n   0     2   *   *   * ubuntu \/home\/ubuntu\/edhrec\/batch\/backup.py\n\n   0     *   *   *   * ubuntu \/home\/ubuntu\/edhrec\/core\/checks.py\n  32     1   *   *   1 ubuntu \/home\/ubuntu\/edhrec\/core\/recommendations.py\n   2  *\/12   *   *   * ubuntu \/home\/ubuntu\/edhrec\/batch\/populate_usagescores.sh \n*\/12     *   *   *   * ubuntu \/home\/ubuntu\/edhrec\/batch\/youtubemonitor.py\n   0     *   *   *   * ubuntu \/home\/ubuntu\/edhrec\/api\/daily.py\n  30     5   *   *   * ubuntu cat \/var\/log\/nginx\/access.log | python2 \/home\/ubuntu\/edhrec\/batch\/count_nginx_ip.py | python \/home\/ubuntu\/edhrec\/core\/slackalert.py status\n\n# restart api\n0     *   *   *   * root supervisorctl restart api1\n30    *   *   *   * root supervisorctl restart api2\n\n# restart dynamic\n34    *\/2   *   *   * root supervisorctl restart dynamic5 &amp;&amp; supervisorctl restart dynamic6 &amp;&amp; supervisorctl restart dynamic7 &amp;&amp; supervisorctl restart dynamic8 &amp;&amp; supervisorctl restart dynamic9 &amp;&amp; supervisorctl restart dynamic0\n\n# aws cloudwatch\n *\/5     *   *   *   * ubuntu \/home\/ubuntu\/aws-scripts-mon\/mon-put-instance-data.pl --mem-util --mem-used-incl-cache-buff --mem-used --mem-avail\n\n# letsencrypt\n0 0,12 * * * python -c 'import random; import time; time.sleep(random.random() * 3600)' &amp;&amp; .\/home\/ubuntu\/certbot-auto renew \n```",
+        "user": "U286Q175Y",
+        "ts": "1529074734.000823",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "747b962d-1f7e-4e6c-a676-6db1a7dc7c54",
+        "type": "message",
+        "text": "for some reason `youtubemonitor.py` is not running",
+        "user": "U286Q175Y",
+        "ts": "1529074746.000494",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c0b54800-9ed1-439c-b5df-5940e77609c5",
+        "type": "message",
+        "text": "crontab looks fine",
+        "user": "U286Q175Y",
+        "ts": "1529074755.000603",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "310b51be-3e6c-4efa-b5ea-4a128257d9f6",
+        "type": "message",
+        "text": "any ideas?",
+        "user": "U286Q175Y",
+        "ts": "1529074757.000143",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b4f80f14-770c-4c60-b955-9b108bbb3263",
+        "type": "message",
+        "text": "`(*system*) ERROR (Syntax error, this crontab file will be ignored)`",
+        "user": "U28TLDP0R",
+        "ts": "1529091127.000281",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "492f2960-ce7a-4c45-ad54-a231203ce2a5",
+        "type": "message",
+        "text": "apparently reload\/restart gives no indication of this error, you have to check the syslog to see it",
+        "user": "U28TLDP0R",
+        "ts": "1529091165.000240",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "49d6ac4f-3f51-48bb-be2e-4de788d59381",
+        "type": "message",
+        "text": "it was the last line btw, I guess other versions of cron allow no username?  that line was directly copied from letsencrypt docs",
+        "user": "U28TLDP0R",
+        "ts": "1529091250.000145",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "667e3c47-2e48-42fd-88f1-a5a673d6923c",
+        "type": "message",
+        "text": "speaking of which I should fix that `.\/home` …",
+        "user": "U28TLDP0R",
+        "ts": "1529091281.000401",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Annoying ad ",
+        "files": [
+            {
+                "id": "FB7TN83HN",
+                "created": 1529095077,
+                "timestamp": 1529095077,
+                "name": ".png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U28TLDP0R",
+                "editable": false,
+                "size": 139324,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FB7TN83HN\/.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FB7TN83HN\/download\/.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_64.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_80.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_360.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360_w": 202,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_480.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_160.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_720.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_800.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_800_w": 450,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_960.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB7TN83HN-e18d5af774\/_1024.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 1334,
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U28TLDP0R\/FB7TN83HN\/.png",
+                "permalink_public": "https:\/\/slack-files.com\/T286HM2F3-FB7TN83HN-ceb5f363cf",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U28TLDP0R",
+        "display_as_bot": false,
+        "ts": "1529095080.000260"
+    },
+    {
+        "client_msg_id": "6d7b613d-ad0c-431a-a8f2-efaafaeb749f",
+        "type": "message",
+        "text": "ads are on articles now",
+        "user": "U28TLDP0R",
+        "ts": "1529096297.000215",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "521cdac0-ab7e-4ebf-940a-101aeae3182d",
+        "type": "message",
+        "text": "using the same google adsense ids as the other (but different div ids from nitro’s perspective) so if those need to change lmk the new ones",
+        "user": "U28TLDP0R",
+        "ts": "1529096320.000113",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529096336.000197",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card articles ads from Doing to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/G33CrJH8|articles ads>* from *Doing* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529097101.000416",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card articles upgrades - update wp plugins, redirect http to https from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/RY34tb0L|articles upgrades - update wp plugins, redirect http to https>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529098414.000120",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card articles upgrades - update wp plugins, redirect http to https from Doing to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/RY34tb0L|articles upgrades - update wp plugins, redirect http to https>* from *Doing* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529099220.000298",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card On partner pages, we should have a new panel that shows how many times each commander is tied to each partner. Then when you click the link, it takes you to that pair's page. from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/KbQlVBxD|On partner pages, we should have a new panel that shows how many times each commander is tied to each partner. Then when you click the link, it takes you to that pair's page.>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529101014.000234",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card check up on partner pages later - make sure all pages are being made added to list Doing on board edhrec.",
+                "text": "In list *Doing* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "check up on partner pages later - make sure all pages are being made",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/Kp16SMNX",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2f6f6f2c-42a3-41dc-aede-94180cbb5463",
+        "type": "message",
+        "text": "```\n        alldata = sorted([item for sublist in list(data['Cards'].values()) for item in sublist],\n                         key=lambda x: x['Popularity'], reverse=True)\n```",
+        "user": "U28TLDP0R",
+        "ts": "1529101946.000010",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0dc41d81-9216-47a3-8d81-7b70c65771c6",
+        "type": "message",
+        "text": "I wonder how much time is wasted on this line of code",
+        "user": "U28TLDP0R",
+        "ts": "1529101954.000066",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0d6145b7-41af-4f62-8388-2ce9295ce83c",
+        "type": "message",
+        "text": "some partner decks are in the db with non-partner commander2s",
+        "user": "U28TLDP0R",
+        "ts": "1529110701.000003",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529113122.000032",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card On partner pages, we should have a new panel that shows how many times each commander is tied to each partner. Then when you click the link, it takes you to that pair's page. from Doing to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/KbQlVBxD|On partner pages, we should have a new panel that shows how many times each commander is tied to each partner. Then when you click the link, it takes you to that pair's page.>* from *Doing* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FB8MCS4Q2",
+                "created": 1529113154,
+                "timestamp": 1529113154,
+                "name": "Screen Shot 2018-06-15 at 6.37.49 PM.png",
+                "title": "Screen Shot 2018-06-15 at 6.37.49 PM.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U28TLDP0R",
+                "editable": false,
+                "size": 1122525,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FB8MCS4Q2\/screen_shot_2018-06-15_at_6.37.49_pm.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FB8MCS4Q2\/download\/screen_shot_2018-06-15_at_6.37.49_pm.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_64.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_80.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_360.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360_w": 360,
+                "thumb_360_h": 150,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_480.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_480_w": 480,
+                "thumb_480_h": 200,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_160.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_720.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720_w": 720,
+                "thumb_720_h": 300,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_800.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_800_w": 800,
+                "thumb_800_h": 333,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_960.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_960_w": 960,
+                "thumb_960_h": 400,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FB8MCS4Q2-74aab90c7e\/screen_shot_2018-06-15_at_6.37.49_pm_1024.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 427,
+                "image_exif_rotation": 1,
+                "original_w": 3308,
+                "original_h": 1378,
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U28TLDP0R\/FB8MCS4Q2\/screen_shot_2018-06-15_at_6.37.49_pm.png",
+                "permalink_public": "https:\/\/slack-files.com\/T286HM2F3-FB8MCS4Q2-31cd506c29",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U28TLDP0R",
+        "display_as_bot": false,
+        "ts": "1529113158.000079"
+    },
+    {
+        "client_msg_id": "53dc55c8-07bd-4ee2-9edf-56b5bdbb4f04",
+        "type": "message",
+        "text": "im gonna reorganize a few of these cards",
+        "user": "U28TLDP0R",
+        "ts": "1529113200.000070",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529113414.000074",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card Rewrite CardList to support (a) raw html inside the CardList [so that cardkingdom purchase link can be at the top of every text-view list of CardLists], and (b) support alternate labels [so that average decklists work] added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "Rewrite CardList to support (a) raw html inside the CardList [so that cardkingdom purchase link can be at the top of every text-view list of CardLists], and (b) support alternate labels [so that average decklists work]",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/uL4bjyTL",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529113423.000053",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts Archived the card Redo average decklist page to be the hybrid text\/picture approach.",
+                "text": "Archived the card *<https:\/\/trello.com\/c\/Ig1RfQ8s|Redo average decklist page to be the hybrid text\/picture approach>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529113432.000067",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts Archived the card Use cardkingdom's new decklist thingy to allow people to export lists from the deckpreview pages.",
+                "text": "Archived the card *<https:\/\/trello.com\/c\/jtDuG5sp|Use cardkingdom's new decklist thingy to allow people to export lists from the deckpreview pages>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529113438.000060",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Rewrite CardList to support (a) raw html inside the CardList [so that cardkingdom purchase link can be at the top of every text-view list of CardLists], and (b) support alternate labels [so that average decklists work] from EDHREC Let's Do Soon to EDHREC New Features One Day....",
+                "text": "Moved *<https:\/\/trello.com\/c\/uL4bjyTL|Rewrite CardList to support (a) raw html inside the CardList [so that cardkingdom purchase link can be at the top of every text-view list of CardLists], and (b) support alternate labels [so that average decklists work]>* from *EDHREC Let's Do Soon* to *EDHREC New Features One Day...*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529113530.000062",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card Cache wordpress results or otherwise make wordpress stuff not take several minutes upon every initialization added to list EDHREC New Features One Day... on board edhrec.",
+                "text": "In list *EDHREC New Features One Day...* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "Cache wordpress results or otherwise make wordpress stuff not take several minutes upon every initialization",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/du7slD5a",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529115590.000091",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card make typeahead update without requiring hard refresh from EDHREC Bugs to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/EfCiRNCG|make typeahead update without requiring hard refresh>* from *EDHREC Bugs* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529117479.000062",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card brawl still uses old css\/js, update and test added to list EDHREC Bugs on board edhrec.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "brawl still uses old css\/js, update and test",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/DVzaah8m",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529117479.000073",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card make typeahead update without requiring hard refresh from Doing to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/EfCiRNCG|make typeahead update without requiring hard refresh>* from *Doing* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529129600.000048",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card brawl still uses old css\/js, update and test from EDHREC Bugs to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/DVzaah8m|brawl still uses old css\/js, update and test>* from *EDHREC Bugs* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

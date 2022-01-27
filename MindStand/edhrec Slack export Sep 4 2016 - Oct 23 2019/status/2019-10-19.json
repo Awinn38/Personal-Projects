@@ -1,0 +1,362 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 39.351s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571472337.031700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 08:13:58,346 INFO backup.py took 0:13:50.863482\n```",
+        "ts": "1571472835.031800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 08:15:11,858 INFO New Trending 2019-10-19\n{\"name\": \"Heroic Intervention\", \"s\": [0, 51, 58, 53, 73, 75, 78], \"z\": 1.2205188522277073}\n{\"name\": \"Orzhov Enforcer\", \"s\": [0, 2, 3, 5, 10, 9, 9], \"z\": 1.2081991718302043}\n{\"name\": \"Vedalken Orrery\", \"s\": [0, 17, 23, 29, 40, 33, 33], \"z\": 1.183187453252783}\n{\"name\": \"Shambling Vent\", \"s\": [0, 2, 6, 5, 14, 13, 10], \"z\": 1.1825252253854504}\n{\"name\": \"Judith, the Scourge Diva\", \"s\": [0, 9, 8, 12, 15, 17, 18], \"z\": 1.1719331685640295}\n{\"name\": \"Estrid's Invocation\", \"s\": [0, 17, 9, 13, 27, 19, 25], \"z\": 1.171005347172923}\n{\"name\": \"The Great Henge\", \"s\": [0, 22, 23, 21, 27, 37, 40], \"z\": 1.1629511361812321}\n{\"name\": \"Prowling Serpopard\", \"s\": [0, 15, 8, 10, 22, 17, 24], \"z\": 1.1592731394157374}\n{\"name\": \"Angel of Despair\", \"s\": [0, 3, 4, 6, 8, 9, 10], \"z\": 1.144257332832438}\n{\"name\": \"Avatar of Woe\", \"s\": [0, 2, 5, 7, 9, 13, 10], \"z\": 1.1410369823348991}\n2019-10-19 08:15:11,874 INFO daily.py took 0:15:04.091124\n```",
+        "ts": "1571472909.031900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 1.012s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571479499.032000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 12:05:03,152 INFO cards.py took 0:04:55.844964\n```",
+        "ts": "1571486700.032100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF...........................E.\n======================================================================\nERROR: test_random (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 466, in test_random\n    data = urllib.request.urlopen('<http:\/\/edhrec.com\/random>').read()\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 163, in urlopen\n    return opener.open(url, data, timeout)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 472, in open\n    response = meth(req, response)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 582, in http_response\n    'http', request, response, code, msg, hdrs)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 504, in error\n    result = self._call_chain(*args)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 444, in _call_chain\n    result = func(*args)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 696, in http_error_302\n    return self.parent.open(new, timeout=req.timeout)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 472, in open\n    response = meth(req, response)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 582, in http_response\n    'http', request, response, code, msg, hdrs)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 510, in error\n    return self._call_chain(*args)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 444, in _call_chain\n    result = func(*args)\n  File \"\/usr\/lib\/python3.5\/urllib\/request.py\", line 590, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 502: Bad Gateway\n\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 1.957s\n\nFAILED (failures=1, errors=1)\n\n```",
+        "ts": "1571486700.032200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1571486713.032300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 1.243s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571493899.032400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 1.788s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571501099.032500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1571501548.032600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 16:12:32,645 INFO nightly.py took 4:07:15.860842\n```",
+        "ts": "1571501549.032700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 38.663s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571508335.032800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 4.057s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571515501.032900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 20:27:24,969 INFO archidekt.py took 0:23:25.836581\n```",
+        "ts": "1571516840.033000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 20:55:08,754 INFO deckstats.py took 0:25:43.328542\n```",
+        "ts": "1571518504.033100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 21:44:35,352 INFO mtggoldfish.py took 0:29:07.544491\n```",
+        "ts": "1571521471.033200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 1.782s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571522698.033300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-19 22:33:27,117 INFO update_deckswithprices.py took 0:31:32.374049\nNew deck count from past 2 days: \n- Other: 0\n- deckstats: 546\n- MTGGoldfish: 479\n- Archidekt: 802\n```",
+        "ts": "1571524402.033400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 2.320s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571529898.033500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-20 00:11:14,848 INFO cards.py took 0:11:07.430131\n```",
+        "ts": "1571530270.033600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-20 00:35:40,521 INFO archidekt.py took 0:22:18.885236\n```",
+        "ts": "1571531736.033700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-20 01:03:10,753 INFO deckstats.py took 0:25:30.613503\n```",
+        "ts": "1571533386.033800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-20 01:52:09,782 INFO mtggoldfish.py took 0:28:41.412141\n```",
+        "ts": "1571536325.033900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 2.203s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571537098.034000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-20 02:41:34,271 INFO update_deckswithprices.py took 0:31:57.531914\nNew deck count from past 2 days: \n- Other: 0\n- deckstats: 341\n- Archidekt: 614\n- MTGGoldfish: 289\n```",
+        "ts": "1571539289.034100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1571539294.034200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 2.065s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571544297.034300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\nF.............................\n======================================================================\nFAIL: test_Atarka (__main__.testXenagos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/testing.py\", line 19, in test_Atarka\n    self.assertNotEqual(-1, data[bIndex:eIndex].find('Atarka'))\nAssertionError: -1 == -1\n\n----------------------------------------------------------------------\nRan 30 tests in 19.413s\n\nFAILED (failures=1)\n\n```",
+        "ts": "1571551515.034400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1571553752.034500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-10-20 06:42:38,163 INFO nightly.py took 4:00:58.108186\n```",
+        "ts": "1571553753.034600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/80588\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

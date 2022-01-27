@@ -1,0 +1,100 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nThu Oct  4 14:42:24 UTC 2018\n\n```",
+        "ts": "1538663687.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nThu Oct  4 14:42:26 UTC 2018\n\n```",
+        "ts": "1538663688.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nThu Oct  4 16:14:53 UTC 2018\n\n```",
+        "ts": "1538669235.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1538704678.000100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [3.085042978E8 (05\/10\/18 01:52:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2018-10-05T01:57:57.739+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"name\":\"InstanceId\",\"value\":\"i-0f7f3750e584e120e\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-05T01:57:57.767Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [3.085042978E8 (05\/10\/18 01:52:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2018-10-05T01:57:57.739+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"name\":\"InstanceId\",\"value\":\"i-0f7f3750e584e120e\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-10-05T01:57:57.767Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('13.57.243.235', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 6973)   -  05\/Oct\/2018:05:30:03 +0000\n(('54.193.80.163', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 6952)   -  05\/Oct\/2018:05:30:00 +0000\n(('54.157.3.180', 'test'), 5515)   -  05\/Oct\/2018:05:30:12 +0000\n(('54.145.195.171', 'Mozilla\/5.0 (compatible; VoluumDSP-content-bot\/2.0; <mailto:+dsp-dev@codewise.com|+dsp-dev@codewise.com>)'), 4307)   -  05\/Oct\/2018:05:29:53 +0000\n(('54.93.203.246', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 3296)   -  05\/Oct\/2018:00:26:39 +0000\n(('34.207.240.118', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 3060)   -  05\/Oct\/2018:01:06:46 +0000\n(('35.153.105.222', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 2933)   -  05\/Oct\/2018:01:36:42 +0000\n(('3.120.192.207', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 2798)   -  05\/Oct\/2018:00:11:15 +0000\n(('54.243.31.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2745)   -  05\/Oct\/2018:05:30:09 +0000\n(('107.23.255.34', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2745)   -  05\/Oct\/2018:05:29:57 +0000\n(('54.183.255.162', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2734)   -  05\/Oct\/2018:05:30:03 +0000\n(('54.241.32.66', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2732)   -  05\/Oct\/2018:05:29:48 +0000\n(('176.34.159.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2732)   -  05\/Oct\/2018:05:29:58 +0000\n(('54.228.16.34', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2731)   -  05\/Oct\/2018:05:30:02 +0000\n(('177.71.207.130', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2722)   -  05\/Oct\/2018:05:29:49 +0000\n(('54.232.40.98', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2716)   -  05\/Oct\/2018:05:29:47 +0000\n(('54.248.220.2', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2714)   -  05\/Oct\/2018:05:29:56 +0000\n(('54.252.254.226', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2706)   -  05\/Oct\/2018:05:30:09 +0000\n(('54.251.31.162', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2701)   -  05\/Oct\/2018:05:30:05 +0000\n(('54.255.254.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2701)   -  05\/Oct\/2018:05:30:07 +0000\n(('54.244.52.226', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2669)   -  05\/Oct\/2018:05:29:44 +0000\n(('54.250.253.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2648)   -  05\/Oct\/2018:05:29:55 +0000\n(('54.252.79.130', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2643)   -  05\/Oct\/2018:05:29:55 +0000",
+        "ts": "1538716954.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(('206.16.134.25', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 2558)   -  05\/Oct\/2018:05:28:43 +0000",
+        "ts": "1538716954.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(('54.245.168.2', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 2545)   -  05\/Oct\/2018:05:30:09 +0000\n\n```",
+        "ts": "1538716954.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,280 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 07:21:28,058 INFO update_deckswithprices.py took 0:23:39.605773\n```",
+        "ts": "1559632868.002700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 08:11:58,312 INFO New Trending 2019-06-04\n{\"name\": \"Windswept Heath\", \"s\": [0, 56, 72, 82, 86, 92, 124], \"z\": 1.2445417516423942}\n{\"name\": \"Caves of Koilos\", \"s\": [0, 36, 20, 40, 47, 45, 67], \"z\": 1.2320674299329941}\n{\"name\": \"Sun Titan\", \"s\": [0, 64, 41, 55, 72, 76, 82], \"z\": 1.2279147179281638}\n{\"name\": \"Orzhov Guildgate\", \"s\": [0, 28, 17, 31, 40, 38, 42], \"z\": 1.2270655143437559}\n{\"name\": \"Gray Merchant of Asphodel\", \"s\": [0, 29, 31, 37, 44, 49, 49], \"z\": 1.213344560358706}\n{\"name\": \"Wooded Foothills\", \"s\": [0, 55, 70, 67, 88, 83, 90], \"z\": 1.2091329428374806}\n{\"name\": \"Utter End\", \"s\": [0, 45, 32, 48, 59, 52, 74], \"z\": 1.2050590670740025}\n{\"name\": \"Elesh Norn, Grand Cenobite\", \"s\": [0, 15, 20, 15, 27, 29, 26], \"z\": 1.1823457813161646}\n{\"name\": \"Butcher of Malakir\", \"s\": [0, 25, 17, 23, 48, 30, 32], \"z\": 1.1747241404771347}\n{\"name\": \"Kor Haven\", \"s\": [0, 4, 6, 7, 12, 11, 17], \"z\": 1.1737237008890793}\n2019-06-04 08:11:58,332 INFO daily.py took 0:11:53.245388\n```",
+        "ts": "1559635899.002800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 08:14:17,362 INFO backup.py took 0:14:15.124385\n```",
+        "ts": "1559636038.002900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559636218.003000",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [9.054487838E8 (04\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-04T08:16:57.674+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-04T08:16:57.745Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [9.054487838E8 (04\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-04T08:16:57.674+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-04T08:16:57.745Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 08:21:52,867 INFO update_deckswithprices.py took 0:26:27.700101\nNew deck count from past 2 days: \n- Other: 0\n- MTGGoldfish: 361\n- Archidekt: 668\n- deckstats: 381\n```",
+        "ts": "1559636493.003100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 20:24:54,749 INFO archidekt.py took 0:22:53.287685\n```",
+        "ts": "1559679874.003200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 20:34:46,047 WARNING Chaos Orb from Talisman of Resiliance in <https:\/\/deckstats.net\/decks\/106191\/968752-nath-of-the-gilt-leaf-elves-st\/en>\n```",
+        "ts": "1559680465.003300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 20:41:55,937 WARNING Chaos Orb from Watermarket in <https:\/\/deckstats.net\/decks\/119746\/1239098-welcome-to-the-carnival\/en>\n```",
+        "ts": "1559680895.003400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 20:45:04,089 WARNING Chaos Orb from Split Screen in <https:\/\/deckstats.net\/decks\/119746\/1171422-finely-tuned-explosion\/en#Sil>\n```",
+        "ts": "1559681083.003500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 20:52:43,082 INFO deckstats.py took 0:25:48.794328\n```",
+        "ts": "1559681542.003600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 21:14:46,392 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1970038>\n```",
+        "ts": "1559682866.003700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 21:17:34,504 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1970048>\n```",
+        "ts": "1559683034.003800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 21:27:33,845 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1974095>\n```",
+        "ts": "1559683633.003900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 21:30:34,942 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1969960>\n```",
+        "ts": "1559683814.004000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 21:34:03,414 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1969550>\n```",
+        "ts": "1559684023.004100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 21:41:52,107 INFO mtggoldfish.py took 0:28:52.015566\n```",
+        "ts": "1559684491.004200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 22:18:48,558 INFO update_deckswithprices.py took 0:24:24.630093\nNew deck count from past 2 days: \n- MTGGoldfish: 457\n- deckstats: 514\n- Archidekt: 845\n- Other: 0\n```",
+        "ts": "1559686708.004300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-04 22:31:30,833 INFO recommendations.py took 14:31:26.647270\n```",
+        "ts": "1559687470.004400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-05 04:55:04,918 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'nightly' has no attribute '_make_commander_p'\n```",
+        "ts": "1559710484.004500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-05 05:01:34,765 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 966, in get_count_by_date\n    return cache.get('commanders_table\/{}'.format(carddate))[name][tribe]\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 67, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: commanders_table\/2016-07-22\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 50, in _make_commanders_p\n    make_commander(cmdr, checktribe=True, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 583, in make_commander\n    data = origin.getcommanders(card=name, checktribe=checktribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 445, in getcommanders\n    data = database.tally(decks, card=card, commander=True, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2294, in tally\n    num_decks = get_count_by_date(name, released_at, commander=True, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 973, in get_count_by_date\n    return cache.get('commanders_table\/earliest')[name][tribe]\nKeyError: 'Expensive'\n```",
+        "ts": "1559710874.004600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-05 05:29:21,006 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    database.get_commander_ranks()['Tana, the Bloodsower\n                                                       ^\nSyntaxError: EOL while scanning string literal\n```",
+        "ts": "1559712540.004700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-05 05:29:23,874 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: list indices must be integers or slices, not str\n```",
+        "ts": "1559712543.004800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

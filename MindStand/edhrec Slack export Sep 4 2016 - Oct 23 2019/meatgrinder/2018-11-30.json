@@ -1,0 +1,558 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543611851.002000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card cache TypeError bug from Doing to Done in Nov '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/pzOblNpN|cache TypeError bug>* from *Doing* to *Done in Nov '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543611852.002100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [high] front page isn't updating with new article content. from Doing to Done in Nov '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/HrDc4CjY|[high] front page isn't updating with new article content.>* from *Doing* to *Done in Nov '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1801f594-465c-4f08-a884-4653ee992ece",
+        "type": "message",
+        "text": "hey <@UEFG14S5A>, I just pushed a blank css file that’s linked to the website, and also included our cardlists javascript in two separate files, one in es6 and one in plain js so you can use whichever one you prefer.  you’ll probably mostly be interested in the `render_cardview` function, which basically builds individual bits of html and glues them all together at the end.  so to add buttons to the card, for example, copy the contents of one of these files into better.js and add button html to `render_cardview` and of course styles can go in the css file.",
+        "user": "U28TLDP0R",
+        "ts": "1543614128.005500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "634c387e-839d-4f35-81d7-0383844b656b",
+        "type": "message",
+        "text": "also regarding api endpoints, we currently have one for recommendations.  it requires a commander and a list of 2+ cards.\n\n```\n$ curl -k <https:\/\/edhrec.com\/recjson\/> -H \"Content-Type: application\/json\" --data '{\"commander\": \"Omnath, Locus of Mana\", \"cards\": [[1, \"Regrowth\"], [23, \"Forest\"], [1, \"Seedborn Muse\"]]}'\n```\nreturns a list of recs and cuts, each of which looks like this:\n```\n{\n  \"score\": 0.3814729984934073,\n  \"cardname\": \"Nykthos, Shrine to Nyx\",\n  \"info\": {\n    \"types\": [\n      \"Land\"\n    ]\n  }\n},\n```",
+        "user": "U28TLDP0R",
+        "ts": "1543614286.006900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "40cec9d2-5b6e-47b1-bf16-970e41500db7",
+        "type": "message",
+        "text": "not sure if that meets all your needs but I’m open to adding more to it or making a new endpoint altogether",
+        "user": "U28TLDP0R",
+        "ts": "1543614333.007600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "2a80f999-78e5-446c-a9bb-4f3529fa7b2c",
+        "type": "message",
+        "text": "let me know if you have any questions or concerns",
+        "user": "U28TLDP0R",
+        "ts": "1543614347.007900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543615429.008000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card do a big scrape at some point to get added to list EDHREC New Features One Day... on board edhrec.",
+                "text": "In list *EDHREC New Features One Day...* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "do a big scrape at some point to get",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/2wbJF6Gj",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543615443.008100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts renamed the card \"do a big scrape at some point to get\" to do a big scrape at some point to get more decks for the new UNOFFICIAL commanders.",
+                "text": "Renamed the card \"do a big scrape at some point to get\" to *<https:\/\/trello.com\/c\/2wbJF6Gj|do a big scrape at some point to get more decks for the new UNOFFICIAL commanders>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543615612.008200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [low] Westvale abbey is not showing up as UNOFFICIAL in the mono black listing. from EDHREC Bugs to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/jNuBvp7x|[low] Westvale abbey is not showing up as UNOFFICIAL in the mono black listing.>* from *EDHREC Bugs* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3ea73fa2-6459-42a7-82ee-6d36f4823359",
+        "type": "message",
+        "text": "<@U286Q175Y> any idea why `Color identity mismatch Grusilda, Monster Masher set() ['B', 'R']` is happening when `database.get_card('Grusilda, Monster Masher')` returns empty set?",
+        "user": "U28TLDP0R",
+        "ts": "1543616449.008600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543616578.008700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [low] Westvale abbey is not showing up as UNOFFICIAL in the mono black listing. from Doing to Done in Nov '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/jNuBvp7x|[low] Westvale abbey is not showing up as UNOFFICIAL in the mono black listing.>* from *Doing* to *Done in Nov '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1EB108DA-EA4B-4401-B40A-8E13EC39EBB7",
+        "type": "message",
+        "text": "<@U28TLDP0R> check if its a commander",
+        "user": "U286Q175Y",
+        "ts": "1543618469.009200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5065BA98-7A03-4EB5-83BD-3386A61E8940",
+        "type": "message",
+        "text": "Get commander",
+        "user": "U286Q175Y",
+        "ts": "1543618474.009400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "F78C7741-7640-4C94-8A68-AD6298436A25",
+        "type": "message",
+        "text": "Im pretty sure that error message is telling who you the commander of the deck is",
+        "user": "U286Q175Y",
+        "ts": "1543618593.010000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8c0a9c33-a5b5-4a9a-9cb7-9a2e4eda2c4f",
+        "type": "message",
+        "text": "ah, I thought get_card also got commanders",
+        "user": "U28TLDP0R",
+        "ts": "1543618689.010300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "40be52fb-cd64-42e4-8493-59e6536b0458",
+        "type": "message",
+        "text": "you’re right",
+        "user": "U28TLDP0R",
+        "ts": "1543618700.010500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543625439.011000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [medium] Add Cardhoarder MTGO prices to EDHREC. from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/MVDyvu07|[medium] Add Cardhoarder MTGO prices to EDHREC.>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543638740.011100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card move price data to cards.py instead of separate modules added to list EDHREC New Features One Day... on board edhrec.",
+                "text": "In list *EDHREC New Features One Day...* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "move price data to cards.py instead of separate modules",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/3Cc2fEtb",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e00e9c4c-e905-4971-a442-9af5e9c134fb",
+        "type": "message",
+        "text": "<@U28TLDP0R> advanced filters is 500'ing",
+        "user": "U286Q175Y",
+        "ts": "1543643625.011400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543643668.011500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card [critical] all advanced filters are 500ing added to list EDHREC Bugs on board edhrec.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "[critical] all advanced filters are 500ing",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/PGrZADFd",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "40de943c-76a2-4d7f-9332-3290f9640e92",
+        "type": "message",
+        "text": "try now",
+        "user": "U28TLDP0R",
+        "ts": "1543643725.011700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c276abf4-da38-4696-9f89-a205c48d7e39",
+        "type": "message",
+        "text": "works",
+        "user": "U286Q175Y",
+        "ts": "1543643991.012000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543643991.012100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [critical] all advanced filters are 500ing from EDHREC Bugs to Done in Nov '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/PGrZADFd|[critical] all advanced filters are 500ing>* from *EDHREC Bugs* to *Done in Nov '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f7af1276-85a8-4b06-9476-c352e30c5e2c",
+        "type": "message",
+        "text": "ty",
+        "user": "U286Q175Y",
+        "ts": "1543644013.012500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1543645781.012600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on [medium] Add Cardhoarder MTGO prices to EDHREC.: \"prices added everywhere.  can't get this svg icon to work ...\"",
+                "text": "prices added everywhere.  can't get this svg icon to work ...",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/MVDyvu07|[medium] Add Cardhoarder MTGO prices to EDHREC.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

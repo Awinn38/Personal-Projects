@@ -1,0 +1,136 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1557039819.036800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 07:04:51,830 INFO nightly.py took 4:18:13.293678\n```",
+        "ts": "1557039820.036900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 08:06:54,403 INFO backup.py took 0:06:52.688720\n```",
+        "ts": "1557043542.037000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1557043618.037100",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [6.50510779E8 (05\/05\/19 08:01:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-05-05T08:06:57.683+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-05-05T08:06:57.787Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [6.50510779E8 (05\/05\/19 08:01:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-05-05T08:06:57.683+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-05-05T08:06:57.787Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 12:36:56,305 INFO New Trending 2019-05-05\n{\"name\": \"Trading Post\", \"s\": [0, 19, 17, 20, 32, 28, 32], \"z\": 1.236399406672824}\n{\"name\": \"Midnight Reaper\", \"s\": [0, 13, 15, 17, 24, 28, 24], \"z\": 1.2231150895093477}\n{\"name\": \"Grim Haruspex\", \"s\": [0, 24, 15, 20, 27, 35, 42], \"z\": 1.2095121864543263}\n{\"name\": \"Cruel Celebrant\", \"s\": [0, 14, 9, 10, 20, 20, 26], \"z\": 1.2060343114322247}\n{\"name\": \"Wayfarer's Bauble\", \"s\": [0, 59, 61, 74, 79, 92, 91], \"z\": 1.2059095242121476}\n{\"name\": \"Boreas Charger\", \"s\": [0, 8, 8, 11, 15, 20, 16], \"z\": 1.1987652938669469}\n{\"name\": \"Talisman of Dominance\", \"s\": [0, 25, 21, 38, 43, 47, 38], \"z\": 1.1978682463724295}\n{\"name\": \"Exotic Orchard\", \"s\": [0, 106, 120, 109, 122, 151, 164], \"z\": 1.1963092431187008}\n{\"name\": \"Banefire\", \"s\": [0, 6, 6, 6, 12, 13, 12], \"z\": 1.1900374702920864}\n{\"name\": \"Spark Double\", \"s\": [0, 17, 21, 25, 32, 30, 34], \"z\": 1.1852786913748654}\n2019-05-05 12:36:56,318 INFO daily.py took 4:36:52.519259\n```",
+        "ts": "1557059744.037200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 20:31:49,419 INFO archidekt.py took 0:29:57.356756\n```",
+        "ts": "1557088237.037300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 21:08:13,643 INFO deckstats.py took 0:34:25.332671\n```",
+        "ts": "1557090421.037400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 21:59:28,622 INFO mtggoldfish.py took 0:30:58.999056\n```",
+        "ts": "1557093496.037500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 22:30:28,610 INFO update_deckswithprices.py took 0:30:57.306699\n```",
+        "ts": "1557095356.037600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-05 22:30:29,653 INFO New deck count from past 2 days: \n- deckstats: 702\n- MTGGoldfish: 484\n- Other: 0\n- Archidekt: 600\n```",
+        "ts": "1557095357.037700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

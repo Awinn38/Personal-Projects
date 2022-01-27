@@ -1,0 +1,329 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559160083.049000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on [low] clones is both a theme and a tribe: \"clones threshold set to 1000 in constants to disable it, running database.update_themes. should show up in next nightly.make_themes.\"",
+                "text": "clones threshold set to 1000 in constants to disable it, running database.update_themes. should show up in next nightly.make_themes.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/QDHr6sZs|[low] clones is both a theme and a tribe>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559160096.049100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card [low] clones is both a theme and a tribe from EDHREC Bugs to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/QDHr6sZs|[low] clones is both a theme and a tribe>* from *EDHREC Bugs* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559161065.049200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on [low] identify lands as color-fixing vs utility: \"renamed to _is_color_fixing_land in cards.py to indicate private internal function\"",
+                "text": "renamed to _is_color_fixing_land in cards.py to indicate private internal function",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/a15yU1cG|[low] identify lands as color-fixing vs utility>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559165540.049300",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on [low] identify lands as color-fixing vs utility: \"<https:\/\/dev.edhrec.com\/commanders\/xira-arien#utilitylands>\n<https:\/\/dev.edhrec.com\/commanders\/xira-arien#color-fixinglands>\n\nnotes to self:\ncards.get(cardname)['color_fixing_land'] seems to have a correct True\/False value.\ndatabase.tally attempts to make new outbytype sections depending on that value, which should propagate to out_dict['Cards'][new sections].\n(once that works, can remove existing 'Land' section since the contents are split among the new ones).\n(nightly.make_commander calls origin.getcommanders calls origin.get_cardlists)\norigin.get_cardlists should be taking tallied data and making new section cardlists if they are there.\n\ntesting:\ndecks = origin.get_decks('Xira Arien', 'commander')\ndata = database.tally(decks, card='Xira Arien', commander=True)\ndata['Cards']['ColorFixingLand']\ndata['Cards']['UtilityLand']\n\n\"",
+                "text": "<https:\/\/dev.edhrec.com\/commanders\/xira-arien#utilitylands>\n<https:\/\/dev.edhrec.com\/commanders\/xira-arien#color-fixinglands>\n\nnotes to self:\ncards.get(cardname)['color_fixing_land'] seems to have a correct True\/False value.\ndatabase.tally attempts to make new outbytype sections depending on that value, which should propagate to out_dict['Cards'][new sections].\n(once that works, can remove existing 'Land' section since the contents are split among the new ones).\n(nightly.make_commander calls origin.getcommanders calls origin.get_cardlists)\norigin.get_cardlists should be taking tallied data and making new section cardlists if they are there.\n\ntesting:\ndecks = origin.get_decks('Xira Arien', 'commander')\ndata = database.tally(decks, card='Xira Arien', commander=True)\ndata['Cards']['ColorFixingLand']\ndata['Cards']['UtilityLand']\n\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/a15yU1cG|[low] identify lands as color-fixing vs utility>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bc3d9fb8-a65a-42ba-93bb-ae270d10352e",
+        "type": "message",
+        "text": "web\/origin.py is currently locked, i don't know if that's from me",
+        "user": "U3MTAQBE1",
+        "ts": "1559165710.049900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8d459613-243b-4f01-82a7-e85724ac3ae8",
+        "type": "message",
+        "text": "not me",
+        "user": "U28TLDP0R",
+        "ts": "1559165737.050100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "79b2820c-9a7b-445c-bffd-563dcedbf98f",
+        "type": "message",
+        "text": "diff just showed whitespace",
+        "user": "U3MTAQBE1",
+        "ts": "1559166200.050400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559166312.050500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on [low] identify lands as color-fixing vs utility: \"get_cardlists: commented out 'Land' from sections to iterate\"",
+                "text": "get_cardlists: commented out 'Land' from sections to iterate",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/a15yU1cG|[low] identify lands as color-fixing vs utility>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559166514.050600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card [low] identify lands as color-fixing vs utility from EDHREC Let's Do Soon to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/a15yU1cG|[low] identify lands as color-fixing vs utility>* from *EDHREC Let's Do Soon* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559167787.050700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on [low] identify lands as color-fixing vs utility: \"cards.py 'mana of any type' fix for Reflecting Pool being incorrectly flagged as non-color-fixing\"",
+                "text": "cards.py 'mana of any type' fix for Reflecting Pool being incorrectly flagged as non-color-fixing",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/a15yU1cG|[low] identify lands as color-fixing vs utility>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a1d9dfff-4218-4b59-b345-dfd6df7cef99",
+        "type": "message",
+        "text": "hmm... or is it?",
+        "user": "U3MTAQBE1",
+        "ts": "1559168009.051100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5d4e99dd-eb86-41c0-9fc0-f529b4c1ef21",
+        "type": "message",
+        "text": "if it gives a color you already have, is it color fixing?",
+        "user": "U3MTAQBE1",
+        "ts": "1559168027.051500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "E2DE839E-6FF1-4A63-8E27-3775003E5CB7",
+        "type": "message",
+        "text": "Yeah id say so",
+        "user": "U286Q175Y",
+        "ts": "1559172601.051800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "031B9411-31EA-45A6-A628-C32B6A728BE9",
+        "type": "message",
+        "text": "Its not utility",
+        "user": "U286Q175Y",
+        "ts": "1559172605.052000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "16AA1BF0-0454-4469-9F33-212AF6C55D0C",
+        "type": "message",
+        "text": "Like a deck wouldnt play it bc it synergizes with zombies",
+        "user": "U286Q175Y",
+        "ts": "1559172618.052500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

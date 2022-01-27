@@ -1,0 +1,458 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-02 09:47:45,759 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 294, in recv_into\n    return self.connection.recv_into(*args, **kwargs)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1625, in recv_into\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1448, in _raise_ssl_error\n    raise SysCallError(errno, errorcode.get(errno))\nOpenSSL.SSL.SysCallError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 360, in _error_catcher\n    yield\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 666, in read_chunked\n    self._update_chunk_length()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 598, in _update_chunk_length\n    line = self._fp.fp.readline()\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 575, in readinto\n    return self._sock.recv_into(b)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 299, in recv_into\n    raise SocketError(str(e))\nOSError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 750, in generate\n    for chunk in self.raw.stream(chunk_size, decode_content=True):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 490, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 694, in read_chunked\n    self._original_response.close()\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 378, in _error_catcher\n    raise ProtocolError('Connection broken: %r' % e, e)\nurllib3.exceptions.ProtocolError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 265, in update_all\n    _get_multipage('posts')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 33, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 686, in send\n    r.content\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 828, in content\n    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 753, in generate\n    raise ChunkedEncodingError(e)\nrequests.exceptions.ChunkedEncodingError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n```",
+        "ts": "1546422444.022700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-02 10:47:47,801 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 294, in recv_into\n    return self.connection.recv_into(*args, **kwargs)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1625, in recv_into\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1448, in _raise_ssl_error\n    raise SysCallError(errno, errorcode.get(errno))\nOpenSSL.SSL.SysCallError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 360, in _error_catcher\n    yield\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 666, in read_chunked\n    self._update_chunk_length()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 598, in _update_chunk_length\n    line = self._fp.fp.readline()\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 575, in readinto\n    return self._sock.recv_into(b)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 299, in recv_into\n    raise SocketError(str(e))\nOSError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 750, in generate\n    for chunk in self.raw.stream(chunk_size, decode_content=True):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 490, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 694, in read_chunked\n    self._original_response.close()\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 378, in _error_catcher\n    raise ProtocolError('Connection broken: %r' % e, e)\nurllib3.exceptions.ProtocolError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 265, in update_all\n    _get_multipage('posts')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 33, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 686, in send\n    r.content\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 828, in content\n    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 753, in generate\n    raise ChunkedEncodingError(e)\nrequests.exceptions.ChunkedEncodingError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n```",
+        "ts": "1546426046.022800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1546437580.022900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1546441181.023000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1546441181.023100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1546444780.023200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:16:01:48] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 582, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/anafenza, the foremost\n```",
+        "ts": "1546444886.023300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-02 16:48:25,304 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 294, in recv_into\n    return self.connection.recv_into(*args, **kwargs)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1625, in recv_into\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1448, in _raise_ssl_error\n    raise SysCallError(errno, errorcode.get(errno))\nOpenSSL.SSL.SysCallError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 360, in _error_catcher\n    yield\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 666, in read_chunked\n    self._update_chunk_length()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 598, in _update_chunk_length\n    line = self._fp.fp.readline()\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 575, in readinto\n    return self._sock.recv_into(b)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 299, in recv_into\n    raise SocketError(str(e))\nOSError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 750, in generate\n    for chunk in self.raw.stream(chunk_size, decode_content=True):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 490, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 694, in read_chunked\n    self._original_response.close()\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 378, in _error_catcher\n    raise ProtocolError('Connection broken: %r' % e, e)\nurllib3.exceptions.ProtocolError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 266, in update_all\n    _get_multipage('tags')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 33, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 686, in send\n    r.content\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 828, in content\n    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 753, in generate\n    raise ChunkedEncodingError(e)\nrequests.exceptions.ChunkedEncodingError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n```",
+        "ts": "1546447683.023400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1546448380.023500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:32:51] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468348.023600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:32:57] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468354.023700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:33:06] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468364.023800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:33:18] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468376.023900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:33:26] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468383.024000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "5f2f05b2-99a9-4426-9acb-1d8ee7843644",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1546468385.024200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:33:30] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468387.024300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[02\/Jan\/2019:22:33:53] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 158, in make_page\n    cached_stopwords = stopwords.words('english')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 22, in words\n    return [line for line in line_tokenize(self.raw(fileids))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in raw\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/wordlist.py\", line 28, in &lt;listcomp&gt;\n    return concat([self.open(f).read() for f in fileids])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/corpus\/reader\/api.py\", line 213, in open\n    stream = self._root.join(file).open(encoding)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 340, in join\n    return FileSystemPathPointer(_path)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/compat.py\", line 221, in _decorator\n    return init_func(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/nltk\/data.py\", line 318, in __init__\n    raise IOError('No such file or directory: %r' % _path)\nOSError: No such file or directory: '\/home\/ubuntu\/nltk_data\/corpora\/stopwords\/english'\n```",
+        "ts": "1546468410.024400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Jan  2 22:34:01 UTC 2019\n\n```",
+        "ts": "1546468418.024500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "1e1c7a4d-da57-42ca-b82f-5119ba315b27",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1546468419.024700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-02 22:47:48,497 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 294, in recv_into\n    return self.connection.recv_into(*args, **kwargs)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1625, in recv_into\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1448, in _raise_ssl_error\n    raise SysCallError(errno, errorcode.get(errno))\nOpenSSL.SSL.SysCallError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 360, in _error_catcher\n    yield\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 666, in read_chunked\n    self._update_chunk_length()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 598, in _update_chunk_length\n    line = self._fp.fp.readline()\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 575, in readinto\n    return self._sock.recv_into(b)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 299, in recv_into\n    raise SocketError(str(e))\nOSError: (104, 'ECONNRESET')\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 750, in generate\n    for chunk in self.raw.stream(chunk_size, decode_content=True):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 490, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 694, in read_chunked\n    self._original_response.close()\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 77, in __exit__\n    self.gen.throw(type, value, traceback)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/response.py\", line 378, in _error_catcher\n    raise ProtocolError('Connection broken: %r' % e, e)\nurllib3.exceptions.ProtocolError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 265, in update_all\n    _get_multipage('posts')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 33, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 686, in send\n    r.content\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 828, in content\n    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/models.py\", line 753, in generate\n    raise ChunkedEncodingError(e)\nrequests.exceptions.ChunkedEncodingError: ('Connection broken: OSError(\"(104, \\'ECONNRESET\\')\",)', OSError(\"(104, 'ECONNRESET')\",))\n```",
+        "ts": "1546469245.024800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nWed Jan  2 23:21:57 UTC 2019\n\n```",
+        "ts": "1546471294.024900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "26e946d8-fb70-4e3c-8e04-77d3cb424297",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1546471387.025100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nWed Jan  2 23:23:38 UTC 2019\n\n```",
+        "ts": "1546471419.025200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1546473603.025300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1546473603.025400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1546473603.025500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1546473604.025600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1546473604.025700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1546473604.025800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1546473605.025900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 2 dynamic.py running. Before we had 5.",
+        "ts": "1546473605.026000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "8c951780-6e6f-45ef-bcd4-0e0f4a2ba101",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1546475799.026200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[03\/Jan\/2019:07:13:54] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 582, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/marath, will of the wild\n```",
+        "ts": "1546499634.026300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[03\/Jan\/2019:07:14:50] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 582, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/mayael the anima\n```",
+        "ts": "1546499690.026400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[03\/Jan\/2019:07:16:16] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 582, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/gahiji, honored one\n```",
+        "ts": "1546499775.026500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

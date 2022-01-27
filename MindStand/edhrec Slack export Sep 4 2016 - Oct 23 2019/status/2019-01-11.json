@@ -1,0 +1,878 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\noperator does not exist: date &gt;=\nLINE 15:                         WHERE savedate &gt;= %s::date\n                                                ^\nHINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 829, in nightly\n    make_top_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 130, in make_top_index\n    cardlists = CardList(origin.gettop(brawl=brawl), 'Top Cards')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 785, in gettop\n    data = database.get_top(cardtype=cardtype, cardsubtype=cardsubtype, colorid=colorid, keyword=keyword, sort_col=sort_col)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1032, in get_top\n    '''.format(qualifier, coloridline, typeline, limit, _TABLE_PREFIX, sort_col))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: operator does not exist: date &gt;=\nLINE 15:                         WHERE savedate &gt;= %s::date\n                                                ^\nHINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.\n\n",
+        "ts": "1547198462.091600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 09:21:13,547 ERROR operator does not exist: date &gt;=\nLINE 15:                         WHERE savedate &gt;= %s::date\n                                                ^\nHINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.\n\n2019-01-11 09:21:13,557 ERROR Traceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 829, in nightly\n    make_top_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 130, in make_top_index\n    cardlists = CardList(origin.gettop(brawl=brawl), 'Top Cards')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 785, in gettop\n    data = database.get_top(cardtype=cardtype, cardsubtype=cardsubtype, colorid=colorid, keyword=keyword, sort_col=sort_col)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1032, in get_top\n    '''.format(qualifier, coloridline, typeline, limit, _TABLE_PREFIX, sort_col))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: operator does not exist: date &gt;=\nLINE 15:                         WHERE savedate &gt;= %s::date\n                                                ^\nHINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.\n\n\n```",
+        "ts": "1547198462.091700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=True",
+        "ts": "1547198466.091800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1547211594.091900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 14:10:40,222 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 292, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 284, in update_all\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 284, in &lt;listcomp&gt;\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 115, in _parse_post\n    media = get_media(post['featured_media'])\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 193, in get_media\n    return cache.get('wp\/by-id\/media\/{}'.format(mid))\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: wp\/by-id\/media\/26072\n```",
+        "ts": "1547215829.092000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:05:46,384 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 560, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 59, in make_page\n    json.dump(json_dict, f, indent=4)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 178, in dump\n    for chunk in iterable:\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 429, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 324, in _iterencode_list\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 436, in _iterencode\n    o = _default(o)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2019, 1, 7) is not JSON serializable\n```",
+        "ts": "1547237134.092100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "8709a277-6764-46e7-bd13-3ba932d80ec8",
+        "type": "message",
+        "text": "might get noisy in here for a bit",
+        "user": "U28TLDP0R",
+        "ts": "1547237144.092300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:07:35,660 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'ls' is not defined\n```",
+        "ts": "1547237243.092400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:09:22,922 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'brawl' is not defined\n```",
+        "ts": "1547237351.092500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:09:44,069 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'database' is not defined\n```",
+        "ts": "1547237372.092600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:09:48,521 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nImportError: No module named 'database'\n```",
+        "ts": "1547237376.092700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:10:01,346 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'os' is not defined\n```",
+        "ts": "1547237389.092800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:10:03,493 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name '__file__' is not defined\n```",
+        "ts": "1547237391.092900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:10:34,864 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 560, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 62, in make_page\n    with open(json_path, 'w') as f:\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 178, in dump\n    for chunk in iterable:\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 429, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 324, in _iterencode_list\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 436, in _iterencode\n    o = _default(o)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2019, 1, 7) is not JSON serializable\n```",
+        "ts": "1547237423.093000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:12:45,449 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nNameError: name 'json' is not defined\n```",
+        "ts": "1547237553.093100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:12:48,401 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 230, in dumps\n    return _default_encoder.encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2019, 1, 7) is not JSON serializable\n```",
+        "ts": "1547237557.093200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:13:41,677 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nFileNotFoundError: [Errno 2] No such file or directory: '\/tmp\/test.txt'\n```",
+        "ts": "1547237609.093300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:14:01,131 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nFileNotFoundError: [Errno 2] No such file or directory: '\/tmp\/test.txt'\n```",
+        "ts": "1547237629.093400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:14:20,381 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n```",
+        "ts": "1547237648.093500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:40:38,609 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 560, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 64, in make_page\n    json.dump(json_dict, f, indent=4)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 178, in dump\n    for chunk in iterable:\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 429, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 324, in _iterencode_list\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 436, in _iterencode\n    o = _default(o)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2019, 1, 7) is not JSON serializable\n```",
+        "ts": "1547239226.093600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:42:10,065 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 560, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 64, in make_page\n    json.dump(json_dict, f, indent=4)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 178, in dump\n    for chunk in iterable:\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 429, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 324, in _iterencode_list\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 436, in _iterencode\n    o = _default(o)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2019, 1, 7) is not JSON serializable\n```",
+        "ts": "1547239318.093700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:43:33,000 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 560, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 72, in make_page\n    json.dump(json_dict, f, cls=MyEncoder, indent=4)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 178, in dump\n    for chunk in iterable:\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 429, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 324, in _iterencode_list\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 403, in _iterencode_dict\n    yield from chunks\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 436, in _iterencode\n    o = _default(o)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 25, in default\n    if isinstance(obj, date):\nNameError: name 'date' is not defined\n```",
+        "ts": "1547239401.093800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 20:51:02,722 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 560, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 230, in make_page\n    'json_dict': json.dumps(json_dict, separators=(',', ':'))\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 237, in dumps\n    **kw).encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: &lt;edhrec.web.classes.CardView object at 0x7fbe82021198&gt; is not JSON serializable\n```",
+        "ts": "1547239850.093900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 21:32:32,462 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1816, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547242340.094000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 21:32:48,518 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547242356.094100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 21:52:52,145 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547243560.094200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "2d50515a-cdf3-4d41-a75a-f6a5d12b2d87",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1547243850.094400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:02:04] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244112.094500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:02:16] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244124.094600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:02:48] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244156.094700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:02:49] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244157.094800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:01] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244169.094900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:03] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244171.095000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:13] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244181.095100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:21] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244188.095200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "37e14a5d-acb3-4698-8884-b597eeb04d0f",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1547244199.095500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:35] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244203.095600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:43] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244211.095700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:03:59] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244227.095800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Jan\/2019:22:04:28] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 60, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    outbytype[card['primary_type']].append(card)\nKeyError: 'primary_type'\n```",
+        "ts": "1547244255.095900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "d428d664-30e6-456a-ad9a-7e347610ebc0",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1547244291.096100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:31:22,882 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1816, in tally\n    primary_type = card['Details']['primary_type']\nKeyError: 'primary_type'\n```",
+        "ts": "1547245870.096200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:32:56,778 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    code.interact(locals=locals())\nTypeError: interact() got an unexpected keyword argument 'locals'\n```",
+        "ts": "1547245964.096300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:33:52,531 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 503, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1817, in tally\n    primary_type = card['Details']['primary_type']\nKeyError: 'primary_type'\n```",
+        "ts": "1547246020.096400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:54:54,383 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-11 22:54:54,383 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1547247282.096500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:54:59,463 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-11 22:54:59,464 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1547247287.096600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:55:06,764 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-11 22:55:06,764 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1547247294.096700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 22:57:07,798 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cmdr matrix)\n2019-01-11 22:57:07,799 ERROR Somehow Forest got into this set of recs ['B', 'R', 'W'] (cid matrix)\n```",
+        "ts": "1547247415.096800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=True",
+        "ts": "1547248108.096900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547248113.097000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1547249438.097100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 23:30:50,934 ERROR Command 'gulp' returned non-zero exit status 1\n2019-01-11 23:30:50,937 ERROR Traceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n\n```",
+        "ts": "1547249438.097200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547249441.097300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ndatetime.date(2017, 8, 25) is not JSON serializable\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 39, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 675, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 663, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    'repls': json.loads(json.dumps(repls)),\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 230, in dumps\n    return _default_encoder.encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2017, 8, 25) is not JSON serializable\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 818, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 704, in make_commanders\n    pool.map(_make_commanders_p, commanders, skipdecks)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nTypeError: datetime.date(2017, 8, 25) is not JSON serializable\n",
+        "ts": "1547249457.097400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 23:31:10,358 ERROR datetime.date(2017, 8, 25) is not JSON serializable\n2019-01-11 23:31:10,359 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 39, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 675, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 663, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    'repls': json.loads(json.dumps(repls)),\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 230, in dumps\n    return _default_encoder.encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2017, 8, 25) is not JSON serializable\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 818, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 704, in make_commanders\n    pool.map(_make_commanders_p, commanders, skipdecks)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nTypeError: datetime.date(2017, 8, 25) is not JSON serializable\n\n```",
+        "ts": "1547249457.097500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=True",
+        "ts": "1547249462.097600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1547250958.097700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 23:56:10,970 ERROR Command 'gulp' returned non-zero exit status 1\n2019-01-11 23:56:10,971 ERROR Traceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n\n```",
+        "ts": "1547250958.097800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547250962.097900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ndatetime.date(2018, 10, 1) is not JSON serializable\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 39, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 675, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 663, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    'repls': json.loads(json.dumps(repls)),\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 230, in dumps\n    return _default_encoder.encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2018, 10, 1) is not JSON serializable\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 818, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 704, in make_commanders\n    pool.map(_make_commanders_p, commanders, skipdecks)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nTypeError: datetime.date(2018, 10, 1) is not JSON serializable\n",
+        "ts": "1547250993.098000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-11 23:56:46,280 ERROR datetime.date(2018, 10, 1) is not JSON serializable\n2019-01-11 23:56:46,282 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 39, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 675, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 663, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    'repls': json.loads(json.dumps(repls)),\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 230, in dumps\n    return _default_encoder.encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2018, 10, 1) is not JSON serializable\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 818, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 704, in make_commanders\n    pool.map(_make_commanders_p, commanders, skipdecks)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\nTypeError: datetime.date(2018, 10, 1) is not JSON serializable\n\n```",
+        "ts": "1547250993.098100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=True",
+        "ts": "1547250998.098200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-12 02:50:03,086 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/make_set.py\", line 18, in &lt;module&gt;\n    nightly._make_commanders_p(name, skiparticles=True)\nTypeError: _make_commanders_p() got an unexpected keyword argument 'skiparticles'\n```",
+        "ts": "1547261390.098300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-12 02:58:44,597 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/make_set.py\", line 18, in &lt;module&gt;\n    nightly._make_commanders_p(name)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 39, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 675, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 663, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 52, in make_page\n    'repls': json.loads(json.dumps(repls)),\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 230, in dumps\n    return _default_encoder.encode(obj)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 198, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 256, in iterencode\n    return _iterencode(o, 0)\n  File \"\/usr\/lib\/python3.5\/json\/encoder.py\", line 179, in default\n    raise TypeError(repr(o) + \" is not JSON serializable\")\nTypeError: datetime.date(2018, 10, 16) is not JSON serializable\n```",
+        "ts": "1547261911.098400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=True",
+        "ts": "1547266356.098500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547266580.098600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1547267935.098700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-01-12 04:39:09,330 ERROR Command 'gulp' returned non-zero exit status 1\n2019-01-12 04:39:09,332 ERROR Traceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 813, in nightly\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 161, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.5\/subprocess.py\", line 581, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n\n```",
+        "ts": "1547267936.098800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547267940.098900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1547272791.099000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

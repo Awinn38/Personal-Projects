@@ -1,0 +1,242 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1551476474.008800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1551477151.008900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1551477267.009000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1551479826.009100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nExpecting value: line 1 column 1 (char 0)\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \".\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \".\/nightly.py\", line 731, in make_decks_cmdr\n    sims[list(deckurls)[0]] = []\n  File \".\/nightly.py\", line 718, in make_deck\n    cardlists=cardlists,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 204, in make_page\n    {'href': cardview.scryfall_uri, 'value': 'Scryfall'}\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 268, in load\n    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 319, in loads\n    return _default_decoder.decode(s)\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 339, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 357, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 881, in nightly\n    make_partner_commanders(onlydecks=onlydecks)\n  File \".\/nightly.py\", line 766, in make_commanders\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+        "ts": "1551481906.009200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-01 23:14:32,041 ERROR Expecting value: line 1 column 1 (char 0)\n2019-03-01 23:14:32,043 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \".\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \".\/nightly.py\", line 731, in make_decks_cmdr\n    sims[list(deckurls)[0]] = []\n  File \".\/nightly.py\", line 718, in make_deck\n    cardlists=cardlists,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 204, in make_page\n    {'href': cardview.scryfall_uri, 'value': 'Scryfall'}\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 268, in load\n    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)\n  File \"\/usr\/lib\/python3.5\/json\/__init__.py\", line 319, in loads\n    return _default_decoder.decode(s)\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 339, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"\/usr\/lib\/python3.5\/json\/decoder.py\", line 357, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 881, in nightly\n    make_partner_commanders(onlydecks=onlydecks)\n  File \".\/nightly.py\", line 766, in make_commanders\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\n```",
+        "ts": "1551481907.009300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-02 00:35:01,515 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 734, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 721, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 233, in make_page\n    repls['panels'], repls['panels2'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks, tribelinks2=tribelinks2, partnercounts=partnercounts)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 357, in make_panels\n    outpanels2['links'] = make_card_urls2(cardview, url, tribelinks2)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 174, in make_card_urls2\n    for tribelink in tribelinks['themes']:\nTypeError: 'NoneType' object is not subscriptable\n```",
+        "ts": "1551486736.009400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-02 01:01:03,962 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 501, in make_card\n    cardlists=cardlists\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 310, in make_page\n    f.write(ENV.get_template(template_name).render(repls2))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panels.html\", line 74, in &lt;module&gt;\n    {{ set deck = panels2.deckinfo }}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 966, in render\n    return concat(self.root_render_func(self.new_context(vars)))\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 37, in &lt;module&gt;\n    {% block content %}{% endblock %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 6, in &lt;module&gt;\n    {% include 'panels.html' %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panels.html\", line 74, in &lt;module&gt;\n    {{ set deck = panels2.deckinfo }}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 868, in subparse\n    self.stream.expect('variable_end')\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/lexer.py\", line 374, in expect\n    self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'deck'\n```",
+        "ts": "1551488298.009500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-02 01:02:45,378 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 734, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 721, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 310, in make_page\n    f.write(ENV.get_template(template_name).render(repls2))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 37, in &lt;module&gt;\n    {% block content %}{% endblock %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 6, in &lt;module&gt;\n    {% include 'panels.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panels.html\", line 75, in &lt;module&gt;\n    {% include 'deck_preview2.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/deck_preview2.html\", line 2, in &lt;module&gt;\n    {% if deck.deck_preview.commander %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'dict object' has no attribute 'deck_preview'\n```",
+        "ts": "1551488400.009600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1551488537.009700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-02 01:06:04,794 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 734, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 721, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 310, in make_page\n    f.write(ENV.get_template(template_name).render(repls2))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 37, in &lt;module&gt;\n    {% block content %}{% endblock %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 6, in &lt;module&gt;\n    {% include 'panels.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panels.html\", line 75, in &lt;module&gt;\n    {% include 'deck_preview2.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/deck_preview2.html\", line 10, in &lt;module&gt;\n    &lt;div&gt;Source: &lt;a alt=\"Deck Source\" href=\"{{ deck.deck_preview.url }}\"&gt;{{ row.deck_preview.url.split('\/')[2] }}&lt;\/a&gt;&lt;\/div&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'row' is undefined\n```",
+        "ts": "1551488599.009800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-02 04:29:14,047 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 41, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 734, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 721, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 310, in make_page\n    f.write(ENV.get_template(template_name).render(repls2))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 37, in &lt;module&gt;\n    {% block content %}{% endblock %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 6, in &lt;module&gt;\n    {% include 'panels.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panels.html\", line 78, in &lt;module&gt;\n    {% include 'deck_preview2.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/deck_preview2.html\", line 2, in &lt;module&gt;\n    &lt;a alt=\"{{ deck.alt }}\" href=\"{{ deck.href }}\"&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'dict object' has no attribute 'deck'\n```",
+        "ts": "1551500788.009900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1551502936.010000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1551502937.010100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-02 05:57:12,742 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'precon'\n```",
+        "ts": "1551506066.010200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1551506536.010300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1551506536.010400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1551510136.010500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1551510408.010600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1551510807.010700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/cfr.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

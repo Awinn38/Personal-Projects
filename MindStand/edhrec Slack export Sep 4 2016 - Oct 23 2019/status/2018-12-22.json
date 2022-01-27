@@ -1,0 +1,268 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[22\/Dec\/2018:20:32:31] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 45, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 569, in url_to_name\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/azami, lady of scrolls\n```",
+        "ts": "1545510742.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[22\/Dec\/2018:20:53:44] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 38, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 331, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 556, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'list' object has no attribute 'split'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 41, in index\n    return {'cards': [get_shit(name['name'])]}\nTypeError: list indices must be integers or slices, not str\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 43, in index\n    return {'cards': [get_shit(n['name']) for n in names]}\nUnboundLocalError: local variable 'names' referenced before assignment\n```",
+        "ts": "1545512014.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Dec\/2018:00:30:55] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/wordpress.py\", line 22, in index\n    'articles': wordpress.get_posts_by_category('articles')[:5],\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 194, in get_posts_by_category\n    return cache.get('wp\/by-category\/{}'.format(category))\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'wp\/by-category\/content'\n```",
+        "ts": "1545525045.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Dec\/2018:03:28:05] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 38, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 15, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 331, in get\n    return cache.get('cards\/' + scn(name))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 556, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'list' object has no attribute 'split'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 41, in index\n    return {'cards': [get_shit(name['name'])]}\nTypeError: list indices must be integers or slices, not str\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 43, in index\n    return {'cards': [get_shit(n['name']) for n in names]}\nUnboundLocalError: local variable 'names' referenced before assignment\n```",
+        "ts": "1545535675.001900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 04:08:50,178 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 955, in &lt;module&gt;\n    nightly()\n  File \".\/nightly.py\", line 822, in nightly\n    make_404()\n  File \".\/nightly.py\", line 95, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 201, in make_page\n    'set1': sets[0]['name'],\nKeyError: 0\n```",
+        "ts": "1545538119.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 04:41:35,741 CRITICAL Uncaught exception\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 37, in _make_commanders_p\n    make_decks_cmdr(cmdr) #, outof=outof): BRAWL, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 696, in make_decks_cmdr\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 617, in make_deck\n    if c not in rankedcards:\n  File \"\/home\/ubuntu\/edhrec\/core\/recommendations.py\", line 295, in recommend\n    if not set(cards.get(cardname)['colorIdentity']).issubset(set(cid)):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 328, in get\n    meld_names = set(_CARDS[name]['names'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 558, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 47, in get\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  terminating connection due to administrator command\n\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 966, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 836, in nightly\n    make_top_index()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 725, in make_commanders\n    make_card(card['front'])\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\npsycopg2.OperationalError: FATAL:  terminating connection due to administrator command\n\n```",
+        "ts": "1545540084.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 04:44:49,601 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 2, in &lt;module&gt;\n    nightly.make_card('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 458, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 67, in getcards\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1548, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 813, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 756, in _get_decks_helper\n    cachekey = 'get_deck: ' + url\nNameError: name 'url' is not defined\n```",
+        "ts": "1545540278.002200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 04:46:27,997 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 3, in &lt;module&gt;\n    nightly.make_card('Island')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 458, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    decks = get_decks(card, 'card')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1147, in intersect\n    return okdecks.difference(baddecks)\nAttributeError: 'list' object has no attribute 'difference'\n```",
+        "ts": "1545540376.002300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 04:47:07,964 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 3, in &lt;module&gt;\n    nightly.make_card('Island')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 458, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    decks = get_decks(card, 'card')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1148, in intersect\n    return okdecks.difference(baddecks)\nAttributeError: 'list' object has no attribute 'difference'\n```",
+        "ts": "1545540416.002400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 05:07:40,111 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"test0.py\", line 2, in &lt;module&gt;\n    nightly.make_card('Ulrich of the Krallenhorde', skiparticles=True)\nTypeError: make_card() got an unexpected keyword argument 'skiparticles'\n```",
+        "ts": "1545541649.002500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1545542275.002600",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.73208263E7 (23\/12\/18 05:02:00)] was greater than or equal to the threshold (5.0E7).\",\"StateChangeTime\":\"2018-12-23T05:17:54.457+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5.0E7,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-23T05:17:54.505Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkIn\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkIn\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.73208263E7 (23\/12\/18 05:02:00)] was greater than or equal to the threshold (5.0E7).\",\"StateChangeTime\":\"2018-12-23T05:17:54.457+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkIn\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5.0E7,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2018-12-23T05:17:54.505Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 05:22:08,122 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 2, in &lt;module&gt;\n    nightly.make_card('Ulrich of the Krallenhorde', skiparticles=True)\nTypeError: make_card() got an unexpected keyword argument 'skiparticles'\n```",
+        "ts": "1545542516.002700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 05:48:44,035 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 3, in &lt;module&gt;\n    nightly.make_card('Island')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 458, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    decks = get_decks(card, 'card')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1148, in intersect\n    return okdecks.difference(baddecks)\nAttributeError: 'list' object has no attribute 'difference'\n```",
+        "ts": "1545544112.002800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 05:54:10,701 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec2\/web\/nightly.py\", line 742, in make_cards\n    p.map(make_card, cards.get_all(doublefaced=False, split=False))\nTypeError: get_all() got an unexpected keyword argument 'doublefaced'\n```",
+        "ts": "1545544439.002900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 05:56:08,520 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec2\/web\/nightly.py\", line 742, in make_cards\n    p.map(make_card, cards.get_all(doublefaced=False, split=False))\nTypeError: get_all() got an unexpected keyword argument 'doublefaced'\n```",
+        "ts": "1545544557.003000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 06:14:46,813 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test0.py\", line 2, in &lt;module&gt;\n    nightly.make_card('Ulrich of the Krallenhorde')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 458, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 67, in getcards\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1427, in tally\n    for c in d['cards']:\nKeyError: 'cards'\n```",
+        "ts": "1545545675.003100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Dec\/2018:06:21:34] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 65, in index\n    card = CardView(Card(commander), label='{0} decks'.format(data['repls']['numdecks']))\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 22, in __init__\n    self.name = card['name']\nTypeError: tuple indices must be integers or slices, not str\n```",
+        "ts": "1545546083.003200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Dec\/2018:06:33:41] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 65, in index\n    card = CardView(Card(commander), label='{0} decks'.format(data['repls']['numdecks']))\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 22, in __init__\n    self.name = card['name']\nTypeError: tuple indices must be integers or slices, not str\n```",
+        "ts": "1545546810.003300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Dec\/2018:06:36:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 65, in index\n    card = CardView(Card(commander), label='{0} decks'.format(data['repls']['numdecks']))\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 22, in __init__\n    self.name = card['name']\nTypeError: tuple indices must be integers or slices, not str\n```",
+        "ts": "1545546982.003400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 06:48:47,560 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/usr\/lib\/python3.5\/cProfile.py\", line 16, in run\n    return _pyprofile._Utils(Profile).run(statement, filename, sort)\n  File \"\/usr\/lib\/python3.5\/profile.py\", line 55, in run\n    prof.run(statement)\n  File \"\/usr\/lib\/python3.5\/cProfile.py\", line 95, in run\n    return self.runctx(cmd, dict, dict)\n  File \"\/usr\/lib\/python3.5\/cProfile.py\", line 100, in runctx\n    exec(cmd, globals, locals)\nTypeError: exec() arg 1 must be a string, bytes or code object\n```",
+        "ts": "1545547716.003500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-23 06:56:10,352 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    SELECT COUNT(*) FROM cards WHERE name='Taiga';\n               ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1545548159.003600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

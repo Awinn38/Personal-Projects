@@ -1,0 +1,771 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531146125.000438",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on search.tallyjson(**kwargs) return json of database.tally output: \"fixed multiple commander search\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Grenzo, Havoc Raiser\"})\n{'cards': 'Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Grenzo, Havoc Raiser'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\nCommanders as input cards: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\ndecks w Kiki-Jiki, Mirror Breaker in 99: 9444\ndecks w Krenko, Mob Boss in 99: 4465\ndecks w Grenzo, Havoc Raiser in 99: 3033\n+ decks with all cards in 99: 251\nCommanders: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\n+ Kiki-Jiki, Mirror Breaker decks with [the rest] in 99: 5\n+ Krenko, Mob Boss decks with [the rest] in 99: 277\n+ Grenzo, Havoc Raiser decks with [the rest] in 99: 110\n= Total decks: 643\ndone tally\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"commander\": \"Kiki-Jiki, Mirror Breaker\", \"cards\": \"Krenko, Mob Boss&amp;Grenzo, Havoc Raiser\"})\n{'commander': 'Kiki-Jiki, Mirror Breaker', 'cards': 'Krenko, Mob Boss&amp;Grenzo, Havoc Raiser'}\nInput cards\n['Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\ndecks with ['Krenko, Mob Boss', 'Grenzo, Havoc Raiser'] in 99: 592\nCommanders: ['Kiki-Jiki, Mirror Breaker']\n+ Kiki-Jiki, Mirror Breaker decks with ['Krenko, Mob Boss', 'Grenzo, Havoc Raiser'] in 99: 5\n= Total decks: 5\ndone tally\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"commander\": \"Krenko, Mob Boss\", \"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Grenzo, Havoc Raiser\"})\n{'commander': 'Krenko, Mob Boss', 'cards': 'Kiki-Jiki, Mirror Breaker&amp;Grenzo, Havoc Raiser'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Grenzo, Havoc Raiser']\ndecks with ['Kiki-Jiki, Mirror Breaker', 'Grenzo, Havoc Raiser'] in 99: 706\nCommanders: ['Krenko, Mob Boss']\n+ Krenko, Mob Boss decks with ['Kiki-Jiki, Mirror Breaker', 'Grenzo, Havoc Raiser'] in 99: 277\n= Total decks: 277\ndone tally\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"commander\": \"Grenzo, Havoc Raiser\", \"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss\"})\n{'commander': 'Grenzo, Havoc Raiser', 'cards': 'Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss']\ndecks with ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss'] in 99: 1440\nCommanders: ['Grenzo, Havoc Raiser']\n+ Grenzo, Havoc Raiser decks with ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss'] in 99: 110\n= Total decks: 110\ndone tally\n&gt;&gt;&gt;\"",
+                "text": "fixed multiple commander search\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Grenzo, Havoc Raiser\"})\n{'cards': 'Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss&amp;Grenzo, Havoc Raiser'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\nCommanders as input cards: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\ndecks w Kiki-Jiki, Mirror Breaker in 99: 9444\ndecks w Krenko, Mob Boss in 99: 4465\ndecks w Grenzo, Havoc Raiser in 99: 3033\n+ decks with all cards in 99: 251\nCommanders: ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\n+ Kiki-Jiki, Mirror Breaker decks with [the rest] in 99: 5\n+ Krenko, Mob Boss decks with [the rest] in 99: 277\n+ Grenzo, Havoc Raiser decks with [the rest] in 99: 110\n= Total decks: 643\ndone tally\n\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"commander\": \"Kiki-Jiki, Mirror Breaker\", \"cards\": \"Krenko, Mob Boss&amp;Grenzo, Havoc Raiser\"})\n{'commander': 'Kiki-Jiki, Mirror Breaker', 'cards': 'Krenko, Mob Boss&amp;Grenzo, Havoc Raiser'}\nInput cards\n['Krenko, Mob Boss', 'Grenzo, Havoc Raiser']\ndecks with ['Krenko, Mob Boss', 'Grenzo, Havoc Raiser'] in 99: 592\nCommanders: ['Kiki-Jiki, Mirror Breaker']\n+ Kiki-Jiki, Mirror Breaker decks with ['Krenko, Mob Boss', 'Grenzo, Havoc Raiser'] in 99: 5\n= Total decks: 5\ndone tally\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"commander\": \"Krenko, Mob Boss\", \"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Grenzo, Havoc Raiser\"})\n{'commander': 'Krenko, Mob Boss', 'cards': 'Kiki-Jiki, Mirror Breaker&amp;Grenzo, Havoc Raiser'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Grenzo, Havoc Raiser']\ndecks with ['Kiki-Jiki, Mirror Breaker', 'Grenzo, Havoc Raiser'] in 99: 706\nCommanders: ['Krenko, Mob Boss']\n+ Krenko, Mob Boss decks with ['Kiki-Jiki, Mirror Breaker', 'Grenzo, Havoc Raiser'] in 99: 277\n= Total decks: 277\ndone tally\n&gt;&gt;&gt; import search; a = search.tallyjson(**{\"commander\": \"Grenzo, Havoc Raiser\", \"cards\": \"Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss\"})\n{'commander': 'Grenzo, Havoc Raiser', 'cards': 'Kiki-Jiki, Mirror Breaker&amp;Krenko, Mob Boss'}\nInput cards\n['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss']\ndecks with ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss'] in 99: 1440\nCommanders: ['Grenzo, Havoc Raiser']\n+ Grenzo, Havoc Raiser decks with ['Kiki-Jiki, Mirror Breaker', 'Krenko, Mob Boss'] in 99: 110\n= Total decks: 110\ndone tally\n&gt;&gt;&gt;",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/0kMyeWgR|search.tallyjson(**kwargs) return json of database.tally output>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531147096.000417",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card We need to add more cards to the signature skip list -- pretty much all the boring dual lands: <https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation> from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/zYka1jyX|We need to add more cards to the signature skip list -- pretty much all the boring dual lands: https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531148572.000312",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on We need to add more cards to the signature skip list -- pretty much all the boring dual lands: <https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>: \"    # duals: battlebond\n    'Bountiful Promenade', 'Morphic Pool', 'Luxury Suite', 'Spire Garden', 'Sea of Clouds',\n    # duals: scry 1\n    'Temple of Abandon', 'Temple of Deceit', 'Temple of Enlightenment',\n    'Temple of Epiphany', 'Temple of Malady', 'Temple of Malice', 'Temple of Mystery',\n    'Temple of Plenty', 'Temple of Silence', 'Temple of Triumph',\n    # duals: tapped unless you control\n    'Blackcleave Cliffs', 'Blooming Marsh', 'Botanical Sanctum', 'Canopy Vista',\n    'Cinder Glade', 'Clifftop Retreat', 'Concealed Courtyard', 'Copperline Gorge',\n    'Darkslick Shores', 'Dragonskull Summit', 'Drowned Catacomb', 'Glacial Fortress',\n    'Hinterland Harbor', 'Inspiring Vantage', 'Isolated Chapel', 'Prairie Stream',\n    'Razorverge Thicket', 'Rootbound Crag', 'Seachrome Coast', 'Smoldering Marsh',\n    'Spirebluff Canal' ,'Sulfur Falls', 'Sunken Hollow', 'Sunpetal Grove',\n    'Woodland Cemetery',\n    # duals: tapped, gain 1 life\n    'Akoum Refuge', 'Bloodfell Caves', 'Blossoming Sands', 'Dismal Backwater',\n    'Graypelt Refuge', 'Jungle Hollow', 'Jwar Isle Refuge', 'Kazandu Refuge',\n    'Rugged Highlands', 'Scoured Barrens', 'Sejiri Refuge', 'Swiftwater Cliffs',\n    'Thornwood Falls', 'Tranquil Cove', 'Wind-Scarred Crag',\n    # duals: deals 1 damage to you\n    'Adarkar Wastes', 'Battlefield Forge', 'Brushland', 'Caldera Lake',\n    'Caves of Koilos', 'Karplusan Forest', 'Llanowar Wastes', 'Pine Barrens',\n    'Salt Flats', 'Scrubland', 'Shivan Reef', 'Skyshroud Forest',\n    'Sulfurous Springs', 'Underground River', 'Yavimaya Coast',\n    # duals: return a land\n    'Azorius Chancery', 'Boros Garrison', 'Dimir Aqueduct', 'Golgari Rot Farm',\n    'Gruul Turf', 'Izzet Boilerworks', 'Orzhov Basilica', 'Rakdos Carnarium',\n    'Selesyna Sanctuary', 'Simic Growth Chamber'\n\"",
+                "text": "    # duals: battlebond\n    'Bountiful Promenade', 'Morphic Pool', 'Luxury Suite', 'Spire Garden', 'Sea of Clouds',\n    # duals: scry 1\n    'Temple of Abandon', 'Temple of Deceit', 'Temple of Enlightenment',\n    'Temple of Epiphany', 'Temple of Malady', 'Temple of Malice', 'Temple of Mystery',\n    'Temple of Plenty', 'Temple of Silence', 'Temple of Triumph',\n    # duals: tapped unless you control\n    'Blackcleave Cliffs', 'Blooming Marsh', 'Botanical Sanctum', 'Canopy Vista',\n    'Cinder Glade', 'Clifftop Retreat', 'Concealed Courtyard', 'Copperline Gorge',\n    'Darkslick Shores', 'Dragonskull Summit', 'Drowned Catacomb', 'Glacial Fortress',\n    'Hinterland Harbor', 'Inspiring Vantage', 'Isolated Chapel', 'Prairie Stream',\n    'Razorverge Thicket', 'Rootbound Crag', 'Seachrome Coast', 'Smoldering Marsh',\n    'Spirebluff Canal' ,'Sulfur Falls', 'Sunken Hollow', 'Sunpetal Grove',\n    'Woodland Cemetery',\n    # duals: tapped, gain 1 life\n    'Akoum Refuge', 'Bloodfell Caves', 'Blossoming Sands', 'Dismal Backwater',\n    'Graypelt Refuge', 'Jungle Hollow', 'Jwar Isle Refuge', 'Kazandu Refuge',\n    'Rugged Highlands', 'Scoured Barrens', 'Sejiri Refuge', 'Swiftwater Cliffs',\n    'Thornwood Falls', 'Tranquil Cove', 'Wind-Scarred Crag',\n    # duals: deals 1 damage to you\n    'Adarkar Wastes', 'Battlefield Forge', 'Brushland', 'Caldera Lake',\n    'Caves of Koilos', 'Karplusan Forest', 'Llanowar Wastes', 'Pine Barrens',\n    'Salt Flats', 'Scrubland', 'Shivan Reef', 'Skyshroud Forest',\n    'Sulfurous Springs', 'Underground River', 'Yavimaya Coast',\n    # duals: return a land\n    'Azorius Chancery', 'Boros Garrison', 'Dimir Aqueduct', 'Golgari Rot Farm',\n    'Gruul Turf', 'Izzet Boilerworks', 'Orzhov Basilica', 'Rakdos Carnarium',\n    'Selesyna Sanctuary', 'Simic Growth Chamber'\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/zYka1jyX|We need to add more cards to the signature skip list -- pretty much all the boring dual lands: https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c38e1076-429a-46bf-b8b4-f6c23b5e8a87",
+        "type": "message",
+        "text": "web.nightly.make_card('Kambal, Consul of Allocation') doesn't seem to update the card page?",
+        "user": "U3MTAQBE1",
+        "ts": "1531148817.000156",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5112ce46-7c76-4ce9-bbc7-634e8383a58e",
+        "type": "message",
+        "text": "or card page isn't using signature_skip",
+        "user": "U3MTAQBE1",
+        "ts": "1531149038.000474",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0378ee0b-e6ae-4248-9a03-1153f3baa14e",
+        "type": "message",
+        "text": "or solring=True",
+        "user": "U3MTAQBE1",
+        "ts": "1531149189.000505",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fa4a85e1-4411-4eb3-ac48-0c765cc6a8de",
+        "type": "message",
+        "text": "`nightly.make_card('Kambal, Consul of Allocation')`",
+        "user": "U286Q175Y",
+        "ts": "1531149590.000397",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ca464cb6-f408-45df-af8e-5b0fcc899a3d",
+        "type": "message",
+        "text": "worked for me",
+        "user": "U286Q175Y",
+        "ts": "1531149592.000020",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cf61382c-812a-48e7-ac77-aadc72fcdf91",
+        "type": "message",
+        "text": "hm ok",
+        "user": "U3MTAQBE1",
+        "ts": "1531149620.000292",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "2bd9a411-a274-406c-9d36-95ee1f81b671",
+        "type": "message",
+        "text": "tainted field",
+        "user": "U3MTAQBE1",
+        "ts": "1531149641.000443",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "53cc1304-8006-49b5-bdf6-0a556de18d52",
+        "type": "message",
+        "text": "are signets ok as signature cards?",
+        "user": "U3MTAQBE1",
+        "ts": "1531149664.000593",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "08c85421-22e6-4e60-97ce-9d2f42e62cde",
+        "type": "message",
+        "text": "nah lets drop those oto",
+        "user": "U286Q175Y",
+        "ts": "1531149673.000437",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531149888.000235",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on We need to add more cards to the signature skip list -- pretty much all the boring dual lands: <https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>: \"    # duals: tainted\n    'Tainted Field', 'Tainted Isle', 'Tainted Peak', 'Tainted Wood',\n    # signets\n    'Azorius Signet', 'Boros Signet', 'Dimir Signet', 'Golgari Signet',\n    'Gruul Signet', 'Izzet Signet', 'Orzhov Signet', 'Rakdos Signet',\n    'Selesnya Signet', 'Simic Signet'\n\n<https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>\"",
+                "text": "    # duals: tainted\n    'Tainted Field', 'Tainted Isle', 'Tainted Peak', 'Tainted Wood',\n    # signets\n    'Azorius Signet', 'Boros Signet', 'Dimir Signet', 'Golgari Signet',\n    'Gruul Signet', 'Izzet Signet', 'Orzhov Signet', 'Rakdos Signet',\n    'Selesnya Signet', 'Simic Signet'\n\n<https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/zYka1jyX|We need to add more cards to the signature skip list -- pretty much all the boring dual lands: https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531149921.000111",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card We need to add more cards to the signature skip list -- pretty much all the boring dual lands: <https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation> from Doing to Done in July '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/zYka1jyX|We need to add more cards to the signature skip list -- pretty much all the boring dual lands: https:\/\/edhrec.com\/cards\/kambal-consul-of-allocation>* from *Doing* to *Done in July '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531150714.000093",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "New card Pillow Fort (\"can't attack you\") added to list Themes to add on board edhrec.",
+                "text": "In list *Themes to add* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "Pillow Fort (\"can't attack you\")",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/hU5YQRnk",
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531153883.000091",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "New card Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +' added to list Themes to add on board edhrec.",
+                "text": "In list *Themes to add* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +'",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/KNHKP0UB",
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "419700ee-f121-44d9-97cc-bb3df496d465",
+        "type": "message",
+        "text": "i tried voltron one time",
+        "user": "U286Q175Y",
+        "ts": "1531157067.000291",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cc18d8cc-15df-4050-80bf-a1968d734fcc",
+        "type": "message",
+        "text": "i didnt like it because it kind of mixed auras and equipment and was too broad",
+        "user": "U286Q175Y",
+        "ts": "1531157075.000202",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "567114ba-5285-40f6-95bc-459a165265b6",
+        "type": "message",
+        "text": "it would probably pull decks away from auras and equipment",
+        "user": "U3MTAQBE1",
+        "ts": "1531157176.000359",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "df5d43ce-81eb-443b-b52b-dcc5c5fad927",
+        "type": "message",
+        "text": "pillow fort will probably pull away from enchantment",
+        "user": "U3MTAQBE1",
+        "ts": "1531157190.000131",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a3ee8d2f-b9ac-4121-bba8-bfc1072df9ee",
+        "type": "message",
+        "text": "i made auras and enchantments separate because of voltron — before i just had voltron",
+        "user": "U286Q175Y",
+        "ts": "1531157350.000139",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1f2fc1ff-411a-485b-85b0-a809008ebd33",
+        "type": "message",
+        "text": "but i could tell there was like half auras half equipment decks and everything was like 25%",
+        "user": "U286Q175Y",
+        "ts": "1531157363.000160",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f4658732-f307-4c33-afeb-4a74d350db6a",
+        "type": "message",
+        "text": "thinking if i check the text for voltron-boosting keywords\/phrases instead of aura\/equipment type it might be more focused",
+        "user": "U3MTAQBE1",
+        "ts": "1531157425.000224",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "43611a07-42f7-46db-a6d3-9c0a832c8e3d",
+        "type": "message",
+        "text": "exalted, creature gets +, can't be blocked, gains double strike\/legendary creature with double strike",
+        "user": "U3MTAQBE1",
+        "ts": "1531157528.000053",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f5bbfd30-8d3f-45c4-a796-653cf5122f6e",
+        "type": "message",
+        "text": "yeah sounds good",
+        "user": "U286Q175Y",
+        "ts": "1531157635.000181",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531158088.000358",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +' from Themes to add to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/KNHKP0UB|Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +'>* from *Themes to add* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531158091.000285",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card Pillow Fort (\"can't attack you\") from Themes to add to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/hU5YQRnk|Pillow Fort (\"can't attack you\")>* from *Themes to add* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531159009.000416",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +': \" python -c \"import database; database.update_themes(write_to_db=False)\"\ninit...\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/mono-white-aether-revolt-sram> from equipment to auras\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/kasssssssssssseto-voltron-archmage> from auras to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/karona-god-of-slaugther> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/anarchy-madness-and-joyriding> from chaos to exile\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/18-09-16-rafiq-of-the-many-edh> from None to voltron\nUpdated theme for <https:\/\/deckstats.net\/decks\/79200\/966909-muldrotha-the-gravetide\/en> from sacrifice to lands\nUpdated theme for <https:\/\/deckstats.net\/decks\/96638\/858931-shu-yun-one-punch-man-deck-wit\/en> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/08-11-16-tana> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/gahijis-pillowfort-1> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/ishai-and-kraum-3\/#Ish> from theft to pillow-fort\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1181781> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/just-a-lone-lone-lonely-loner> from None to voltron\nUpdated theme for <https:\/\/deckstats.net\/decks\/84985\/705916-word-of-law\/en> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/please-dont-attack-me-1> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/survivor-shenanigans> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/budget-beats-with-jenara-50> from auras to voltron\nUpdated theme for <http:\/\/deckstats.net\/decks\/10502\/74533-exalted> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/radha-voltron-1> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/jeskai-fight-club-edh\/#Bru> from None to pillow-fort\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1169325> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/sram-command> from equipment to auras\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/608998> from equipment to voltron\n\"",
+                "text": " python -c \"import database; database.update_themes(write_to_db=False)\"\ninit...\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/mono-white-aether-revolt-sram> from equipment to auras\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/kasssssssssssseto-voltron-archmage> from auras to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/karona-god-of-slaugther> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/anarchy-madness-and-joyriding> from chaos to exile\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/18-09-16-rafiq-of-the-many-edh> from None to voltron\nUpdated theme for <https:\/\/deckstats.net\/decks\/79200\/966909-muldrotha-the-gravetide\/en> from sacrifice to lands\nUpdated theme for <https:\/\/deckstats.net\/decks\/96638\/858931-shu-yun-one-punch-man-deck-wit\/en> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/08-11-16-tana> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/gahijis-pillowfort-1> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/ishai-and-kraum-3\/#Ish> from theft to pillow-fort\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1181781> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/just-a-lone-lone-lonely-loner> from None to voltron\nUpdated theme for <https:\/\/deckstats.net\/decks\/84985\/705916-word-of-law\/en> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/please-dont-attack-me-1> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/survivor-shenanigans> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/budget-beats-with-jenara-50> from auras to voltron\nUpdated theme for <http:\/\/deckstats.net\/decks\/10502\/74533-exalted> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/radha-voltron-1> from None to voltron\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/jeskai-fight-club-edh\/#Bru> from None to pillow-fort\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1169325> from None to pillow-fort\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/sram-command> from equipment to auras\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/608998> from equipment to voltron\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/KNHKP0UB|Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +'>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cfa0c592-7e80-4bb8-a208-347e97de6f3e",
+        "type": "message",
+        "text": "i feel better when themes are mainly going from None to a new theme",
+        "user": "U3MTAQBE1",
+        "ts": "1531159071.000543",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "05f43577-a967-4e6d-81dd-5840e0d4b584",
+        "type": "message",
+        "text": "i could run update_themes now, but it might break nightly later",
+        "user": "U3MTAQBE1",
+        "ts": "1531159281.000041",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531159670.000067",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +' from Doing to Done in July '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/KNHKP0UB|Voltron? more than just counting aura\/equipment. 'exalted', 'double strike', 'creature gets +'>* from *Doing* to *Done in July '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531159673.000016",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card Pillow Fort (\"can't attack you\") from Doing to Done in July '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/hU5YQRnk|Pillow Fort (\"can't attack you\")>* from *Doing* to *Done in July '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "BCA60D4B-2F84-4378-BD67-4771BF119B85",
+        "type": "message",
+        "text": "<@U28TLDP0R> know what this email about ie migjt be about?",
+        "user": "U286Q175Y",
+        "ts": "1531176052.000034",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "80ddfd24-bd14-4159-936f-78969872e429",
+        "type": "message",
+        "text": "no ideas that wouldn’t be solved by 1 or 2",
+        "user": "U28TLDP0R",
+        "ts": "1531176194.000063",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3d0042c3-4458-4ac7-9a3c-6b3337d47d34",
+        "type": "message",
+        "text": "unless his work is blocking something",
+        "user": "U28TLDP0R",
+        "ts": "1531176199.000156",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1541073520.004900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1541109518.005000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1541123916.005100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ncan't adapt type 'set'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 939, in edhrec\n    make_commanders_colors()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 102, in make_commanders_colors\n    staples = origin.getcards(ccombo=colorabbr.upper())\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 45, in getcards\n    color_data = database.tally(database.get_coloridentity(ccombo))['Cards']\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 394, in get_coloridentity\n    cache.set(cachekey, out)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 74, in set\n    (key, value, expires)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/extras.py\", line 144, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: can't adapt type 'set'\n",
+        "ts": "1541130167.005200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nFri Nov  2 03:44:19 UTC 2018\n\n```",
+        "ts": "1541130169.005300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Nov  2 04:57:52 UTC 2018\n\n```",
+        "ts": "1541134582.005400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1439266>",
+        "ts": "1541134953.005500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1436472>",
+        "ts": "1541136486.005600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 23662) - 02\/Nov\/2018:05:29:47\n('37.9.87.143', 4235) - 02\/Nov\/2018:05:24:25\n('207.46.13.110', 4063) - 02\/Nov\/2018:05:29:49\n('77.88.47.5', 3974) - 02\/Nov\/2018:05:30:01\n('40.77.167.25', 3580) - 02\/Nov\/2018:05:29:41\n('40.77.167.40', 3432) - 02\/Nov\/2018:05:29:55\n('100.43.90.124', 2296) - 02\/Nov\/2018:04:56:10\n('157.55.39.97', 2005) - 01\/Nov\/2018:20:35:23\n('37.9.87.178', 1999) - 02\/Nov\/2018:00:43:51\n('207.46.13.185', 1705) - 02\/Nov\/2018:03:38:35\n('100.43.85.126', 1649) - 02\/Nov\/2018:05:20:32\n('216.244.66.232', 1419) - 02\/Nov\/2018:05:29:31\n('5.255.250.100', 1314) - 01\/Nov\/2018:16:50:55\n('100.43.85.112', 1213) - 02\/Nov\/2018:04:46:50\n('66.249.73.217', 1175) - 02\/Nov\/2018:05:20:11\n('144.76.40.222', 1154) - 02\/Nov\/2018:00:13:02\n('66.249.73.215', 1007) - 02\/Nov\/2018:05:20:50\n('13.57.179.149', 929) - 02\/Nov\/2018:05:29:22\n('13.56.79.15', 914) - 02\/Nov\/2018:05:29:50\n('77.88.47.10', 908) - 02\/Nov\/2018:04:46:51\n('106.120.173.150', 886) - 02\/Nov\/2018:00:29:53\n('148.64.56.73', 760) - 02\/Nov\/2018:05:27:16\n('66.249.73.218', 732) - 02\/Nov\/2018:05:15:47\n('202.14.10.233', 685) - 02\/Nov\/2018:05:29:18\n('18.215.117.151', 678) - 01\/Nov\/2018:22:01:58\n\n```",
+        "ts": "1541136511.005700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1435935>",
+        "ts": "1541136802.005800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

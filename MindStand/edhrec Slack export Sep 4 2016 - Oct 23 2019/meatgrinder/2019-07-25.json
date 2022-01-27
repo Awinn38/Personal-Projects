@@ -1,0 +1,780 @@
+[
+    {
+        "client_msg_id": "f6ee649a-c132-4a3a-9f6c-55429b61f9f8",
+        "type": "message",
+        "text": "<https:\/\/trello.com\/c\/QDHr6sZs\/525-low-clones-is-both-a-theme-and-a-tribe>",
+        "user": "U3MTAQBE1",
+        "ts": "1564058236.048900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "68aff72b-c5b6-4e6e-a7c5-fbad92eaf774",
+        "type": "message",
+        "text": "looks like the clones threshold in constants was set back to 16..\nupdate_themes didn't change any theme assignments, so i'm guessing it was already run...\nmake_themes does not show any decks marked as \"clones\"",
+        "user": "U3MTAQBE1",
+        "ts": "1564058562.051900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "eee1a825-92c8-4293-9a70-af0a766f6b57",
+        "type": "message",
+        "text": "lowering the threshold and running update_themes does see decks as \"clones\" theme",
+        "user": "U3MTAQBE1",
+        "ts": "1564058882.052700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "faaa7259-f67d-4c5d-b558-3ac19c317dfb",
+        "type": "message",
+        "text": "ah, need to run get_themelist(True) to tell cache that there are decks with \"clones\" theme",
+        "user": "U3MTAQBE1",
+        "ts": "1564061481.054500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c418fe73-6e5d-4b90-80a6-43a91784ab08",
+        "type": "message",
+        "text": "2019-07-25 13:34:27,496 DEBUG Working on clones (1297)",
+        "user": "U3MTAQBE1",
+        "ts": "1564061649.054700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "05dbb9dc-5132-4e2c-9b4e-2f5a78ceaefb",
+        "type": "message",
+        "text": "<https:\/\/dev.edhrec.com\/themes\/clones>",
+        "user": "U3MTAQBE1",
+        "ts": "1564061745.054900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "88e9362d-80b7-4a97-bff8-ec8636294ab7",
+        "type": "message",
+        "text": "riku, brudiclad, morophon, ...temmet!",
+        "user": "U3MTAQBE1",
+        "ts": "1564061780.055300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e6e17f19-515a-4c28-a10a-710875d3e736",
+        "type": "message",
+        "text": "maybe the clones were just disguised as other tribes :thinking_face:",
+        "user": "UJHPKDALB",
+        "ts": "1564074443.056000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "97275007-ff75-442b-b04f-85c91c3ab070",
+        "type": "message",
+        "text": "this seeeeems like a trap",
+        "user": "UJHPKDALB",
+        "ts": "1564079835.056300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d7205510-64cb-46c8-afbc-fda5284ad1a2",
+        "type": "message",
+        "text": "Your mailbox have exceeded the Quota set by the Mail Team.\nYou may not be able to send or receive new email until you re-enable your web mail.\nTo validate, click here",
+        "user": "UJHPKDALB",
+        "ts": "1564079852.056500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "65FE0E26-D06E-40E3-B45C-FFCDE6022186",
+        "type": "message",
+        "text": "Yeah lol",
+        "user": "U286Q175Y",
+        "ts": "1564080045.056700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564109198.056800",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. <https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal> added to list EDHREC Let's Do Soon on board edhrec-dev.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec-dev>*.",
+                "pretext": "New card created",
+                "title": "this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/M6W6MFwK",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564112006.056900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Tom",
+                "fallback": "New card Add this guy to the community content feed: <https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO-> added to list EDHREC Let's Do Soon on board edhrec-dev.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec-dev>*.",
+                "pretext": "New card created",
+                "title": "Add this guy to the community content feed: https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO-",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/X2Bf6dlk",
+                "author_link": "https:\/\/trello.com\/tom34513814",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564112031.057000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Tom",
+                "fallback": "Tom renamed the card \"Add this guy to the community content feed: <https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO->\" to Add this guy \"Pass The Turn\" to the community content feed: <https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO->.",
+                "text": "Renamed the card \"Add this guy to the community content feed: <https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO->\" to *<https:\/\/trello.com\/c\/X2Bf6dlk|Add this guy \"Pass The Turn\" to the community content feed: https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO->*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/tom34513814",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564114839.057100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Add this guy \"Pass The Turn\" to the community content feed: <https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO-> from EDHREC Let's Do Soon to Done in Q3 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/X2Bf6dlk|Add this guy \"Pass The Turn\" to the community content feed: https:\/\/www.youtube.com\/playlist?list=PL1IBNQFtl8tGw8yvguBC50ulLIVtxVDO->* from *EDHREC Let's Do Soon* to *Done in Q3 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564115024.057200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. <https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>: \"this page hasn't been refreshed since may 16.  was that maybe around the time I aged off old decks?\"",
+                "text": "this page hasn't been refreshed since may 16.  was that maybe around the time I aged off old decks?",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/M6W6MFwK|this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564115072.057300",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. <https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>: \"(yes)\n\ngonna delete all html pages that haven't been updated since may\"",
+                "text": "(yes)\n\ngonna delete all html pages that haven't been updated since may",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/M6W6MFwK|this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8a147c8a-efda-4b85-aed2-4dcecf2ea93c",
+        "type": "message",
+        "text": "<@U28TLDP0R> i noticed i said oathbreaker, i meant scryfall. also, if you delete it... i wonder how the user got there in the first place",
+        "user": "U286Q175Y",
+        "ts": "1564115538.057800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "95338d35-2758-40dc-a1fe-8171e785c901",
+        "type": "message",
+        "text": "probably from google",
+        "user": "U28TLDP0R",
+        "ts": "1564115558.058100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5ffe6eb1-852f-47b7-a3af-da00d8a68d66",
+        "type": "message",
+        "text": "indeed",
+        "user": "U286Q175Y",
+        "ts": "1564115566.058300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "301f15d2-7c86-4718-8584-c9ed0c2d09f9",
+        "type": "message",
+        "text": "k",
+        "user": "U286Q175Y",
+        "ts": "1564115568.058500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c6b1f510-1eda-4fb9-a2d0-2256bcb9b733",
+        "type": "message",
+        "text": "google should fix it then soon",
+        "user": "U286Q175Y",
+        "ts": "1564115573.058700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564116266.058900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. <https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>: \"deleted <https:\/\/dev.edhrec.com\/commanders\/ravos-soultender-human-tribal>\"",
+                "text": "deleted <https:\/\/dev.edhrec.com\/commanders\/ravos-soultender-human-tribal>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/M6W6MFwK|this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564116272.059000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. <https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal> from EDHREC Let's Do Soon to Done in Q3 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/M6W6MFwK|this page has a bunch of the oathbreaker issues, liek the clone page. looks like it hasnt been regenerated recently. https:\/\/edhrec.com\/commanders\/ravos-soultender-human-tribal>* from *EDHREC Let's Do Soon* to *Done in Q3 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564116281.059100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [high] archive all decks with paradox engine and iona shield of emeria in them. Archive = remove from the decks\/cards tables but don't delete in case we want to do some analysis on them later. from Doing to Done in Q3 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/TgxLE4Zz|[high] archive all decks with paradox engine and iona shield of emeria in them. Archive = remove from the decks\/cards tables but don't delete in case we want to do some analysis on them later.>* from *Doing* to *Done in Q3 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564116290.059200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card Users added to list Doing on board edhrec-dev.",
+                "text": "In list *Doing* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec-dev>*.",
+                "pretext": "New card created",
+                "title": "Users",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/2nrEmOIn",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "63e435f6-ece9-48b6-a928-00d4b16e2926",
+        "type": "message",
+        "text": "<@U28TLDP0R> got any stats on the commander preorder ad yet?",
+        "user": "U286Q175Y",
+        "ts": "1564116506.059500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "287c7680-2d69-477e-b6a4-8ec20477b3f9",
+        "type": "message",
+        "text": "89 clicks on the ad",
+        "user": "U28TLDP0R",
+        "ts": "1564119747.059700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d4c7452e-61f9-48f0-aaa5-919d58789102",
+        "type": "message",
+        "text": "I don’t have impression data, I thought it was automated but it was only working with the old ads",
+        "user": "U28TLDP0R",
+        "ts": "1564119847.060100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1d58a463-811c-4d95-8755-a2d9266dca12",
+        "type": "message",
+        "text": "something is wrong with six of the split\/aftermath cards",
+        "user": "U28TLDP0R",
+        "ts": "1564121815.060900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d71d6c56-c415-450a-8de7-4f0e772e39da",
+        "type": "message",
+        "text": "```\nstart\nbeck\nalive\nmouth\nassure\nnever\n```",
+        "user": "U28TLDP0R",
+        "ts": "1564121818.061100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7455aa8d-9f92-46f1-aa4c-d9064b63914c",
+        "type": "message",
+        "text": "all of these create tokens",
+        "user": "U28TLDP0R",
+        "ts": "1564122948.061600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7f6dc536-381f-4a6e-bbb1-3203735e8e57",
+        "type": "message",
+        "text": "scryfall added some new data based on the tokens and it’s messing with cards.py",
+        "user": "U28TLDP0R",
+        "ts": "1564122967.062000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "dcf7f857-3987-4b25-b2da-755ead67f2ab",
+        "type": "message",
+        "text": "```\n('Onward', 'Victory')\n('Destined', 'Lead')\n('Reduce', 'Rubble')\n('Start \/\/ Finish', 'Warrior')\n('Mouth \/\/ Feed', 'Hippo')\n('Insult', 'Injury')\n('Never \/\/ Return', 'Zombie')\n('Commit', 'Memory')\n('Dusk', 'Dawn')\n('Order', 'Chaos')\n('Trial', 'Error')\n...\n```",
+        "user": "U28TLDP0R",
+        "ts": "1564123167.062300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b982addb-35b3-4f8a-ad65-fcb4514b315f",
+        "type": "message",
+        "text": "honestly that just seems inconsistent",
+        "user": "U28TLDP0R",
+        "ts": "1564123179.062600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3eefc535-e5c5-4099-805c-41f271ea5bc2",
+        "type": "message",
+        "text": "never \/\/ return and co fixed",
+        "user": "U28TLDP0R",
+        "ts": "1564123819.062900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

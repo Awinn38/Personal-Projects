@@ -1,0 +1,824 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 08:11:54,549 ERROR name_to_url caught exception: Mountains\n```",
+        "ts": "1544429383.042500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 08:16:14,591 ERROR name_to_url caught exception: Bosom Buddy\n```",
+        "ts": "1544429643.042600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1544432271.042700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:09:48:12] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 136, in recjson\n    scores=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/recommendations.py\", line 273, in recommend\n    recs[cardname] = [rank \/ cmdr_multiplier]\nZeroDivisionError: float division by zero\n```",
+        "ts": "1544435161.042800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:12:09:05] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544443613.042900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:12:09:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544443641.043000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:12:40:17] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544445486.043100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:13:53:04] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544449852.043200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 14:15:54,097 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 278, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 270, in update_all\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 270, in &lt;listcomp&gt;\n    parsed_posts = [_parse_post(p) for p in sorted(cache.get('wp\/posts').values(), key=lambda x: x['date'], reverse=True)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 102, in _parse_post\n    media = get_media(post['featured_media'])\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 180, in get_media\n    return cache.get('wp\/by-id\/media\/{}'.format(mid))\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 61, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: wp\/by-id\/media\/25559\n```",
+        "ts": "1544451222.043300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1544453870.043400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:15:09:28] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544454436.043500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 15:47:13,432 ERROR Somehow Mountain got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,432 ERROR Somehow Swamp got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,433 ERROR Somehow Crumbling Necropolis got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,433 ERROR Somehow Savage Lands got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,433 ERROR Somehow Chaos Warp got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,433 ERROR Somehow Rakdos Signet got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,433 ERROR Somehow Blasphemous Act got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,434 ERROR Somehow Dimir Signet got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,434 ERROR Somehow Divergent Transformations got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,434 ERROR Somehow Faithless Looting got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-12-10 15:47:13,435 ERROR Somehow Anger got into this set of recs ['G', 'U'] (cmdr matrix)\n```",
+        "ts": "1544456701.043600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:20:26] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, set(negatives))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544458694.043700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:20:51] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, set(negatives))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1271, in intersect\n    baddecks = functools.reduce(set.union, negatives) if len(negatives) &gt; 0 else set()\nTypeError: descriptor 'union' requires a 'set' object but received a 'list'\n```",
+        "ts": "1544458719.043800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:22:13] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 204, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544458801.043900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:24:38] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'set'\n[10\/Dec\/2018:16:24:39] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544458946.044000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:24:48] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544458956.044100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:24:50] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544458957.044200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:25:02] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544458970.044300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:26:03] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544459030.044400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:26:50] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544459078.044500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:29:43] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544459251.044600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:31:05] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1544459332.044700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:34:28] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n```",
+        "ts": "1544459536.044800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:35:21] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, set(negatives))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n```",
+        "ts": "1544459588.044900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:39:08] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n```",
+        "ts": "1544459815.045000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:40:24] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n```",
+        "ts": "1544459892.045100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:41:11] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n[10\/Dec\/2018:16:41:12] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n```",
+        "ts": "1544459939.045200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:16:43:46] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 57, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 413, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 207, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1270, in intersect\n    okdecks = set(functools.reduce(set.intersection, positives))\nTypeError: descriptor 'intersection' requires a 'set' object but received a 'str'\n```",
+        "ts": "1544460094.045300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "85468595-8ede-46cc-bed1-3ad3af5891da",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1544460191.045500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 17:50:40,068 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 329, in make_themes\n    allcards.append(_make_theme(themename, theme, allcards=allcards))\nTypeError: _make_theme() got an unexpected keyword argument 'allcards'\n```",
+        "ts": "1544464107.045600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 18:47:44,489 ERROR Somehow Cyclonic Rift got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,489 ERROR Somehow Mystical Tutor got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,489 ERROR Somehow Baleful Strix got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,489 ERROR Somehow Rhystic Study got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,490 ERROR Somehow Azorius Signet got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,490 ERROR Somehow Dimir Signet got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,490 ERROR Somehow Brainstorm got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,490 ERROR Somehow Rite of Replication got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,490 ERROR Somehow Venser, Shaper Savant got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Propaganda got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Mana Drain got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Kiki-Jiki, Mirror Breaker got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Terminate got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Mental Misstep got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Chaos Warp got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,491 ERROR Somehow Cryptic Command got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,492 ERROR Somehow Dig Through Time got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,492 ERROR Somehow Kolaghan's Command got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,492 ERROR Somehow Render Silent got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,492 ERROR Somehow Zealous Conscripts got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,492 ERROR Somehow Creeping Tar Pit got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,492 ERROR Somehow Rakdos Charm got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,493 ERROR Somehow Mystic Confluence got into this set of recs ['B', 'W'] (cmdr matrix)\n2018-12-10 18:47:44,493 ERROR Somehow Mystical Teachings got into this set of recs ['B', 'W'] (cmdr matrix)\n```",
+        "ts": "1544467531.045700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1544468269.045800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 19:33:45,988 ERROR Somehow Swamp got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,988 ERROR Somehow Dimir Signet got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,988 ERROR Somehow Demonic Tutor got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,988 ERROR Somehow Underground Sea got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,989 ERROR Somehow Badlands got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,989 ERROR Somehow Plains got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,989 ERROR Somehow Hallowed Fountain got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,989 ERROR Somehow Tundra got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,989 ERROR Somehow Plateau got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,990 ERROR Somehow Scrubland got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,990 ERROR Somehow Swords to Plowshares got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,990 ERROR Somehow Terminate got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,990 ERROR Somehow Rakdos Charm got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,990 ERROR Somehow Dimir Aqueduct got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,990 ERROR Somehow Felidar Guardian got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,991 ERROR Somehow Azorius Signet got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,991 ERROR Somehow Mystic Monastery got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,991 ERROR Somehow Bojuka Bog got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,991 ERROR Somehow Baleful Strix got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,991 ERROR Somehow Kolaghan's Command got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,992 ERROR Somehow Ghostly Prison got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,992 ERROR Somehow Enlightened Tutor got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,992 ERROR Somehow Vindicate got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,992 ERROR Somehow Sun Titan got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,992 ERROR Somehow Karmic Guide got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,992 ERROR Somehow Dark Petition got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,993 ERROR Somehow Azorius Chancery got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,993 ERROR Somehow Cabal Coffers got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,993 ERROR Somehow Temple of Enlightenment got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,993 ERROR Somehow Austere Command got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,993 ERROR Somehow Mystical Teachings got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,993 ERROR Somehow Oblivion Ring got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,994 ERROR Somehow Exquisite Blood got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,994 ERROR Somehow Ravos, Soultender got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,994 ERROR Somehow Rune-Scarred Demon got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,994 ERROR Somehow Necropotence got into this set of recs ['R', 'U'] (cmdr matrix)\n2018-12-10 19:33:45,994 ERROR Somehow Render Silent got into this set of recs ['R', 'U'] (cmdr matrix)\n```",
+        "ts": "1544470293.045900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:20:25:29] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 136, in recjson\n    scores=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/recommendations.py\", line 282, in recommend\n    recs[cardname].append(rank \/ cid_multiplier)\nZeroDivisionError: float division by zero\n```",
+        "ts": "1544473397.046000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-10 20:28:34,697 ERROR Somehow Baleful Strix got into this set of recs ['R', 'U'] (cmdr matrix)\n```",
+        "ts": "1544473582.046100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:20:43:55] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 131, in recjson\n    colorid = set(''.join([''.join(c['color_identity']) for c in commanders]))\n  File \".\/dynamic.py\", line 131, in &lt;listcomp&gt;\n    colorid = set(''.join([''.join(c['color_identity']) for c in commanders]))\nTypeError: string indices must be integers\n```",
+        "ts": "1544474502.046200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:20:46:18] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 132, in recjson\n    ccards = [c for c in ccards if set(c['color_identity']).issubset(colord)]\n  File \".\/dynamic.py\", line 132, in &lt;listcomp&gt;\n    ccards = [c for c in ccards if set(c['color_identity']).issubset(colord)]\nTypeError: string indices must be integers\n```",
+        "ts": "1544474645.046300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:20:51:50] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 134, in recjson\n    ccards = [c for c in ccards if set(c['color_identity']).issubset(colord)]\n  File \".\/dynamic.py\", line 134, in &lt;listcomp&gt;\n    ccards = [c for c in ccards if set(c['color_identity']).issubset(colord)]\nTypeError: string indices must be integers\n```",
+        "ts": "1544474977.046400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:20:55:22] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 134, in recjson\n    ccards = [c for c in ccards if set(cards.get(c)['color_identity']).issubset(colord)]\n  File \".\/dynamic.py\", line 134, in &lt;listcomp&gt;\n    ccards = [c for c in ccards if set(cards.get(c)['color_identity']).issubset(colord)]\nNameError: name 'colord' is not defined\n```",
+        "ts": "1544475189.046500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:20:55:40] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 150, in recjson\n    return {'commander': commander, 'commanders': commanders, 'cards': ccards, 'recs': newrecs, 'cuts': outrecs}\nNameError: name 'commander' is not defined\n```",
+        "ts": "1544475207.046600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1544475469.046700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1544475469.046800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1544475469.046900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] We now have 3 dynamic.py running. Before we had 2.",
+        "ts": "1544475469.047000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:03:20] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 135, in recjson\n    if not set(cards.get(c)['color_identity']).issubset(colorid):\nNameError: name 'c' is not defined\n```",
+        "ts": "1544475667.047100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:04:04] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 117, in recjson\n    commanders = [cards.scn(c) for c in body['commander'].split('&amp;')]\nAttributeError: 'list' object has no attribute 'split'\n```",
+        "ts": "1544475711.047200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:06:09] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 694, in _do_respond\n    response.finalize()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 896, in finalize\n    content = self.collapse_body()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 854, in collapse_body\n    new_body = b''.join(self.body)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpcompat.py\", line 130, in json_encode\n    for chunk in _json_encode(value):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 696, in _iterencode\n    for chunk in _iterencode_dict(o, _current_indent_level):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 652, in _iterencode_dict\n    for chunk in chunks:\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 716, in _iterencode\n    o = _default(o)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 273, in default\n    o.__class__.__name__)\nTypeError: Object of type set is not JSON serializable\n```",
+        "ts": "1544475836.047300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:07:32] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 694, in _do_respond\n    response.finalize()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 896, in finalize\n    content = self.collapse_body()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 854, in collapse_body\n    new_body = b''.join(self.body)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpcompat.py\", line 130, in json_encode\n    for chunk in _json_encode(value):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 696, in _iterencode\n    for chunk in _iterencode_dict(o, _current_indent_level):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 652, in _iterencode_dict\n    for chunk in chunks:\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 716, in _iterencode\n    o = _default(o)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/simplejson\/encoder.py\", line 273, in default\n    o.__class__.__name__)\nTypeError: Object of type set is not JSON serializable\n```",
+        "ts": "1544475919.047400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "7997ce0c-d8bd-4b82-83d2-682bab0bc82d",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1544476026.047600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:18:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 150, in recjson\n    }, scores=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/recommendations.py\", line 265, in recommend\n    cmdr_multiplier = (resonate_cmdr \/ (resonate_cid + resonate_cmdr) * 2) ** 2\nZeroDivisionError: division by zero\n```",
+        "ts": "1544476572.047700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "c3a75a88-cf4d-404a-a90e-87d3bb42cf19",
+        "type": "message",
+        "text": "aw man unstable cards still break it",
+        "user": "U28TLDP0R",
+        "ts": "1544476589.048000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:22:28] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 136, in recjson\n    if not set(cards['color_identity']).issubset(colorid):\nTypeError: 'module' object is not subscriptable\n```",
+        "ts": "1544476815.048100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:40:17] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 128, in recjson\n    card_scn = cards.scn(card)\nNameError: name 'card' is not defined\n```",
+        "ts": "1544477884.048200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "dad77136-8fe9-4851-9492-7343b14d677d",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1544477958.048400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[10\/Dec\/2018:21:41:59] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \".\/dynamic.py\", line 127, in recjson\n    for count, cardname in body['cards']:\nValueError: not enough values to unpack (expected 2, got 1)\n```",
+        "ts": "1544477986.048500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "f065efa0-7f2e-4c42-89b8-b790134a1e20",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1544478021.048700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 2 dynamic.py running. Before we had 3.",
+        "ts": "1544479068.048800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1544486268.048900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nTue Dec 11 02:05:56 UTC 2018\n\n```",
+        "ts": "1544493822.049000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "deckstats failed\n```\nTue Dec 11 02:52:44 UTC 2018\n\n```",
+        "ts": "1544496629.049100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-11 06:36:24,264 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'nightly' has no attribute 'make_set'\n```",
+        "ts": "1544510049.049200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "462f9655-d644-4e68-a3a2-8b3095232084",
+        "type": "message",
+        "text": "lol that was me running `python -c`",
+        "user": "U28TLDP0R",
+        "ts": "1544510286.049800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1544511467.049900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

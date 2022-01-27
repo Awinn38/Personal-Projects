@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nFri Aug 10 20:23:41 UTC 2018\n\n```",
+        "ts": "1533932388.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Aug 10 20:23:41 UTC 2018\n\n```",
+        "ts": "1533932388.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nFri Aug 10 23:11:11 UTC 2018\n\n```",
+        "ts": "1533942437.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n[Errno 32] Broken pipe\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 732, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 692, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 680, in make_deck\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 63, in make_page\n    print('make_page: {}'.format(filename))\nBrokenPipeError: [Errno 32] Broken pipe\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 886, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 767, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nBrokenPipeError: [Errno 32] Broken pipe\n",
+        "ts": "1533942523.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 921, in brawl\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 62, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1533942526.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('54.157.3.180', 'test'), 68440)\n(('66.249.66.40', 'Mediapartners-Google'), 22381)\n(('54.241.253.165', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 22015)\n(('206.16.134.18', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 20287)\n(('206.16.134.25', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 20111)\n(('206.16.134.17', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 20036)\n(('206.16.134.16', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 20005)\n(('206.16.134.22', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19966)\n(('206.16.134.27', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19965)\n(('206.16.134.30', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19897)\n(('206.16.134.26', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19870)\n(('206.16.134.19', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19820)\n(('206.16.134.20', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19715)\n(('206.16.134.21', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19541)\n(('206.16.134.24', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 19321)\n(('107.23.255.34', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 17067)\n(('54.243.31.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 17001)\n(('54.241.32.66', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16946)\n(('176.34.159.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16943)\n(('54.183.255.162', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16939)\n(('54.245.168.2', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16935)\n(('54.228.16.34', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16929)\n(('54.244.52.226', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16912)\n(('177.71.207.130', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16894)\n(('54.232.40.98', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 16832)\n\n```",
+        "ts": "1533965229.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

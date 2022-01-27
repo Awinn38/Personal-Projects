@@ -1,0 +1,769 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1558422206.025100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 08:15:25,184 INFO backup.py took 0:15:22.765597\n```",
+        "ts": "1558426426.025200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1558426618.025300",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.073634032E8 (21\/05\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-05-21T08:16:57.670+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-05-21T08:16:57.737Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.073634032E8 (21\/05\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-05-21T08:16:57.670+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-05-21T08:16:57.737Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 11:39:15,883 INFO New Trending 2019-05-21\n{\"name\": \"Mana Confluence\", \"s\": [0, 54, 69, 72, 84, 94, 94], \"z\": 1.2484456366837742}\n{\"name\": \"Mana Reflection\", \"s\": [0, 4, 4, 4, 14, 12, 15], \"z\": 1.2202497214959418}\n{\"name\": \"Crystal Ball\", \"s\": [0, 2, 8, 7, 14, 15, 14], \"z\": 1.214366583760183}\n{\"name\": \"Tome of the Guildpact\", \"s\": [0, 4, 3, 4, 13, 11, 11], \"z\": 1.2130144816297719}\n{\"name\": \"Green Sun's Zenith\", \"s\": [0, 38, 45, 32, 55, 54, 64], \"z\": 1.2055707892203866}\n{\"name\": \"Simic Charm\", \"s\": [0, 5, 5, 5, 13, 11, 12], \"z\": 1.204548412479568}\n{\"name\": \"Sterling Grove\", \"s\": [0, 9, 5, 7, 14, 15, 16], \"z\": 1.2018919860989707}\n{\"name\": \"Sheltered Thicket\", \"s\": [0, 19, 22, 19, 32, 30, 33], \"z\": 1.2016626992133312}\n{\"name\": \"Warstorm Surge\", \"s\": [0, 21, 24, 21, 35, 34, 33], \"z\": 1.197289109522922}\n{\"name\": \"Vraska, Relic Seeker\", \"s\": [0, 7, 5, 5, 13, 13, 14], \"z\": 1.1964494673112156}\n2019-05-21 11:39:15,903 INFO daily.py took 3:39:09.431957\n```",
+        "ts": "1558438657.025400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1558440205.025500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has been updated!",
+        "ts": "1558447403.025600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1558452780.025700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 15:34:40,352 INFO nightly.py took 1 day, 17:21:56.234924\n```",
+        "ts": "1558452781.025800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:08:52,930 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 196, in make_top_colors\n    cardlists = CardList(origin.gettop(colorid=colorabbr))\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 720, in gettop\n    data = [x for x in data if x['name'] not in constants.BASICS]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 720, in &lt;listcomp&gt;\n    data = [x for x in data if x['name'] not in constants.BASICS]\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 166, in __getitem__\n    x = self._index[x]\nKeyError: 'name'\n```",
+        "ts": "1558469233.025900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:28:07,527 INFO archidekt.py took 0:26:12.225805\n```",
+        "ts": "1558470388.026000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:37:32,630 WARNING Chaos Orb from Ice-Fang Coatl in <https:\/\/deckstats.net\/decks\/54477\/514120-snakes-elves\/en>\n```",
+        "ts": "1558470953.026100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:38:33,115 WARNING Chaos Orb from A Display of My Dark Power in <https:\/\/deckstats.net\/decks\/129834\/1300438-yennett-top-deck\/en>\n```",
+        "ts": "1558471014.026200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:44:02,937 WARNING Chaos Orb from Ice-Fang Coatl in <https:\/\/deckstats.net\/decks\/30874\/1293809-canada\/en>\n```",
+        "ts": "1558471343.026300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:44:23,200 WARNING Chaos Orb from Prismatic Vista in <https:\/\/deckstats.net\/decks\/100887\/1061963-tuvasa-s-enchanted-pillow-fort\/en>\n```",
+        "ts": "1558471363.026400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 20:50:54,899 WARNING Chaos Orb from Sword of Dungeons &amp; Dragons in <https:\/\/deckstats.net\/decks\/119746\/1216785-naya-equipments\/en#Aki>\n```",
+        "ts": "1558471755.026500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:00:48,667 INFO deckstats.py took 0:30:42.142438\n```",
+        "ts": "1558472349.026600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:05:49,229 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 10, in &lt;module&gt;\n    nightly.make_card('Lightning Bolt')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 502, in make_card\n    data = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 67, in getcards\n    data = database.tally(decks, card=card)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2058, in tally\n    num_decks = get_count_by_date(card, card_age)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 934, in get_count_by_date\n    if not _DATE_TABLE:\nUnboundLocalError: local variable '_DATE_TABLE' referenced before assignment\n```",
+        "ts": "1558472650.026700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:06:47,952 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 940, in get_count_by_date\n    return _DATE_TABLE[table][carddate][name]\nKeyError: datetime.date(2010, 7, 16)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test.py\", line 10, in &lt;module&gt;\n    nightly.make_card('Lightning Bolt')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 502, in make_card\n    data = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 67, in getcards\n    data = database.tally(decks, card=card)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2060, in tally\n    num_decks = get_count_by_date(card, card_age)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 945, in get_count_by_date\n    return _DATE_TABLE[table]['earliest']\nKeyError: 'earliest'\n```",
+        "ts": "1558472708.026800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:07:56,586 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'database' has no attribute 'get_data_tables'\n```",
+        "ts": "1558472777.026900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:10:45,114 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 184, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"\/usr\/lib\/python3.5\/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/__main__.py\", line 4, in &lt;module&gt;\n    flamegraph.main()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/flamegraph\/flamegraph.py\", line 112, in main\n    exec(script_compiled, script_globals, script_globals)\n  File \"test.py\", line 10, in &lt;module&gt;\n    nightly.make_card('Lightning Bolt')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 502, in make_card\n    data = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 67, in getcards\n    data = database.tally(decks, card=card)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2066, in tally\n    popularity = card_counter[name] \/ num_decks\nTypeError: unsupported operand type(s) for \/: 'int' and 'dict'\n```",
+        "ts": "1558472945.027000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:37:25,641 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1168, in get_potential_tribes\n    potential_tribes[key] = get_potential_tribes_for_commander(key)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1180, in get_potential_tribes_for_commander\n    pcommander[1] = 'DONKEYPENIS'\nTypeError: 'tuple' object does not support item assignment\n```",
+        "ts": "1558474546.027100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:41:06,571 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1168, in get_potential_tribes\n    potential_tribes[key] = get_potential_tribes_for_commander(key)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1182, in get_potential_tribes_for_commander\n    pcommander[1] = 'DONKEYPENIS'\nTypeError: 'tuple' object does not support item assignment\n```",
+        "ts": "1558474767.027200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:42:04,007 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1168, in get_potential_tribes\n    potential_tribes[key] = get_potential_tribes_for_commander(key)\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1558474824.027300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:42:29,413 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1168, in get_potential_tribes\n    potential_tribes[key] = get_potential_tribes_for_commander(key)\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1558474850.027400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:49:21,015 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1172, in get_potential_tribes\n    return potential_tribes()\nTypeError: 'dict' object is not callable\n```",
+        "ts": "1558475261.027500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:50:37,554 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'Thraximundar' is not defined\n```",
+        "ts": "1558475338.027600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 21:50:51,762 INFO mtggoldfish.py took 0:29:48.788014\n```",
+        "ts": "1558475352.027700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:10:19,282 INFO recommendations.py took 14:10:14.429639\n```",
+        "ts": "1558476520.027800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:12:21,795 INFO update_deckswithprices.py took 0:21:27.871564\n```",
+        "ts": "1558476642.027900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:12:22,550 INFO New deck count from past 2 days: \n- Archidekt: 650\n- deckstats: 497\n- Other: 0\n- MTGGoldfish: 448\n```",
+        "ts": "1558476643.028000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:38:40,021 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    for row in rows:\n    ^\nIndentationError: unexpected indent\n2019-05-21 22:38:40,022 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cards = row['cards']\n    ^\nIndentationError: unexpected indent\n2019-05-21 22:38:40,026 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cur.execute('INSERT INTO cards_new VALUES ' + ', '.join(['(%s, %s)'] * len(cards)), [(url, c) for c in cards])\n    ^\nIndentationError: unexpected indent\n```",
+        "ts": "1558478220.028100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:39:03,289 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 6, in &lt;module&gt;\n  File \"&lt;stdin&gt;\", line 6, in &lt;listcomp&gt;\nNameError: name 'url' is not defined\n```",
+        "ts": "1558478244.028200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:39:34,800 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 5, in &lt;module&gt;\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\nIndexError: list index out of range\n```",
+        "ts": "1558478275.028300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:41:31,230 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 5, in &lt;module&gt;\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: relation \"cards_new\" does not exist\nLINE 1: INSERT INTO cards_new VALUES ('<https:\/\/archidekt.com\/decks\/8>...\n                    ^\n\n```",
+        "ts": "1558478391.028400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:41:54,691 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 6\n    ;\n    ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1558478415.028500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:41:58,731 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    ;\n    ^\nSyntaxError: invalid syntax\n2019-05-21 22:41:58,960 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    ;\n    ^\nSyntaxError: invalid syntax\n2019-05-21 22:41:59,162 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    ;\n    ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1558478419.028600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:42:06,441 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 5, in &lt;module&gt;\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.InternalError: current transaction is aborted, commands ignored until end of transaction block\n\n```",
+        "ts": "1558478427.028700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:45:05,051 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 3\n    rows = cur.fetchall()\n       ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1558478605.028800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:45:19,605 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 4\n    for row in rows:\n      ^\nSyntaxError: invalid syntax\n2019-05-21 22:45:19,605 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    url = row['url']\n    ^\nIndentationError: unexpected indent\n2019-05-21 22:45:19,606 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cards = row['cards']\n    ^\nIndentationError: unexpected indent\n2019-05-21 22:45:19,607 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    selectstrs = [item for sublist in [(url, l) for l in cards] for item in sublist]\n    ^\nIndentationError: unexpected indent\n```",
+        "ts": "1558478620.028900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 22:45:30,683 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 5\n    for row in rows:\n      ^\nSyntaxError: invalid syntax\n2019-05-21 22:45:30,684 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    url = row['url']\n    ^\nIndentationError: unexpected indent\n2019-05-21 22:45:30,684 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    cards = row['cards']\n    ^\nIndentationError: unexpected indent\n2019-05-21 22:45:30,685 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    selectstrs = [item for sublist in [(url, l) for l in cards] for item in sublist]\n    ^\nIndentationError: unexpected indent\n```",
+        "ts": "1558478631.029000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1558479803.029100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-21 23:07:21,110 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'BEGIN' is not defined\n2019-05-21 23:07:21,110 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    DROP TABLE cards;\n             ^\nSyntaxError: invalid syntax\n2019-05-21 23:07:21,111 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    CREATE TABLE cards as TABLE cards_new;\n               ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1558479941.029200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 03:24:53,088 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 0\n```",
+        "ts": "1558495393.029300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 03:26:48,496 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 0\n```",
+        "ts": "1558495509.029400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 04:00:54,779 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'database' has no attribute 'get_date_table'\n```",
+        "ts": "1558497555.029500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 04:02:45,809 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: get_count_by_date() missing 1 required positional argument: 'carddate'\n```",
+        "ts": "1558497666.029600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 04:03:10,969 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 935, in get_count_by_date\n    carddate = datetime.strptime(carddate, '%Y-%m-%d').date()\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 510, in _strptime_datetime\n    tt, fraction = _strptime(data_string, format)\n  File \"\/usr\/lib\/python3.5\/_strptime.py\", line 343, in _strptime\n    (data_string, format))\nValueError: time data '2018-41-01' does not match format '%Y-%m-%d'\n```",
+        "ts": "1558497691.029700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 04:06:06,060 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nAttributeError: module 'database' has no attribute 'get_commander_count_by_date'\n```",
+        "ts": "1558497866.029800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[22\/May\/2019:05:06:22] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 75, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 440, in getcommanders\n    decks = get_decks(card, 'commander', filtin, filtout, filters, checktribe, tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 186, in get_decks\n    negatives = [database.get_card(c, ignore_cache=IGNORE_CACHE) for c in filtout]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 186, in &lt;listcomp&gt;\n    negatives = [database.get_card(c, ignore_cache=IGNORE_CACHE) for c in filtout]\nTypeError: get_card() got an unexpected keyword argument 'ignore_cache'\n```",
+        "ts": "1558501482.029900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:36:09,311 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name '_CARDS' is not defined\n```",
+        "ts": "1558503269.030000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:36:17,172 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nKeyError: 0\n```",
+        "ts": "1558503277.030100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:37:48,602 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    mana = ['{W}','{U}','{B}','{R}','{G}']\n    ^\nIndentationError: unexpected indent\n2019-05-22 05:37:48,603 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    for color in mana:\n    ^\nIndentationError: unexpected indent\n2019-05-22 05:37:48,614 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    if 'Add ' + color in oracle:\n    ^\nIndentationError: unexpected indent\n2019-05-22 05:37:48,626 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    for color2 in (mana - color):\n    ^\nIndentationError: unexpected indent\n2019-05-22 05:37:48,648 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    if color2 in oracle:\n    ^\nIndentationError: unexpected indent\n```",
+        "ts": "1558503368.030200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "409fb583-da85-40c9-addc-8ffdce215144",
+        "type": "message",
+        "text": ".",
+        "user": "U3MTAQBE1",
+        "ts": "1558503376.030400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:40:09,377 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 6\n    return False\n         ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1558503509.030500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:41:25,434 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 2\n    if 'Add ' + color in oracle:\n                               ^\nIndentationError: expected an indented block\n```",
+        "ts": "1558503585.030600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:42:01,319 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 3, in &lt;module&gt;\nTypeError: unsupported operand type(s) for -: 'list' and 'str'\n```",
+        "ts": "1558503621.030700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 05:47:18,195 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 5, in &lt;module&gt;\nNameError: name 'color1' is not defined\n```",
+        "ts": "1558503938.030800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 06:36:59,515 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"asdf.py\", line 133, in &lt;module&gt;\n    with database.getcursor() as cur:\nAttributeError: module 'database' has no attribute 'getcursor'\n```",
+        "ts": "1558506919.030900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 06:38:40,132 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"asdf.py\", line 135, in &lt;module&gt;\n    cur.execute('SELECT url FROM cards WHERE url IN %s', (cards,))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: syntax error at or near \"ARRAY\"\nLINE 1: SELECT url FROM cards WHERE url IN ARRAY['Silent Submarine',...\n                                           ^\n\n```",
+        "ts": "1558507020.031000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 06:54:05,409 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"&lt;stdin&gt;\", line 2, in is_color_fixer\nTypeError: string indices must be integers\n```",
+        "ts": "1558507945.031100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 06:55:01,443 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nKeyError: 'murmuing-bosk'\n```",
+        "ts": "1558508001.031200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-22 07:00:32,027 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nKeyError: 'sanctum of ugin'\n```",
+        "ts": "1558508332.031300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

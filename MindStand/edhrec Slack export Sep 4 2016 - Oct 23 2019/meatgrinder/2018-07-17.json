@@ -1,0 +1,448 @@
+[
+    {
+        "client_msg_id": "7165a244-0897-4212-b91a-ed4819eb70e0",
+        "type": "message",
+        "text": "nightly’s running in supervisor now",
+        "user": "U28TLDP0R",
+        "ts": "1531811315.000048",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "FB87DE38-F380-41B5-AE53-2784ADCA4898",
+        "type": "message",
+        "text": "Nice work",
+        "user": "U286Q175Y",
+        "ts": "1531823784.000324",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531863762.000102",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"core.cards\ndef get_meld():\n    return {key: value for key, value in list(_CARDS.items()) if value['layout'] == 'meld'}\n\n&gt;&gt;&gt; core.cards.get_meld().keys()\ndict_keys(['Brisela, Voice of Nightmares', 'Bruna, the Fading Light', 'Midnight Scavengers', 'Chittering Host', 'Graf Rats', 'Hanweir Garrison', 'Hanweir, the Writhing Township', 'Gisela, the Broken Blade', 'Hanweir Battlements'])\n\n\"",
+                "text": "core.cards\ndef get_meld():\n    return {key: value for key, value in list(_CARDS.items()) if value['layout'] == 'meld'}\n\n&gt;&gt;&gt; core.cards.get_meld().keys()\ndict_keys(['Brisela, Voice of Nightmares', 'Bruna, the Fading Light', 'Midnight Scavengers', 'Chittering Host', 'Graf Rats', 'Hanweir Garrison', 'Hanweir, the Writhing Township', 'Gisela, the Broken Blade', 'Hanweir Battlements'])\n\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531864405.000221",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"web.origin\ndef get_meld_cards():\n(adapted from get_doublefaced_cards)\n\n&gt;&gt;&gt; a = web.origin.get_meld_cards()\n&gt;&gt;&gt; for card in a: print(card['name'])\n...\nGraf Rats (Chittering Host)\nMidnight Scavengers (Chittering Host)\nGisela, the Broken Blade (Brisela, Voice of Nightmares)\nBruna, the Fading Light (Brisela, Voice of Nightmares)\nHanweir Battlements (Hanweir, the Writhing Township)\nHanweir Garrison (Hanweir, the Writhing Township)\n&gt;&gt;&gt;\n\"",
+                "text": "web.origin\ndef get_meld_cards():\n(adapted from get_doublefaced_cards)\n\n&gt;&gt;&gt; a = web.origin.get_meld_cards()\n&gt;&gt;&gt; for card in a: print(card['name'])\n...\nGraf Rats (Chittering Host)\nMidnight Scavengers (Chittering Host)\nGisela, the Broken Blade (Brisela, Voice of Nightmares)\nBruna, the Fading Light (Brisela, Voice of Nightmares)\nHanweir Battlements (Hanweir, the Writhing Township)\nHanweir Garrison (Hanweir, the Writhing Township)\n&gt;&gt;&gt;\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531867219.000028",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"web.classes.CardView.__init__\n(after init_name call)\n        if len(self.cards) == 1 and self.cards[0].dict['layout'] == 'meld':\n            self.cards.append(Card(self.cards[0].dict['names'][2]))\n\nweb.nightly\ndef make_meld_cards\n(might not be necessary after CardView change\n\n<https:\/\/edhrec.com\/cards\/midnight-scavengers>\n<https:\/\/edhrec.com\/cards\/graf-rats>\n<https:\/\/edhrec.com\/cards\/hanweir-garrison>\n<https:\/\/edhrec.com\/cards\/hanweir-battlements>\n<https:\/\/edhrec.com\/cards\/bruna-the-fading-light>\n<https:\/\/edhrec.com\/cards\/gisela-the-broken-blade>\"",
+                "text": "web.classes.CardView.__init__\n(after init_name call)\n        if len(self.cards) == 1 and self.cards[0].dict['layout'] == 'meld':\n            self.cards.append(Card(self.cards[0].dict['names'][2]))\n\nweb.nightly\ndef make_meld_cards\n(might not be necessary after CardView change\n\n<https:\/\/edhrec.com\/cards\/midnight-scavengers>\n<https:\/\/edhrec.com\/cards\/graf-rats>\n<https:\/\/edhrec.com\/cards\/hanweir-garrison>\n<https:\/\/edhrec.com\/cards\/hanweir-battlements>\n<https:\/\/edhrec.com\/cards\/bruna-the-fading-light>\n<https:\/\/edhrec.com\/cards\/gisela-the-broken-blade>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531867631.000146",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"make_meld_cards should make pages for the melded side by searching decks for the other two cards?\"",
+                "text": "make_meld_cards should make pages for the melded side by searching decks for the other two cards?",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7194ac2c-fd5e-428f-a29b-6fa29c58f46c",
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/cards\/midnight-scavengers>\n<https:\/\/edhrec.com\/cards\/graf-rats>\n<https:\/\/edhrec.com\/cards\/hanweir-garrison>\n<https:\/\/edhrec.com\/cards\/hanweir-battlements>\n<https:\/\/edhrec.com\/cards\/bruna-the-fading-light>\n<https:\/\/edhrec.com\/cards\/gisela-the-broken-blade>",
+        "user": "U3MTAQBE1",
+        "ts": "1531867702.000117",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "05D64939-7839-4690-B189-A5980843DDD7",
+        "type": "message",
+        "text": "I like it. <@U28TLDP0R> plz check since that touches code you wrote more",
+        "user": "U286Q175Y",
+        "ts": "1531869132.000161",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "02FCFBF4-5B55-4275-9C3F-809D8D765C8B",
+        "type": "message",
+        "text": "Gisela doesnt work",
+        "user": "U286Q175Y",
+        "ts": "1531869150.000059",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "79095d7b-c375-4c5d-8e24-935498326b1d",
+        "type": "message",
+        "text": "hmm, it works when i remake it?",
+        "user": "U3MTAQBE1",
+        "ts": "1531869284.000101",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "F5B06582-DF17-414B-B5E5-717A4E31E484",
+        "type": "message",
+        "text": " ¯\\_(ツ)_\/¯",
+        "user": "U286Q175Y",
+        "ts": "1531869319.000041",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8DE60548-F9A9-4685-9A53-FFE4A8056EE7",
+        "type": "message",
+        "text": "Yolo",
+        "user": "U286Q175Y",
+        "ts": "1531869325.000147",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "74f1074a-6594-4109-a509-ae91edf90f27",
+        "type": "message",
+        "text": "commander page too: <https:\/\/edhrec.com\/commanders\/gisela-the-broken-blade>",
+        "user": "U3MTAQBE1",
+        "ts": "1531869402.000143",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Gisela, the Broken Blade (Commander)",
+                "title_link": "https:\/\/edhrec.com\/commanders\/gisela-the-broken-blade",
+                "text": "EDH \/ Commander Recommendations: Bruna the Fading Light, Thalia's Lancers, Herald of War, Seraph Sanctuary, Aegis Angel, Baneslayer Angel",
+                "fallback": "EDHREC - Gisela, the Broken Blade (Commander)",
+                "from_url": "https:\/\/edhrec.com\/commanders\/gisela-the-broken-blade",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/commanders\/gisela-the-broken-blade"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a0d562d7-fed2-4de0-a3a1-d7e58e13e6f5",
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/commanders\/bruna-the-fading-light>",
+        "user": "U3MTAQBE1",
+        "ts": "1531869465.000012",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Bruna, the Fading Light (Commander)",
+                "title_link": "https:\/\/edhrec.com\/commanders\/bruna-the-fading-light",
+                "text": "EDH \/ Commander Recommendations: Gisela the Broken Blade, Thalia's Lancers, Karmic Guide, Emeria Shepherd, Reya Dawnbringer, Angel of Serenity",
+                "fallback": "EDHREC - Bruna, the Fading Light (Commander)",
+                "from_url": "https:\/\/edhrec.com\/commanders\/bruna-the-fading-light",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/commanders\/bruna-the-fading-light"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531878716.000116",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"CardView might need another check or we get a pair of Briselas\n<https:\/\/edhrec.com\/cards\/brisela-voice-of-nightmares>\"",
+                "text": "CardView might need another check or we get a pair of Briselas\n<https:\/\/edhrec.com\/cards\/brisela-voice-of-nightmares>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531879019.000111",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"        if len(self.cards) == 1 and self.cards[0].dict['layout'] == 'meld':\n            if self.name != self.cards[0].dict['names'][2]:\n                self.cards.append(Card(self.cards[0].dict['names'][2]))\n\n<https:\/\/edhrec.com\/cards\/brisela-voice-of-nightmares>\n<https:\/\/edhrec.com\/cards\/bruna-the-fading-light>\"",
+                "text": "        if len(self.cards) == 1 and self.cards[0].dict['layout'] == 'meld':\n            if self.name != self.cards[0].dict['names'][2]:\n                self.cards.append(Card(self.cards[0].dict['names'][2]))\n\n<https:\/\/edhrec.com\/cards\/brisela-voice-of-nightmares>\n<https:\/\/edhrec.com\/cards\/bruna-the-fading-light>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1531881241.000097",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.: \"web.nightly.make_meld_cards\njust makes pages for the melded backs, should have \"correct\" stats now.\nseems that some decks just have the melded version in their card lists?\n<https:\/\/edhrec.com\/cards\/brisela-voice-of-nightmares>\n<https:\/\/edhrec.com\/cards\/chittering-host>\n<https:\/\/edhrec.com\/cards\/hanweir-the-writhing-township>\"",
+                "text": "web.nightly.make_meld_cards\njust makes pages for the melded backs, should have \"correct\" stats now.\nseems that some decks just have the melded version in their card lists?\n<https:\/\/edhrec.com\/cards\/brisela-voice-of-nightmares>\n<https:\/\/edhrec.com\/cards\/chittering-host>\n<https:\/\/edhrec.com\/cards\/hanweir-the-writhing-township>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/VhGkzISU|Meld cards should show a card back... right now if i have to look up what the back side does I have to go to gatherer.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1c81aaef-8614-48b0-9b36-75329faca354",
+        "type": "message",
+        "text": "aaah page titles are wrong",
+        "user": "U3MTAQBE1",
+        "ts": "1531881328.000139",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9400d09f-6c43-447f-9d0f-9871915c9437",
+        "type": "message",
+        "text": "ok better now",
+        "user": "U3MTAQBE1",
+        "ts": "1531881435.000136",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

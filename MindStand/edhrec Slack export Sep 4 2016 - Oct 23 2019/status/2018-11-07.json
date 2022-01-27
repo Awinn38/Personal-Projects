@@ -1,0 +1,83 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Nov  7 21:25:07 UTC 2018\n\n```",
+        "ts": "1541625793.008000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mtggoldfish failed\n```\nWed Nov  7 21:26:25 UTC 2018\n\n```",
+        "ts": "1541625870.008100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "b46dbbc1-0705-4315-a4ae-4f8f8d1e18cf",
+        "type": "message",
+        "text": "^ this is me",
+        "user": "U28TLDP0R",
+        "ts": "1541625884.008500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1451802>",
+        "ts": "1541633696.008600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ncould not fork new process for connection: Cannot allocate memory\n\ncould not fork new process for connection: Cannot allocate memory\n\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 777, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 727, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 641, in make_deck\n    info = database.get_deck(url)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 738, in get_deck\n    decks = get_decks([url], get_cards)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 825, in get_decks\n    return _get_decks_helper(urls, get_cards, brawl=True) + _get_decks_helper(urls, get_cards, brawl=False) + _get_decks_helper(urls, get_cards, brawl=False, tiny=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 769, in _get_decks_helper\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.4\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 41, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 2, user='postgres')\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: could not fork new process for connection: Cannot allocate memory\n\ncould not fork new process for connection: Cannot allocate memory\n\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\npsycopg2.OperationalError: could not fork new process for connection: Cannot allocate memory\n\ncould not fork new process for connection: Cannot allocate memory\n\n",
+        "ts": "1541648063.008700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 24369) - 08\/Nov\/2018:05:29:59\n('40.77.167.20', 4907) - 08\/Nov\/2018:05:29:15\n('40.77.167.40', 4898) - 08\/Nov\/2018:05:29:44\n('40.77.167.42', 4884) - 08\/Nov\/2018:05:29:57\n('37.9.87.143', 4664) - 08\/Nov\/2018:04:17:32\n('40.77.167.25', 3973) - 08\/Nov\/2018:02:01:10\n('77.88.47.5', 3363) - 08\/Nov\/2018:03:00:14\n('100.43.90.124', 1819) - 07\/Nov\/2018:21:13:32\n('100.43.85.112', 1708) - 08\/Nov\/2018:05:24:32\n('66.249.69.14', 1702) - 08\/Nov\/2018:05:29:53\n('66.249.69.10', 1475) - 08\/Nov\/2018:04:55:33\n('88.99.250.15', 1389) - 08\/Nov\/2018:05:15:30\n('66.249.69.31', 1111) - 08\/Nov\/2018:05:23:05\n('66.249.69.5', 1057) - 08\/Nov\/2018:03:10:57\n('5.255.250.100', 1033) - 07\/Nov\/2018:20:27:48\n('216.244.66.232', 941) - 08\/Nov\/2018:04:48:04\n('77.88.47.10', 928) - 08\/Nov\/2018:04:24:02\n('46.4.119.70', 901) - 08\/Nov\/2018:01:36:00\n('66.249.69.13', 886) - 08\/Nov\/2018:04:41:11\n('106.120.173.150', 885) - 07\/Nov\/2018:22:42:50\n('66.249.69.3', 816) - 08\/Nov\/2018:03:17:05\n('52.53.173.88', 772) - 08\/Nov\/2018:05:28:37\n('207.46.13.23', 756) - 08\/Nov\/2018:05:29:06\n('54.241.130.133', 718) - 08\/Nov\/2018:05:28:51\n('144.76.81.72', 647) - 07\/Nov\/2018:20:19:07\n\n```",
+        "ts": "1541654886.008800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

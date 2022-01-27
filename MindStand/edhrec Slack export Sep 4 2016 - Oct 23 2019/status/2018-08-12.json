@@ -1,0 +1,86 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/cards\/capsize.html has been updated!",
+        "ts": "1534074963.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Aug 12 13:10:37 UTC 2018\n\n```",
+        "ts": "1534079197.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Aug 12 13:10:38 UTC 2018\n\n```",
+        "ts": "1534079197.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nname 'e' is not defined\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1111, in get_usage_scores\n    } for k in cur.fetchall()]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1111, in &lt;listcomp&gt;\n    } for k in cur.fetchall()]\nTypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 750, in _make_commanders_p\n    make_commander(cmdr, brawl=brawl, tiny=tiny, skiparticles=skiparticles)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 536, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 421, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1525, in tally\n    [card['Card'] for card in out_cards], colorid=color_id)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1112, in get_usage_scores\n    except TypeError(e):\nNameError: name 'e' is not defined\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 903, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 784, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nNameError: name 'e' is not defined\n",
+        "ts": "1534092788.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nSun Aug 12 18:34:48 UTC 2018\n\n```",
+        "ts": "1534098647.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSun Aug 12 18:34:48 UTC 2018\n\n```",
+        "ts": "1534098647.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('54.157.3.180', 'test'), 91484)\n(('92.222.90.8', 'Python-urllib\/2.7'), 57401)\n(('206.16.134.18', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28582)\n(('206.16.134.16', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28379)\n(('206.16.134.25', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28247)\n(('206.16.134.17', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28219)\n(('206.16.134.27', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28197)\n(('206.16.134.22', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28133)\n(('206.16.134.26', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28101)\n(('206.16.134.30', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28057)\n(('206.16.134.19', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28050)\n(('206.16.134.20', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 28046)\n(('206.16.134.21', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 27710)\n(('206.16.134.24', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 27655)\n(('206.16.134.28', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko\/20120101 Firefox\/29.0'), 23349)\n(('107.23.255.34', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22813)\n(('54.243.31.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22737)\n(('54.241.32.66', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22655)\n(('176.34.159.194', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22651)\n(('54.183.255.162', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22650)\n(('54.245.168.2', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22639)\n(('54.228.16.34', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22639)\n(('54.244.52.226', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22612)\n(('177.71.207.130', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22581)\n(('54.232.40.98', 'Amazon-Route53-Health-Check-Service (ref 9c1f473d-6d3f-472e-a59f-5c1942e5ed17; report <http:\/\/amzn.to\/1vsZADi>)'), 22511)\n\n```",
+        "ts": "1534138058.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

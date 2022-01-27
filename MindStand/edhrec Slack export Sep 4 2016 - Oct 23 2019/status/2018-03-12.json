@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ndeck not found\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \".\/nightly.py\", line 483, in _make_commanders_p\n    make_commander(cmdr, bytribe=True, tribe=tribe)\n  File \".\/nightly.py\", line 356, in make_commander\n    tribelinks=tribelinks)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in make_page\n    repls['panels'] = make_panels(panels, card, name, repls=repls, recentdecks=recentdecks, articles=articles, tribelinks=tribelinks)\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 93, in make_panels\n    trows.append('&lt;tr&gt;&lt;td&gt;&lt;div class=\"recentpanelrow\"&gt;&lt;a href=\"{0}\"&gt;{1}&lt;\/a&gt;&lt;\/div&gt;&lt;\/td&gt;&lt;\/tr&gt;'.format('\/deckpreview\/' + ''.join(c if c.isalnum() else '-' for c in deck[0]), deck_preview_html(deck[0])))\n  File \"\/home\/ubuntu\/edhrec\/web\/panels.py\", line 14, in deck_preview_html\n    deckinfo = database.get_deck(deckurl, get_cards=False)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 489, in get_deck\n    raise ValueError('deck not found')\nValueError: deck not found\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 557, in &lt;module&gt;\n    make_commanders()\n  File \".\/nightly.py\", line 491, in make_commanders\n    p.map(_make_commanders_p, cards.get_commanders())\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nValueError: deck not found\n",
+        "ts": "1520891802.000319",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n[Errno 32] Broken pipe\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 557, in &lt;module&gt;\n    make_commanders()\n  File \".\/nightly.py\", line 488, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \".\/nightly.py\", line 328, in make_commander\n    articles = [(x['title'], x['link']) for x in wordpress.get_commander(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 112, in get_commander\n    return get_articles_by_commander()[cmdr]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 80, in get_articles_by_commander\n    articles = [parse_post(p) for p in get_posts()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 80, in &lt;listcomp&gt;\n    articles = [parse_post(p) for p in get_posts()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 187, in parse_post\n    tags.append(get_tag(tid))\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 139, in get_tag\n    return get_tags()[tid]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 143, in get_tags\n    return {t['id']: t for t in _get_multipage('tags')}\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 37, in _get_multipage\n    print('Reading from {}'.format(url))\nBrokenPipeError: [Errno 32] Broken pipe\n",
+        "ts": "1520892625.000270",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "text": "nothing to see here",
+        "user": "U28TLDP0R",
+        "ts": "1520892737.000316",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCan't pickle &lt;function _make_commanders_p at 0x7efd162d6a60&gt;: attribute lookup _make_commanders_p on __main__ failed\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 557, in &lt;module&gt;\n    make_commanders()\n  File \".\/nightly.py\", line 491, in make_commanders\n    p.map(_make_commanders_p, cards.get_commanders())\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 383, in _handle_tasks\n    put(task)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/connection.py\", line 206, in send\n    self._send_bytes(ForkingPickler.dumps(obj))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/reduction.py\", line 50, in dumps\n    cls(buf, protocol).dump(obj)\n_pickle.PicklingError: Can't pickle &lt;function _make_commanders_p at 0x7efd162d6a60&gt;: attribute lookup _make_commanders_p on __main__ failed\n",
+        "ts": "1520892880.000458",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

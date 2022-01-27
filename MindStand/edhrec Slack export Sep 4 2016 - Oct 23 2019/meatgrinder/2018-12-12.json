@@ -1,0 +1,508 @@
+[
+    {
+        "client_msg_id": "3cf324d6-7c74-437e-b546-3869bdae1b7b",
+        "type": "message",
+        "text": "<@U28TLDP0R> Was testing out some initial stuff for the decklist and it seems like the repo isn't being loaded in properly - it appears there were merge conflicts between the external repo and the main one that broke the build - would you mind letting me know how edhrec-external is being included? I'm curious and it might help me avoid issues in the future",
+        "user": "UEFG14S5A",
+        "ts": "1544652420.039300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "186f456a-e03a-4652-91dd-13a2f0637b68",
+        "type": "message",
+        "text": "I just have a script running `git pull`.  any idea how the merge conflicts are happening?",
+        "user": "U28TLDP0R",
+        "ts": "1544652640.040300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fffe54e9-bcfe-4eb6-b042-f154bf7790cd",
+        "type": "message",
+        "text": "I accidentally pushed something not in the .gitignore and force pushed a correction - probably pulled that build in and didn't pull any changes for the force pushed commit",
+        "user": "UEFG14S5A",
+        "ts": "1544652699.041500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "00eda34f-9835-450d-952d-4f542b7e604e",
+        "type": "message",
+        "text": "I'll just not force push in the future :+1:",
+        "user": "UEFG14S5A",
+        "ts": "1544652721.042100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b74795bd-a6f5-43df-bcd3-b2682d64bd03",
+        "type": "message",
+        "text": "but for now do you think you could resolve the conflicts?",
+        "user": "UEFG14S5A",
+        "ts": "1544652742.042500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "17ce2a51-3f8f-4880-a81b-363d51c33362",
+        "type": "message",
+        "text": "I just re-cloned the repo and re-started it",
+        "user": "U28TLDP0R",
+        "ts": "1544652832.043000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9494d068-0f0f-4e57-af77-ca79ec3b5332",
+        "type": "message",
+        "text": "let me know if it’s not updating still",
+        "user": "U28TLDP0R",
+        "ts": "1544652835.043200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1a46ea6c-e6f7-4fae-a0bd-3859b79d0538",
+        "type": "message",
+        "text": "awesome thanks!",
+        "user": "UEFG14S5A",
+        "ts": "1544652847.043400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "062efee2-2f7a-4068-94d8-cbd6c24400bc",
+        "type": "message",
+        "text": "So it looks like the .js is working again, but the updated css file isn't being included on <http:\/\/dev.edhrec.com|dev.edhrec.com> - should I expect a delay for that one or does that need to be fixed?",
+        "user": "UEFG14S5A",
+        "ts": "1544653299.044400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8683769d-b022-4b3a-b992-c0cf21d23dca",
+        "type": "message",
+        "text": "hmm, it seems to me like when I make changes to the css file they’re immediately reflected?  not sure",
+        "user": "U28TLDP0R",
+        "ts": "1544653889.045100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "98814f42-0743-4169-8986-7db0872581f4",
+        "type": "message",
+        "text": "the css include is being added by the js so maybe it’s using a cached version, are you hard refreshing?",
+        "user": "U28TLDP0R",
+        "ts": "1544653933.046000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "73555c33-b222-439a-abec-0eb54675ef6d",
+        "type": "message",
+        "text": "oh thanks yeah it was just cached",
+        "user": "UEFG14S5A",
+        "ts": "1544653957.046300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0A43C799-B3FE-4F99-8B52-1BB70D4935B0",
+        "type": "message",
+        "text": "Bane of my existence ",
+        "user": "U286Q175Y",
+        "ts": "1544653987.046800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "laughing",
+                "users": [
+                    "UEFG14S5A"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1544659319.048000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card cardkingdom prices not updating added to list EDHREC Bugs on board edhrec.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "cardkingdom prices not updating",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/9QlAXS3A",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1544659370.048100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts updated the description of cardkingdom prices not updating.",
+                "text": "the updater is in allnightly, just ran it and it works fine, but the prices json was several weeks old until then.  something wrong when running through supervisor\/???",
+                "pretext": "Updated the description of *<https:\/\/trello.com\/c\/9QlAXS3A|cardkingdom prices not updating>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1544662939.048200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on AttributeError: 'dict' object has no attribute 'split': \"{'name': ['Thraximundar']}\"",
+                "text": "{'name': ['Thraximundar']}",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/xpGOviVJ|AttributeError: 'dict' object has no attribute 'split'>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "B494E34B-53DC-4F19-B987-3159176D04FD",
+        "type": "message",
+        "text": "Interesting we just had a user complain about cardkingdom prices being off",
+        "user": "U286Q175Y",
+        "ts": "1544663497.048700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e20ecaeb-c590-405a-9ec7-bb760c64ebe8",
+        "type": "message",
+        "text": "yeah they’re old",
+        "user": "U28TLDP0R",
+        "ts": "1544664779.048900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "211b196d-d276-4a0a-844e-c9524c201a56",
+        "type": "message",
+        "text": "btw if slackbot goes nuts and posts too many messages it might get blocked",
+        "user": "U286Q175Y",
+        "ts": "1544669392.049500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ed8a6295-24b3-45e6-9177-1cc85f3db06d",
+        "type": "message",
+        "text": "happened to a friend of mine",
+        "user": "U286Q175Y",
+        "ts": "1544669395.049700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9f34b723-82ef-4f47-8e47-b0a5c770b3ed",
+        "type": "message",
+        "text": "seems like its going wild in status",
+        "user": "U286Q175Y",
+        "ts": "1544669403.049900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1544669784.050200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on [medium] Add the affiliate links to the default cardview in wordpress. Users want to be able to preview prices and we want to help them buy those cards.: \"reminder to uncomment slackbot later\"",
+                "text": "reminder to uncomment slackbot later",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/xNcmKrJL|[medium] Add the affiliate links to the default cardview in wordpress. Users want to be able to preview prices and we want to help them buy those cards.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee69c8ec-6e99-453b-b901-e292cbb31f18",
+        "type": "message",
+        "text": "oh right that doesn’t work like that any more",
+        "user": "U28TLDP0R",
+        "ts": "1544669853.050500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,845 @@
+[
+    {
+        "client_msg_id": "04531715-453b-4dc8-961b-82865fff50d6",
+        "type": "message",
+        "text": "I think I figured out why the cpu is so high but I’m still figuring out how to fix it",
+        "user": "U28TLDP0R",
+        "ts": "1539973953.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3126a471-475a-4a30-b108-84f2f4e61106",
+        "type": "message",
+        "text": "lol k",
+        "user": "U286Q175Y",
+        "ts": "1539973998.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539975359.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card fix homepage nitro bugs from Doing to Done in Oct '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/AvtZHcHH|fix homepage nitro bugs>* from *Doing* to *Done in Oct '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539975362.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card reboot + assign elastic ip + update cloudfront origin from Doing to Done in Oct '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/Ghgh0CLx|reboot + assign elastic ip + update cloudfront origin>* from *Doing* to *Done in Oct '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539975422.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Cache wordpress results or otherwise make wordpress stuff not take several minutes upon every initialization from EDHREC New Features One Day... to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/du7slD5a|Cache wordpress results or otherwise make wordpress stuff not take several minutes upon every initialization>* from *EDHREC New Features One Day...* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539976009.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on Cache wordpress results or otherwise make wordpress stuff not take several minutes upon every initialization: \"cloudfront has forced me to spend more time thinking about how we cache stuff.\n\nright now, the API processes that serve json are the same ones that initialize them, and they're stored in memory.  my solution to refreshing this data is killing one of two processes every 30 minutes.  bad things about this are (a) bad stuff happens if it restarts while python changes are halfway done (b) sometimes there's a 30 min period where the api will give 2 different responses depending on which one the load balancer gives you.\n\nwhat needs to happen is:\n1. flask API reads json data from the database and caches it in memory for 1-5 minutes.  only need to restart it when making api changes.\n2. flask API updater background task frequently polls wordpress\/etc for new data, processes data and writes json to database\n\nthis will solve (a) and (b), significantly lower stress on wordpress server, AND python scripts won't spend 5-10 minutes initializing wordpress data every time.\"",
+                "text": "cloudfront has forced me to spend more time thinking about how we cache stuff.\n\nright now, the API processes that serve json are the same ones that initialize them, and they're stored in memory.  my solution to refreshing this data is killing one of two processes every 30 minutes.  bad things about this are (a) bad stuff happens if it restarts while python changes are halfway done (b) sometimes there's a 30 min period where the api will give 2 different responses depending on which one the load balancer gives you.\n\nwhat needs to happen is:\n1. flask API reads json data from the database and caches it in memory for 1-5 minutes.  only need to restart it when making api changes.\n2. flask API updater background task frequently polls wordpress\/etc for new data, processes data and writes json to database\n\nthis will solve (a) and (b), significantly lower stress on wordpress server, AND python scripts won't spend 5-10 minutes initializing wordpress data every time.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/du7slD5a|Cache wordpress results or otherwise make wordpress stuff not take several minutes upon every initialization>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "99eb8bc2-d687-498f-85b8-f5c619eb4ddc",
+        "type": "message",
+        "text": "`load average: 0.18, 0.57, 5.86`",
+        "user": "U28TLDP0R",
+        "ts": "1539988705.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "85760f52-f274-47a7-903f-b241375fc2b3",
+        "type": "message",
+        "text": "lookin good",
+        "user": "U28TLDP0R",
+        "ts": "1539988709.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0449af76-6bbd-4898-8cc6-b08e3495f5d2",
+        "type": "message",
+        "text": "previous numbers were sometimes above 40",
+        "user": "U28TLDP0R",
+        "ts": "1539988724.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6771645E-8FCD-40E3-ACB7-EEF739289AA4",
+        "type": "message",
+        "text": "Nice ",
+        "user": "U286Q175Y",
+        "ts": "1539991082.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539998245.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "New card convoke added to list Themes to add on board edhrec.",
+                "text": "In list *Themes to add* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "convoke",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/zcAl8bAT",
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7b287d86-4c86-437e-9d26-9ce60dc1a865",
+        "type": "message",
+        "text": "Nate@DESKTOP-IQ23M0C MINGW64 ~\n$ ssh <mailto:ubuntu@dev.edhrec.com|ubuntu@dev.edhrec.com>\nssh: connect to host <http:\/\/dev.edhrec.com|dev.edhrec.com> port 22: Connection timed out",
+        "user": "U3MTAQBE1",
+        "ts": "1539998279.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "941f548d-7a54-442e-9f1f-17ba6b1b1b79",
+        "type": "message",
+        "text": "i was able to get in",
+        "user": "U286Q175Y",
+        "ts": "1539998313.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "36bf3fd8-75a5-48df-b7a2-47d700a86fa9",
+        "type": "message",
+        "text": "do you have a new ip?",
+        "user": "U286Q175Y",
+        "ts": "1539998316.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "dd416859-424e-4f3f-be36-4fd699c4545a",
+        "type": "message",
+        "text": "i pm'd it to keattz",
+        "user": "U3MTAQBE1",
+        "ts": "1539998338.000200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f549aed8-5a5f-4578-bf6f-1d22c6f54e07",
+        "type": "message",
+        "text": "whats your ip right now",
+        "user": "U286Q175Y",
+        "ts": "1539998353.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "915c692c-08bf-4864-9668-bec42da14ec0",
+        "type": "message",
+        "text": "50.0.92.208",
+        "user": "U3MTAQBE1",
+        "ts": "1539998362.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "67a1711a-b78d-4da7-9faa-8cbbb5e7fc2e",
+        "type": "message",
+        "text": "ok you should be good",
+        "user": "U286Q175Y",
+        "ts": "1539998410.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1c7dba63-9c4c-49b3-81dc-125037c8bfe5",
+        "type": "message",
+        "text": "it wasnt in there",
+        "user": "U286Q175Y",
+        "ts": "1539998414.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "00f1945e-a473-44fb-9eac-22a15ebd7049",
+        "type": "message",
+        "text": "sorry I must’ve accidentally marked it as read",
+        "user": "U28TLDP0R",
+        "ts": "1539998462.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b4e8b0b2-dd01-4bb4-8749-1db5a6dafc92",
+        "type": "message",
+        "text": "its k i can add it too next time, just ask both of us",
+        "user": "U286Q175Y",
+        "ts": "1539998498.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a94cfeec-495b-4cc7-81e4-89a04a3b3382",
+        "type": "message",
+        "text": "still timing out",
+        "user": "U3MTAQBE1",
+        "ts": "1539998610.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8ee03936-8170-4aa2-8090-3cc8825257f4",
+        "type": "message",
+        "text": "oops",
+        "user": "U286Q175Y",
+        "ts": "1539998626.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "98a2db8d-ae7e-4cb9-9fae-69c0a925e37d",
+        "type": "message",
+        "text": "try now",
+        "user": "U286Q175Y",
+        "ts": "1539998647.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0f2fd916-2667-4f34-9b8d-0b88e16e976c",
+        "type": "message",
+        "text": "ok im in",
+        "user": "U3MTAQBE1",
+        "ts": "1539998665.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b837f1ba-89a1-49cb-9311-a20d16d5693f",
+        "type": "message",
+        "text": "api broken for a few min btw",
+        "user": "U28TLDP0R",
+        "ts": "1539998757.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539998787.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on supervisorctl doesn't init properly upon reboot: \" + supervisor doesn't use virtualenv \"",
+                "text": " + supervisor doesn't use virtualenv ",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/o6aqNNcJ|supervisorctl doesn't init properly upon reboot>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1539999749.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card pay to turn off ads on disqus from EDHREC Let's Do Soon to Done in Oct '18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/GNGHGxNt|pay to turn off ads on disqus>* from *EDHREC Let's Do Soon* to *Done in Oct '18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d6654e11-f875-4f5c-ac7e-2578bae9f748",
+        "type": "message",
+        "text": "what do you think of marking up the top commanders with icons based on how they are trending over week\/month\/all time?\ne.g. <https:\/\/edhrec.com\/commanders\/test7>",
+        "user": "U3MTAQBE1",
+        "ts": "1540005017.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Top EDH Commanders",
+                "title_link": "https:\/\/edhrec.com\/commanders\/test7",
+                "text": "Popular Top commanders and decks for EDH \/ Commander",
+                "fallback": "EDHREC - Top EDH Commanders",
+                "from_url": "https:\/\/edhrec.com\/commanders\/test7",
+                "service_icon": "https:\/\/edhrec.com\/img\/touch-icon-iphone-114.png",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/commanders\/test7"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7c4cdaed-b581-45ab-b9b8-53b1d115cc65",
+        "type": "message",
+        "text": "basically, i want an idea of commander popularity over time without scrolling up and down and playing concentration to remember who is on which lists",
+        "user": "U3MTAQBE1",
+        "ts": "1540005687.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d63a01a9-eefc-442d-bca6-6ce729902823",
+        "type": "message",
+        "text": "yes ive thought of this a few times",
+        "user": "U286Q175Y",
+        "ts": "1540007808.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "4dc414c7-9745-4ef5-949d-ba3a8ca75da5",
+        "type": "message",
+        "text": "im glad you want to work on it",
+        "user": "U286Q175Y",
+        "ts": "1540007813.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "22bc36cb-bfff-47c8-b844-47f9d817d2cd",
+        "type": "message",
+        "text": "so what i'd _really_ like to do is to convert the commander top list to a tabular list",
+        "user": "U286Q175Y",
+        "ts": "1540007850.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b1a3000e-9f8f-4e65-aec1-0e0fa55cc0e3",
+        "type": "message",
+        "text": "something that uses the table widget that we use in the table of decks",
+        "user": "U286Q175Y",
+        "ts": "1540007884.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "258e18cc-4c78-4519-b4c9-38983ef7d2c9",
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/listofdecks\/atraxa-praetors-voice>",
+        "user": "U286Q175Y",
+        "ts": "1540007884.000300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - Atraxa, Praetors' Voice (Decklists)",
+                "title_link": "https:\/\/edhrec.com\/listofdecks\/atraxa-praetors-voice",
+                "text": "EDH \/ Commander Decklist: ...",
+                "fallback": "EDHREC - Atraxa, Praetors' Voice (Decklists)",
+                "from_url": "https:\/\/edhrec.com\/listofdecks\/atraxa-praetors-voice",
+                "service_icon": "https:\/\/edhrec.com\/img\/touch-icon-iphone-114.png",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/listofdecks\/atraxa-praetors-voice"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2019fb9f-a3eb-4d68-849b-1d1c5e2a9f81",
+        "type": "message",
+        "text": "im not 100% sure of that though",
+        "user": "U286Q175Y",
+        "ts": "1540007941.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9ce3671d-9fc6-49f7-9d37-3329955a4d3f",
+        "type": "message",
+        "text": "however.... the other idea i want to have is to have color ID selectable at the top, so you can see the top list for just grixis commanders, or just commanders that contain red",
+        "user": "U286Q175Y",
+        "ts": "1540007970.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "429727ad-0464-457d-8ee5-ad7a27121016",
+        "type": "message",
+        "text": "i guess the reason im bringing this shit up is i think if we are going to work on that we could make it an excuse to redesign that page anyways",
+        "user": "U286Q175Y",
+        "ts": "1540008009.000100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

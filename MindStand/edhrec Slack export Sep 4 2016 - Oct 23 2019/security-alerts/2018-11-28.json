@@ -1,0 +1,140 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1543433836.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-12122",
+                "id": 1,
+                "title_link": "https:\/\/nodejs.org\/en\/blog\/vulnerability\/november-2018-security-releases\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Slowloris HTTP Denial of Service: An attacker can cause a Denial of Service (DoS) by sending headers very slowly keeping HTTP or HTTPS connections and associated resources alive for a long period of time.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-12122"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1543433836.000200",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-12123",
+                "id": 1,
+                "title_link": "https:\/\/nodejs.org\/en\/blog\/vulnerability\/november-2018-security-releases\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case \"javascript:\" (e.g. \"javAscript:\") protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-12123"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1543433836.000300",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-15441",
+                "id": 1,
+                "title_link": "https:\/\/tools.cisco.com\/security\/center\/content\/CiscoSecurityAdvisory\/cisco-sa-20181128-plm-sql-inject",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "A vulnerability in the web framework code of Cisco Prime License Manager (PLM) could allow an unauthenticated, remote attacker to execute arbitrary SQL queries. The vulnerability is due to a lack of proper validation of user-supplied input in SQL queries. An attacker could exploit this vulnerability by sending crafted HTTP POST requests that contain malicious SQL statements to an affected application. A successful exploit could allow the attacker to modify and delete arbitrary data in the PLM database or gain shell access with the privileges of the postgres user.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-15441"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1543433836.000400",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-12121",
+                "id": 1,
+                "title_link": "https:\/\/nodejs.org\/en\/blog\/vulnerability\/november-2018-security-releases\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Denial of Service with large HTTP headers: By using a combination of many requests with maximum sized headers (almost 80 KB per connection), and carefully timed completion of the headers, it is possible to cause the HTTP server to abort from heap allocation failure. Attack potential is mitigated by the use of a load balancer or other proxy layer.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-12121"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1543433836.000500",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-12120",
+                "id": 1,
+                "title_link": "https:\/\/nodejs.org\/en\/blog\/vulnerability\/november-2018-security-releases\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Node.js: All versions prior to Node.js 6.15.0: Debugger port 5858 listens on any interface by default: When the debugger is enabled with `node --debug` or `node debug`, it listens to port 5858 on all interfaces by default. This may allow remote computers to attach to the debug port and evaluate arbitrary JavaScript. The default interface is now localhost. It has always been possible to start the debugger on a specific interface, such as `node --debug=localhost`. The debugger was removed in Node.js 8 and replaced with the inspector, so no versions from 8 and later are vulnerable.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-12120"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1543433836.000600",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-12116",
+                "id": 1,
+                "title_link": "https:\/\/nodejs.org\/en\/blog\/vulnerability\/november-2018-security-releases\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Node.js: All versions prior to Node.js 6.15.0 and 8.14.0: HTTP request splitting: If Node.js can be convinced to use unsanitized user-provided Unicode data for the `path` option of an HTTP request, then data can be provided which will trigger a second, unexpected, and user-defined HTTP request to made to the same server.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-12116"
+            }
+        ]
+    }
+]

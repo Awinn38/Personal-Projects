@@ -1,0 +1,829 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 1 dynamic.py running. Before we had 2.",
+        "ts": "1552719694.079600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 07:05:57,707 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 281, in update_all\n    _get_multipage('media')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 63, in _get_multipage\n    cache.set('wp\/by-id\/{}\/{}'.format(endpoint, item['id']), item)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 86, in set\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  the database system is shutting down\n\n2019-03-16 07:05:57,712 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 283, in update_all\n    _get_multipage('tags')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 63, in _get_multipage\n    cache.set('wp\/by-id\/{}\/{}'.format(endpoint, item['id']), item)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 86, in set\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  the database system is shutting down\n\n2019-03-16 07:05:57,713 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 286, in update_all\n    _update_tagnames()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 169, in _update_tagnames\n    [cache.set('wp\/by-tag\/cards\/{}'.format(name_to_tag(n)), n) for n in cards.get_all()]\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 169, in &lt;listcomp&gt;\n    [cache.set('wp\/by-tag\/cards\/{}'.format(name_to_tag(n)), n) for n in cards.get_all()]\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 86, in set\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.5\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 20, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 10, user='postgres')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect",
+        "ts": "1552719748.079700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  the database system is shutting down\n\n2019-03-16 07:05:57,732 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 97, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 41, in update\n    tally = database.tally(database.get_commander(commander))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1646, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 848, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 810, in _get_decks_helper\n    (deckinfo['url'],)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: terminating connection due to administrator command\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n2019-03-16 07:05:57,733 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 97, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 41, in update\n    tally = database.tally(database.get_commander(commander))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1646, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 848, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 810, in _get_decks_helper\n    (deckinfo['url'],)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: terminating connection due to administrator command\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n2019-03-16 07:05:57,733 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 97, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 41, in update\n    tally = database.tally(database.get_commander(commander))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1646, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 848, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 810, in _get_decks_helper\n    (deckinfo['url'],)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: terminating connection due to administrator command\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n2019-03-16 07:05:57,733 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 97, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 41, in update\n    tally = database.tally(database.get_commander(commander))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1646, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 848, in get_decks",
+        "ts": "1552719748.079800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 810, in _get_decks_helper\n    (deckinfo['url'],)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.OperationalError: terminating connection due to administrator command\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n```",
+        "ts": "1552719748.079900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:06] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721797.080900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721798.081000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721798.081100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721798.081200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721798.081300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:09] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721799.081400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:09] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721799.081500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:09] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:09] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:09] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721799.081600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721800.081700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721800.081800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721800.081900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:10] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721800.082000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721801.082100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721801.082200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721801.082300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:11] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721802.082400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721802.082500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721802.082600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721802.082700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:12] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721802.082800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721803.082900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721803.083000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721803.083100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:13] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721803.083200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721804.083300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721804.083400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:14] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721804.083500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721805.083600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721805.083700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721805.083800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721805.083900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n",
+        "ts": "1552721806.084000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:15] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721806.084100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721806.084200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n[16\/Mar\/2019:07:40:16] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721857.084300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:07:41:08] ENGINE Error in HTTPServer.tick\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1721, in serve\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cheroot\/server.py\", line 1899, in tick\n  File \"\/usr\/lib\/python3.5\/socket.py\", line 195, in accept\nOSError: [Errno 24] Too many open files\n\n```",
+        "ts": "1552721918.084400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 07:40:45,090 ERROR Dynamic psycopg2.OperationalError - restarting\n2019-03-16 07:41:15,231 ERROR Dynamic psycopg2.OperationalError - restarting\n```",
+        "ts": "1552721978.084500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 07:53:33,486 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1974, in update_ckprices\n    cardkingdom.update()\nTypeError: update() missing 2 required positional arguments: 'flip_split_names' and 'transform_tuples'\n```",
+        "ts": "1552722604.084600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 08:00:04,892 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 97, in &lt;module&gt;\n    update()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 41, in update\n    tally = database.tally(database.get_commander(commander))\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1645, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 847, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 821, in _get_decks_helper\n    'combos': combos.extract_combos(deckcards + [p for p in pcommander if p]),\n  File \"\/home\/ubuntu\/edhrec\/core\/combos.py\", line 36, in extract_combos\n    s = set(listofcards)\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1552722995.084700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] We now have 2 dynamic.py running. Before we had 1.",
+        "ts": "1552723293.084800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:08:11:37] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 64, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1645, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 847, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 821, in _get_decks_helper\n    'combos': combos.extract_combos(deckcards + [p for p in pcommander if p]),\n  File \"\/home\/ubuntu\/edhrec\/core\/combos.py\", line 36, in extract_combos\n    s = set(listofcards)\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1552723687.084900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:08:12:10] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 64, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1645, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 847, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 821, in _get_decks_helper\n    'combos': combos.extract_combos(deckcards + [p for p in pcommander if p]),\n  File \"\/home\/ubuntu\/edhrec\/core\/combos.py\", line 36, in extract_combos\n    s = set(listofcards)\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1552723720.085000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 08:14:19,630 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 2\n    cur.execute('SELECT cards FROM decks WHERE url='<http:\/\/www.mtggoldfish.com\/deck\/1184934>')\n                                                       ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1552723850.085100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:08:15:14] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 64, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1645, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 847, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 821, in _get_decks_helper\n    'combos': combos.extract_combos(deckcards + [p for p in pcommander if p]),\n  File \"\/home\/ubuntu\/edhrec\/core\/combos.py\", line 36, in extract_combos\n    s = set(listofcards)\nTypeError: unhashable type: 'list'\n```",
+        "ts": "1552723904.085200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "1ad83f34-a6cc-4e55-969a-95a04bd49f18",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1552723990.085400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[16\/Mar\/2019:08:19:42] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 64, in index\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1645, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 847, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 812, in _get_decks_helper\n    deckcards = cur.fetchone()[0]\nTypeError: 'NoneType' object is not subscriptable\n```",
+        "ts": "1552724172.085500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 08:21:51,067 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2014, in update_ckprices\n    JOIN deckprices ON decks.url=deckprices.url;\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: INSERT has more expressions than target columns\nLINE 29:                    decks.cardhash, decks.dprecon, decks.card...\n                                                           ^\n\n```",
+        "ts": "1552724301.085600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1552724578.085700",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [3.955285158E8 (16\/03\/19 08:12:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-03-16T08:22:57.676+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-16T08:22:57.715Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [3.955285158E8 (16\/03\/19 08:12:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-03-16T08:22:57.676+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-03-16T08:22:57.715Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 08:28:42,614 ERROR no cards for <http:\/\/tappedout.net\/mtg-decks\/jki>\n2019-03-16 08:28:42,657 ERROR no cards for <http:\/\/tappedout.net\/mtg-decks\/06-10-16-bird-tribal-edh>\n```",
+        "ts": "1552724713.085800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 08:39:00,122 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/update_ckprices.py\", line 10, in &lt;module&gt;\n    database.update_ckprices()\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 2014, in update_ckprices\n    FROM decks\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.ProgrammingError: INSERT has more expressions than target columns\nLINE 29:                    decks.cardhash, decks.dprecon, decks.card...\n                                                           ^\n\n```",
+        "ts": "1552725330.085900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 09:09:12,751 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 550, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1641, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 842, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 814, in _get_decks_helper\n    'cards': deckinfo['deckcards'],\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 166, in __getitem__\n    x = self._index[x]\nKeyError: 'deckcards'\n```",
+        "ts": "1552727143.086000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-03-16 09:09:25,382 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 550, in make_commander\n    data = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe, outof=outof)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 452, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1641, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 842, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 816, in _get_decks_helper\n    'combos': combos.extract_combos(deckcards + [p for p in pcommander if p]),\nNameError: name 'deckcards' is not defined\n```",
+        "ts": "1552727155.086100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1552737693.086200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1552741294.086300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

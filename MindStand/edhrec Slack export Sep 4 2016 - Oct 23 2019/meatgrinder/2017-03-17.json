@@ -1,0 +1,830 @@
+[
+    {
+        "type": "message",
+        "text": "hey <@U4L8JB6NS>, glad to have you here",
+        "user": "U28TLDP0R",
+        "ts": "1489769020.645466",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "as don said, main things right now are:\n- overhauling the navbar\n- redesigning front page to show off latest article\n- minor changes to logo",
+        "user": "U28TLDP0R",
+        "ts": "1489769102.685386",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "right now our navbar design is constrained by the limitations of bootstrap, so we're probably going to be moving away from the bootstrap navbar, or at least using it in combination with something else",
+        "user": "U28TLDP0R",
+        "ts": "1489769192.730664",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "the problem with the navbar of course being that it's now too wide and we can't really add anything else to it unless we make \"Colors\" one menu with 2 tiers of hover menus, which I'd like to avoid",
+        "user": "U28TLDP0R",
+        "ts": "1489769475.868484",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm not sure what the best way is for me to work with you on this.  I've been looking at a few non-boostrap navbar libraries, so e.g. we could pick one of them and then try to make it look how we want, or we could come from the other end and you could mock up a navbar and we could try to build it on an existing library (or entirely ourselves)",
+        "user": "U28TLDP0R",
+        "ts": "1489769635.948633",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "or something in-between",
+        "user": "U28TLDP0R",
+        "ts": "1489769643.952539",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "there's also a lot to discuss and I don't want to wall-of-text you immediately",
+        "user": "U28TLDP0R",
+        "ts": "1489769774.017194",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hey <@U28TLDP0R> good to meet you",
+        "user": "U4L8JB6NS",
+        "ts": "1489779232.404598",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "No worries about the wall of text, it's all good to know",
+        "user": "U4L8JB6NS",
+        "ts": "1489779256.413963",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I will sketch out a few ways we can reduce the size of the nav content, and I will try and keep the color options visible",
+        "user": "U4L8JB6NS",
+        "ts": "1489779321.439053",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I guess the best way to work together is bouncing ideas off each other, maybe finding some other sites examples of navs.  And determining what is possible.",
+        "user": "U4L8JB6NS",
+        "ts": "1489779585.540918",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I’ve been working on a different navbar layout, but I’m really early in the process right now, but I might be able to upload it somewhere today",
+        "user": "U28TLDP0R",
+        "ts": "1489779954.686289",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I’d just paste a screenshot but since it has dropdowns I don’t think that would really do it justice",
+        "user": "U28TLDP0R",
+        "ts": "1489779998.703762",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sure, I'd like to see anything you have, screenshots or prototype. Or whatever",
+        "user": "U4L8JB6NS",
+        "ts": "1489780075.733740",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah I’ll let you know",
+        "user": "U28TLDP0R",
+        "ts": "1489780238.799063",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I would like to get design stuff planned out soon but we’re not in a huge rush",
+        "user": "U28TLDP0R",
+        "ts": "1489780327.834267",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm not sure what your timeline is looking like, but I planned on working on this on\/off in my spare time. What times usually work best for you to talk about the design?",
+        "user": "U4L8JB6NS",
+        "ts": "1489780449.882305",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I mean I’m most responsive in the afternoons and late at night (PST) but times should be very flexible",
+        "user": "U28TLDP0R",
+        "ts": "1489780596.942416",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "if you’d prefer some more structure we could schedule a time but I was just planning on winging it, pinging you on slack when I’m ready and we can do stuff whenever you’re available",
+        "user": "U28TLDP0R",
+        "ts": "1489780704.986717",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Good to know, I am in EST time. Winging it works too, and I can just share stuff as I come up with it.",
+        "user": "U4L8JB6NS",
+        "ts": "1489780817.034068",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Just as a reference point, was the homepage redesign I initially did far from what your looking for as a redesign? Maybe something more simplistic?",
+        "files": [
+            {
+                "id": "F4KDWNLTA",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "user": "U4L8JB6NS",
+        "display_as_bot": false,
+        "ts": "1489781194.190585"
+    },
+    {
+        "type": "message",
+        "text": "I like a lot of things about the design, like the search bar being central, and I think in general all the info is laid out better than it is on the live site",
+        "user": "U28TLDP0R",
+        "ts": "1489782493.702439",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "the thing about the card art things is that afaik there’s no easy way for us to programmatically get high res card art for every mtg card",
+        "user": "U28TLDP0R",
+        "ts": "1489782628.756733",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "for the “top commander” circles, I think it would be possible to just fetch art from gatherer and crop out everything but the art, but it’d be kinda low res so the circles probably would have to be smaller",
+        "user": "U28TLDP0R",
+        "ts": "1489782757.807704",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "atraxa will probably be the #1 commander until the next commander set comes out so we could easily just use that for the front page, but it could be weird that we didn’t have any art in the background on the rest of the pages?",
+        "user": "U28TLDP0R",
+        "ts": "1489782864.849903",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "it might actually be fine though",
+        "user": "U28TLDP0R",
+        "ts": "1489782904.865343",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I want to be careful about using wizard art as part of the background or whatever",
+        "user": "U286Q175Y",
+        "ts": "1489782936.877808",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Not that it matters from a copyright perspective but it seems obvious whst it is if its in a cardframe",
+        "user": "U286Q175Y",
+        "ts": "1489782959.886432",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Oh i guess it is labeled",
+        "user": "U286Q175Y",
+        "ts": "1489782986.897166",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "That's good to know. I will try to avoid making the art too large then. I know some other sites that use full art, like Pucatrade. But I am not sure how they get it or use it legally.",
+        "user": "U4L8JB6NS",
+        "ts": "1489783026.912459",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So the opposite of pucatrade as design is what i want lol",
+        "user": "U286Q175Y",
+        "ts": "1489783069.928460",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "They also blur the art for backgrounds, which might be a nice way around both.",
+        "files": [
+            {
+                "id": "F4LRSPARL",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "user": "U4L8JB6NS",
+        "display_as_bot": false,
+        "ts": "1489783077.931339"
+    },
+    {
+        "type": "message",
+        "text": "Haha okay, opposite of Pucatrade",
+        "user": "U4L8JB6NS",
+        "ts": "1489783094.937659",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g769064afb60",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2769064afb609932265acd01395c49e0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "Andrew",
+            "real_name": "Andrew Considine",
+            "display_name": "andrew",
+            "team": "T286HM2F3",
+            "name": "andrew",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yes, an inverted pyramid scheme",
+        "user": "U32LRG9NU",
+        "ts": "1489783126.950177",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gf71fb4e53f1",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/ff71fb4e53f1749f2a16f3194fe9362b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0006-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason Alt",
+            "display_name": "jasonalt",
+            "team": "T286HM2F3",
+            "name": "jasonalt",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm helping.",
+        "user": "U32LRG9NU",
+        "ts": "1489783138.954466",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gf71fb4e53f1",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/ff71fb4e53f1749f2a16f3194fe9362b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0006-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason Alt",
+            "display_name": "jasonalt",
+            "team": "T286HM2F3",
+            "name": "jasonalt",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah I think we’re going for a cleaner look than pucatrade",
+        "user": "U28TLDP0R",
+        "ts": "1489783184.972151",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "lol jason",
+        "user": "U28TLDP0R",
+        "ts": "1489783190.974275",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I will have more input if we talk about changing the WordPress landing page",
+        "user": "U32LRG9NU",
+        "ts": "1489783277.006977",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gf71fb4e53f1",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/ff71fb4e53f1749f2a16f3194fe9362b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0006-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason Alt",
+            "display_name": "jasonalt",
+            "team": "T286HM2F3",
+            "name": "jasonalt",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "yeah we’ll definitely want to update the wordpress layout a bit as well",
+        "user": "U28TLDP0R",
+        "ts": "1489783321.023478",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U28TLDP0R> have you tried fixing the nightly problem? Someone pointed out the article links for roon arent working",
+        "user": "U286Q175Y",
+        "ts": "1489800168.533511",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "oh, no",
+        "user": "U28TLDP0R",
+        "ts": "1489806633.037242",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I forgot to write it down somewhere",
+        "user": "U28TLDP0R",
+        "ts": "1489806831.051502",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

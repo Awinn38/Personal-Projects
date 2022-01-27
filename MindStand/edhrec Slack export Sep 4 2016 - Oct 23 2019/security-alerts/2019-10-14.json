@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1571096234.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-17592",
+                "id": 1,
+                "title_link": "https:\/\/github.com\/adaltas\/node-csv-parse\/commit\/b9d35940c6815cdf1dfd6b21857a1f6d0fd51e4a",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "The csv-parse module before 4.4.6 for Node.js is vulnerable to Regular Expression Denial of Service. The __isInt() function contains a malformed regular expression that processes large crafted input very slowly. This is triggered when using the cast option.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-17592"
+            }
+        ]
+    }
+]

@@ -1,0 +1,2045 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529911496.000222",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Add a filter option on all pages to hide cards of a certain value. Maybe have a few fixed options like &lt;$1, &lt;$5, &lt;$25: \"core\/testing.py functions:\n\n# checks cardkingdom if a card is within the price range\ndef is_card_in_price(cardname, min=MIN_PRICE, max=MAX_PRICE):\n\n# from a list of card names, return a list of card names that are within the price range\ndef get_cards_in_price(cardlist, min=MIN_PRICE, max=MAX_PRICE):\n\n# returns a copy of _CARDS that only contains cards within the price range\ndef get_all_in_price(min=MIN_PRICE, max=MAX_PRICE):\n\n# 3DH: $3 or less\ndef get_all_3dh():\n\n# 1DH: $1 or less\ndef get_all_1dh():\n\n\"",
+                "text": "core\/testing.py functions:\n\n# checks cardkingdom if a card is within the price range\ndef is_card_in_price(cardname, min=MIN_PRICE, max=MAX_PRICE):\n\n# from a list of card names, return a list of card names that are within the price range\ndef get_cards_in_price(cardlist, min=MIN_PRICE, max=MAX_PRICE):\n\n# returns a copy of _CARDS that only contains cards within the price range\ndef get_all_in_price(min=MIN_PRICE, max=MAX_PRICE):\n\n# 3DH: $3 or less\ndef get_all_3dh():\n\n# 1DH: $1 or less\ndef get_all_1dh():\n\n",
+                "pretext": "New comment on *&lt;<https:\/\/trello.com\/c\/gFecGBdc%7CAdd> a filter option on all pages to hide cards of a certain value. Maybe have a few fixed options like &lt;$1, &lt;$5, &lt;$25&gt;*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529914663.000189",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on add price to average decklist: \"core\/testing.py\n# calculates the price of a sampledeck\ndef get_sampledeck_price(sampledeck):\n\n\nimport testing; import edhrec.web.origin\ninit...\ninit...\nc = edhrec.web.origin.getcommanders(card='Vela the Night-Clad')\nc['sampledeck']\n['1 Vela the Night-Clad', '', '1 Baleful Strix', '1 Deadeye Navigator', '1 Deepfathom Skulker', '1 Dimir Cutpurse', '1 Dimir Infiltrator', '1 Evil Twin', '1 Faerie Artisans', '1 Ghastlord of Fugue', '1 Glen Elendra Liege', '1 Gonti, Lord of Luxury', '1 Higure, the Still Wind', '1 Ink-Eyes, Servant of Oni', '1 Invisible Stalker', '1 Kheru Mind-Eater', '1 Mistblade Shinobi', '1 Mulldrifter', '1 Ninja of the Deep Hours', '1 Okiba-Gang Shinobi', \"1 Sakashima's Student\", '1 Shadowmage Infiltrator', '1 Shriekmaw', '1 Silent-Blade Oni', '1 Sire of Stagnation', '1 Skullsnatcher', '1 Solemn Simulacrum', '1 Thada Adel, Acquisitor', '1 Thassa, God of the Sea', '1 Throat Slitter', '1 Tormented Soul', '1 Walker of Secret Ways', '1 Wrexial, the Risen Deep', '', '1 Counterspell', '1 Cyclonic Rift', '1 Disallow', '1 Evacuation', '1 Go for the Throat', \"1 Hero's Downfall\", '1 Paradoxical Outcome', '1 Void Shatter', '', \"1 Baral's Expertise\", '1 Demonic Tutor', '1 Devastation Tide', '1 Diabolic Tutor', '1 Open into Wonder', '1 Rite of Replication', '1 Stolen Identity', '', '1 Bident of Thassa', \"1 Commander's Sphere\", '1 Dimir Keyrune', '1 Dimir Signet', '1 Dowsing Dagger', '1 Lightning Greaves', '1 Quietus Spike', '1 Sol Ring', '1 Swiftfoot Boots', '1 Thought Vessel', '1 Whispersilk Cloak', '', '1 Coastal Piracy', '1 Dire Undercurrents', '1 Phyrexian Arena', '1 Rhystic Study', '', '1 Bojuka Bog', '1 Choked Estuary', '1 Command Tower', '1 Dimir Aqueduct', '1 Dismal Backwater', '1 Drowned Catacomb', '1 Evolving Wilds', '1 Jwar Isle Refuge', '1 Reliquary Tower', \"1 Rogue's Passage\", '1 Sunken Hollow', '1 Tainted Isle', '1 Temple of Deceit', '1 Temple of the False God', '1 Watery Grave', '', '14 Island', '9 Swamp']\ntesting.get_sampledeck_price(c['sampledeck'])\n246.92000000000004\n\"",
+                "text": "core\/testing.py\n# calculates the price of a sampledeck\ndef get_sampledeck_price(sampledeck):\n\n\nimport testing; import edhrec.web.origin\ninit...\ninit...\nc = edhrec.web.origin.getcommanders(card='Vela the Night-Clad')\nc['sampledeck']\n['1 Vela the Night-Clad', '', '1 Baleful Strix', '1 Deadeye Navigator', '1 Deepfathom Skulker', '1 Dimir Cutpurse', '1 Dimir Infiltrator', '1 Evil Twin', '1 Faerie Artisans', '1 Ghastlord of Fugue', '1 Glen Elendra Liege', '1 Gonti, Lord of Luxury', '1 Higure, the Still Wind', '1 Ink-Eyes, Servant of Oni', '1 Invisible Stalker', '1 Kheru Mind-Eater', '1 Mistblade Shinobi', '1 Mulldrifter', '1 Ninja of the Deep Hours', '1 Okiba-Gang Shinobi', \"1 Sakashima's Student\", '1 Shadowmage Infiltrator', '1 Shriekmaw', '1 Silent-Blade Oni', '1 Sire of Stagnation', '1 Skullsnatcher', '1 Solemn Simulacrum', '1 Thada Adel, Acquisitor', '1 Thassa, God of the Sea', '1 Throat Slitter', '1 Tormented Soul', '1 Walker of Secret Ways', '1 Wrexial, the Risen Deep', '', '1 Counterspell', '1 Cyclonic Rift', '1 Disallow', '1 Evacuation', '1 Go for the Throat', \"1 Hero's Downfall\", '1 Paradoxical Outcome', '1 Void Shatter', '', \"1 Baral's Expertise\", '1 Demonic Tutor', '1 Devastation Tide', '1 Diabolic Tutor', '1 Open into Wonder', '1 Rite of Replication', '1 Stolen Identity', '', '1 Bident of Thassa', \"1 Commander's Sphere\", '1 Dimir Keyrune', '1 Dimir Signet', '1 Dowsing Dagger', '1 Lightning Greaves', '1 Quietus Spike', '1 Sol Ring', '1 Swiftfoot Boots', '1 Thought Vessel', '1 Whispersilk Cloak', '', '1 Coastal Piracy', '1 Dire Undercurrents', '1 Phyrexian Arena', '1 Rhystic Study', '', '1 Bojuka Bog', '1 Choked Estuary', '1 Command Tower', '1 Dimir Aqueduct', '1 Dismal Backwater', '1 Drowned Catacomb', '1 Evolving Wilds', '1 Jwar Isle Refuge', '1 Reliquary Tower', \"1 Rogue's Passage\", '1 Sunken Hollow', '1 Tainted Isle', '1 Temple of Deceit', '1 Temple of the False God', '1 Watery Grave', '', '14 Island', '9 Swamp']\ntesting.get_sampledeck_price(c['sampledeck'])\n246.92000000000004\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/y7hLZFFu|add price to average decklist>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529916207.000504",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Add support for different pricing (EU, online): \"core\/testing.py\n\n# wrapper around pricing calls to more easily switch sources\ndef get_price(cardname, vendor='cardkingdom'):\n\n\"",
+                "text": "core\/testing.py\n\n# wrapper around pricing calls to more easily switch sources\ndef get_price(cardname, vendor='cardkingdom'):\n\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/E5Pfb8Ru|Add support for different pricing (EU, online)>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "CB5D199D-F783-4B84-BEE0-5BABB818CE7B",
+        "type": "message",
+        "text": "The show below dollar amoint we can do in javascript i think",
+        "user": "U286Q175Y",
+        "ts": "1529929045.000391",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "83185020-5a28-4132-9df0-83af9d4df225",
+        "type": "message",
+        "text": "also, be careful on the definitions:\n - 1DH = each card less than $1\n - 3DH = whole deck must be less than 3 tickets\n\nThere is a bit of nuance here as well. 1DH\/3DH deck is a deck construction restraint, not a card filter.\n\nJust terminology, but we can filter cards by dollar amount without giving it a 1dh\/3dh name",
+        "user": "U286Q175Y",
+        "ts": "1529933428.000533",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "2a6f8388-f664-46e2-8e21-7fa258865d5e",
+        "type": "message",
+        "text": "doing it in javascript would be a bit different though, right?  running tally on all decks then filtering by $1 vs. filtering decks by $1 then running tally on that",
+        "user": "U28TLDP0R",
+        "ts": "1529951756.000380",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529952879.000422",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card mockup basic screens added to list Web UI on board Deckbuilder.",
+                "text": "In list *Web UI* on *<https:\/\/trello.com\/b\/fbcW7hoB|Deckbuilder>*.",
+                "pretext": "New card created",
+                "title": "mockup basic screens",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/DvdostcY",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529953476.000293",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on mockup basic screens: \"touring existing deckbuilders first to get an idea how to fit everything on screen with our recs\"",
+                "text": "touring existing deckbuilders first to get an idea how to fit everything on screen with our recs",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/DvdostcY|mockup basic screens>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "C44104B3-7659-4D2F-87DD-6EA67E5738CA",
+        "type": "message",
+        "text": "Doing it in js is what i want. Same results just organized \/ shown differently",
+        "user": "U286Q175Y",
+        "ts": "1529954204.000582",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9E2BC357-D09B-4261-B402-3A3B89527925",
+        "type": "message",
+        "text": "We already have budget filters with expensive \/ budget",
+        "user": "U286Q175Y",
+        "ts": "1529954225.000598",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0f558b31-e92b-4348-a960-32f1cbb31bd9",
+        "type": "message",
+        "text": "just did some profiling",
+        "user": "U286Q175Y",
+        "ts": "1529958090.000743",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "4bbbd463-194d-456c-b55c-8dc54d90cb99",
+        "type": "message",
+        "text": "looks like `subprocess.check_call(['html-minifier', ` is taking up about 30 sec of 47 sec of building decks",
+        "user": "U286Q175Y",
+        "ts": "1529958116.000058",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "98c0d580-222a-494b-b55e-984ce2302a19",
+        "type": "message",
+        "text": "thats why nightly is running so slow lately",
+        "user": "U286Q175Y",
+        "ts": "1529958146.000549",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529958224.000641",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card Nitro guys dont like how we implemented the floater ad on mobile. We should look into using their mobile anchor thingy they mentioned. added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "Nitro guys dont like how we implemented the floater ad on mobile. We should look into using their mobile anchor thingy they mentioned.",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/0rulCKqv",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a61c4122-3a6d-4935-ac6f-6cd47cef337b",
+        "type": "message",
+        "text": "not sure I undertand",
+        "user": "U28TLDP0R",
+        "ts": "1529958275.000606",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "162a0e25-4365-4286-9fc1-0895ef59e734",
+        "type": "message",
+        "text": "each deck takes 47 sec?",
+        "user": "U28TLDP0R",
+        "ts": "1529958279.000386",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "52319896-4ed9-427b-a81b-1c0fdf32c542",
+        "type": "message",
+        "text": "it took 47 sec to build all taniwha decks (69 of them)",
+        "user": "U286Q175Y",
+        "ts": "1529958288.000635",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U286Q175Y",
+            "ts": "1529958322.000000"
+        }
+    },
+    {
+        "client_msg_id": "8c29f041-014f-4b7e-8b19-4827c85af14b",
+        "type": "message",
+        "text": "29 of those seconds were spent on 69 calls to html-minifier",
+        "user": "U286Q175Y",
+        "ts": "1529958300.000304",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b4f9437c-ca7d-431d-9fca-cdba2ad4f8b4",
+        "type": "message",
+        "text": "I see",
+        "user": "U28TLDP0R",
+        "ts": "1529958321.000632",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f61d0315-5bdf-41df-ac56-f8992a39240f",
+        "type": "message",
+        "text": "we don’t have to use it, I was just doing it to save bandwidth",
+        "user": "U28TLDP0R",
+        "ts": "1529958452.000137",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e1f9cac8-9182-465e-93d0-461d4df1bc3c",
+        "type": "message",
+        "text": "how about we set up a flag to use it or not use it",
+        "user": "U286Q175Y",
+        "ts": "1529958481.000235",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "89fa681a-958a-4bf7-9512-8b99392e83bd",
+        "type": "message",
+        "text": "that way if we need to get a nightly shipped out quickly we can turn it off",
+        "user": "U286Q175Y",
+        "ts": "1529958490.000541",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0f041314-39c7-4e88-b853-48557bfebb0d",
+        "type": "message",
+        "text": "better idea, I’ll just modify templates.py to minify the template the first time it loads it",
+        "user": "U28TLDP0R",
+        "ts": "1529958539.000614",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cc58da9f-261c-48b1-b26d-eb69107d21be",
+        "type": "message",
+        "text": "i dont know what that means but it sounds good",
+        "user": "U286Q175Y",
+        "ts": "1529958562.000614",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6e59e4a1-8eb1-4516-82c2-2682f2ec3c04",
+        "type": "message",
+        "text": "lol",
+        "user": "U286Q175Y",
+        "ts": "1529958563.000244",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6b55ffd8-ab63-483a-a66b-41d63f28b2c7",
+        "type": "message",
+        "text": "right now we use html files with $variables as templates, find\/replace them with python stuff, then use a minifier to make the .html file as small as possible",
+        "user": "U28TLDP0R",
+        "ts": "1529958695.000167",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "11173b90-fd12-492b-b4f5-f6d10d6cd23e",
+        "type": "message",
+        "text": "so I’ll try swapping steps (2) and (3)",
+        "user": "U28TLDP0R",
+        "ts": "1529958720.000552",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5c701970-edbb-4579-aea6-af610a6e27dc",
+        "type": "message",
+        "text": "ah nice",
+        "user": "U286Q175Y",
+        "ts": "1529958743.000233",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "189e49b5-287d-4fc3-9342-c241b13bc188",
+        "type": "message",
+        "text": "that way we only run html-minifier like 10 times instead of like 10000 times",
+        "user": "U28TLDP0R",
+        "ts": "1529958745.000685",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1123c6a0-5ce4-4d2e-ad03-26918650c1fa",
+        "type": "message",
+        "text": "sounds good",
+        "user": "U286Q175Y",
+        "ts": "1529958756.000378",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "41ec7055-d1cb-496d-be11-2a37e973da3d",
+        "type": "message",
+        "text": "there is a nightly running manually in screen, so kill that first before you start testing",
+        "user": "U286Q175Y",
+        "ts": "1529958764.000464",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c891db8d-2c70-47b3-aef8-3ad1a51593d2",
+        "type": "message",
+        "text": "its on cards so it doesnt matter",
+        "user": "U286Q175Y",
+        "ts": "1529958768.000430",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ba68cfbc-c77f-4fdf-996e-d3a99ad77583",
+        "type": "message",
+        "text": "why not just let it run?",
+        "user": "U28TLDP0R",
+        "ts": "1529958791.000205",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c13909ed-8815-439f-b22e-c43a90e78692",
+        "type": "message",
+        "text": "eh i guess",
+        "user": "U286Q175Y",
+        "ts": "1529958862.000642",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a18ab05d-da6a-4581-9527-ef5a27e774ea",
+        "type": "message",
+        "text": ":smile:",
+        "user": "U286Q175Y",
+        "ts": "1529958863.000617",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9d2ad125-21e5-4c33-8de5-cf92c5729028",
+        "type": "message",
+        "text": "guess it doesnt matter",
+        "user": "U286Q175Y",
+        "ts": "1529958872.000243",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529967075.000171",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Nitro guys dont like how we implemented the floater ad on mobile. We should look into using their mobile anchor thingy they mentioned. from EDHREC Let's Do Soon to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/0rulCKqv|Nitro guys dont like how we implemented the floater ad on mobile. We should look into using their mobile anchor thingy they mentioned.>* from *EDHREC Let's Do Soon* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529967146.000149",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on Nitro guys dont like how we implemented the floater ad on mobile. We should look into using their mobile anchor thingy they mentioned.: \"only makes the js call for appropriately sized screens.  still not using their mobile floater because there's still no close ad button except for the google one which usually doesn't appear and leaves a dumb \"this ad has been removed\" banner afterward.\"",
+                "text": "only makes the js call for appropriately sized screens.  still not using their mobile floater because there's still no close ad button except for the google one which usually doesn't appear and leaves a dumb \"this ad has been removed\" banner afterward.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/0rulCKqv|Nitro guys dont like how we implemented the floater ad on mobile. We should look into using their mobile anchor thingy they mentioned.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529967189.000221",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card If you search for a battlebond partner commander with the search box, like Zndrsplt, it takes you to their solo page with 0 decks. We should have it bring you to the partner page i think? I'm not sure though because then the \"view as card\" link disappears. from EDHREC Let's Do Soon to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/EiC8qyTP|If you search for a battlebond partner commander with the search box, like Zndrsplt, it takes you to their solo page with 0 decks. We should have it bring you to the partner page i think? I'm not sure though because then the \"view as card\" link disappears.>* from *EDHREC Let's Do Soon* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "881D3C73-F373-4A43-9308-C2BCDEAF93FD",
+        "type": "message",
+        "text": "<@U28TLDP0R> you see their gripe with display none though?",
+        "user": "U286Q175Y",
+        "ts": "1529968567.000311",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0567f895-73a4-4bda-9f5d-2832ca3b1831",
+        "type": "message",
+        "text": "yes",
+        "user": "U28TLDP0R",
+        "ts": "1529968573.000224",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1f1e8250-2880-4c64-9196-37d1e6bed64e",
+        "type": "message",
+        "text": "fixed next nightly",
+        "user": "U28TLDP0R",
+        "ts": "1529968587.000380",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "FB1D9E39-BB3A-4CCF-AAC5-AF8A202C4769",
+        "type": "message",
+        "text": "Lk",
+        "user": "U286Q175Y",
+        "ts": "1529968593.000027",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "E52DDD2D-67FA-43E1-8834-BE7E97B10D6A",
+        "type": "message",
+        "text": "Kk",
+        "user": "U286Q175Y",
+        "ts": "1529968594.000145",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529976019.000026",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on add price to average decklist: \"<https:\/\/deckstats.net\/decks\/85558\/1024085-vela-edhrec-sample-deck-test>\ndeckstats says $222.45 + 0.81 Vela, might be using tcgplayer prices.\nclickthrough deckstats button to \"add to cart on card kingdom!\":\nCards Selected: 100\/100   Price: $212.50 (Lowest Price)\nresult seems to be in the right area\n\"",
+                "text": "<https:\/\/deckstats.net\/decks\/85558\/1024085-vela-edhrec-sample-deck-test>\ndeckstats says $222.45 + 0.81 Vela, might be using tcgplayer prices.\nclickthrough deckstats button to \"add to cart on card kingdom!\":\nCards Selected: 100\/100   Price: $212.50 (Lowest Price)\nresult seems to be in the right area\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/y7hLZFFu|add price to average decklist>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529976248.000084",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Implement an API we can use internally to fetch card prices and quickly tally up the cost of a pool of cards (i.e., a deck). This way we make prices update on all the pages dynamically instead of requiring a nightly run. Also, this means we would only have to build the deckpreview pages once since the only reason we rebuild them is for pricing purposes.: \"does this imply on the js side or py side or both?\"",
+                "text": "does this imply on the js side or py side or both?",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/wFo3TkuJ|Implement an API we can use internally to fetch card prices and quickly tally up the cost of a pool of cards (i.e., a deck). This way we make prices update on all the pages dynamically instead of requiring a nightly run. Also, this means we would only have to build the deckpreview pages once since the only reason we rebuild them is for pricing purposes.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "91ad6ca8-46fd-4d61-93dd-814d6b266770",
+        "type": "message",
+        "text": "i'd stay away from that ticket for now",
+        "user": "U286Q175Y",
+        "ts": "1529977237.000319",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0bceb7b0-fd45-4036-8edc-85c7bdddfdaf",
+        "type": "message",
+        "text": "the pricing one",
+        "user": "U286Q175Y",
+        "ts": "1529977240.000179",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "93e28cfe-3d7a-46f6-ba9e-8d0e8218eb0b",
+        "type": "message",
+        "text": "k",
+        "user": "U3MTAQBE1",
+        "ts": "1529977264.000276",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "aa2a832b-9031-4ad9-8d35-1ac671a214b8",
+        "type": "message",
+        "text": "well i guess they are both pricing",
+        "user": "U286Q175Y",
+        "ts": "1529977283.000115",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "82c57538-ff64-42b8-819f-5c8fac326f8a",
+        "type": "message",
+        "text": "particularly the dynamic fetching cards",
+        "user": "U286Q175Y",
+        "ts": "1529977289.000198",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "00c92cec-8efb-4eb1-983e-f721f8de2ca7",
+        "type": "message",
+        "text": "its a big change",
+        "user": "U286Q175Y",
+        "ts": "1529977293.000183",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529979685.000105",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on If you search for a battlebond partner commander with the search box, like Zndrsplt, it takes you to their solo page with 0 decks. We should have it bring you to the partner page i think? I'm not sure though because then the \"view as card\" link disappears.: \"fixed for now, need to verify its still fixed after a full nightly run\"",
+                "text": "fixed for now, need to verify its still fixed after a full nightly run",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/EiC8qyTP|If you search for a battlebond partner commander with the search box, like Zndrsplt, it takes you to their solo page with 0 decks. We should have it bring you to the partner page i think? I'm not sure though because then the \"view as card\" link disappears.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529980744.000222",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on Build a python module (decks.py) that provides easy interaction into the database to create decks and modify decks and whatever else.: \"there is a core\/decks.py with similarity functions.\nmake another decks.py somewhere else?\ncore\/deckbuilder\/decks.py?\"",
+                "text": "there is a core\/decks.py with similarity functions.\nmake another decks.py somewhere else?\ncore\/deckbuilder\/decks.py?",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/hbg3ObZ3|Build a python module (decks.py) that provides easy interaction into the database to create decks and modify decks and whatever else.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "41fa923a-6bd2-4d5b-8f14-e1eb70171c21",
+        "type": "message",
+        "text": "I don’t think decks.py is being used anywhere, you can just rename that one if you’d prefer",
+        "user": "U28TLDP0R",
+        "ts": "1529981102.000277",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cbb5c71d-1bde-42ca-864e-64070eb73135",
+        "type": "message",
+        "text": "man a lot of these tickets aren't great for you to work on yet since a lot of the design is in my head",
+        "user": "U286Q175Y",
+        "ts": "1529981160.000090",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7b354526-930a-46c2-8948-2f158bc13d95",
+        "type": "message",
+        "text": "sorry about that",
+        "user": "U286Q175Y",
+        "ts": "1529981161.000176",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "83e04303-ac00-4987-adec-c14662461fde",
+        "type": "message",
+        "text": "all of the deckbuilder stuff is going to be in its own root dir, like instead of edhrec\/ it'll be deckbuilder\/",
+        "user": "U286Q175Y",
+        "ts": "1529981181.000163",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "83f11cc4-0b93-41d8-80ea-834dc87f444a",
+        "type": "message",
+        "text": "well, i mean it's the kind of thing i can do\/have done before, and doesn't affect the site pages until it's done and there's a front end",
+        "user": "U3MTAQBE1",
+        "ts": "1529981214.000146",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7deb5e2b-0dfd-4fe0-97b2-b21d1ef63e10",
+        "type": "message",
+        "text": "what i mean is ive made decisions in my head about how it has been done, like where we want to put decks.py",
+        "user": "U286Q175Y",
+        "ts": "1529981244.000216",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "45d084a4-b1f6-43f3-9cd4-ed9fc92018f5",
+        "type": "message",
+        "text": "cool",
+        "user": "U3MTAQBE1",
+        "ts": "1529981254.000026",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "30698709-821e-485c-b087-bba17146df68",
+        "type": "message",
+        "text": "give me a min and we can chat about what you can work on",
+        "user": "U286Q175Y",
+        "ts": "1529981268.000008",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0245f9d9-79c9-4f9a-9560-1d4773241df1",
+        "type": "message",
+        "text": "starting nightly",
+        "user": "U286Q175Y",
+        "ts": "1529982216.000082",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1a91c32a-1589-4677-8070-9b8c6c8372db",
+        "type": "message",
+        "text": "Deck builder is in the works? ",
+        "user": "U3QMCLQQG",
+        "ts": "1529982540.000118",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "8e4c39d8c950",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-14\/126921841136_8e4c39d8c950d030317f_72.jpg",
+            "first_name": "Dean",
+            "real_name": "Dean Gootee",
+            "display_name": "dean",
+            "team": "T286HM2F3",
+            "name": "dean",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d9de7ba4-3c1c-4b93-9f87-1ad922d4dccd",
+        "type": "message",
+        "text": "sssssshhhh",
+        "user": "U3MTAQBE1",
+        "ts": "1529982558.000252",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cfce5b2d-8140-410d-98b0-1e206dd1f748",
+        "type": "message",
+        "text": "it’s planned out",
+        "user": "U286Q175Y",
+        "ts": "1529982566.000007",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "34acb159-6541-4bf5-9ed8-92be1c4b74dd",
+        "type": "message",
+        "text": "starting work on it this week",
+        "user": "U286Q175Y",
+        "ts": "1529982577.000123",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "a418788d-515d-49a6-8af4-325a00737245",
+        "type": "message",
+        "text": "Cool",
+        "user": "U3QMCLQQG",
+        "ts": "1529982637.000119",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "8e4c39d8c950",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-14\/126921841136_8e4c39d8c950d030317f_72.jpg",
+            "first_name": "Dean",
+            "real_name": "Dean Gootee",
+            "display_name": "dean",
+            "team": "T286HM2F3",
+            "name": "dean",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3b521a54-7b8e-48f5-acc7-a710c7d653d7",
+        "type": "message",
+        "text": "Cross my heart and hope to die, Nate. ",
+        "user": "U3QMCLQQG",
+        "ts": "1529982652.000029",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "8e4c39d8c950",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-01-14\/126921841136_8e4c39d8c950d030317f_72.jpg",
+            "first_name": "Dean",
+            "real_name": "Dean Gootee",
+            "display_name": "dean",
+            "team": "T286HM2F3",
+            "name": "dean",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529983449.000240",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card RR, SA, RC themes added to list Themes to add on board edhrec.",
+                "text": "In list *Themes to add* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "RR, SA, RC themes",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/5rZ62FTH",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529984419.000182",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card Themes\/tribes for partners don't work. They seem to be showing up, but they just show the full deck list for each one. from EDHREC Bugs to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/cKmRLDgD|Themes\/tribes for partners don't work. They seem to be showing up, but they just show the full deck list for each one.>* from *EDHREC Bugs* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "be869a97-5de6-4ceb-95f4-3d4e33d27019",
+        "type": "message",
+        "text": "I’m gonna ctrl-c this allnightly when it’s done preparing and the run nightly",
+        "user": "U28TLDP0R",
+        "ts": "1529984507.000184",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c4d2eb47-d893-4bc5-ab69-b82b3c87e891",
+        "type": "message",
+        "text": "just finished a few things",
+        "user": "U28TLDP0R",
+        "ts": "1529984520.000050",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "60b45fe2-38d4-4300-9204-ba48687a7eff",
+        "type": "message",
+        "text": "kk",
+        "user": "U286Q175Y",
+        "ts": "1529984790.000185",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ea220754-e526-4190-a458-30f00418f650",
+        "type": "message",
+        "text": "should i update_themes now?",
+        "user": "U3MTAQBE1",
+        "ts": "1529985378.000029",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d4da2513-cd82-4688-a061-c19af64c8e41",
+        "type": "message",
+        "text": "now would be a good time if you worked on some additional themes",
+        "user": "U286Q175Y",
+        "ts": "1529985429.000177",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c9cc6d04-1147-42cc-a83e-f07893aecaa8",
+        "type": "message",
+        "text": "k",
+        "user": "U3MTAQBE1",
+        "ts": "1529985456.000199",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3a200238-363d-4aeb-8719-2de1a29e61d1",
+        "type": "message",
+        "text": "which did you do?",
+        "user": "U286Q175Y",
+        "ts": "1529985465.000180",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529985474.000195",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess moved the card RR, SA, RC themes from Themes to add to Done in June 18.",
+                "text": "Moved *<https:\/\/trello.com\/c\/5rZ62FTH|RR, SA, RC themes>* from *Themes to add* to *Done in June 18*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a3fb351b-b422-4d6f-affd-2c3ae18ecc93",
+        "type": "message",
+        "text": "nice :] im excited to see those",
+        "user": "U286Q175Y",
+        "ts": "1529985486.000019",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e3cca5cf-6f71-4027-9a99-0a6b6e4a1b5c",
+        "type": "message",
+        "text": "you make 3 themes right? not just one",
+        "user": "U286Q175Y",
+        "ts": "1529985495.000105",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "eb475981-bcc7-4f78-921e-edee7cec1758",
+        "type": "message",
+        "text": "want to split them up?",
+        "user": "U3MTAQBE1",
+        "ts": "1529985517.000186",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "78454dbb-42c9-4045-ba3e-bee9526bdf29",
+        "type": "message",
+        "text": "yeah i think so",
+        "user": "U286Q175Y",
+        "ts": "1529985521.000177",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "971321fc-1a1d-4f3d-a1f6-00731bb0fb21",
+        "type": "message",
+        "text": "k hang on",
+        "user": "U3MTAQBE1",
+        "ts": "1529985527.000185",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529985906.000362",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on RR, SA, RC themes: \"&gt;&gt;&gt; database.update_themes(write_to_db=False)\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/human-sacrifice-edh-1> from None to shadowborn apostle\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1075892> from None to rat colony\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/friend-or-hostage> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/im-bad-1> from None to relentless rats\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/thrumming-shadow-borns> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/sidisis-faithful-edh> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/shadowborn-apostel-edh> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/born-of-the-shadows\/#Tym> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/jarrad-rat-reverend> from None to relentless rats\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/shadowborn-god-complex> from None to shadowborn apostle\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1078680> from None to rat colony\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/athreos-the-demon-herald> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/shadow-born-waaaaagh> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/17-08-16-shadowborn\/#Tym> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/cult-of-the-damned-4> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/sekkuar-and-his-band-of-demon-cultists> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/iconics-7-rats> from None to relentless rats\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/edh-erebos> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/06-05-17-shadowstorm> from None to shadowborn apostle\n\"",
+                "text": "&gt;&gt;&gt; database.update_themes(write_to_db=False)\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/human-sacrifice-edh-1> from None to shadowborn apostle\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1075892> from None to rat colony\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/friend-or-hostage> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/im-bad-1> from None to relentless rats\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/thrumming-shadow-borns> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/sidisis-faithful-edh> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/shadowborn-apostel-edh> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/born-of-the-shadows\/#Tym> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/jarrad-rat-reverend> from None to relentless rats\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/shadowborn-god-complex> from None to shadowborn apostle\nUpdated theme for <http:\/\/www.mtggoldfish.com\/deck\/1078680> from None to rat colony\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/athreos-the-demon-herald> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/shadow-born-waaaaagh> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/17-08-16-shadowborn\/#Tym> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/cult-of-the-damned-4> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/sekkuar-and-his-band-of-demon-cultists> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/iconics-7-rats> from None to relentless rats\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/edh-erebos> from None to shadowborn apostle\nUpdated theme for <http:\/\/tappedout.net\/mtg-decks\/06-05-17-shadowstorm> from None to shadowborn apostle\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/5rZ62FTH|RR, SA, RC themes>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "798bf472-4b8d-4c65-886d-f30592086f35",
+        "type": "message",
+        "text": "looks good?",
+        "user": "U3MTAQBE1",
+        "ts": "1529985926.000029",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d79a0930-0250-4d4c-b038-62554f846907",
+        "type": "message",
+        "text": "yup! excited to see the results",
+        "user": "U286Q175Y",
+        "ts": "1529985963.000209",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "2c749438-9090-46d9-bafb-336dcf9d42d8",
+        "type": "message",
+        "text": "Updated 1765 decks for new themes",
+        "user": "U3MTAQBE1",
+        "ts": "1529989004.000204",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9a9ab4f3-8cac-4f74-a4b8-9e736ff74e15",
+        "type": "message",
+        "text": "aah spaces in the names",
+        "user": "U3MTAQBE1",
+        "ts": "1529989182.000165",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "620aef8e-bede-4017-8b87-191a7ce21ccc",
+        "type": "message",
+        "text": "early stats: <https:\/\/edhrec.com\/themes\/shadowborn-apostle.html>",
+        "user": "U3MTAQBE1",
+        "ts": "1529989918.000154",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - shadowborn-apostle",
+                "title_link": "https:\/\/edhrec.com\/themes\/shadowborn-apostle.html",
+                "text": "Popular Shadowborn Apostle Theme EDH \/ Commander commanders: Shadowborn Apostle,Razaketh the Foulblooded,Cabal Stronghold,Rune-Scarred Demon,Thrumming Stone,Harvester of Souls",
+                "fallback": "EDHREC - shadowborn-apostle",
+                "from_url": "https:\/\/edhrec.com\/themes\/shadowborn-apostle.html",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/themes\/shadowborn-apostle.html"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9d62a5e2-d03c-4b86-9ee6-d5a2779a77c3",
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/themes\/relentless-rats.html>",
+        "user": "U3MTAQBE1",
+        "ts": "1529990081.000090",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - relentless-rats",
+                "title_link": "https:\/\/edhrec.com\/themes\/relentless-rats.html",
+                "text": "Popular Relentless Rats Theme EDH \/ Commander commanders: Relentless Rats,Pack Rat,Ogre Slumlord,Swarmyard,Ratcatcher,Thrumming Stone",
+                "fallback": "EDHREC - relentless-rats",
+                "from_url": "https:\/\/edhrec.com\/themes\/relentless-rats.html",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/themes\/relentless-rats.html"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "caaf4c2c-355c-42db-8385-563e7a51c34b",
+        "type": "message",
+        "text": "<https:\/\/edhrec.com\/themes\/rat-colony.html>",
+        "user": "U3MTAQBE1",
+        "ts": "1529990148.000131",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "EDHREC - rat-colony",
+                "title_link": "https:\/\/edhrec.com\/themes\/rat-colony.html",
+                "text": "Popular Rat Colony Theme EDH \/ Commander commanders: Rat Colony,Bontu's Monument,Ogre Slumlord,Ratcatcher,Pack Rat,Cabal Stronghold",
+                "fallback": "EDHREC - rat-colony",
+                "from_url": "https:\/\/edhrec.com\/themes\/rat-colony.html",
+                "service_icon": "https:\/\/edhrec.com\/favicon.ico",
+                "service_name": "edhrec.com",
+                "id": 1,
+                "original_url": "https:\/\/edhrec.com\/themes\/rat-colony.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1529993738.000291",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Nate Burgess",
+                "fallback": "Nate Burgess commented on RR, SA, RC themes: \"update done\n<https:\/\/edhrec.com\/themes\/shadowborn-apostle>\n<https:\/\/edhrec.com\/themes\/relentless-rats>\n<https:\/\/edhrec.com\/themes\/rat-colony>\n\"",
+                "text": "update done\n<https:\/\/edhrec.com\/themes\/shadowborn-apostle>\n<https:\/\/edhrec.com\/themes\/relentless-rats>\n<https:\/\/edhrec.com\/themes\/rat-colony>\n",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/5rZ62FTH|RR, SA, RC themes>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/nateburgess",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/cafb148fbc6a0bb6e514f0a5b7cc9737\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    }
+]

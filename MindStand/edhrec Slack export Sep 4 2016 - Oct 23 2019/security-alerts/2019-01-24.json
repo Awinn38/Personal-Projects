@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1548401835.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2017-18359",
+                "id": 1,
+                "title_link": "https:\/\/trac.osgeo.org\/postgis\/changeset\/15444",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "PostGIS 2.x before 2.3.3, as used with PostgreSQL, allows remote attackers to cause a denial of service via crafted ST_AsX3D function input, as demonstrated by an abnormal server termination for \"SELECT ST_AsX3D('LINESTRING EMPTY');\" because empty geometries are mishandled.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2017-18359"
+            }
+        ]
+    }
+]

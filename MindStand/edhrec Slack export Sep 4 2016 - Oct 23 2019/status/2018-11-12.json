@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1542020395.013400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nMon Nov 12 20:17:59 UTC 2018\n\n```",
+        "ts": "1542053867.013500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 23890) - 13\/Nov\/2018:05:29:58\n('46.4.119.70', 6074) - 13\/Nov\/2018:05:19:41\n('40.77.167.20', 5584) - 13\/Nov\/2018:05:29:49\n('40.77.167.40', 5576) - 13\/Nov\/2018:05:29:58\n('37.9.87.143', 5558) - 13\/Nov\/2018:04:20:48\n('40.77.167.144', 5540) - 13\/Nov\/2018:05:29:54\n('207.46.13.76', 5284) - 13\/Nov\/2018:05:29:53\n('77.88.47.5', 4260) - 13\/Nov\/2018:02:46:12\n('66.249.69.11', 3411) - 13\/Nov\/2018:05:10:52\n('66.249.69.10', 3114) - 13\/Nov\/2018:05:29:59\n('66.249.69.5', 2886) - 13\/Nov\/2018:03:57:17\n('66.249.69.31', 2443) - 13\/Nov\/2018:05:16:21\n('100.43.90.124', 2198) - 13\/Nov\/2018:04:44:49\n('100.43.85.112', 2067) - 13\/Nov\/2018:05:26:48\n('73.0.170.191', 1636) - 13\/Nov\/2018:02:44:55\n('77.88.47.10', 1492) - 13\/Nov\/2018:03:41:00\n('5.255.250.100', 1198) - 13\/Nov\/2018:04:44:46\n('13.56.253.194', 1171) - 13\/Nov\/2018:05:28:31\n('13.57.51.147', 1149) - 13\/Nov\/2018:05:29:17\n('66.249.75.31', 1061) - 13\/Nov\/2018:05:21:26\n('5.255.250.124', 1032) - 12\/Nov\/2018:19:13:23\n('66.249.69.15', 1013) - 13\/Nov\/2018:05:21:28\n('66.249.91.10', 1012) - 13\/Nov\/2018:04:56:10\n('216.244.66.232', 974) - 13\/Nov\/2018:05:29:33\n('66.249.91.11', 967) - 13\/Nov\/2018:05:06:34\n\n```",
+        "ts": "1542086987.013600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'cards\/split'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 38, in get\n    return json.loads(_CACHE[key])\n  File \"\/usr\/lib\/python3.4\/json\/__init__.py\", line 312, in loads\n    s.__class__.__name__))\nTypeError: the JSON object must be str, not 'dict'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 841, in nightly\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 729, in make_commanders\n    _make_commanders_p(commander)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 38, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 688, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 628, in make_deck\n    cardview = CardView([Card(n, is_commander=True) for n in name], directory='commanders')\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 628, in &lt;listcomp&gt;\n    cardview = CardView([Card(n, is_commander=True) for n in name], directory='commanders')\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 31, in __init__\n    if self.name in cards.get_split():\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 476, in get_split\n    return cache.get('cards\/split')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 40, in get\n    return _CACHE[key]\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/cachetools\/ttl.py\", line 85, in __getitem__\n    return self.__missing__(key)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/cachetools\/cache.py\", line 80, in __missing__\n    value = self.__missing(key)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/cachetools\/cache.py\", line 110, in __missing\n    raise KeyError(key)\nKeyError: 'cards\/split'\n",
+        "ts": "1542089866.013700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nTue Nov 13 06:18:01 UTC 2018\n\n```",
+        "ts": "1542089867.013800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

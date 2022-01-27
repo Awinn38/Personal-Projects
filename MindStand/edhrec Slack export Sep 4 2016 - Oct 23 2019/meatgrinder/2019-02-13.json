@@ -1,0 +1,545 @@
+[
+    {
+        "client_msg_id": "ded392d4-9a07-49e6-8ff4-4f321d33ca74",
+        "type": "message",
+        "text": "Decklist still not loading on <http:\/\/dev.edhrec.com|dev.edhrec.com> - did something go wrong with bundling it when ads were separated?",
+        "user": "UEFG14S5A",
+        "ts": "1550048417.014800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "478243dd-deeb-4985-8031-be26bc969069",
+        "type": "message",
+        "text": "taking a look",
+        "user": "U28TLDP0R",
+        "ts": "1550083757.015200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "bff4306d-3976-4fc1-ad59-b20b32bb5fa7",
+        "type": "message",
+        "text": "```Uncaught TypeError: Cannot read property 'innerHTML' of undefined at better.js?_=1550084342956:23```",
+        "user": "U28TLDP0R",
+        "ts": "1550084466.015500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8f44e744-98bf-4c16-9ed2-e4e2afcf4d47",
+        "type": "message",
+        "text": "nwname is no longer there for the commander card, so you will need to check if it exists before accessing the innerHTML, if I’m interpreting this correctly",
+        "user": "U28TLDP0R",
+        "ts": "1550084579.016400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "72457e16-ff0b-487d-a31d-eb0d78a22ee4",
+        "type": "message",
+        "text": "also I’m not sure what you mean by http cached, but we write out the html files and serve them to amazon cloudfront through nginx",
+        "user": "U28TLDP0R",
+        "ts": "1550084630.017100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550084734.017200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card will \/ rowan kenrith 404 added to list Doing on board edhrec.",
+                "text": "In list *Doing* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "will \/ rowan kenrith 404",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/g8z0GK4J",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550085741.017300",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on will \/ rowan kenrith 404: \"seems like the cards module is returning them appropriately.  running make_partner_commanders manually now\"",
+                "text": "seems like the cards module is returning them appropriately.  running make_partner_commanders manually now",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/g8z0GK4J|will \/ rowan kenrith 404>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550085748.017400",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card why zscores broken added to list Doing on board edhrec.",
+                "text": "In list *Doing* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "why zscores broken",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/lc4xkCSN",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "677be737-908c-42f4-ad72-4c51905331ae",
+        "type": "message",
+        "text": "how are we calculating trending cards right now?",
+        "user": "U286Q175Y",
+        "ts": "1550093131.017600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1033dfa8-9ac6-401d-b09d-c206f112d90b",
+        "type": "message",
+        "text": "Sol Ring is #1",
+        "user": "U286Q175Y",
+        "ts": "1550093149.018000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "159e9999-0fe0-4fa6-8206-0d12145dd550",
+        "type": "message",
+        "text": "we should also remove the \"boring lands\" from the list. IIRC i have a list of \"boring cards\" we remove from some pages",
+        "user": "U286Q175Y",
+        "ts": "1550093168.018500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0d5c7d29-d2f8-45c2-bf12-c18601f2d2ab",
+        "type": "message",
+        "text": "z-scores",
+        "user": "U28TLDP0R",
+        "ts": "1550094617.018700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3cb6c628-7562-431a-b094-132e5cbba633",
+        "type": "message",
+        "text": "none of those cards should be trending",
+        "user": "U28TLDP0R",
+        "ts": "1550094623.019000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "93e7bab9-5052-45fb-841e-cd6f5988cde3",
+        "type": "message",
+        "text": "it’s just showing top cards cause there’s a bug I’m investigating",
+        "user": "U28TLDP0R",
+        "ts": "1550094716.019600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d4714683-58e1-42c5-8377-08b17dee7da7",
+        "type": "message",
+        "text": "something got weird with the M19 gift pack cards",
+        "user": "U28TLDP0R",
+        "ts": "1550096930.020000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "03b07d69-a702-40cd-ae93-0283ba35ffed",
+        "type": "message",
+        "text": "scryfall recently renamed the set code for them and it screwed up the cards module",
+        "user": "U28TLDP0R",
+        "ts": "1550096996.020800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1e0a4432-437f-478b-8024-5db5dfdf7f9c",
+        "type": "message",
+        "text": "easy enough to fix but somehow it also affected z-scores, or maybe it’s just a coincidence",
+        "user": "U28TLDP0R",
+        "ts": "1550097026.021400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d31078fa-dad3-43a8-b51d-55c93598f9ce",
+        "type": "message",
+        "text": "may have fixed it now but it takes like 40 min to recalculate",
+        "user": "U28TLDP0R",
+        "ts": "1550097075.022300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550099053.022400",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card will \/ rowan kenrith 404 from Doing to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/g8z0GK4J|will \/ rowan kenrith 404>* from *Doing* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550099093.022500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on will \/ rowan kenrith 404: \"redirects for BBD commanders are a little different then other pairs since there's only 1 pair of them.  I never wrote the code to make them in nightly so they got deleted when I cleaned up old stuff.\"",
+                "text": "redirects for BBD commanders are a little different then other pairs since there's only 1 pair of them.  I never wrote the code to make them in nightly so they got deleted when I cleaned up old stuff.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/g8z0GK4J|will \/ rowan kenrith 404>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550101757.022600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on why zscores broken: \"this should fix itself soon but hrere's a preview: ```['Swarm of Rats', \"Lawmage's Binding\", 'Eidolon of Rhetoric', 'Ethersworn Canonist', 'Ward of Bones', \"Teferi's Isle\", \"Mirari's Wake\", 'Underworld Coinsmith', 'Pack Rat', 'Celestial Dawn']```\"",
+                "text": "this should fix itself soon but hrere's a preview: ```['Swarm of Rats', \"Lawmage's Binding\", 'Eidolon of Rhetoric', 'Ethersworn Canonist', 'Ward of Bones', \"Teferi's Isle\", \"Mirari's Wake\", 'Underworld Coinsmith', 'Pack Rat', 'Celestial Dawn']```",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/lc4xkCSN|why zscores broken>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550101817.022700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on why zscores broken: \"one of the m19 gift pack cards was included in 0 decks in the past month, so it doesn't have a zscore, which broke shit.  now handled.\"",
+                "text": "one of the m19 gift pack cards was included in 0 decks in the past month, so it doesn't have a zscore, which broke shit.  now handled.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/lc4xkCSN|why zscores broken>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550120130.022800",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card why zscores broken from Doing to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/lc4xkCSN|why zscores broken>* from *Doing* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bfbc2088-c178-479d-a599-ec50153ae150",
+        "type": "message",
+        "text": "oh ok, that's different then - afaik there are at least 3 types of caching for web requests: this CDN sort of approach, using http headers to define when content is stale and caching responses on your server that can be served again with the same url\/params",
+        "user": "UEFG14S5A",
+        "ts": "1550120877.024500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "38a16926-28df-4ad0-8a8e-03ee00abf17a",
+        "type": "message",
+        "text": "I meant the second one",
+        "user": "UEFG14S5A",
+        "ts": "1550120886.024800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

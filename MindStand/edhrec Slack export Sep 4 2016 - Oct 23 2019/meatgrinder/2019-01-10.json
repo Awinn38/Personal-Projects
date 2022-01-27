@@ -1,0 +1,128 @@
+[
+    {
+        "client_msg_id": "4aeee99f-4561-46f2-878f-737814c2f7c8",
+        "type": "message",
+        "text": "<@U28TLDP0R> Whenever you get a chance to answer this, I've been doing some work on the extension this week and there was something I could use clarification on:\n\nIn the original post where you let me know that you had provided the plain and es6 js files for building HTML, you sort of implied that I would be able to edit those functions by redefining them in better.js - does this mean that the functions will not be called until after better.js loads, in which case I can add the button code in before they are rendered? If this is true, this doesn't lend itself well to modification in the future on your end, as there will be two definitions of the function and only the one in my repo will work. If your intent was to copy\/merge in my modifications to the file manually, then the only thing I'm unsure of is how to test that this works",
+        "user": "UEFG14S5A",
+        "ts": "1547186665.110900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fcce4c40-4330-4f2a-aacd-7bfa0169070f",
+        "type": "message",
+        "text": "One more thing - when you can, I need some changes to be made to json_dict\n- `commander` should be included as a top level value in json_dict (so as not to interfere with render_cardview) with the same schema as any of the cards in the cardlists. This is so that I can pull pricing and type data for the commander of a given page when a user adds it to their decklist\n- Each card should include a `type` property. One of the decklist requirements is to display cards broken down by type, but if a user adds a card from `Top Cards` or `Signature Cards` or even the commander for a given page, I currently don't know which type the card is so I cannot categorize it",
+        "user": "UEFG14S5A",
+        "ts": "1547187555.116700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f256bf93-e33b-49a7-8bce-062830be6d16",
+        "type": "message",
+        "text": "I'll be incorporating it into our actual javascript once you're ready to hand it off.  If it works on the dev site then it should pretty much copy paste right over.",
+        "user": "U28TLDP0R",
+        "ts": "1547191310.118300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "47cb9d74-c292-4191-b3bc-2b6597baa749",
+        "type": "message",
+        "text": "I'll get those json_dict changes made tomorrow.",
+        "user": "U28TLDP0R",
+        "ts": "1547191644.119000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "68f20c1a-331a-4709-a563-f3b5997ff81d",
+        "type": "message",
+        "text": "ah ok, so are you suggesting that I overwrite `render_cardview` in `better.js` while testing and then commit the finalized changes to `cardlists-es6.js` so that you can copy them in?",
+        "user": "UEFG14S5A",
+        "ts": "1547192184.120800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9e7f182a-14dd-477e-bb3e-7023edb69e54",
+        "type": "message",
+        "text": "Oh, and last thing for the night, I recently moved so my IP address has changed to `73.223.77.92`",
+        "user": "UEFG14S5A",
+        "ts": "1547192280.121800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

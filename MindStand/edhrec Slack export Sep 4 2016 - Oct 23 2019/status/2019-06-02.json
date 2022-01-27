@@ -1,0 +1,208 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 08:10:21,439 INFO New Trending 2019-06-02\n{\"name\": \"Baleful Strix\", \"s\": [0, 22, 25, 28, 45, 48, 40], \"z\": 1.3405359508985952}\n{\"name\": \"Aggravated Assault\", \"s\": [0, 8, 7, 10, 17, 17, 20], \"z\": 1.2674441288390008}\n{\"name\": \"Desert of the Fervent\", \"s\": [0, 6, 8, 8, 19, 15, 13], \"z\": 1.1940796389559163}\n{\"name\": \"Ancient Tomb\", \"s\": [0, 85, 69, 70, 94, 95, 112], \"z\": 1.1861847191197432}\n{\"name\": \"Minamo, School at Water's Edge\", \"s\": [0, 9, 5, 8, 15, 14, 14], \"z\": 1.1838998137487495}\n{\"name\": \"Bolas's Citadel\", \"s\": [0, 30, 32, 38, 46, 49, 45], \"z\": 1.1653688802097344}\n{\"name\": \"Reflecting Pool\", \"s\": [0, 63, 44, 52, 63, 81, 76], \"z\": 1.1619552785824878}\n{\"name\": \"Nether Traitor\", \"s\": [0, 5, 1, 5, 10, 9, 13], \"z\": 1.158290386302179}\n{\"name\": \"Mist-Cloaked Herald\", \"s\": [0, 8, 8, 6, 18, 13, 15], \"z\": 1.1571520124444221}\n{\"name\": \"Prismatic Vista\", \"s\": [0, 3, 4, 4, 14, 17, 9], \"z\": 1.1481218091295526}\n2019-06-02 08:10:21,454 INFO daily.py took 0:10:16.589788\n```",
+        "ts": "1559463005.014000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 08:11:56,966 INFO backup.py took 0:11:54.987004\n```",
+        "ts": "1559463100.014100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559463418.014200",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.97000289E8 (02\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-02T08:16:57.672+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-02T08:16:57.745Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [8.97000289E8 (02\/06\/19 08:11:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-06-02T08:16:57.672+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-06-02T08:16:57.745Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 19:00:09,519 ERROR Status code 404 from <https:\/\/www.youtube.com\/feeds\/videos.xml?playlist_id=PLrv-kr8kSmaJoGgxMCQYhC87m-0oES9y1>\n```",
+        "ts": "1559501992.014300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:18:25,299 WARNING Chaos Orb from City of Ass in <https:\/\/archidekt.com\/decks\/97157>\n```",
+        "ts": "1559506688.014400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:29:32,736 INFO archidekt.py took 0:26:49.636155\n```",
+        "ts": "1559507356.014500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:40:06,304 WARNING Chaos Orb from Lair of the Ashen Idol in <https:\/\/deckstats.net\/decks\/131459\/1313017-shadowborn-demon-action\/en>\n```",
+        "ts": "1559507989.014600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:43:38,995 WARNING Chaos Orb from Talisman of Resiliance in <https:\/\/deckstats.net\/decks\/106191\/968752-nath-of-the-gilt-leaf-elves-st\/en>\n```",
+        "ts": "1559508202.014700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:47:23,333 WARNING Chaos Orb from Urza, Academy Headmaster in <https:\/\/deckstats.net\/decks\/123760\/1312592-make-it-work\/en>\n```",
+        "ts": "1559508426.014800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:52:04,032 WARNING Chaos Orb from Box of Free-Range Goblins in <https:\/\/deckstats.net\/decks\/38159\/1312348--17-london-bridge-jund-silver-\/en>\n```",
+        "ts": "1559508707.014900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 20:57:19,352 INFO deckstats.py took 0:25:47.783225\n```",
+        "ts": "1559509022.015000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 21:18:15,703 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1969550>\n```",
+        "ts": "1559510278.015100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 21:38:35,588 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1963710>\n```",
+        "ts": "1559511498.015200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 21:43:42,442 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1969630>\n```",
+        "ts": "1559511805.015300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 21:46:50,369 INFO mtggoldfish.py took 0:29:14.999479\n```",
+        "ts": "1559511993.015400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-02 22:20:10,827 INFO update_deckswithprices.py took 0:20:58.129509\n```",
+        "ts": "1559513993.015500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

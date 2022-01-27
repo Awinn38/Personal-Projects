@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1563385035.000200",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-1010083",
+                "id": 1,
+                "title_link": "https:\/\/www.palletsprojects.com\/blog\/flask-1-0-released\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "The Pallets Project Flask before 1.0 is affected by: unexpected memory usage. The impact is: denial of service. The attack vector is: crafted encoded JSON data. The fixed version is: 1.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-1010083"
+            }
+        ]
+    }
+]

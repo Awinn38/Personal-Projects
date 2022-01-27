@@ -1,0 +1,371 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:07:57:35] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563868623.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 08:00:04,173 INFO New Trending 2019-07-23\n\n2019-07-23 08:00:04,180 INFO daily.py took 0:00:00.502598\n```",
+        "ts": "1563868789.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 08:12:47,271 INFO backup.py took 0:12:45.069650\n```",
+        "ts": "1563869535.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:08:13:00] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563869548.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:08:13:07] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563869555.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:08:26:34] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563870362.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 10:04:17,740 INFO New Trending 2019-07-23\n{\"name\": \"Ancient Den\", \"s\": [0, 3, 21, 0, 0, 0, 15], \"z\": -0.0}\n{\"name\": \"Skittering Surveyor\", \"s\": [0, 3, 8, 0, 0, 0, 10], \"z\": 0.0}\n{\"name\": \"Karn's Bastion\", \"s\": [0, 26, 34, 0, 0, 0, 75], \"z\": 0.0}\n{\"name\": \"Selesnya Guildgate\", \"s\": [0, 15, 20, 0, 0, 0, 46], \"z\": 0.0}\n{\"name\": \"Ornithopter\", \"s\": [0, 9, 6, 0, 0, 0, 20], \"z\": 0.0}\n{\"name\": \"Knight of the Ebon Legion\", \"s\": [0, 5, 4, 0, 0, 0, 7], \"z\": 0.0}\n{\"name\": \"Faerie Artisans\", \"s\": [0, 7, 11, 0, 0, 0, 13], \"z\": -0.0}\n{\"name\": \"Jund Panorama\", \"s\": [0, 11, 11, 0, 0, 0, 32], \"z\": 0.0}\n{\"name\": \"Basalt Monolith\", \"s\": [0, 18, 29, 0, 0, 0, 39], \"z\": 0.0}\n{\"name\": \"Vitalize\", \"s\": [0, 4, 6, 0, 0, 0, 6], \"z\": -0.0}\n2019-07-23 10:04:17,756 INFO daily.py took 2:04:11.799208\n```",
+        "ts": "1563876225.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:10:59:41] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563879549.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:17:19:51] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563902359.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:17:38:29] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563903476.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:19:37:01] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563910589.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 20:11:36,288 WARNING Chaos Orb in <https:\/\/archidekt.com\/decks\/147588>\n```",
+        "ts": "1563912663.000400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 20:31:47,942 INFO archidekt.py took 0:27:45.902632\n```",
+        "ts": "1563913875.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 20:34:35,847 WARNING Chaos Orb in <https:\/\/deckstats.net\/decks\/136627\/1353485-elves\/en>\n```",
+        "ts": "1563914043.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 20:57:07,120 WARNING Chaos Orb in <https:\/\/deckstats.net\/decks\/86132\/1063920-cedh-yidris-storm\/en>\n```",
+        "ts": "1563915394.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 21:07:42,695 WARNING Chaos Orb in <https:\/\/deckstats.net\/decks\/133889\/1361606-merfolk-fun\/en>\n```",
+        "ts": "1563916029.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 21:08:35,879 INFO deckstats.py took 0:34:48.628752\n```",
+        "ts": "1563916083.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 21:31:44,705 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2116628>\n```",
+        "ts": "1563917473.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 21:34:32,144 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2117003>\n```",
+        "ts": "1563917639.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 21:40:06,528 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2115712>\n```",
+        "ts": "1563917973.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 21:52:19,568 WARNING Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/2117965>\n```",
+        "ts": "1563918706.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 22:00:47,419 INFO mtggoldfish.py took 0:31:56.032371\n```",
+        "ts": "1563919214.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[23\/Jul\/2019:22:09:15] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    name = cherrypy.request.json['name']\nKeyError: 'name'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in index\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 47, in &lt;listcomp&gt;\n    return {'cards': [get_shit(n) for n in names]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 19, in get_shit\n    card = cards.get(cards.scn(cardname))\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 655, in scn\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 464, in get\nAttributeError: 'NoneType' object has no attribute 'split'\n```",
+        "ts": "1563919723.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "47bad889-8752-49ce-87a6-24281799cd59",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1563919756.001700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-23 22:42:39,614 INFO update_deckswithprices.py took 0:27:06.032662\nNew deck count from past 2 days: \n- Other: 0\n- Archidekt: 555\n- MTGGoldfish: 786\n- deckstats: 621\n```",
+        "ts": "1563921726.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-07-24 00:52:12,598 INFO recommendations.py took 16:52:07.206607\n```",
+        "ts": "1563929499.001900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1563941069.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/tribes\/allies.html has not been updated in the past 30 hours",
+        "ts": "1563941070.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/top\/g.html has not been updated in the past 30 hours",
+        "ts": "1563941070.002200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has not been updated in the past 30 hours",
+        "ts": "1563941070.002300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nslice indices must be integers or None or have an __index__ method\nTraceback (most recent call last):\n  File \"nightly.py\", line 474, in &lt;module&gt;\n    make_commanders()\n  File \"nightly.py\", line 407, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \"nightly.py\", line 325, in make_commander\n    recentdecks, cardlists, averages, sampledeck, tribelinks = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 411, in getcommanders\n    sampledeck = get_sampledeck(card, alldata, avgs)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 330, in get_sampledeck\n    typelists.append(sorted([x for x in poscards][:avgs[pos.lower()]]))\nTypeError: slice indices must be integers or None or have an __index__ method\n",
+        "ts": "1516316445.000342",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nmust be str, not bytes\nTraceback (most recent call last):\n  File \"nightly.py\", line 471, in &lt;module&gt;\n    make_404()\n  File \"nightly.py\", line 34, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 178, in make_page\n    f.write(templates.get('container').safe_substitute(repls).encode('utf-8'))\nTypeError: must be str, not bytes\n",
+        "ts": "1516318584.000275",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'str' object has no attribute 'decode'\nTraceback (most recent call last):\n  File \"nightly.py\", line 474, in &lt;module&gt;\n    make_commanders()\n  File \"nightly.py\", line 407, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \"nightly.py\", line 325, in make_commander\n    recentdecks, cardlists, averages, sampledeck, tribelinks = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 393, in getcommanders\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1084, in tally\n    card_age = cards.get(card)['age']\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 91, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 341, in scn\n    spellcheck_key = unidecode(cardname.decode('utf-8')).lower()\nAttributeError: 'str' object has no attribute 'decode'\n",
+        "ts": "1516318621.000371",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'str' object has no attribute 'decode'\nTraceback (most recent call last):\n  File \"nightly.py\", line 474, in &lt;module&gt;\n    make_commanders()\n  File \"nightly.py\", line 407, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \"nightly.py\", line 325, in make_commander\n    recentdecks, cardlists, averages, sampledeck, tribelinks = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 399, in getcommanders\n    cardlists = get_cardlists(data)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 278, in get_cardlists\n    directory='cards') for d in data['Cards'][cgroup]][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 278, in &lt;listcomp&gt;\n    directory='cards') for d in data['Cards'][cgroup]][:cnum]\nAttributeError: 'str' object has no attribute 'decode'\n",
+        "ts": "1516318650.000033",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nunorderable types: dict() &lt; dict()\nTraceback (most recent call last):\n  File \"nightly.py\", line 474, in &lt;module&gt;\n    make_commanders()\n  File \"nightly.py\", line 407, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \"nightly.py\", line 325, in make_commander\n    recentdecks, cardlists, averages, sampledeck, tribelinks = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    sampledeck = get_sampledeck(card, alldata, avgs)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 329, in get_sampledeck\n    typelists.append(sorted([x for x in poscards][:avgs[pos.lower()]]))\nTypeError: unorderable types: dict() &lt; dict()\n",
+        "ts": "1516318731.000283",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nunorderable types: dict() &lt; dict()\nTraceback (most recent call last):\n  File \"nightly.py\", line 474, in &lt;module&gt;\n    make_commanders()\n  File \"nightly.py\", line 407, in make_commanders\n    make_commander('Omnath, Locus of Mana')\n  File \"nightly.py\", line 325, in make_commander\n    recentdecks, cardlists, averages, sampledeck, tribelinks = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 410, in getcommanders\n    sampledeck = get_sampledeck(card, alldata, avgs)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 329, in get_sampledeck\n    typelists.append(sorted([x for x in poscards][:avgs[pos.lower()]]))\nTypeError: unorderable types: dict() &lt; dict()\n",
+        "ts": "1516318822.000207",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

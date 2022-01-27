@@ -1,0 +1,642 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1554235420.042600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card xs resolution ad clipping navbar from EDHREC Bugs to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/hEp8rRLl|xs resolution ad clipping navbar>* from *EDHREC Bugs* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1554235991.042700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on trending cards is broken again?: \"the root of the problem was - the deck scrapers weren't running 2 weeks ago, and started up about a week ago. in other words, every card IS trending right now, so the most popular cards are trending the hardest.\n\nfor now, the solution is to adjust sampling window I'm using down from 30 days to 7 days.  honestly, I could just keep it this way, it's just a matter of preference.\n\nI also took this opportunity to (a) start caching intermediate zscore data so that it won't take me hours just to rebuild the data before I can start debugging, and (b) rewrote part of the trending calculation to ensure that sol ring, command tower, shocks and signets will never be \"trending\" (more details below)\n\nthe way I computing trending is basically a zscore of the count of every card from every deck in the past 7 days, relative to the last 30 days, and then exponentially weighing based on inverse popularity.  the exponent I was using before produced interesting results, but I'm now taking it a step further and increasing it until a predefined list of \"uninteresting\" cards is no longer in the top ten list.\"",
+                "text": "the root of the problem was - the deck scrapers weren't running 2 weeks ago, and started up about a week ago. in other words, every card IS trending right now, so the most popular cards are trending the hardest.\n\nfor now, the solution is to adjust sampling window I'm using down from 30 days to 7 days.  honestly, I could just keep it this way, it's just a matter of preference.\n\nI also took this opportunity to (a) start caching intermediate zscore data so that it won't take me hours just to rebuild the data before I can start debugging, and (b) rewrote part of the trending calculation to ensure that sol ring, command tower, shocks and signets will never be \"trending\" (more details below)\n\nthe way I computing trending is basically a zscore of the count of every card from every deck in the past 7 days, relative to the last 30 days, and then exponentially weighing based on inverse popularity.  the exponent I was using before produced interesting results, but I'm now taking it a step further and increasing it until a predefined list of \"uninteresting\" cards is no longer in the top ten list.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/nzkBeBek|trending cards is broken again?>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1554236072.042800",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card trending cards is broken again? from EDHREC Bugs to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/nzkBeBek|trending cards is broken again?>* from *EDHREC Bugs* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1554236128.042900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on trending cards is broken again?: \"so now I'm just waiting for these slow-ass calculations to run\"",
+                "text": "so now I'm just waiting for these slow-ass calculations to run",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/nzkBeBek|trending cards is broken again?>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "86c9d528-0bba-4236-a170-e24f94f6fd11",
+        "type": "message",
+        "text": "well actually it’s the db calls that are the slow part, but anyway",
+        "user": "U28TLDP0R",
+        "ts": "1554236164.043300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9853498d-f006-4ed5-9707-971cea870195",
+        "type": "message",
+        "text": "think saltvote is slowing it down?",
+        "user": "U286Q175Y",
+        "ts": "1554236554.043500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f962d8c0-03aa-4eb3-9009-ed969e9a3da3",
+        "type": "message",
+        "text": "no it’s just a lot of db queries",
+        "user": "U28TLDP0R",
+        "ts": "1554237636.043700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "I can't actually get the mobile ad to show up at all (in the chrome dev tools mobile mode or on my physical device) - any tips for testing this?",
+        "user": "UEFG14S5A",
+        "ts": "1554254211.044200",
+        "thread_ts": "1554176822.028900",
+        "root": {
+            "client_msg_id": "7e4c2484-216a-43d8-afe5-7712906edcaa",
+            "type": "message",
+            "text": "one more thing <@UEFG14S5A>, can you add 50px padding beneath the 4 buttons when screen resolution &lt; 768px?  our sticky mobile ad is there and we definitely want both the ad and all the buttons visible",
+            "user": "U28TLDP0R",
+            "ts": "1554176822.028900",
+            "team": "T286HM2F3",
+            "thread_ts": "1554176822.028900",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1554254211.044200",
+            "reply_users": [
+                "UEFG14S5A"
+            ],
+            "replies": [
+                {
+                    "user": "UEFG14S5A",
+                    "ts": "1554254211.044200"
+                }
+            ],
+            "subscribed": false
+        },
+        "client_msg_id": "66393702-4e86-4d3d-bfbf-4738c68de508"
+    },
+    {
+        "client_msg_id": "27baaed8-fae6-42f8-a534-203d17494df6",
+        "type": "message",
+        "text": "Ok, I think I got everything except for what I replied with here ^, so as soon as we get that done, should be good to go",
+        "user": "UEFG14S5A",
+        "ts": "1554257373.045100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "8b2b6141-ab2a-4b24-a867-fdb82c118b78",
+        "type": "message",
+        "text": "to recap, that's\n- fix the bug with clicking the copy button when there's no commander\n- remove the recs loading spinner and header if there's an error while fetching recs\n- always show the 'add' (now toggle) buttons with checkmarks if the card is in the clipboard\n- remove cards when clicking on the checkmark",
+        "user": "UEFG14S5A",
+        "ts": "1554257846.047000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3ea10db7-3700-4be2-a5f0-fb02863391dd",
+        "type": "message",
+        "text": "a note about the recs loading spinner - I added some error handling, but I can't seem to test it because the recs endpoint returns valid inRecs for a deck with Xenagos as the commander and Surrak Dragonclaw in the list, and I couldn't find a combination that made it error",
+        "user": "UEFG14S5A",
+        "ts": "1554257933.048100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "60314842-7a8a-4d65-b0f2-47efd500b6cb",
+        "type": "message",
+        "text": "let me know if I can verify this more rigorously",
+        "user": "UEFG14S5A",
+        "ts": "1554257944.048700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "192c0863-d509-4f29-b783-497fc4cefe92",
+        "type": "message",
+        "text": "it wont error on that",
+        "user": "U286Q175Y",
+        "ts": "1554258660.048900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "da177451-5cf0-48b2-94db-3ab4f65b3fec",
+        "type": "message",
+        "text": "the main error it'll get is if you don't have enough cards",
+        "user": "U286Q175Y",
+        "ts": "1554258667.049200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "for me mobile ads only show up if I use this thing <@UEFG14S5A>",
+        "files": [
+            {
+                "id": "FHMG6GU5U",
+                "created": 1554259654,
+                "timestamp": 1554259654,
+                "name": "Capture.PNG",
+                "title": "Capture.PNG",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U28TLDP0R",
+                "editable": false,
+                "size": 139177,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FHMG6GU5U\/capture.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FHMG6GU5U\/download\/capture.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_64.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_80.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_360.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360_w": 360,
+                "thumb_360_h": 200,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_480.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_480_w": 480,
+                "thumb_480_h": 267,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_160.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_720.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720_w": 720,
+                "thumb_720_h": 400,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_800.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_800_w": 800,
+                "thumb_800_h": 445,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_960.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_960_w": 960,
+                "thumb_960_h": 534,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHMG6GU5U-dfe82ff511\/capture_1024.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 569,
+                "image_exif_rotation": 1,
+                "original_w": 1207,
+                "original_h": 671,
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U28TLDP0R\/FHMG6GU5U\/capture.png",
+                "permalink_public": "https:\/\/slack-files.com\/T286HM2F3-FHMG6GU5U-9847cabcbd",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U28TLDP0R",
+        "display_as_bot": false,
+        "ts": "1554259657.049300",
+        "client_msg_id": "f75ff8cd-de6d-4962-8a41-e44096d9e0bb"
+    },
+    {
+        "client_msg_id": "7e01a52e-6062-4b79-8c3b-d5c2e69dc522",
+        "type": "message",
+        "text": "if that doesn't work I can just test it",
+        "user": "U28TLDP0R",
+        "ts": "1554259723.049700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "e24177c7-16c0-4aae-aefa-fd67420535cd",
+        "type": "message",
+        "text": "Ulrich commander + Surrak and Radha shows no recs after ~1 sec of loading - looks good to me",
+        "user": "U28TLDP0R",
+        "ts": "1554260544.050400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "580c4053-0a84-4386-8940-e7c1f108d285",
+        "type": "message",
+        "text": "There were other cards too <@U286Q175Y>, but <@U28TLDP0R> great, seems like it works then :slightly_smiling_face:",
+        "user": "UEFG14S5A",
+        "ts": "1554261620.050800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fc0149fd-caf2-4ab6-9c44-f44a25a18e26",
+        "type": "message",
+        "text": "in terms of the ad thing, that's what I meant by the chrome dev tools mobile mode and I still see nothing (no adblock running and disabled cache) - not sure what's up there but I changed the padding-bottom to 60px from 10px, let me know if that fits properly",
+        "user": "UEFG14S5A",
+        "ts": "1554261906.052400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7feb5398-8a08-4ed6-a0fe-208efd666bd7",
+        "type": "message",
+        "text": "looks good to me",
+        "user": "U28TLDP0R",
+        "ts": "1554262285.052600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FHBC9JR25",
+                "created": 1554262322,
+                "timestamp": 1554262322,
+                "name": "Screen Shot 2019-04-02 at 8.31.28 PM.png",
+                "title": "Screen Shot 2019-04-02 at 8.31.28 PM.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U28TLDP0R",
+                "editable": false,
+                "size": 96150,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FHBC9JR25\/screen_shot_2019-04-02_at_8.31.28_pm.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T286HM2F3-FHBC9JR25\/download\/screen_shot_2019-04-02_at_8.31.28_pm.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_64.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_80.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_360.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_360_w": 204,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_480.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_480_w": 272,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_160.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_720.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_720_w": 409,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T286HM2F3-FHBC9JR25-390663b581\/screen_shot_2019-04-02_at_8.31.28_pm_800.png?t=xoxe-76221716513-794073583234-794073583266-1ff3cf69954d6ebcea7887b8cddaed05",
+                "thumb_800_w": 454,
+                "thumb_800_h": 800,
+                "image_exif_rotation": 1,
+                "original_w": 530,
+                "original_h": 934,
+                "permalink": "https:\/\/edhrec.slack.com\/files\/U28TLDP0R\/FHBC9JR25\/screen_shot_2019-04-02_at_8.31.28_pm.png",
+                "permalink_public": "https:\/\/slack-files.com\/T286HM2F3-FHBC9JR25-2e9ef29ad5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U28TLDP0R",
+        "display_as_bot": false,
+        "ts": "1554262325.052700",
+        "client_msg_id": "7f5fa5dd-3978-49cf-97ac-701648cc10cb"
+    },
+    {
+        "client_msg_id": "b1d84121-102d-429b-a03b-300589d6664e",
+        "type": "message",
+        "text": "<@U28TLDP0R> i'd like to put a call for the saltvote thing on the front page. perhaps on a banner like you did for the april fools thing?",
+        "user": "U286Q175Y",
+        "ts": "1554267116.053400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1fd32a77-64c2-4826-9b63-34192f1f0c9e",
+        "type": "message",
+        "text": "*Vote for the SALTIEST card in EDH!* Help us collect some data on what cards people are frustrated to see in EDH. <https:\/\/edhrec.com\/nacl\/vote\/>",
+        "user": "U286Q175Y",
+        "ts": "1554267208.054600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U286Q175Y",
+            "ts": "1554267223.000000"
+        }
+    },
+    {
+        "client_msg_id": "27fce6bf-9bee-441e-94b2-6c963190dac1",
+        "type": "message",
+        "text": "something like that",
+        "user": "U286Q175Y",
+        "ts": "1554267212.054800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c7aba1b3-ed8f-41b0-852e-be7283f9a2fc",
+        "type": "message",
+        "text": "just need it up for a day i'd say",
+        "user": "U286Q175Y",
+        "ts": "1554267235.055100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c5c0d40f-9245-4235-a37c-ff9b98d4e0a3",
+        "type": "message",
+        "text": "yeah I can add an alert on the homepage",
+        "user": "U28TLDP0R",
+        "ts": "1554269278.055400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

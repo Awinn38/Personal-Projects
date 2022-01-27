@@ -1,0 +1,86 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] We now have 7 dynamic.py running. Before we had 6.",
+        "ts": "1540497547.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'releaseDate'\nTraceback (most recent call last):\n  File \".\/nightly.py\", line 925, in edhrec\n    make_404()\n  File \".\/nightly.py\", line 38, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 166, in make_page\n    sets = sorted([(x['code'].lower(), x['name'], x['releaseDate']) for x in list(cards.get_sets().values())],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 166, in &lt;listcomp&gt;\n    sets = sorted([(x['code'].lower(), x['name'], x['releaseDate']) for x in list(cards.get_sets().values())],\nKeyError: 'releaseDate'\n",
+        "ts": "1540498134.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 6 dynamic.py running. Before we had 7.",
+        "ts": "1540501148.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has been updated!",
+        "ts": "1540508347.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1540508347.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/sets\/bfz.html has not been updated in the past 30 hours",
+        "ts": "1540519147.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 36106) - 26\/Oct\/2018:05:30:01\n('40.77.167.125', 6283) - 26\/Oct\/2018:05:29:16\n('157.55.39.168', 5912) - 26\/Oct\/2018:05:30:01\n('207.46.13.169', 5149) - 26\/Oct\/2018:05:29:45\n('157.55.39.163', 4998) - 26\/Oct\/2018:05:29:26\n('66.249.64.213', 2861) - 26\/Oct\/2018:05:23:37\n('5.255.250.34', 1729) - 26\/Oct\/2018:05:16:40\n('37.9.87.143', 1657) - 26\/Oct\/2018:03:47:38\n('100.43.85.112', 1654) - 26\/Oct\/2018:05:15:26\n('66.249.64.200', 1591) - 26\/Oct\/2018:05:25:48\n('77.88.47.10', 1285) - 26\/Oct\/2018:05:16:38\n('88.99.250.15', 1282) - 26\/Oct\/2018:04:26:40\n('66.249.64.221', 1282) - 26\/Oct\/2018:05:29:40\n('5.255.250.174', 1091) - 26\/Oct\/2018:04:05:15\n('216.244.66.232', 1034) - 26\/Oct\/2018:05:28:33\n('106.120.173.150', 892) - 26\/Oct\/2018:02:14:32\n('18.215.117.151', 858) - 26\/Oct\/2018:00:15:29\n('13.57.178.54', 853) - 26\/Oct\/2018:05:28:01\n('13.57.57.87', 793) - 26\/Oct\/2018:05:29:43\n('77.88.47.5', 789) - 26\/Oct\/2018:01:03:57\n('158.69.251.119', 786) - 26\/Oct\/2018:04:22:28\n('95.216.2.253', 689) - 25\/Oct\/2018:18:00:36\n('148.64.56.67', 678) - 26\/Oct\/2018:05:27:11\n('148.64.56.69', 668) - 26\/Oct\/2018:05:29:20\n('148.64.56.73', 667) - 26\/Oct\/2018:05:20:27\n\n```",
+        "ts": "1540531741.000100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

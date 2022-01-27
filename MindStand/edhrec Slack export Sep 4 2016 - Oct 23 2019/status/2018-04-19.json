@@ -1,0 +1,146 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nThu Apr 19 23:12:49 UTC 2018\n\n```",
+        "ts": "1524179432.000208",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nThu Apr 19 23:14:29 UTC 2018\n\n```",
+        "ts": "1524179533.000005",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nFATAL:  sorry, too many clients already\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 709, in brawl\n    make_brawl_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 546, in make_brawl_cards\n    make_card(card)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 333, in make_card\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 174, in make_page\n    tribes = [pluralize_tribe(t['name']) for t in database.get_tribelist()][:5]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 852, in get_tribelist\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.4\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 64, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 2, user='postgres')\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  sorry, too many clients already\n\n",
+        "ts": "1524183839.000187",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nFATAL:  sorry, too many clients already\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 660, in edhrec\n    make_404()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 36, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 174, in make_page\n    tribes = [pluralize_tribe(t['name']) for t in database.get_tribelist()][:5]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 852, in get_tribelist\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.4\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 64, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 2, user='postgres')\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  sorry, too many clients already\n\n",
+        "ts": "1524183839.000253",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nFri Apr 20 00:26:18 UTC 2018\n\n```",
+        "ts": "1524183841.000048",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nFATAL:  sorry, too many clients already\n\nTraceback (most recent call last):\n  File \"nightly.py\", line 697, in brawl\n    make_404()\n  File \"nightly.py\", line 36, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 174, in make_page\n    tribes = [pluralize_tribe(t['name']) for t in database.get_tribelist()][:5]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 852, in get_tribelist\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.4\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 64, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 2, user='postgres')\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  sorry, too many clients already\n\n",
+        "ts": "1524184303.000291",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nFATAL:  sorry, too many clients already\n\nTraceback (most recent call last):\n  File \"nightly.py\", line 660, in edhrec\n    make_404()\n  File \"nightly.py\", line 36, in make_404\n    make_page('404', '', layout='404')\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 174, in make_page\n    tribes = [pluralize_tribe(t['name']) for t in database.get_tribelist()][:5]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 852, in get_tribelist\n    with _getcursor() as cur:\n  File \"\/usr\/lib\/python3.4\/contextlib.py\", line 59, in __enter__\n    return next(self.gen)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 64, in _getcursor\n    pool = psycopg2.pool.ThreadedConnectionPool(1, 2, user='postgres')\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 161, in __init__\n    self, minconn, maxconn, *args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 58, in __init__\n    self._connect()\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/pool.py\", line 62, in _connect\n    conn = psycopg2.connect(*self._args, **self._kwargs)\n  File \"\/usr\/local\/lib\/python3.4\/dist-packages\/psycopg2\/__init__.py\", line 130, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\npsycopg2.OperationalError: FATAL:  sorry, too many clients already\n\n",
+        "ts": "1524184304.000056",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/commanders\/pang-tong-young-phoenix.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/commanders\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html\/commanders\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1524192343.000163",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/decks\/pang-tong-young-phoenix.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/decks\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html\/decks\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1524192344.000058",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/listofdecks\/pang-tong-young-phoenix.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/listofdecks\/pang-tong-young-phoenix.html', '-o', '\/usr\/share\/nginx\/html\/listofdecks\/pang-tong-young-phoenix.html']' returned non-zero exit status 1",
+        "ts": "1524192344.000194",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n(('209.133.83.194', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/65.0.3325.181 Safari\/537.36 OPR\/52.0.2871.40'), 463796)\n(('68.175.103.121', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/11.1 Safari\/605.1.15'), 74478)\n(('54.157.3.180', 'test'), 57130)\n(('54.85.182.120', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/600.1.25 (KHTML, like Gecko) Version\/8.0 Safari\/600.1.25'), 37494)\n(('34.216.252.127', 'A6-Indexer'), 27368)\n(('173.196.173.180', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/65.0.3325.181 Safari\/537.36 OPR\/52.0.2871.40'), 27065)\n(('51.175.197.253', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.13; rv:59.0) Gecko\/20100101 Firefox\/59.0'), 22151)\n(('96.3.66.160', 'Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/65.0.3325.181 Safari\/537.36'), 21261)\n(('12.161.61.162', '-'), 20056)\n(('66.249.92.200', 'Mediapartners-Google'), 11144)\n(('142.165.228.137', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/65.0.3325.181 Safari\/537.36'), 9506)\n(('52.52.164.177', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3053.3 Safari\/537.36'), 9387)\n(('73.131.7.222', 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit\/601.5.17 (KHTML, like Gecko) Version\/9.1 Safari\/601.5.17'), 8988)\n(('109.68.173.21', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/65.0.3325.181 Safari\/537.36'), 7560)\n(('68.201.48.132', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36 Edge\/16.16299'), 7311)\n(('216.244.66.240', 'Mozilla\/5.0 (compatible; DotBot\/1.1; <http:\/\/www.opensiteexplorer.org\/dotbot>, <mailto:help@moz.com|help@moz.com>)'), 6667)\n(('66.249.66.200', 'Mediapartners-Google'), 6256)\n(('75.98.9.249', 'Mozilla\/5.0 (compatible; NetSeer crawler\/2.0; +<http:\/\/www.netseer.com\/crawler.html;> <mailto:crawler@netseer.com|crawler@netseer.com>)'), 5838)\n(('205.250.50.44', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko\/20100101 Firefox\/59.0'), 5380)\n(('74.113.53.162', 'Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; rv:11.0) like Gecko'), 5103)\n(('108.215.101.116', 'Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko\/20100101 Firefox\/59.0'), 4939)\n(('82.206.67.199', 'Mozilla\/5.0 (X11; Linux x86_64; rv:52.0) Gecko\/20100101 Firefox\/52.0'), 4663)\n(('74.215.216.105', 'Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/65.0.3325.181 Safari\/537.36'), 4443)\n(('184.101.238.194', 'Mozilla\/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit\/604.1.34 (KHTML, like Gecko) CriOS\/65.0.3325.152 Mobile\/15D100 Safari\/604.1'), 4404)\n(('54.85.228.149', 'newspaper\/0.2.5'), 4253)\n\n```",
+        "ts": "1524202114.000031",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skipping making this html because of some sort of error happened:\/usr\/share\/nginx\/html\/commanders\/kwende-pride-of-femeref.html ... Command '['html-minifier', '--collapse-boolean-attributes', '--collapse-whitespace', '--decode-entities', '--minify-css', '--minify-js', '--process-conditional-comments', '--process-scripts text\/html', '--remove-attribute-quotes', '--remove-comments', '--remove-empty-attributes', '--remove-optional-tags', '--remove-redundant-attributes', '--remove-script-type-attributes', '--trim-custom-fragments', '--use-short-doctype', '\/usr\/share\/nginx\/html\/commanders\/kwende-pride-of-femeref.html', '-o', '\/usr\/share\/nginx\/html\/commanders\/kwende-pride-of-femeref.html']' returned non-zero exit status 1",
+        "ts": "1524205637.000216",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

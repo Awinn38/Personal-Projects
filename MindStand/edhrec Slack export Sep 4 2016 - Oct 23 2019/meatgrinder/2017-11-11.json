@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "text": "&gt;&gt;&gt;\nTraceback (most recent call last):\n  File “\/usr\/local\/lib\/python2.7\/dist-packages\/cherrypy\/_cprequest.py”, line 670, in respond\n    response.body = self.handler()\n  File “\/usr\/local\/lib\/python2.7\/dist-packages\/cherrypy\/lib\/encoding.py”, line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File “\/usr\/local\/lib\/python2.7\/dist-packages\/cherrypy\/_cpdispatch.py”, line 60, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File “\/home\/ubuntu\/edhrec\/web\/dynamic.py”, line 53, in index\n    filters=filters, checktribe=checktribe, tribe=tribe)\n  File “\/home\/ubuntu\/edhrec\/web\/origin.py”, line 383, in getcommanders\n    tribelinks = get_tribelinks(card)\n  File “\/home\/ubuntu\/edhrec\/web\/origin.py”, line 235, in get_tribelinks\n    outlinks.append(‘-’ + str(tribe).lower().replace(‘-’, ‘_’) + ‘-’ + t_or_t.lower(), ‘(’ + ‘%.1f’ % (potentials[tribe] \/ total_decks * 100) + ‘%) ’ + t_or_t + ‘: ’ + label) # TODO rly\nTypeError: append() takes exactly one argument (2 given)",
+        "user": "U286Q175Y",
+        "ts": "1510410763.000017",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\n        outlinks.append('-' + str(tribe).lower().replace('-', '_') + '-' + t_or_t.lower(), '(' + '%.1f' % (potentials[tribe] \/ total_decks * 100) + '%) ' + t_or_t + ': ' + label) # TODO rly\n```",
+        "user": "U286Q175Y",
+        "ts": "1510410790.000106",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "```\n        outlinks.append(('-' + str(tribe).lower().replace('-', '_') + '-' + t_or_t.lower(), '(' + '%.1f' % (potentials[tribe] \/ total_decks * 100) + '%) ' + t_or_t + ': ' + label)) # TODO rly\n```",
+        "user": "U286Q175Y",
+        "ts": "1510410796.000080",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "somehow a set of parenthesis got deleted ….",
+        "user": "U286Q175Y",
+        "ts": "1510410802.000080",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,355 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1547736626.165400",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card [medium] Add Archidekt as a data feed added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "[medium] Add Archidekt as a data feed",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/5FwzVOXO",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1547736648.165500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner commented on [medium] Add Archidekt as a data feed: \"Explanation of how to do this from the Archidekt people:\n\nTo get a list of decks with a commander you can use the following endpoint along with query string parameters.\n\n<https:\/\/archidekt.com\/api\/decks\/cards\/>\n\nIt returns a json that's paginated with a count field, a previous and next fields, and a results field. The results field is a list of deck objects that has a bunch of data, but what I imagine you'll mainly need is the id field as that will allow you to access an endpoint to view the cards in a deck. The query string parameters you'll likely need for the above endpoint are the following:\n\ncommanders - expects a comma separated list of commanders with quotes around each (ie: ?commanders=\"Chromium, the Mutable\")\norderBy - you'll probably want to use the -created at to order to see the most recent decks, updatedAt is another option (ie: &amp;orderBy=-createdAt)\n\nSo to use the endpoint to get all decks for Chromium, the Mutable, would look like:\n\n<https:\/\/archidekt.com\/api\/decks\/cards\/?commanders=%22Chromium%2C%20the%20Mutable%22&amp;orderBy=-createdAt>\n\nOnce you've gotten your deck ids from that endpoint to access a list of cards in a deck you can use the following endpoint replacing &lt;DECK_ID&gt; with the id of deck you'd like to fetch:\n\n<https:\/\/archidekt.com\/api\/decks\/&lt;DECK_ID&gt;\/small\/>\n\nThis returns a json object with a lot of deck information but you'll probably just want the cards field which contains a list of card objects with quantity and deck builder information and each of those objects contains a card field that contains actual card information such as the name field which I assume you'll need.\"",
+                "text": "Explanation of how to do this from the Archidekt people:\n\nTo get a list of decks with a commander you can use the following endpoint along with query string parameters.\n\n<https:\/\/archidekt.com\/api\/decks\/cards\/>\n\nIt returns a json that's paginated with a count field, a previous and next fields, and a results field. The results field is a list of deck objects that has a bunch of data, but what I imagine you'll mainly need is the id field as that will allow you to access an endpoint to view the cards in a deck. The query string parameters you'll likely need for the above endpoint are the following:\n\ncommanders - expects a comma separated list of commanders with quotes around each (ie: ?commanders=\"Chromium, the Mutable\")\norderBy - you'll probably want to use the -created at to order to see the most recent decks, updatedAt is another option (ie: &amp;orderBy=-createdAt)\n\nSo to use the endpoint to get all decks for Chromium, the Mutable, would look like:\n\n<https:\/\/archidekt.com\/api\/decks\/cards\/?commanders=%22Chromium%2C%20the%20Mutable%22&amp;orderBy=-createdAt>\n\nOnce you've gotten your deck ids from that endpoint to access a list of cards in a deck you can use the following endpoint replacing &lt;DECK_ID&gt; with the id of deck you'd like to fetch:\n\n<https:\/\/archidekt.com\/api\/decks\/&lt;DECK_ID&gt;\/small\/>\n\nThis returns a json object with a lot of deck information but you'll probably just want the cards field which contains a list of card objects with quantity and deck builder information and each of those objects contains a card field that contains actual card information such as the name field which I assume you'll need.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/5FwzVOXO|[medium] Add Archidekt as a data feed>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1547736714.165600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner commented on [medium] Add Archidekt as a data feed: \"To add a new data feed, we need a script like tappedout.py and deckstats.py which is in web.py. This model will likely be different because they are actually giving us a json endpoint and we don't have to scrape html.\n\nAfter we have that script working, we need to add the scraping to allnightly.sh\"",
+                "text": "To add a new data feed, we need a script like tappedout.py and deckstats.py which is in web.py. This model will likely be different because they are actually giving us a json endpoint and we don't have to scrape html.\n\nAfter we have that script working, we need to add the scraping to allnightly.sh",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/5FwzVOXO|[medium] Add Archidekt as a data feed>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "user": "UFFTD5EHM",
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1547750054.166200",
+        "text": "<@UFFTD5EHM> has joined the channel"
+    },
+    {
+        "user": "UEF135G05",
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1547750388.166400",
+        "text": "<@UEF135G05> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1547760546.166700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card add cmc to cardview\/json_dict from Doing to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/Jd1AZcsF|add cmc to cardview\/json_dict>* from *Doing* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ae4e189b-7c52-45f3-8006-032ea788a2fd",
+        "type": "message",
+        "text": "<@UEFG14S5A> `primary_types` and `cmcs` are the new keys, and they’re arrays.  just realized when I was rewriting cmc that it makes more sense since it corresponds with the `cards` key, which can have 1 card, 2 cards, or front\/back of 1 card",
+        "user": "U28TLDP0R",
+        "ts": "1547760791.169100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "AA9A0B63-E04B-4781-B9D5-A3849036CE00",
+        "type": "message",
+        "text": "Is there a case where there would be 2 cards that arent the front\/back of a card?",
+        "user": "UEFG14S5A",
+        "ts": "1547760893.170400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "85481e9e-d961-42b2-9d7a-2d93da78907e",
+        "type": "message",
+        "text": "meld and partners come to mind",
+        "user": "U28TLDP0R",
+        "ts": "1547760932.170700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "UEFG14S5A"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6766f53c-fedc-41db-a611-cacfbc31bf67",
+        "type": "message",
+        "text": "not sure if there’s anything else",
+        "user": "U28TLDP0R",
+        "ts": "1547760938.170900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "40cf7850-90fc-4696-8505-da9c3515f89a",
+        "type": "message",
+        "text": "nothing else that i can think of",
+        "user": "U28TLDP0R",
+        "ts": "1547761049.171100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1547772811.171600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card [low] partner commander average decks have 101 cards. Also, the commander doesnt show up correctly, it shows up as a tuple. added to list EDHREC Bugs on board edhrec.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "[low] partner commander average decks have 101 cards. Also, the commander doesnt show up correctly, it shows up as a tuple.",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/RqQnQUFB",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1547773544.171700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner added Mike to the board edhrec.",
+                "text": "Added <https:\/\/trello.com\/mike84101507|Mike> to the board *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e485fc9c-9ffa-4800-b7f1-530fd7166545",
+        "type": "message",
+        "text": "So I was trying to test the add card button for decklists by overriding the render_cardview function, however that function is a const so I can't actually override it. <@U28TLDP0R> Could you either make it a `let` or add in the buttons for me? It should be roughly\n```\n  const addCardButton = document.createElement('a');\n  addCardButton.setAttribute('class', 'add-card-button');\n  addCardButton.setAttribute('cardName', cardName);\n  const addCardButtonArrow = document.createElement('div');\n  addCardButtonArrow.setAttribute('class', 'glyphicon glyphicon-chevron-right');\n  addCardButton.appendChild(addCardButtonArrow);\n  addCardButton.addEventListener('click', function(event) {\n    addCardToDecklist(addCardButton.getAttribute('cardName'));\n    event.preventDefault();\n  });\n\n```\nbut converted to es6+jquery\nSome context: each of these buttons used to be added while traversing through the list of card divs on the page, so cardName comes from parsing the name from what's currently shown. Not the best method but the only way to get the name when this was an extension.\nAlso, I don't see any events in the current code, and with all of the elements being added as strings I don't think my current method of adding an event listener will work. It's possible that you could create this as a separate function, and give each button an onclick to call that function instead.\nI haven't been able to think of a better way to tell which card the button is being pressed on and pass that info to the addCardToDecklist function, but if you think of any please let me know. To test if this works, the card should be visible by clicking decklist after clicking the add card button.\nLet me know if you make it a let or if you manage to easily get the changes in :slightly_smiling_face:",
+        "user": "UEFG14S5A",
+        "ts": "1547788750.179600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "fb3c9a7f-3f4f-43c1-899d-df185ca4b2f9",
+        "type": "message",
+        "text": "yeah I can change it to let",
+        "user": "U28TLDP0R",
+        "ts": "1547789222.179800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c341d161-1ac4-4158-bdd3-dca0bdf35654",
+        "type": "message",
+        "text": "gonna push new homepage to dev tomorrow and then live if nothing explodes",
+        "user": "U28TLDP0R",
+        "ts": "1547791592.180300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "087cef1a-7c62-4358-906e-5c71857c3bcc",
+        "type": "message",
+        "text": "Do you all use django or flask or some other framework that I should be investigating?",
+        "user": "UFFTD5EHM",
+        "ts": "1547797170.181000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gaf5561d8aaa",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6af5561d8aaae22572327722df49fddf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0000-72.png",
+            "first_name": "Mike",
+            "real_name": "Mike Paddock",
+            "display_name": "Mike",
+            "team": "T286HM2F3",
+            "name": "jhyrryl",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

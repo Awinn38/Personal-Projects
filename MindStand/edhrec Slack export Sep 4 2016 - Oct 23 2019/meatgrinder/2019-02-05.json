@@ -1,0 +1,245 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549405478.310700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [high] tcgplayer prices not showing up on rna cards. High because tcg asked me to look into it. <https:\/\/edhrec.com\/sets\/rna> from Doing to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/N4pLllmK|[high] tcgplayer prices not showing up on rna cards. High because tcg asked me to look into it. https:\/\/edhrec.com\/sets\/rna>* from *Doing* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549406114.310800",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card BBD partners aren't actually updating, need to add to get_pairs() probably from EDHREC Bugs to Done in Jan '19.",
+                "text": "Moved *<https:\/\/trello.com\/c\/XnAHZVi8|BBD partners aren't actually updating, need to add to get_pairs() probably>* from *EDHREC Bugs* to *Done in Jan '19*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549407407.310900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on investigating email \"Deck Recommendations Not Updating\": \"2 parallel nightlies - too much memory\nthrowing most stuff back in 1 supervisor script - will check tomorrow to make sure zscores are still updating appropriately\"",
+                "text": "2 parallel nightlies - too much memory\nthrowing most stuff back in 1 supervisor script - will check tomorrow to make sure zscores are still updating appropriately",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/hJQLN3Pa|investigating email \"Deck Recommendations Not Updating\">*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e0d2b3b2-6eaa-4039-918b-08793a9558a5",
+        "type": "message",
+        "text": "<@UFFTD5EHM> I used to use deckbox to manage my collection, and it feels like they have a lot of great features but I really don't like the visual aspects of their interface - it kind of feels like using a 10 year old version of Excel",
+        "user": "UEFG14S5A",
+        "ts": "1549425491.312400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UEFG14S5A",
+            "ts": "1549425507.000000"
+        }
+    },
+    {
+        "client_msg_id": "c95dadfd-d0b4-4c8a-b679-6d6c25992f03",
+        "type": "message",
+        "text": "<@U28TLDP0R> I ran into a problem recently and I'm not quite sure how to solve it - looking for some input in case you have any ideas. I'm currently fetching recs using the normal recs endpoint endpoint, but there is a case where a card is recommended but is not on the page, and therefore not in `json_dict`. This creates an issue as I am not able to access any of the necessary information about the card. The possible solutions I see are:\n1. Restrict visible recs to only the cards on the page. This gets a little restrictive once most of a 100 card deck is filled out, and in general doesn't really provide the feature in its entirity\n2. Modify the existing recs endpoint to return all of the necessary information for the decklist, ie\n```\n{\n  name: String,\n  tcgplayer: Double,\n  cardkingdom: Double,\n  imageUrl: String,\n  legalcommander: Boolean,\n  type: String,\n  cmc: Double,\n}\n```\n3. Create a new recs endpoint specifically for the decklist that returns the above info\nLet me know what you think the best route is, and if that route is api work, I'm happy to do some work on it too",
+        "user": "UEFG14S5A",
+        "ts": "1549425947.317800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UEFG14S5A",
+            "ts": "1549425960.000000"
+        }
+    },
+    {
+        "client_msg_id": "9a4736af-1be0-46cc-8a5b-9a248e1b985c",
+        "type": "message",
+        "text": "<@UEFG14S5A> I was mostly commenting from the idea of them being an additional source of decks and ideas. They're fiercely independent, and I doubt they would want to partner or get bought out.",
+        "user": "UFFTD5EHM",
+        "ts": "1549430727.320000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gaf5561d8aaa",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6af5561d8aaae22572327722df49fddf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0000-72.png",
+            "first_name": "Mike",
+            "real_name": "Mike Paddock",
+            "display_name": "Mike",
+            "team": "T286HM2F3",
+            "name": "jhyrryl",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1549430727.320000",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1549431712.321100",
+        "reply_users": [
+            "UEFG14S5A"
+        ],
+        "replies": [
+            {
+                "user": "UEFG14S5A",
+                "ts": "1549431712.321100"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "23203ea5-2910-4996-a310-a592f8ef1df0",
+        "type": "message",
+        "text": "I'll add the additional fields to the recs endpoint",
+        "user": "U28TLDP0R",
+        "ts": "1549430807.320300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "ok_hand",
+                "users": [
+                    "UEFG14S5A"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1549430880.320700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "New card add new fields to \/recs\/ endpoint added to list EDHREC Let's Do Soon on board edhrec.",
+                "text": "In list *EDHREC Let's Do Soon* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "add new fields to \/recs\/ endpoint",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/SvygHRl3",
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "author_icon": "http:\/\/trello-avatars.s3.amazonaws.com\/fe732598dc0f8df89403798d4bfa6ed9\/30.png",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e79babfa-8e90-416a-8a0f-783a10e8f1a8",
+        "type": "message",
+        "text": "Definitely, wasn't suggesting that we partner or anything, was just commenting on my experience with them. Basically, in my opinion, they have ideas to learn from in UX but not in UI",
+        "user": "UEFG14S5A",
+        "ts": "1549431712.321100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "g5a5448ecc22",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c5a5448ecc22d457a8051db2d992d2ae.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-72.png",
+            "first_name": "",
+            "real_name": "Greg Bateman",
+            "display_name": "gbateman",
+            "team": "T286HM2F3",
+            "name": "gerbot150",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1549430727.320000",
+        "parent_user_id": "UFFTD5EHM",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "UFFTD5EHM"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1568072235.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-7176",
+                "id": 1,
+                "title_link": "https:\/\/about.gitlab.com\/2019\/01\/31\/security-release-gitlab-11-dot-7-dot-3-released\/",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "An issue was discovered in GitLab Community and Enterprise Edition 8.x (starting in 8.9), 9.x, 10.x, and 11.x before 11.5.9, 11.6.x before 11.6.7, and 11.7.x before 11.7.2. It has Incorrect Access Control. Guest users are able to add reaction emojis on comments to which they have no visibility.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-7176"
+            }
+        ]
+    }
+]

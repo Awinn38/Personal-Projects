@@ -1,0 +1,590 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1559804575.007000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 07:02:53,867 INFO nightly.py took 0:11:32.972320\n```",
+        "ts": "1559804575.007100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 08:12:46,587 INFO backup.py took 0:12:44.130970\n```",
+        "ts": "1559808768.007200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:32:55,473 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 45\n    'back_on_top': back_on_top,\n                ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559845977.007300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:33:06,191 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 685, in make_commander\n    data = origin.getcommanders(card=name, checktribe=checktribe, tribe=tribe, outof=outof, ss=ss, ob=ob)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 510, in getcommanders\n    cardlists = get_cardlists(data, ss=ss, ob=ob, card=card)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 355, in get_cardlists\n    back_on_top=True\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 63, in __init__\n    'mtggoldfish_uri': self['cards'][0]['mtggoldfish_uri'],\nKeyError: 'mtggoldfish_uri'\n```",
+        "ts": "1559845988.007400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:37:02,504 INFO cards.py took 0:03:35.038836\n```",
+        "ts": "1559846224.007500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:39:55,186 ERROR skin invasion missing from cardkingdom prices json\n2019-06-06 18:39:55,187 ERROR ulvenwald mystics missing from cardkingdom prices json\n2019-06-06 18:39:55,187 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-06-06 18:39:55,187 ERROR autumnal gloom missing from cardkingdom prices json\n2019-06-06 18:39:55,187 ERROR aberrant researcher missing from cardkingdom prices json\n2019-06-06 18:39:55,187 ERROR villagers of estwald missing from cardkingdom prices json\n2019-06-06 18:39:55,187 ERROR daring sleuth missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR extricator of sin missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR civilized scholar missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR gatstaf shepherd missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR lambholt elder missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR grizzled outcasts missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR convicted killer missing from cardkingdom prices json\n2019-06-06 18:39:55,188 ERROR hinterland logger missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR gatstaf arsonists missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR elusive tormentor missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR kindly stranger missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR tormented pariah missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR uninvited geist missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR screeching bat missing from cardkingdom prices json\n2019-06-06 18:39:55,189 ERROR grizzled angler missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR ravenous demon missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR chosen of markov missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR thraben sentry missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR solitary hunter missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR hinterland hermit missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR soul seizer missing from cardkingdom prices json\n2019-06-06 18:39:55,190 ERROR accursed witch missing from cardkingdom prices json\n2019-06-06 18:39:55,191 ERROR cloistered youth missing from cardkingdom prices json\n2019-06-06 18:39:55,191 ERROR vildin-pack outcast missing from cardkingdom prices json\n2019-06-06 18:39:55,191 ERROR hanweir watchkeep missing from cardkingdom prices json\n```",
+        "ts": "1559846397.007600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 18:47:49,558 INFO cards.py took 0:08:19.726580\n```",
+        "ts": "1559846871.007700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 19:15:14,666 INFO cards.py took 0:03:16.374645\n```",
+        "ts": "1559848516.007800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 19:17:07,266 ERROR grizzled angler missing from cardkingdom prices json\n2019-06-06 19:17:07,266 ERROR cloistered youth missing from cardkingdom prices json\n2019-06-06 19:17:07,266 ERROR gatstaf arsonists missing from cardkingdom prices json\n2019-06-06 19:17:07,266 ERROR extricator of sin missing from cardkingdom prices json\n2019-06-06 19:17:07,266 ERROR accursed witch missing from cardkingdom prices json\n2019-06-06 19:17:07,266 ERROR solitary hunter missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR vildin-pack outcast missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR hanweir watchkeep missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR gatstaf shepherd missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR hinterland hermit missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR soul seizer missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR elusive tormentor missing from cardkingdom prices json\n2019-06-06 19:17:07,267 ERROR kindly stranger missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR ulvenwald mystics missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR grizzled outcasts missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR screeching bat missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR hinterland logger missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR chosen of markov missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR civilized scholar missing from cardkingdom prices json\n2019-06-06 19:17:07,268 ERROR autumnal gloom missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR thraben sentry missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR villagers of estwald missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR avacynian missionaries missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR ravenous demon missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR thraben gargoyle missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR aberrant researcher missing from cardkingdom prices json\n2019-06-06 19:17:07,269 ERROR lambholt elder missing from cardkingdom prices json\n2019-06-06 19:17:07,270 ERROR tormented pariah missing from cardkingdom prices json\n2019-06-06 19:17:07,270 ERROR convicted killer missing from cardkingdom prices json\n2019-06-06 19:17:07,270 ERROR daring sleuth missing from cardkingdom prices json\n2019-06-06 19:17:07,270 ERROR uninvited geist missing from cardkingdom prices json\n2019-06-06 19:17:07,270 ERROR skin invasion missing from cardkingdom prices json\n```",
+        "ts": "1559848629.007900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 19:25:22,563 INFO cards.py took 0:08:40.872109\n```",
+        "ts": "1559849124.008000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:27:30,223 INFO OATH archidekt.py took 0:25:38.836155\n```",
+        "ts": "1559852852.008100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:29:40,288 INFO cards.py took 0:03:11.747590\n```",
+        "ts": "1559852982.008200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:35:23,634 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 42\n    uri_names = [c['name']) for c in self['cards']]\n                          ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559853325.008300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:37:50,323 WARNING Chaos Orb from Zombie in <https:\/\/deckstats.net\/decks\/133220\/1314751-budget-liliana-oathbreaker\/en>\n```",
+        "ts": "1559853472.008400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:40:59,968 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 46\n    archidekt_names = ' \/\/ '.join([c['name'] for c in self['cards'])\n                                                                   ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559853662.008500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:48:13,266 WARNING Chaos Orb from A Display of My Dark Power in <https:\/\/deckstats.net\/decks\/132960\/1309551-kiora-s-big-booty-bitchez\/en>\n```",
+        "ts": "1559854095.008600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:51:12,015 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 42\n    if 'card_faces' in self['cards'][0]\n                                      ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559854274.008700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:51:55,812 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in make_commander\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 64, in __init__\n    '&amp;'.join('search_cards_commander[]=' + urllib.parse.quote(u) for u in uri_names)\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 64, in &lt;genexpr&gt;\n    '&amp;'.join('search_cards_commander[]=' + urllib.parse.quote(u) for u in uri_names)\n  File \"\/usr\/lib\/python3.5\/urllib\/parse.py\", line 712, in quote\n    return quote_from_bytes(string, safe)\n  File \"\/usr\/lib\/python3.5\/urllib\/parse.py\", line 737, in quote_from_bytes\n    raise TypeError(\"quote_from_bytes() expected bytes\")\nTypeError: quote_from_bytes() expected bytes\n```",
+        "ts": "1559854318.008800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:53:51,271 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in make_commander\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 65, in __init__\n    '&amp;'.join('search_cards_commander[]=' + urllib.parse.quote(u) for u in uri_names)\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 65, in &lt;genexpr&gt;\n    '&amp;'.join('search_cards_commander[]=' + urllib.parse.quote(u) for u in uri_names)\n  File \"\/usr\/lib\/python3.5\/urllib\/parse.py\", line 712, in quote\n    return quote_from_bytes(string, safe)\n  File \"\/usr\/lib\/python3.5\/urllib\/parse.py\", line 737, in quote_from_bytes\n    raise TypeError(\"quote_from_bytes() expected bytes\")\nTypeError: quote_from_bytes() expected bytes\n```",
+        "ts": "1559854433.008900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:54:36,373 INFO OATH deckstats.py took 0:25:08.760358\n```",
+        "ts": "1559854478.009000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 20:56:28,688 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\nNameError: name 'Expansion' is not defined\n```",
+        "ts": "1559854591.009100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:18:02,654 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 685, in make_commander\n    data = origin.getcommanders(card=name, checktribe=checktribe, tribe=tribe, outof=outof, ss=ss, ob=ob)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 510, in getcommanders\n    cardlists = get_cardlists(data, ss=ss, ob=ob, card=card)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 328, in get_cardlists\n    is_commander=True\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 81, in __init__\n    'mtggoldfish_uri': mtggoldfish_uri,\nUnboundLocalError: local variable 'mtggoldfish_uri' referenced before assignment\n```",
+        "ts": "1559855884.009200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:19:41,254 INFO OATH mtggoldfish.py took 0:23:59.028283\n```",
+        "ts": "1559855983.009300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:21:15,428 INFO update_deckswithprices.py took 0:01:28.761266\n2019-06-06 21:21:15,442 INFO New deck count from past 2 days: \n- deckstats: 113\n- Other: 0\n- MTGGoldfish: 169\n- Archidekt: 183\n```",
+        "ts": "1559856077.009400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:50:20,144 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in make_commander\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 57, in __init__\n    uri_names.append(front_name = self['cards'][0]['name'])\nTypeError: append() takes no keyword arguments\n```",
+        "ts": "1559857822.009500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 21:56:44,489 INFO OATH mtggoldfish.py took 0:00:02.267153\n```",
+        "ts": "1559858206.009600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:32:28,874 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 63\n    deckstats_names = []`\n                        ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559860351.009700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:34:12,871 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 115\n    'name': ' \/\/ '.join([c['name'] for c in self['cards']]),\n         ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559860455.009800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:34:25,082 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 679, in make_commander\n    tribe=tribe\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 70, in __init__\n    mtggoldfish_name = cards[0]['name']\nTypeError: 'module' object is not subscriptable\n```",
+        "ts": "1559860467.009900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:45:26,789 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 33, in &lt;module&gt;\n    from edhrec.web.classes import CardView, CardList\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 70\n    if self['cards'][0]['layout'] = 'split':\n                                  ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1559861129.010000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1559861206.010100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:46:56,879 ERROR list index out of range\n2019-06-06 22:46:56,880 ERROR Traceback (most recent call last):\n  File \".\/nightly.py\", line 1039, in nightly\n    make_top_colors()\n  File \".\/nightly.py\", line 243, in make_top_colors\n    cardlists = CardList(origin.gettop(colorid=colorabbr))\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 1137, in gettop\n    ) for d in data][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 1137, in &lt;listcomp&gt;\n    ) for d in data][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 68, in __init__\n    deckstats_names.append(names_wo_slashes[i])\nIndexError: list index out of range\n\n2019-06-06 22:46:56,881 INFO nightly.py took 0:00:12.617462\n```",
+        "ts": "1559861219.010200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1559861276.010300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 22:48:05,047 ERROR list index out of range\n2019-06-06 22:48:05,048 ERROR Traceback (most recent call last):\n  File \".\/nightly.py\", line 1039, in nightly\n    make_top_colors()\n  File \".\/nightly.py\", line 243, in make_top_colors\n    cardlists = CardList(origin.gettop(colorid=colorabbr))\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 1137, in gettop\n    ) for d in data][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 1137, in &lt;listcomp&gt;\n    ) for d in data][:cnum]\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 69, in __init__\n    deckstats_names.append(names_wo_slashes[i])\nIndexError: list index out of range\n\n2019-06-06 22:48:05,050 INFO nightly.py took 0:00:10.779186\n```",
+        "ts": "1559861287.010400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1559861303.010500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1559862033.010600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-06 23:00:31,597 INFO nightly.py took 0:12:10.684816\n```",
+        "ts": "1559862033.010700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 00:03:21,384 INFO cards.py took 0:03:15.875271\n```",
+        "ts": "1559865803.010800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 00:08:33,908 WARNING Chaos Orb from Sword of Dungeons &amp; Dragons in <https:\/\/archidekt.com\/decks\/100158>\n```",
+        "ts": "1559866117.010900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 00:30:41,981 INFO OATH archidekt.py took 0:25:25.285929\n```",
+        "ts": "1559867444.011000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 00:41:49,912 WARNING Chaos Orb from Zombie in <https:\/\/deckstats.net\/decks\/133220\/1314751-budget-liliana-oathbreaker\/en>\n```",
+        "ts": "1559868112.011100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 00:52:08,763 WARNING Chaos Orb from A Display of My Dark Power in <https:\/\/deckstats.net\/decks\/132960\/1309551-kiora-s-big-booty-bitchez\/en>\n```",
+        "ts": "1559868731.011200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 00:57:45,767 INFO OATH deckstats.py took 0:25:06.325747\n```",
+        "ts": "1559869068.011300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 01:12:40,621 INFO OATH mtggoldfish.py took 0:13:49.589413\n```",
+        "ts": "1559869962.011400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 01:13:23,205 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/update_deckswithprices.py\", line 16, in &lt;module&gt;\n    database.get_date_tables()\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1031, in get_date_tables\n    cache.set('date_tables', date_tables)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 89, in set\n    (key, value, expires)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/psycopg2\/extras.py\", line 141, in execute\n    return super(DictCursor, self).execute(query, vars)\npsycopg2.InternalError: invalid memory alloc request size 1073741824\n\n```",
+        "ts": "1559870005.011500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1559886090.011600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1559886830.011700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-06-07 05:53:48,958 INFO nightly.py took 0:12:20.064916\n```",
+        "ts": "1559886831.011800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

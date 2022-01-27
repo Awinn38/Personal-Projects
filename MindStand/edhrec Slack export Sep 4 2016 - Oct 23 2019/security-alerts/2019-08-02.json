@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1564760235.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2017-18386",
+                "id": 1,
+                "title_link": "https:\/\/documentation.cpanel.net\/display\/CL\/68+Change+Log",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "cPanel before 68.0.15 allows arbitrary code execution via Maketext injection in PostgresAdmin (SEC-313).",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2017-18386"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1564767435.000200",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2017-18392",
+                "id": 1,
+                "title_link": "https:\/\/documentation.cpanel.net\/display\/CL\/68+Change+Log",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "cPanel before 68.0.15 allows collisions because PostgreSQL databases can be assigned to multiple accounts (SEC-325).",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2017-18392"
+            }
+        ]
+    }
+]

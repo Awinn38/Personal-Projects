@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1541518636.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-10936",
+                "id": 1,
+                "title_link": "http:\/\/www.securityfocus.com\/bid\/105220",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "postgresql postgresql_jdbc_driver 8.1 redhat enterprise_linux 6 7.0 virtualization 4.0",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "A weakness was found in postgresql-jdbc before version 42.2.5. It was possible to provide an SSL Factory and not check the host name if a host name verifier was not provided to the driver. This could lead to a condition where a man-in-the-middle attacker could masquerade as a trusted server by providing a certificate for the wrong host, as long as it was signed by a trusted CA.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-10936"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1541533036.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-3830",
+                "id": 1,
+                "title_link": "https:\/\/discuss.elastic.co\/t\/elastic-stack-6-4-1-and-5-6-12-security-update\/149035",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "elasticsearch kibana 5.6.1 5.6.2 5.6.3 5.6.4 6.0.0 6.0.1 6.1.0",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "Kibana versions 5.3.0 to 6.4.1 had a cross-site scripting (XSS) vulnerability via the source field formatter that could allow an attacker to obtain sensitive information from or perform destructive actions on behalf of other Kibana users.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-3830"
+            }
+        ]
+    }
+]

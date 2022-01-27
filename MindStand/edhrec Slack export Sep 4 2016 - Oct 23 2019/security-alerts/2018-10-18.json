@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1539891435.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-10925",
+                "id": 1,
+                "title_link": "http:\/\/www.securityfocus.com\/bid\/105052",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "postgresql postgresql 9.3.0 9.3.1 9.3.2 9.3.3 9.3.4 9.3.5 9.3.6 9.3.7 9.3.8 9.3.9 9.3.10 9.3.11 9.3.12 9.3.13 9.3.14 9.3.15 9.3.16 9.3.17 9.3.18 9.3.19 9.3.20 9.3.21 9.3.22 9.4.0 9.4.1 9.4.2 9.4.3 9.4.4 9.4.5 9.4.6 9.4.7 9.4.8 9.4.9 9.4.10 9.4.11 9.4.12 9.4.13 9.4.14 9.4.15 9.4.16 9.5.0 9.5.1 9.5.2 9.5.3 9.5.4 9.5.5 9.5.6 9.5.7 9.5.8 9.5.9 9.5.10 9.5.11 9.6.0 9.6.1 9.6.2 9.6.3 9.6.4 9.6.5 9.6.6 9.6.7 9.6.8 9.6.9 10.0 10.1 10.2 10.3 10.4 canonical ubuntu_linux 14.04 16.04 18.04 debian debian_linux 9.0",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "It was discovered that PostgreSQL versions before 10.5, 9.6.10, 9.5.14, 9.4.19, and 9.3.24 failed to properly check authorization on certain statements involved with \"INSERT ... ON CONFLICT DO UPDATE\". An attacker with \"CREATE TABLE\" privileges could exploit this to read arbitrary bytes server memory. If the attacker also had certain \"INSERT\" and limited \"UPDATE\" privileges to a particular table, they could exploit this to update other columns in the same table.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-10925"
+            }
+        ]
+    }
+]

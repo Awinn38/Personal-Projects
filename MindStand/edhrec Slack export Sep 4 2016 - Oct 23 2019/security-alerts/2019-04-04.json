@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1554399435.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-5737",
+                "id": 1,
+                "title_link": "http:\/\/lists.opensuse.org\/opensuse-security-announce\/2019-03\/msg00041.html",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "nodejs node.js 6.9.0 6.9.1 6.9.2 6.9.3 6.9.4 6.9.5 6.10.0 6.10.1 6.10.3 6.11.2 6.11.3 6.11.4 6.11.5 6.12.0 6.12.1 6.12.2 6.12.3 6.13.0 6.13.1 6.14.0 6.14.1 6.14.2 6.14.3 6.14.4 6.15.0 6.15.1 6.16.0 8.9.0 8.9.1 8.9.2 8.9.3 8.9.4 8.10.0 8.11.1 8.11.2 8.11.3 8.11.4 8.12.0 8.13.0 8.14.0 8.14.1 8.15.0 8.15.1 10.13.0 10.14.0 10.14.1 10.14.2 10.15.0 10.15.1 10.15.2 opensuse leap 42.3",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "An attacker can cause a Denial of Service (DoS) by establishing an HTTP or HTTPS connection in keep-alive mode and by sending headers very slowly thereby keeping the connection and associated resources alive for a long period of time. Attack potential is mitigated by the use of a load balancer or other proxy layer. This vulnerability is an extension of CVE-2018-12121, addressed in November and impacts all active release lines including 6, 8, 10 and 11.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-5737"
+            }
+        ]
+    }
+]

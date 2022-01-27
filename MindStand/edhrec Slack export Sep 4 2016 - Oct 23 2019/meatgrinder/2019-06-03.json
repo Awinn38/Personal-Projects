@@ -1,0 +1,673 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559566928.024200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card [low] Tana the Bloodsower doesn't have a rank. Other solo partners seem to have one. <https:\/\/edhrec.com\/commanders\/tana-the-bloodsower> added to list EDHREC Bugs on board edhrec.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec>*.",
+                "pretext": "New card created",
+                "title": "[low] Tana the Bloodsower doesn't have a rank. Other solo partners seem to have one. https:\/\/edhrec.com\/commanders\/tana-the-bloodsower",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/9H7rBRdz",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "724d5061-2a64-4413-b72e-ddfac5ac0a25",
+        "type": "message",
+        "text": "btw the guy’s decklist didn’t have a .partner so shit that was checking for partner==null was instead finding partner==undefined and going down the wrong logic tree",
+        "user": "U28TLDP0R",
+        "ts": "1559590543.025400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7502be67-d888-4ca4-99b2-14a83a696476",
+        "type": "message",
+        "text": "not sure how it got to that state but I just made the getter add in .partner==null if it was undefined",
+        "user": "U28TLDP0R",
+        "ts": "1559590583.026000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "3e84ca89-52c5-4efc-a348-f9fb9807db65",
+        "type": "message",
+        "text": "<@U28TLDP0R> you good to \"release\" oathrec?",
+        "user": "U286Q175Y",
+        "ts": "1559595484.026700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6f50e389-bf13-465e-848b-62b4331bc7d9",
+        "type": "message",
+        "text": "yeah",
+        "user": "U28TLDP0R",
+        "ts": "1559595552.027300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cbcab11c-ff32-4317-9197-76767ac6a144",
+        "type": "message",
+        "text": "I actually had just noticed that the colorless ob\/ss indexes were 404ing but I just fixed it",
+        "user": "U28TLDP0R",
+        "ts": "1559595589.028000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "18b03e4e-c425-4c73-926d-e36cd73d843d",
+        "type": "message",
+        "text": "hmm the \/cards\/ pie charts are out of 99",
+        "user": "U28TLDP0R",
+        "ts": "1559595660.028600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "31ebbb60-e7d8-47e2-b287-4c473c72643b",
+        "type": "message",
+        "text": "running nightly again, it takes like 10 min to finish though so nbd",
+        "user": "U28TLDP0R",
+        "ts": "1559595796.028900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c33893b0-1085-48ab-a7ad-c2ac35268b8c",
+        "type": "message",
+        "text": "alright",
+        "user": "U286Q175Y",
+        "ts": "1559596044.029100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ca42aef3-d076-45b2-ab6a-e9883f9d058a",
+        "type": "message",
+        "text": "it’s done",
+        "user": "U28TLDP0R",
+        "ts": "1559596577.029300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "72b74162-8f12-4249-b7b4-21072dd0d507",
+        "type": "message",
+        "text": "2019-06-03 21:14:29,107 INFO nightly.py took 0:11:34.954012",
+        "user": "U28TLDP0R",
+        "ts": "1559596578.029500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9f5f182b-099e-4556-bab6-25a7d94421c5",
+        "type": "message",
+        "text": "speaking of that, shall we start a new <#C54QGTZ0T|status> channel and point stuff at that?",
+        "user": "U286Q175Y",
+        "ts": "1559596717.029800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "efa976fc-8dd3-4a7e-ab86-b7a04ca41fa0",
+        "type": "message",
+        "text": "good idea",
+        "user": "U28TLDP0R",
+        "ts": "1559596890.030100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ae21d22b-4fc2-4478-834e-18edf2a43c0c",
+        "type": "message",
+        "text": "<#CK7GVTABW|obstatus>",
+        "user": "U286Q175Y",
+        "ts": "1559596922.030300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559597936.030400",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card get_coloridentity cache probably not expiring from EDHREC Bugs to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/9i2dJj69|get_coloridentity cache probably not expiring>* from *EDHREC Bugs* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559598037.030500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on get_coloridentity cache probably not expiring: \"added an updater alongside the rest of the deckswithprices cached stuff updaters\n\nget_coloridentity has been returning old cached values for at least a few months now\"",
+                "text": "added an updater alongside the rest of the deckswithprices cached stuff updaters\n\nget_coloridentity has been returning old cached values for at least a few months now",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/9i2dJj69|get_coloridentity cache probably not expiring>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559599284.030600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on [medium] battlebond commander partners shouldnt show up solo. Krav for example has 378 decks which seems to show his solo decks plus his partner decks, while regna is just solo decks. Just delete them from the solo section and the problem goes away. <https:\/\/edhrec.com\/sets\/bbd>: \"<https:\/\/edhrec.com\/sets\/bbd>\"",
+                "text": "<https:\/\/edhrec.com\/sets\/bbd>",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/9QjD8v1b|[medium] battlebond commander partners shouldnt show up solo. Krav for example has 378 decks which seems to show his solo decks plus his partner decks, while regna is just solo decks. Just delete them from the solo section and the problem goes away. https:\/\/edhrec.com\/sets\/bbd>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559599290.030700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [medium] battlebond commander partners shouldnt show up solo. Krav for example has 378 decks which seems to show his solo decks plus his partner decks, while regna is just solo decks. Just delete them from the solo section and the problem goes away. <https:\/\/edhrec.com\/sets\/bbd> from EDHREC Bugs to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/9QjD8v1b|[medium] battlebond commander partners shouldnt show up solo. Krav for example has 378 decks which seems to show his solo decks plus his partner decks, while regna is just solo decks. Just delete them from the solo section and the problem goes away. https:\/\/edhrec.com\/sets\/bbd>* from *EDHREC Bugs* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559600995.030800",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card articles db backup from EDHREC Bugs to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/eWlijkAF|articles db backup>* from *EDHREC Bugs* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559601114.030900",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on articles db backup: \"the shell command I was using was wrong, and I think fixing that fixed the backup script?  not sure why the old backups even worked.  but I tested cron triggering and doing the backup and it now works.\n\nwill check again after next backup (in 3.5 hours) to be sure.\"",
+                "text": "the shell command I was using was wrong, and I think fixing that fixed the backup script?  not sure why the old backups even worked.  but I tested cron triggering and doing the backup and it now works.\n\nwill check again after next backup (in 3.5 hours) to be sure.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/eWlijkAF|articles db backup>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559601150.031000",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card cards\/decks out of sync from Doing to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/qSD1waZ0|cards\/decks out of sync>* from *Doing* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559602333.031100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases? from EDHREC Bugs to Done in Q2 2019.",
+                "text": "Moved *<https:\/\/trello.com\/c\/rkWJDbJ0|leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases?>* from *EDHREC Bugs* to *Done in Q2 2019*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559602598.031200",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases? from Done in Q2 2019 to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/rkWJDbJ0|leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases?>* from *Done in Q2 2019* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559602619.031300",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases?: \"I started typing up reasons for the current soln and why we shouldn't have %s in \"Top Commander\" pages but it gave me 1 last idea to try\"",
+                "text": "I started typing up reasons for the current soln and why we shouldn't have %s in \"Top Commander\" pages but it gave me 1 last idea to try",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/rkWJDbJ0|leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases?>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b5745875-5c22-4d86-8ce9-1b582ac5bb1d",
+        "type": "message",
+        "text": "<@U28TLDP0R> \"new deck count\" hasn't posted in <#C54QGTZ0T|status> since May 27t",
+        "user": "U286Q175Y",
+        "ts": "1559607302.032000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "eb37b50c-97d2-4601-b5d6-b965209cb8c4",
+        "type": "message",
+        "text": "<@U28TLDP0R> also, my apologies, but i renamed #obstatus to <#CK7GVTABW|status-ob> so they are closer together",
+        "user": "U286Q175Y",
+        "ts": "1559607344.032300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1559624816.000100",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases?: \"so I was going to write something about how the database queries for getting the right denominators *for Top Commanders on a card page* takes too long, and how my first stab at it didn't work with themes\/tribes\/advanced filters.  but then I realized it *could* work with themes\/tribes, it would just require some heavier pre-caching.  and advanced filters will just not have denominators.\n\nso I've written all the database functions for this to work now.  I'm running update_decks and if all goes well I'll test it out on a few commanders.\"",
+                "text": "so I was going to write something about how the database queries for getting the right denominators *for Top Commanders on a card page* takes too long, and how my first stab at it didn't work with themes\/tribes\/advanced filters.  but then I realized it *could* work with themes\/tribes, it would just require some heavier pre-caching.  and advanced filters will just not have denominators.\n\nso I've written all the database functions for this to work now.  I'm running update_decks and if all goes well I'll test it out on a few commanders.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/rkWJDbJ0|leyline \/ jodah problem is back.  probably can just get rid of age filtering stuff since we're capped at 2 years now.  is that going to cause issues for brand new releases?>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d0e24131-f3b7-499a-9b4d-822cf0b682fc",
+        "type": "message",
+        "text": "this caching shit is getting out of hand lol",
+        "user": "U286Q175Y",
+        "ts": "1559624846.000300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "85446698-6cbf-4363-b40f-1283d4e240fa",
+        "type": "message",
+        "text": "time to just do everything in memory",
+        "user": "U286Q175Y",
+        "ts": "1559624867.000800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "26f37952-6a34-4a5b-96ea-01604b634dfc",
+        "type": "message",
+        "text": "probably most of it wouldn’t be necessary if it were in elasticsearch",
+        "user": "U28TLDP0R",
+        "ts": "1559624893.001100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "9fdf5642-e667-47c5-82e7-c8cc3a692946",
+        "type": "message",
+        "text": "sounds good",
+        "user": "U286Q175Y",
+        "ts": "1559624911.001300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

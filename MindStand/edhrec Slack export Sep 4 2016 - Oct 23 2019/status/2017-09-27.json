@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the following cards failed to build in nightly []",
+        "ts": "1506498639.000198",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nWed Sep 27 08:13:12 UTC 2017\n\n```",
+        "ts": "1506499713.000227",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nThu Sep 28 02:30:01 UTC 2017\n\n```",
+        "ts": "1506565520.000004",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\ndivision by zero\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 486, in &lt;module&gt;\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 408, in make_commanders\n    make_commander(cmdr)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 325, in make_commander\n    recentdecks, cardlists, averages, sampledeck, tribelinks = origin.getcommanders(card=name, checktribe=bytribe, tribe=tribe)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 381, in getcommanders\n    tribelinks = get_tribelinks(card)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 234, in get_tribelinks\n    outlinks.append(('-' + str(tribe).lower().replace('-', '_') + '-' + t_or_t.lower(), '(' + '%.1f' % (potentials[tribe] \/ total_decks * 100) + '%) ' + t_or_t + ': ' + label ))\nZeroDivisionError: division by zero\n",
+        "ts": "1506574321.000074",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nThu Sep 28 04:56:44 UTC 2017\n\n```",
+        "ts": "1506574321.000194",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "text": "jesus",
+        "user": "U28TLDP0R",
+        "ts": "1506578577.000035",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

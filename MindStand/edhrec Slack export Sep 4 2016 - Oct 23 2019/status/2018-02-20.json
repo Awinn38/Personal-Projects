@@ -1,0 +1,26 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'sultai ascendacy'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 303, in make_card\n    card = Card(name)\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 42, in __init__\n    self.image = scryfall.card(card['name'])['image_uris']['normal']\n  File \"\/home\/ubuntu\/edhrec\/core\/scryfall.py\", line 152, in card\n    return _CACHE['cards'][name.lower()]\nKeyError: 'sultai ascendacy'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 487, in &lt;module&gt;\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 390, in make_cards\n    p.map(make_card, cards.get_all(doublefaced=False, split=False))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nKeyError: 'sultai ascendacy'\n",
+        "ts": "1519148879.000508",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly completed!\n```\nTue Feb 20 18:03:09 UTC 2018\n\n```",
+        "ts": "1519148882.000592",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,715 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1556608410.014700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 07:14:34,668 INFO nightly.py took 4:49:51.195874\n```",
+        "ts": "1556608411.014800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 08:07:40,979 INFO backup.py took 0:07:38.812010\n```",
+        "ts": "1556611597.014900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1556611918.015000",
+        "username": "incoming-webhook",
+        "bot_id": "B5XN109SM",
+        "attachments": [
+            {
+                "fallback": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.861917492E8 (30\/04\/19 08:06:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-04-30T08:11:57.670+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-04-30T08:11:57.749Z ",
+                "text": "<@channel>   *[Amazon CloudWatch Notification]* \nSubject: ALARM: \"EDHREC NetworkOut\" in US East (N. Virginia)\nMessage: {\"AlarmName\":\"EDHREC NetworkOut\",\"AlarmDescription\":null,\"AWSAccountId\":\"083767677168\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [5.861917492E8 (30\/04\/19 08:06:00)] was greater than or equal to the threshold (3.0E8).\",\"StateChangeTime\":\"2019-04-30T08:11:57.670+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"NetworkOut\",\"Namespace\":\"AWS\/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0f7f3750e584e120e\",\"name\":\"InstanceId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0E8,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}\nTimestamp: 2019-04-30T08:11:57.749Z ",
+                "id": 1,
+                "color": "F35A00",
+                "fields": [
+                    {
+                        "title": "Severity",
+                        "value": "ALARM",
+                        "short": true
+                    }
+                ],
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1556614643.015100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 08:58:27,717 INFO nightly.py took 4:23:35.966969\n```",
+        "ts": "1556614644.015200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 12:20:15,732 INFO New Trending 2019-04-30\n{\"name\": \"Teshar, Ancestor's Apostle\", \"s\": [0, 3, 1, 3, 7, 8, 9], \"z\": 1.076833994913308}\n{\"name\": \"Liliana, Dreadhorde General\", \"s\": [0, 8, 12, 13, 19, 26, 23], \"z\": 1.0748143461994704}\n{\"name\": \"Karn Liberated\", \"s\": [0, 7, 7, 8, 13, 20, 20], \"z\": 1.071751311896028}\n{\"name\": \"Spore Frog\", \"s\": [0, 10, 8, 12, 19, 18, 22], \"z\": 1.070234349964326}\n{\"name\": \"Price of Progress\", \"s\": [0, 2, 2, 4, 7, 7, 9], \"z\": 1.0669992073293815}\n{\"name\": \"Imperial Recruiter\", \"s\": [0, 7, 5, 5, 12, 16, 13], \"z\": 1.0646393197567303}\n{\"name\": \"Lapse of Certainty\", \"s\": [0, 5, 4, 7, 12, 10, 13], \"z\": 1.0571044271115488}\n{\"name\": \"Garruk, Apex Predator\", \"s\": [0, 5, 5, 3, 10, 11, 13], \"z\": 1.0491165183078173}\n{\"name\": \"God-Eternal Oketra\", \"s\": [0, 4, 5, 6, 9, 16, 15], \"z\": 1.043165854479244}\n{\"name\": \"Duskmantle Guildmage\", \"s\": [0, 3, 2, 3, 6, 7, 6], \"z\": 1.0421838057973871}\n2019-04-30 12:20:15,745 INFO daily.py took 4:20:10.740988\n```",
+        "ts": "1556626752.015300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 12:36:12,724 ERROR Status code 500 from <https:\/\/www.youtube.com\/feeds\/videos.xml?playlist_id=PLGkcNM-4prEkEUnJH_3uJQrLRXMFZUHg_>\n```",
+        "ts": "1556627709.015400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 15:50:20,445 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    classes.CardView('Erayo, Soratami Ascendant\n                                              ^\nSyntaxError: EOL while scanning string literal\n```",
+        "ts": "1556639356.015500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 15:55:39,447 INFO cards.py took 0:03:10.271012\n```",
+        "ts": "1556639675.015600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 17:41:03,206 INFO cards.py took 0:03:20.589883\n```",
+        "ts": "1556645999.015700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 18:42:30,906 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 873, in get_navbar_info\n    'tribes': [pluralize_tribe(t['name']) for t in get_tribelist()][:5],\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 873, in &lt;listcomp&gt;\n    'tribes': [pluralize_tribe(t['name']) for t in get_tribelist()][:5],\nNameError: name 'pluralize_tribe' is not defined\n```",
+        "ts": "1556649687.015800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 19:00:52,530 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 873, in get_navbar_info\n    'tribes': [pluralize_tribe(t['name']) for t in helpers.get_tribelist()][:5],\nAttributeError: module 'edhrec.core.helpers' has no attribute 'get_tribelist'\n```",
+        "ts": "1556650788.015900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 19:48:07,185 ERROR Status code 404 from <https:\/\/www.youtube.com\/feeds\/videos.xml?playlist_id=PLalnz7fJx9gWGfqMi3bZmzLkHALcfTV9S>\n```",
+        "ts": "1556653623.016000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:05,059 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654341.016100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:06,569 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654342.016200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:07,540 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654343.016300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:09,708 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654345.016400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:11,049 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654347.016500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:13,059 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654349.016600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:14,531 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654350.016700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:16,544 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654352.016800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:18,028 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654354.016900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:20,008 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654355.017000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:21,540 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654357.017100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:23,487 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654359.017200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:25,069 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654361.017300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:26,956 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654362.017400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:28,529 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654364.017500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:30,424 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654366.017600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:32,003 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654368.017700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:33,910 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654369.017800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:35,464 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654371.017900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:37,387 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654373.018000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:38,964 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654374.018100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:40,859 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654376.018200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:42,440 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654378.018300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:44,330 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654380.018400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:00:45,910 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 6, in &lt;module&gt;\n    import nightly\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 34, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 65, in &lt;module&gt;\n    ggg\nNameError: name 'ggg' is not defined\n```",
+        "ts": "1556654381.018500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "7f42d5a2-ba40-4986-a505-163de5acbed0",
+        "type": "message",
+        "text": "nice",
+        "user": "U28TLDP0R",
+        "ts": "1556654393.018700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "04A9D037-BB9B-44DD-8D4D-812B090229C2",
+        "type": "message",
+        "text": "What the shit is that",
+        "user": "U286Q175Y",
+        "ts": "1556654668.018900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7e8527d6-e7a0-4d8d-a07b-3167f70d47f2",
+        "type": "message",
+        "text": "a vim typo",
+        "user": "U28TLDP0R",
+        "ts": "1556654683.019100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:17:14,832 WARNING Chaos Orb from Do-It-Yourself Seraph in <https:\/\/archidekt.com\/decks\/62605#Bru>\n```",
+        "ts": "1556655370.019200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:28:49,345 INFO archidekt.py took 0:26:56.435167\n```",
+        "ts": "1556656065.019300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:31:36,746 WARNING Chaos Orb from Nalathni Dragon in <https:\/\/deckstats.net\/decks\/117214\/1224118-death-by-dragons\/en>\n```",
+        "ts": "1556656232.019400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 20:33:32,287 WARNING Chaos Orb from A Display of My Dark Power in <https:\/\/deckstats.net\/decks\/41045\/1278688-feather-the-master-caster\/en>\n```",
+        "ts": "1556656348.019500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 21:02:45,576 INFO deckstats.py took 0:31:56.532471\n```",
+        "ts": "1556658101.019600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 21:42:46,965 ERROR Chaos Orb in <http:\/\/www.mtggoldfish.com\/deck\/1853135#Wil>\n```",
+        "ts": "1556660502.019700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 21:53:41,056 INFO mtggoldfish.py took 0:30:16.737427\n```",
+        "ts": "1556661157.019800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 22:24:58,674 INFO update_deckswithprices.py took 0:31:15.049772\n```",
+        "ts": "1556663034.019900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-04-30 22:24:59,910 INFO New deck count from past 2 days: \n- deckstats: 603\n- Other: 0\n- MTGGoldfish: 506\n- Archidekt: 640\n```",
+        "ts": "1556663035.020000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-01 04:24:22,681 INFO recommendations.py took 20:24:18.286558\n```",
+        "ts": "1556684598.020100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[01\/May\/2019:05:16:52] ENGINE Error in 'start' listener &lt;bound method Server.start of &lt;cherrypy._cpserver.Server object at 0x7fcf05e59320&gt;&gt;\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/process\/wspbus.py\", line 230, in publish\n    output.append(listener(*args, **kwargs))\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpserver.py\", line 191, in start\n    super(Server, self).start()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/process\/servers.py\", line 177, in start\n    portend.free(*self.bind_addr, timeout=Timeouts.free)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/portend.py\", line 119, in free\n    raise Timeout(\"Port {port} not free on {host}.\".format(**locals()))\nportend.Timeout: Port 8083 not free on 127.0.0.1.\n\n[01\/May\/2019:05:16:52] ENGINE Shutting down due to error in start listener:\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/process\/wspbus.py\", line 268, in start\n    self.publish('start')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/process\/wspbus.py\", line 248, in publish\n    raise exc\ncherrypy.process.wspbus.ChannelFailures: Timeout('Port 8083 not free on 127.0.0.1.',)\n\n```",
+        "ts": "1556687748.020200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-01 06:04:49,006 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 879, in get_navbar_info\n    'themes': [constants.THEMES[t] for t in get_themelist()][:5],\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 879, in &lt;listcomp&gt;\n    'themes': [constants.THEMES[t] for t in get_themelist()][:5],\nTypeError: unhashable type: 'dict'\n```",
+        "ts": "1556690624.020300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-05-01 06:19:42,710 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 616, in make_commander\n    tribelinks=data['tribelinks']\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 220, in make_page\n    f.write(ENV.get_template(template_name).render(repls2))\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/environment.py\", line 1008, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/environment.py\", line 780, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/_compat.py\", line 37, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/navbar.html\", line 429, in template\n    &lt;a href=\"\/themes\/{{ theme.key }}\/\"&gt;{{ theme.plural ? theme.plural : theme.name }}&lt;\/a&gt;\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/environment.py\", line 1005, in render\n    return concat(self.root_render_func(self.new_context(vars)))\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in top-level template code\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 24, in top-level template code\n    {% include 'navbar.html' %}\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/environment.py\", line 780, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/_compat.py\", line 37, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/navbar.html\", line 429, in template\n    &lt;a href=\"\/themes\/{{ theme.key }}\/\"&gt;{{ theme.plural ? theme.plural : theme.name }}&lt;\/a&gt;\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/environment.py\", line 497, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 901, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 883, in subparse\n    rv = self.parse_statement()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 130, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 199, in parse_for\n    body = self.parse_statements(('name:endfor', 'name:else'))\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 165, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 875, in subparse\n    add_data(self.parse_tuple(with_condexpr=True))\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 620, in parse_tuple\n    args.append(parse())\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 432, in parse_expression\n    return self.parse_condexpr()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 437, in parse_condexpr\n    expr1 = self.parse_or()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 450, in parse_or\n    left = self.parse_and()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 459, in parse_and\n    left = self.parse_not()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 470, in parse_not\n    return self.parse_compare()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 474, in parse_compare\n    expr = self.parse_math1()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 496, in parse_math1\n    left = self.parse_concat()",
+        "ts": "1556691518.020400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 507, in parse_concat\n    args = [self.parse_math2()]\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 517, in parse_math2\n    left = self.parse_pow()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 528, in parse_pow\n    left = self.parse_unary()\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 547, in parse_unary\n    node = self.parse_postfix(node)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 672, in parse_postfix\n    node = self.parse_subscript(node)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/parser.py\", line 700, in parse_subscript\n    next(self.stream)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/lexer.py\", line 359, in __next__\n    self.current = next(self._iter)\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/lexer.py\", line 562, in wrap\n    for lineno, token, value in stream:\n  File \"\/home\/ubuntu\/.local\/lib\/python3.5\/site-packages\/jinja2\/lexer.py\", line 739, in tokeniter\n    name, filename)\njinja2.exceptions.TemplateSyntaxError: unexpected char '?' at 16305\n```",
+        "ts": "1556691518.020500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

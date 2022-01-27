@@ -1,0 +1,901 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564409747.022300",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "New card [high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks. added to list EDHREC Bugs on board edhrec-dev.",
+                "text": "In list *EDHREC Bugs* on *<https:\/\/trello.com\/b\/cUfypGhs|edhrec-dev>*.",
+                "pretext": "New card created",
+                "title": "[high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.",
+                "id": 1,
+                "title_link": "https:\/\/trello.com\/c\/vVVYn7YD",
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564409751.022400",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner commented on [high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.: \"postgres=# SELECT COUNT(*) FROM decks WHERE tland &lt; 0;\n count \n-------\n   448\"",
+                "text": "postgres=# SELECT COUNT(*) FROM decks WHERE tland &lt; 0;\n count \n-------\n   448",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/vVVYn7YD|[high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564409764.022500",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "Donald Miner",
+                "fallback": "Donald Miner commented on [high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.: \"postgres=# SELECT COUNT(*) FROM decks WHERE tland &lt; 2;\n count \n-------\n  4871\"",
+                "text": "postgres=# SELECT COUNT(*) FROM decks WHERE tland &lt; 2;\n count \n-------\n  4871",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/vVVYn7YD|[high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/donaldminer",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7667c549-37db-4aeb-aaf8-580c5d9caa65",
+        "type": "message",
+        "text": "I thought fixing this was low prio, Ill work on it today",
+        "user": "U28TLDP0R",
+        "ts": "1564410576.024300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f025c5d7-ac97-4790-9161-915819755f1a",
+        "type": "message",
+        "text": "kk",
+        "user": "U286Q175Y",
+        "ts": "1564411422.024500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "74749c69-17a7-4ac9-814e-a7c373d10155",
+        "type": "message",
+        "text": "it looks like you can fix most of them by recalcuating tland from the other numbers",
+        "user": "U286Q175Y",
+        "ts": "1564411438.024900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "0E04E734-87C0-4B4B-9B36-CB4ABF6FFCC0",
+        "type": "message",
+        "text": "Btw the new data seems to be correct",
+        "user": "U286Q175Y",
+        "ts": "1564414532.025600",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "FF3DA9E1-47C7-4F3B-8886-3E9F845B24D4",
+        "type": "message",
+        "text": "Its just some historic data thats fd",
+        "user": "U286Q175Y",
+        "ts": "1564414539.025900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "febab9bb-22ed-4533-9718-6b91a3bf1bb1",
+        "type": "message",
+        "text": "nah I’ve found some new data that’s off too",
+        "user": "U28TLDP0R",
+        "ts": "1564414569.026300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cd5cf74f-b58f-4353-b92a-b32561fbeedd",
+        "type": "message",
+        "text": "there are probably some bigger sources of error that only affect the old data, though",
+        "user": "U28TLDP0R",
+        "ts": "1564414613.027000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "365b40b3-8ba0-49b3-89f1-bbe7ec35dbc4",
+        "type": "message",
+        "text": "deckstats is 429 too many requesting me for like 30 minutes now",
+        "user": "U28TLDP0R",
+        "ts": "1564414714.027500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5e7de8a7-1ca0-4f0c-8bfc-734fb1c4c24a",
+        "type": "message",
+        "text": "some of these 0 land decks actually contain 0 lands, either because they’re attempting something like manaless dredge, or they just wanted a list of ~100 spells for whatever purpose",
+        "user": "U28TLDP0R",
+        "ts": "1564414954.028900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "4A94F773-17ED-4A99-8E91-A071C6D9DF30",
+        "type": "message",
+        "text": "We should probably add a trap that any deck less than 20 lands or more than 85 lands doesnt make it into the db",
+        "user": "U286Q175Y",
+        "ts": "1564418268.029800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "FA94C265-D362-4DC6-988D-1009B424A443",
+        "type": "message",
+        "text": "We might get rid of some legit decks but theyll be meme decks anyways",
+        "user": "U286Q175Y",
+        "ts": "1564418282.030300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "6cafa851-49db-46d8-88b9-1a2d9729020e",
+        "type": "message",
+        "text": "ok",
+        "user": "U28TLDP0R",
+        "ts": "1564418400.030500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564427848.030600",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts moved the card [high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks. from EDHREC Bugs to Doing.",
+                "text": "Moved *<https:\/\/trello.com\/c\/vVVYn7YD|[high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.>* from *EDHREC Bugs* to *Doing*.",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564428202.030700",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on [high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.: \"found a few bugs so far:\n\n- tland padding was always going to 99, so 97-98,100-102 card decks were slightly off\n- 1st card was missing from mtggoldfish decks unless partner commander present (!)\n- some mtggoldfish decks were indexed twice due to http\/https and #paper url differences\n\nof course, these problems might only be for recent decks.  I guess, in retrospect, we should probably be keeping raw html for decks somewhere.\n\ncurrently re-scraping the faulty decks for mtggoldfish and deckstats (at least, those that still exist).  archidekt data seems fine.\n\nof the remaining decks, it seems like most just didn't get padded properly and are ~20 basic short.  currently compiling data to find outliers to identify any other problems.\"",
+                "text": "found a few bugs so far:\n\n- tland padding was always going to 99, so 97-98,100-102 card decks were slightly off\n- 1st card was missing from mtggoldfish decks unless partner commander present (!)\n- some mtggoldfish decks were indexed twice due to http\/https and #paper url differences\n\nof course, these problems might only be for recent decks.  I guess, in retrospect, we should probably be keeping raw html for decks somewhere.\n\ncurrently re-scraping the faulty decks for mtggoldfish and deckstats (at least, those that still exist).  archidekt data seems fine.\n\nof the remaining decks, it seems like most just didn't get padded properly and are ~20 basic short.  currently compiling data to find outliers to identify any other problems.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/vVVYn7YD|[high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "49376dad-4fc1-4d19-809b-ce36fe97e215",
+        "type": "message",
+        "text": "&gt; - 1st card was missing from mtggoldfish decks unless partner commander present (!)\n\nlol",
+        "user": "U286Q175Y",
+        "ts": "1564428692.031000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d43ac4ba-a3f6-4d11-812f-a66f3ac0f88b",
+        "type": "message",
+        "text": "this guy wants to know how far back the URL update was because he says it's only recently that he can't open his bookmarks",
+        "user": "UJHPKDALB",
+        "ts": "1564431023.031700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d274a16a-4659-48ec-ac78-f77b26554146",
+        "type": "message",
+        "text": "I guess he doesn't believe me about the new scheme",
+        "user": "UJHPKDALB",
+        "ts": "1564431033.032000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "90b03920-1c9f-4191-aff5-805fee6eaab6",
+        "type": "message",
+        "text": "which guy is this?",
+        "user": "U28TLDP0R",
+        "ts": "1564431731.033000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "C306CC8B-5958-4DCC-9B11-9F4B84EF27C9",
+        "type": "message",
+        "text": "One of the guys complaining about broken URLs with the old scheme",
+        "user": "UJHPKDALB",
+        "ts": "1564432790.033700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "d813c5ae-8a0d-48c6-9d69-2735593a8b43",
+        "type": "message",
+        "text": "what's their email address",
+        "user": "U28TLDP0R",
+        "ts": "1564433720.034100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "161914be-b902-4871-9528-034f73838473",
+        "type": "message",
+        "text": "<mailto:nathanp.nappy@gmail.com|nathanp.nappy@gmail.com>",
+        "user": "UJHPKDALB",
+        "ts": "1564434023.034300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "383cb424-b472-4c21-9c19-4be5089e4192",
+        "type": "message",
+        "text": "I guess he replied to only you, but in any case you can just tell them to send you the url and it will almost certainly be a hex url",
+        "user": "U28TLDP0R",
+        "ts": "1564434312.036800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c8165a53-e6f9-4e93-b036-38c87848aa18",
+        "type": "message",
+        "text": "yeah, I'm sure it will be",
+        "user": "UJHPKDALB",
+        "ts": "1564435909.037000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1564456161.038800",
+        "username": "Trello",
+        "bot_id": "BB04ESWBZ",
+        "attachments": [
+            {
+                "author_name": "David Keatts",
+                "fallback": "David Keatts commented on [high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.: \"I found an example of a deck where, in addition to the total card count being off, the individual type counts weren’t representative of the cards in the deck.  so I’m gonna reprocess all the individual type counts (except tland (kinda)) and then re-run my script to look for more issues.\"",
+                "text": "I found an example of a deck where, in addition to the total card count being off, the individual type counts weren’t representative of the cards in the deck.  so I’m gonna reprocess all the individual type counts (except tland (kinda)) and then re-run my script to look for more issues.",
+                "pretext": "New comment on *<https:\/\/trello.com\/c\/vVVYn7YD|[high] there still seems to be a bunch of decks with wonky land counts. I thought we fixed this? We should fix the land counts or delete the problematic decks.>*",
+                "id": 1,
+                "author_link": "https:\/\/trello.com\/davidkeatts1",
+                "color": "0079BF",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "92bef6bf-145e-4aaa-ab16-fd42e2a935dc",
+        "type": "message",
+        "text": "i wonder if we should always recalculate the type counts",
+        "user": "U286Q175Y",
+        "ts": "1564456381.039000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5126f76d-410e-40d5-806f-2c2f8a9f20e1",
+        "type": "message",
+        "text": "like when we recalculate the prices",
+        "user": "U286Q175Y",
+        "ts": "1564456387.039200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b0f62ef2-c78b-41b8-adf4-10d45c3d02eb",
+        "type": "message",
+        "text": "it’s not like they change over time, right?",
+        "user": "U28TLDP0R",
+        "ts": "1564456418.039500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "5297781e-3fc5-4cb8-8114-db4ef0c5b412",
+        "type": "message",
+        "text": "no",
+        "user": "U286Q175Y",
+        "ts": "1564456824.039700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "bead95d7-0294-4ccf-99ba-078cfd47ad1e",
+        "type": "message",
+        "text": "but it would make sure it would fix shit later",
+        "user": "U286Q175Y",
+        "ts": "1564456830.040000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "db855cfe-43f8-44fe-9b80-226ab9762239",
+        "type": "message",
+        "text": "something wiped away the decks table indexes...",
+        "user": "U28TLDP0R",
+        "ts": "1564458353.040700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U28TLDP0R",
+            "ts": "1564458406.000000"
+        }
+    },
+    {
+        "client_msg_id": "dbef5d58-1ac3-4190-bc3c-8cc743ee218c",
+        "type": "message",
+        "text": "can't find any suspicious code",
+        "user": "U28TLDP0R",
+        "ts": "1564458790.041800",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ee1cc452-03d3-460f-9b79-95604cf9a5bf",
+        "type": "message",
+        "text": "just gonna set a reminder and check it every day for now",
+        "user": "U28TLDP0R",
+        "ts": "1564458800.042100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "7fb5dda5-904c-4d56-8f0a-d8b08cbf5ae7",
+        "type": "message",
+        "text": "k",
+        "user": "U286Q175Y",
+        "ts": "1564459160.042500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "acf91e70-d0cc-4aba-9aa4-ccb41d923da7",
+        "type": "message",
+        "text": "ah shit I never responded to this guy complaining about partners",
+        "user": "UJHPKDALB",
+        "ts": "1564459346.042900",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "263c3c92-5d77-4c60-932f-1970e8a2fab9",
+        "type": "message",
+        "text": "is there any way to see recommendations for a monored rowan kenrith deck that doesn't use will kenrith?",
+        "user": "UJHPKDALB",
+        "ts": "1564459772.043700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "1edc9cf6-e2b0-40e6-9f31-9892e2cb3185",
+        "type": "message",
+        "text": ":troll:",
+        "user": "U286Q175Y",
+        "ts": "1564459787.044000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ecb8c67d-19ea-4d34-ab3d-abc409ace40f",
+        "type": "message",
+        "text": "people are terrible, but no",
+        "user": "U286Q175Y",
+        "ts": "1564459819.044200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c4560755-3105-4895-b725-819abdfc1eea",
+        "type": "message",
+        "text": "hope this guy doesn't cancel his subscription",
+        "user": "UJHPKDALB",
+        "ts": "1564459923.044500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "813bf574-2959-491f-be24-8def1f4fe0c9",
+        "type": "message",
+        "text": "oh wait",
+        "user": "UJHPKDALB",
+        "ts": "1564459924.044700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "b128ac6e5e40",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-10\/660486193504_b128ac6e5e40a733579a_72.jpg",
+            "first_name": "Tom",
+            "real_name": "Tom Buck",
+            "display_name": "Tom Buck",
+            "team": "T286HM2F3",
+            "name": "thenrybuck",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

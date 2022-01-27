@@ -1,0 +1,590 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1549873523.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-11 21:29:10,450 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nKeyError: 'container'\n```",
+        "ts": "1549920441.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-11 21:29:34,701 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/code.py\", line 91, in runcode\n    exec(code, self.locals)\n  File \"&lt;console&gt;\", line 1, in &lt;module&gt;\nAttributeError: 'list' object has no attribute 'keys'\n```",
+        "ts": "1549920466.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-11 21:34:40,361 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 31, in &lt;module&gt;\n    from edhrec.web.web import make_page, make_redirect\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 213\n    'styles_css': styles_css,\n               ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549920771.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-11 21:36:04,570 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 428, in make_precons\n    cardlists=cardlists)\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 165, in make_page\n    } for s in cards.get_sets()[:5]\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 165, in &lt;listcomp&gt;\n    } for s in cards.get_sets()[:5]\nKeyError: 'set.icon_svg_uri'\n```",
+        "ts": "1549920855.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'navbar' is undefined\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 724, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 711, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 219, in make_page\n    'tribes': tribes,\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 23, in &lt;module&gt;\n    {% include 'navbar.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/navbar.html\", line 386, in &lt;module&gt;\n    {% for set in navbar.sets %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'navbar' is undefined\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 870, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 759, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(onlydecks=onlydecks, skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njinja2.exceptions.UndefinedError: 'navbar' is undefined\n",
+        "ts": "1549921328.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-11 21:43:57,250 ERROR 'navbar' is undefined\n2019-02-11 21:43:57,252 ERROR multiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 724, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 711, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 219, in make_page\n    'tribes': tribes,\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 23, in &lt;module&gt;\n    {% include 'navbar.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/navbar.html\", line 386, in &lt;module&gt;\n    {% for set in navbar.sets %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'navbar' is undefined\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 870, in nightly\n    make_commanders(skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/batch\/..\/web\/nightly.py\", line 759, in make_commanders\n    pool.map(functools.partial(_make_commanders_p, **dict(onlydecks=onlydecks, skipdecks=skipdecks)), commanders)\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.5\/multiprocessing\/pool.py\", line 608, in get\n    raise self._value\njinja2.exceptions.UndefinedError: 'navbar' is undefined\n\n```",
+        "ts": "1549921328.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Feb\/2019:21:44:07] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 216, in make_page\n    },\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 23, in &lt;module&gt;\n    {% include 'navbar.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/navbar.html\", line 386, in &lt;module&gt;\n    {% for set in navbar.sets %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 397, in getattr\n    return getattr(obj, attribute)\njinja2.exceptions.UndefinedError: 'navbar' is undefined\n```",
+        "ts": "1549921339.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "9790cf46-a12f-410c-aa38-5ad269b1e258",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1549921365.001500",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[11\/Feb\/2019:21:44:42] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 225, in make_page\n    return ENV.get_template(template_name).render(repls2)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 969, in render\n    return self.environment.handle_exception(exc_info, True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/default2.html\", line 1, in &lt;module&gt;\n    {% extends \"base.html\" %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/base.html\", line 23, in &lt;module&gt;\n    {% include 'navbar.html' %}\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/navbar.html\", line 412, in &lt;module&gt;\n    &lt;a href=\"\/tribes\/{{ lower(tribe) }}\/\"&gt;{{ tribe }}&lt;\/a&gt;\njinja2.exceptions.UndefinedError: 'lower' is undefined\n```",
+        "ts": "1549921374.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-11 22:34:40,449 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 453, in wrap_socket\n    cnx.do_handshake()\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1716, in do_handshake\n    self._raise_ssl_error(self._ssl, result)\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/SSL.py\", line 1456, in _raise_ssl_error\n    _raise_current_error()\n  File \"\/usr\/lib\/python3\/dist-packages\/OpenSSL\/_util.py\", line 54, in exception_from_error_queue\n    raise exception_type(errors)\nOpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'sslv3 alert handshake failure')]\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 600, in urlopen\n    chunked=chunked)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 343, in _make_request\n    self._validate_conn(conn)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 839, in _validate_conn\n    conn.connect()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connection.py\", line 344, in connect\n    ssl_context=context)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/ssl_.py\", line 344, in ssl_wrap_socket\n    return context.wrap_socket(sock, server_hostname=server_hostname)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/contrib\/pyopenssl.py\", line 459, in wrap_socket\n    raise ssl.SSLError('bad handshake: %r' % e)\nssl.SSLError: (\"bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'sslv3 alert handshake failure')],)\",)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/adapters.py\", line 449, in send\n    timeout=timeout\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/connectionpool.py\", line 638, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/urllib3\/util\/retry.py\", line 398, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='<http:\/\/articles.edhrec.com|articles.edhrec.com>', port=443): Max retries exceeded with url: \/wp-json\/wp\/v2\/tags?per_page=100&amp;page=86 (Caused by SSLError(SSLError(\"bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'sslv3 alert handshake failure')],)\",),))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 295, in &lt;module&gt;\n    update_all()\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 283, in update_all\n    _get_multipage('tags')\n  File \"\/home\/ubuntu\/edhrec\/core\/wordpress.py\", line 39, in _get_multipage\n    r = requests.get(url, verify=False)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/requests\/adapters.py\", line 514, in send\n    raise SSLError(e, request=request)\nrequests.exceptions.SSLError: HTTPSConnectionPool(host='<http:\/\/articles.edhrec.com|articles.edhrec.com>', port=443): Max retries exceeded with url: \/wp-json\/wp\/v2\/tags?per_page=100&amp;page=86 (Caused by SSLError(SSLError(\"bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'sslv3 alert handshake failure')],)\",),))\n```",
+        "ts": "1549924371.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:00:01:24] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 149, in make_page\n    'cardhoarder': cardview['cardhoarder'],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 296, in make_panels\n    for url_suffix, label in tribelinks:\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 105, in cardview_generate\n    os.makedirs(os.path.dirname(filename), exist_ok=True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 125, in load\n    code = environment.compile(source, name, filename)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 554, in compile\n    self.handle_exception(exc_info, source_hint=source)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/card.html\", line 5, in &lt;module&gt;\n    &lt;img class=\"oneimage\" src=\"{{  }}\" \/&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 867, in subparse\n    add_data(self.parse_tuple(with_condexpr=True))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 629, in parse_tuple\n    describe_token(self.stream.current))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 51, in fail\n    raise exc(msg, lineno, self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of print statement'\n```",
+        "ts": "1549929575.001800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:00:01:29] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 149, in make_page\n    'cardhoarder': cardview['cardhoarder'],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 296, in make_panels\n    for url_suffix, label in tribelinks:\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 105, in cardview_generate\n    os.makedirs(os.path.dirname(filename), exist_ok=True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 125, in load\n    code = environment.compile(source, name, filename)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 554, in compile\n    self.handle_exception(exc_info, source_hint=source)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/card.html\", line 5, in &lt;module&gt;\n    &lt;img class=\"oneimage\" src=\"{{  }}\" \/&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 867, in subparse\n    add_data(self.parse_tuple(with_condexpr=True))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 629, in parse_tuple\n    describe_token(self.stream.current))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 51, in fail\n    raise exc(msg, lineno, self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of print statement'\n```",
+        "ts": "1549929580.001900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 00:01:35,396 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 93, in &lt;module&gt;\n    update_zscores()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 66, in update_zscores\n    zscores = database.get_zscores()\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1301, in get_zscores\n    curr_zs = sorted([get_zscore(r) for r in recent_cards], key=lambda x: x['z'], reverse=True)[:10]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1301, in &lt;listcomp&gt;\n    curr_zs = sorted([get_zscore(r) for r in recent_cards], key=lambda x: x['z'], reverse=True)[:10]\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1275, in get_zscore\n    prev_zscore = statistics.mean(s[:-2*v])**exp * (statistics.mean(s[-2*v:-v]) - statistics.mean(s)) \/ statistics.stdev(s)\nZeroDivisionError: float division by zero\n```",
+        "ts": "1549929586.002000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:00:01:44] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 149, in make_page\n    'cardhoarder': cardview['cardhoarder'],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 296, in make_panels\n    for url_suffix, label in tribelinks:\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 105, in cardview_generate\n    os.makedirs(os.path.dirname(filename), exist_ok=True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 125, in load\n    code = environment.compile(source, name, filename)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 554, in compile\n    self.handle_exception(exc_info, source_hint=source)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/card.html\", line 5, in &lt;module&gt;\n    &lt;img class=\"oneimage\" src=\"{{  }}\" \/&gt;\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 867, in subparse\n    add_data(self.parse_tuple(with_condexpr=True))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 629, in parse_tuple\n    describe_token(self.stream.current))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 51, in fail\n    raise exc(msg, lineno, self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of print statement'\n```",
+        "ts": "1549929595.002100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "72f44e39-94c1-4fc2-abb3-c08284529011",
+        "type": "message",
+        "text": "jesus",
+        "user": "U28TLDP0R",
+        "ts": "1549929600.002300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 00:29:28,473 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 93, in &lt;module&gt;\n    update_zscores()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 66, in update_zscores\n    zscores = database.get_zscores()\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1299, in get_zscores\n    prev_zs = sorted([get_zscore(r) for r in recent_cards], key=lambda x: x['prev_z'], reverse=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1299, in &lt;listcomp&gt;\n    prev_zs = sorted([get_zscore(r) for r in recent_cards], key=lambda x: x['prev_z'], reverse=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1275, in get_zscore\n    prev_zscore = statistics.mean(s[:-2*v])**exp * (statistics.mean(s[-2*v:-v]) - statistics.mean(s)) \/ statistics.stdev(s)\nZeroDivisionError: float division by zero\n```",
+        "ts": "1549931259.002400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, onlydecks=False, skipdecks=False",
+        "ts": "1549932961.002500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:01:24:30] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 149, in make_page\n    'is_unofficial': card['is_unofficial'],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 299, in make_panels\n    'alt': 'Deck Preview',\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 232, in make_panel\n    pass\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 125, in load\n    code = environment.compile(source, name, filename)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 554, in compile\n    self.handle_exception(exc_info, source_hint=source)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panel.html\", line 15, in &lt;module&gt;\n    {% elif %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 187, in parse_for\n    body = self.parse_statements(('name:endfor', 'name:else'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 210, in parse_if\n    drop_needle=True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 136, in parse_statement\n    self.fail_unknown_tag(token.value, token.lineno)",
+        "ts": "1549934560.002600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 89, in fail_unknown_tag\n    return self._fail_ut_eof(name, self._end_token_stack, lineno)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 82, in _fail_ut_eof\n    self.fail(' '.join(message), lineno)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 51, in fail\n    raise exc(msg, lineno, self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'elif'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endif'. The innermost block that needs to be closed is 'if'.\n```",
+        "ts": "1549934560.002700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:01:24:32] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 149, in make_page\n    'is_unofficial': card['is_unofficial'],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 299, in make_panels\n    'alt': 'Deck Preview',\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 232, in make_panel\n    pass\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 125, in load\n    code = environment.compile(source, name, filename)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 554, in compile\n    self.handle_exception(exc_info, source_hint=source)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panel.html\", line 15, in &lt;module&gt;\n    {% elif %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 187, in parse_for\n    body = self.parse_statements(('name:endfor', 'name:else'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 210, in parse_if\n    drop_needle=True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 136, in parse_statement\n    self.fail_unknown_tag(token.value, token.lineno)",
+        "ts": "1549934563.002800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 89, in fail_unknown_tag\n    return self._fail_ut_eof(name, self._end_token_stack, lineno)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 82, in _fail_ut_eof\n    self.fail(' '.join(message), lineno)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 51, in fail\n    raise exc(msg, lineno, self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'elif'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endif'. The innermost block that needs to be closed is 'if'.\n```",
+        "ts": "1549934563.002900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:01:25:57] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 149, in make_page\n    'is_unofficial': card['is_unofficial'],\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 299, in make_panels\n    'alt': 'Deck Preview',\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 232, in make_panel\n    pass\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 125, in load\n    code = environment.compile(source, name, filename)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 554, in compile\n    self.handle_exception(exc_info, source_hint=source)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 742, in handle_exception\n    reraise(exc_type, exc_value, tb)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/_compat.py\", line 36, in reraise\n    raise value.with_traceback(tb)\n  File \"\/home\/ubuntu\/edhrec\/web\/templates\/panel.html\", line 15, in &lt;module&gt;\n    {% elif %}\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 459, in _parse\n    return Parser(self, source, name, encode_filename(filename)).parse()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 893, in parse\n    result = nodes.Template(self.subparse(), lineno=1)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 187, in parse_for\n    body = self.parse_statements(('name:endfor', 'name:else'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 201, in parse_if\n    'name:endif'))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 122, in parse_statement\n    return getattr(self, 'parse_' + self.stream.current.value)()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 210, in parse_if\n    drop_needle=True)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 157, in parse_statements\n    result = self.subparse(end_tokens)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 875, in subparse\n    rv = self.parse_statement()\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 136, in parse_statement\n    self.fail_unknown_tag(token.value, token.lineno)",
+        "ts": "1549934656.003000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 89, in fail_unknown_tag\n    return self._fail_ut_eof(name, self._end_token_stack, lineno)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 82, in _fail_ut_eof\n    self.fail(' '.join(message), lineno)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/parser.py\", line 51, in fail\n    raise exc(msg, lineno, self.name, self.filename)\njinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'elif'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endif'. The innermost block that needs to be closed is 'if'.\n```",
+        "ts": "1549934656.003100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "7f5f09fe-dfe6-4c52-9ec7-dd8b213b8994",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1549934680.003300",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 01:32:33,380 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 67, in update_zscores\n    zscores = database.get_zscores()\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1299, in get_zscores\n    prev_zs = sorted([get_zscore(r) for r in recent_cards], key=lambda x: x['prev_z'], reverse=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1299, in &lt;listcomp&gt;\n    prev_zs = sorted([get_zscore(r) for r in recent_cards], key=lambda x: x['prev_z'], reverse=True)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1275, in get_zscore\n    prev_zscore = statistics.mean(s[:-2*v])**exp * (statistics.mean(s[-2*v:-v]) - statistics.mean(s)) \/ statistics.stdev(s)\nZeroDivisionError: float division by zero\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 97, in &lt;module&gt;\n    update_zscores()\n  File \"\/home\/ubuntu\/edhrec\/api\/daily.py\", line 71, in update_zscores\n    logging.error('Skipping zscores')\nNameError: name 'logging' is not defined\n```",
+        "ts": "1549935044.003400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 01:57:06,369 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 40, in _make_commanders_p\n    make_decks_cmdr(cmdr, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 718, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, skipdecks=skipdecks)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 705, in make_deck\n    repls=info,\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 179, in make_page\n    f.write(ENV.get_template(template_name).render(repls2))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 113, in load\n    source, filename, uptodate = self.get_source(environment, name)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 225, in get_source\n    raise TemplateNotFound(template)\njinja2.exceptions.TemplateNotFound: defaultnhtml\n```",
+        "ts": "1549936517.003500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 02:28:17,279 ERROR Skipping zscores\n```",
+        "ts": "1549938387.003600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 03:28:18,270 ERROR Skipping zscores\n```",
+        "ts": "1549941988.003700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:04:05:31] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 225, in make_page\n    if url.startswith('decks'):\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 113, in load\n    source, filename, uptodate = self.get_source(environment, name)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 225, in get_source\n    raise TemplateNotFound(template)\njinja2.exceptions.TemplateNotFound: default2.html\n```",
+        "ts": "1549944221.003800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[12\/Feb\/2019:04:05:38] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 225, in make_page\n    if url.startswith('decks'):\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 791, in get_template\n    return self._load_template(name, self.make_globals(globals))\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/environment.py\", line 765, in _load_template\n    template = self.loader.load(self, name, globals)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 113, in load\n    source, filename, uptodate = self.get_source(environment, name)\n  File \"\/usr\/lib\/python3\/dist-packages\/jinja2\/loaders.py\", line 225, in get_source\n    raise TemplateNotFound(template)\njinja2.exceptions.TemplateNotFound: default2.html\n```",
+        "ts": "1549944228.003900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "5e6614a8-112f-4c63-a376-2363e52e7ce8",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1549944240.004100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 04:29:18,524 ERROR Skipping zscores\n```",
+        "ts": "1549945648.004200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 04:30:05,258 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \".\/test.py\", line 9, in &lt;module&gt;\n    nightly.make_themes()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 332, in make_themes\n    allcards.append(_make_theme(themename, theme))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 97, in _make_theme\n    url=url)\nNameError: name 'url' is not defined\n```",
+        "ts": "1549945695.004300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1549947793.004400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "3a1347dd-fbc8-4077-b4b9-73dd4524a0c2",
+        "type": "message",
+        "text": "testing _make_theme url fix",
+        "user": "U3MTAQBE1",
+        "ts": "1549948430.004700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 05:29:02,513 ERROR Skipping zscores\n```",
+        "ts": "1549949232.004800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "a57c8ea9-5c5c-4f74-921e-df723c2f508f",
+        "type": "message",
+        "text": "looks ok now",
+        "user": "U3MTAQBE1",
+        "ts": "1549949527.005000",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "4598fd24-5a99-4c1a-a960-bba8cb264c37",
+        "type": "message",
+        "text": "adding persistent petitioners theme while i'm in theme stuff",
+        "user": "U3MTAQBE1",
+        "ts": "1549950000.005700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 06:26:23,329 CRITICAL Uncaught exception\n  File \"&lt;stdin&gt;\", line 1\n    nightly.make)themes()\n                ^\nSyntaxError: invalid syntax\n```",
+        "ts": "1549952673.005800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 06:29:41,125 ERROR Skipping zscores\n```",
+        "ts": "1549952871.007600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "91c71d49-7b60-47e7-95af-e09f2f361faa",
+        "type": "message",
+        "text": "Chaos Orb as most popular bounce theme card. Added to origin.getthemes to check in ['Top'] if ['Signature'] fails.",
+        "user": "U3MTAQBE1",
+        "ts": "1549952871.007700",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "gb1f86dc4c04",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fb1f86dc4c04ba62c7595e22e84b0cf2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "Nate",
+            "real_name": "Nate Burgess",
+            "display_name": "nateburgess",
+            "team": "T286HM2F3",
+            "name": "nateburgess",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2019-02-12 07:27:43,254 ERROR Skipping zscores\n```",
+        "ts": "1549956353.007800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

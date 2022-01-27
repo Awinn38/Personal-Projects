@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1560296235.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-12153",
+                "id": 1,
+                "title_link": "https:\/\/blog.gdssecurity.com\/labs\/2019\/5\/28\/ssrf-and-xxe-vulnerabilities-in-pdfreactor.html",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "Lack of validation in the HTML parser in RealObjects PDFreactor before 10.1.10722 leads to SSRF, allowing attackers to access network or file resources on behalf of the server by supplying malicious HTML content.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-12153"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1560296235.000200",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2019-12154",
+                "id": 1,
+                "title_link": "https:\/\/blog.gdssecurity.com\/labs\/2019\/5\/28\/ssrf-and-xxe-vulnerabilities-in-pdfreactor.html",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Description",
+                        "value": "XXE in the XML parser library in RealObjects PDFreactor before 10.1.10722 allows attackers to supply malicious XML content in externally referenced resources, leading to disclosure of local file contents and\/or denial of service conditions.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2019-12154"
+            }
+        ]
+    }
+]

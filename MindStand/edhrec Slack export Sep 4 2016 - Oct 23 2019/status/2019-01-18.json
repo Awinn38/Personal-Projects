@@ -1,0 +1,167 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1547818862.107500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547818867.107600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Jan\/2019:16:08:50] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 300, in route\n    query3 = cards.name_to_url(query)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 547, in name_to_url\n    return cache.get('cards\/' + name)['url']\nTypeError: string indices must be integers\n```",
+        "ts": "1547827697.107700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Jan\/2019:20:00:09]  \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:09] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 686, in _do_respond\n    self.hooks.run('before_handler')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 116, in run\n    raise exc\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n```",
+        "ts": "1547841575.107800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Jan\/2019:20:00:25]  \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 686, in _do_respond\n    self.hooks.run('before_handler')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 116, in run\n    raise exc\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:25]  \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:25] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 686, in _do_respond\n    self.hooks.run('before_handler')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 116, in run\n    raise exc\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n```",
+        "ts": "1547841591.107900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Jan\/2019:20:00:30]  \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:30] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 686, in _do_respond\n    self.hooks.run('before_handler')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 116, in run\n    raise exc\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:30]  \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n[18\/Jan\/2019:20:00:30] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 686, in _do_respond\n    self.hooks.run('before_handler')\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 116, in run\n    raise exc\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 106, in run\n    hook()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 65, in __call__\n    return self.callback(**self.kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cptools.py\", line 189, in _wrapper\n    if self.callable(**kwargs):\n  File \"\/home\/ubuntu\/edhrec\/api\/api.py\", line 39, in cors\n    cherrypy.response.headers['Access-Control-Allow-Origin'] = cherrypy.request.headers['Origin']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/httputil.py\", line 419, in __getitem__\n    return super(KeyTransformingDict, self).__getitem__(key)\nKeyError: 'Origin'\n```",
+        "ts": "1547841596.108000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "c1475c77-c05d-4ace-ac6c-040fbe794df3",
+        "type": "message",
+        "text": ".",
+        "user": "U28TLDP0R",
+        "ts": "1547841604.108200",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1547849367.108300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547849372.108400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[18\/Jan\/2019:23:35:38] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/excommunicate'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 178, in make_page\n    sets = cards.get_sets()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 445, in get_sets\n    return cache.get('cards\/sets')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 58, in get\n    _CACHE[key] = rec['value']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/excommunicate'\n```",
+        "ts": "1547854504.108500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[19\/Jan\/2019:00:15:49] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 56, in get\n    _CACHE[key] = json.loads(rec['value'])\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/mirror golem'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 78, in index\n    tribelinks=data['tribelinks'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 178, in make_page\n    sets = cards.get_sets()\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 445, in get_sets\n    return cache.get('cards\/sets')\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 58, in get\n    _CACHE[key] = rec['value']\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 91, in __setitem__\n    self.expire(time)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/ttl.py\", line 171, in expire\n    cache_delitem(self, curr.key)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cachetools\/cache.py\", line 73, in __delitem__\n    del self.__data[key]\nKeyError: 'cards\/mirror golem'\n```",
+        "ts": "1547856916.108600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly completed",
+        "ts": "1547883442.108700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly started, skipdecks=False",
+        "ts": "1547883446.108800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

@@ -1,0 +1,260 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 2 dynamic.py running. Before we had 3.",
+        "ts": "1543568318.000200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond",
+        "ts": "1543584604.000300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler",
+        "ts": "1543584604.000400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n[30\/Nov\/2018:13:31:33] HTTP \nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/jsontools.py\", line 58, in json_handler\n    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/api\/card.py\", line 36, in index\n    return {'cards': [get_shit(name)]}\n  File \"\/home\/ubuntu\/edhrec\/api\/util.py\", line 14, in get_shit\n    card = cards.get(cardname)\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 302, in get\n    return _CARDS[scn(name)]\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 577, in scn\n    cardname = cardname.split('\/')[0].strip()\nAttributeError: 'dict' object has no attribute 'split'\n```",
+        "ts": "1543584604.000500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-11-30 18:43:22,925 ERROR Somehow Niv-Mizzet, the Firemind got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Niv-Mizzet, the Firemind got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:22,925 ERROR Somehow Bloodchief Ascension got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Bloodchief Ascension got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:22,925 ERROR Somehow Muldrotha, the Gravetide got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Muldrotha, the Gravetide got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:22,925 ERROR Somehow Duskmantle Guildmage got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Duskmantle Guildmage got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:22,925 ERROR Somehow Dream Salvage got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Dream Salvage got into this set of recs ['G', 'U'] (cmdr matrix)\n```",
+        "ts": "1543603313.000600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-11-30 18:43:25,729 ERROR Somehow Niv-Mizzet, the Firemind got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Niv-Mizzet, the Firemind got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:25,729 ERROR Somehow Bloodchief Ascension got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Bloodchief Ascension got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:25,729 ERROR Somehow Muldrotha, the Gravetide got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Muldrotha, the Gravetide got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:25,729 ERROR Somehow Duskmantle Guildmage got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Duskmantle Guildmage got into this set of recs ['G', 'U'] (cmdr matrix)\n2018-11-30 18:43:25,730 ERROR Somehow Dream Salvage got into this set of recs ['G', 'U'] (cmdr matrix)\nSomehow Dream Salvage got into this set of recs ['G', 'U'] (cmdr matrix)\n```",
+        "ts": "1543603316.000700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:21:32:13] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 598, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 59, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 44, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 600, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'Talrand, Sky Summoner'\n```",
+        "ts": "1543613443.000800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:21:32:43] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 598, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 59, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 44, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 600, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'Talrand, Sky Summoner'\n```",
+        "ts": "1543613474.000900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:21:33:10] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 598, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 59, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 44, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 600, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'Talrand, Sky Summoner'\n```",
+        "ts": "1543613500.001000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:21:35:07] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 598, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 59, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 44, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 600, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'talrand, sky summoner'\n```",
+        "ts": "1543613617.001100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:21:35:39] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 598, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 59, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 44, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 600, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'talrand, sky summoner'\n```",
+        "ts": "1543613649.001200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```[30\/Nov\/2018:21:36:09] HTTP \nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 598, in url_to_name\n    return cache.get('cards\/urls\/' + url)\n  File \"\/home\/ubuntu\/edhrec\/core\/cache.py\", line 59, in get\n    raise NotInCache(key)\nedhrec.core.cache.NotInCache: cards\/urls\/talrand, sky summoner\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 630, in respond\n    self._do_respond(path_info)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cprequest.py\", line 689, in _do_respond\n    response.body = self.handler()\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/lib\/encoding.py\", line 221, in __call__\n    self.body = self.oldhandler(*args, **kwargs)\n  File \"\/usr\/local\/lib\/python3.5\/dist-packages\/cherrypy\/_cpdispatch.py\", line 54, in __call__\n    return self.callable(*self.args, **self.kwargs)\n  File \"\/home\/ubuntu\/edhrec\/web\/dynamic.py\", line 44, in index\n    commander = cards.url_to_name(kwargs['cmdr'])\n  File \"\/home\/ubuntu\/edhrec\/core\/cards.py\", line 600, in url_to_name\n    return _init_urls()['all'][url]\nKeyError: 'talrand, sky summoner'\n```",
+        "ts": "1543613679.001300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-11-30 22:09:39,663 ERROR Color identity mismatch X set() ['B', 'U']\nColor identity mismatch X set() ['B', 'U']\n```",
+        "ts": "1543615689.001400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-11-30 22:16:52,588 ERROR Color identity mismatch Grusilda, Monster Masher set() ['B', 'R']\nColor identity mismatch Grusilda, Monster Masher set() ['B', 'R']\n2018-11-30 22:16:52,609 ERROR Color identity mismatch Baron Von Count set() ['B', 'R']\nColor identity mismatch Baron Von Count set() ['B', 'R']\n2018-11-30 22:16:52,773 ERROR Color identity mismatch Baron Von Count set() ['B', 'R']\nColor identity mismatch Baron Von Count set() ['B', 'R']\n2018-11-30 22:16:52,774 ERROR Color identity mismatch Grusilda, Monster Masher set() ['B', 'R']\nColor identity mismatch Grusilda, Monster Masher set() ['B', 'R']\n2018-11-30 22:16:52,779 ERROR Color identity mismatch Grusilda, Monster Masher set() ['B', 'R']\nColor identity mismatch Grusilda, Monster Masher set() ['B', 'R']\n```",
+        "ts": "1543616122.001500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has been updated!",
+        "ts": "1543618714.001600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```...\n```",
+        "ts": "1543625327.001700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "client_msg_id": "6EE35008-1046-4763-8C8E-91E468513E6C",
+        "type": "message",
+        "text": "Lol edhrecbot",
+        "user": "U286Q175Y",
+        "ts": "1543625624.002100",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "c3805f9d-d684-4784-817a-596dfcf40847",
+        "type": "message",
+        "text": "just me marking a position",
+        "user": "U28TLDP0R",
+        "ts": "1543627978.002400",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "```2018-12-01 04:35:52,868 CRITICAL Uncaught exception\nTraceback (most recent call last):\n  File \"&lt;string&gt;\", line 1, in &lt;module&gt;\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 582, in make_commander\n    partnercounts=data['partnercounts'])\n  File \"\/home\/ubuntu\/edhrec\/web\/web.py\", line 179, in make_page\n    'cardhoarder': cardview['cardhoarder'],\nKeyError: 'cardhoarder'\n```",
+        "ts": "1543638861.002500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "master nightly started!\n```\nSat Dec  1 06:31:27 UTC 2018\n\n```",
+        "ts": "1543645795.002600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

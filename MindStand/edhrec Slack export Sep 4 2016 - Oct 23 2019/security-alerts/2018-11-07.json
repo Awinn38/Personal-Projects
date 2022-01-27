@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New Security Vulnerability Posted",
+        "ts": "1541605036.000100",
+        "bot_id": "BDCKMD2P9",
+        "attachments": [
+            {
+                "title": "CVE-2018-7166",
+                "id": 1,
+                "title_link": "https:\/\/access.redhat.com\/errata\/RHSA-2018:2553",
+                "color": "4CAF50",
+                "fields": [
+                    {
+                        "title": "Affects",
+                        "value": "nodejs node.js 10.0.0 10.1.0 10.2.0 10.2.1 10.3.0 10.4.0 10.4.1 10.5.0 10.6.0 10.7.0 10.8.0",
+                        "short": false
+                    },
+                    {
+                        "title": "Description",
+                        "value": "In all versions of Node.js 10 prior to 10.9.0, an argument processing flaw can cause `Buffer.alloc()` to return uninitialized memory. This method is intended to be safe and only return initialized, or cleared, memory. The third argument specifying `encoding` can be passed as a number, this is misinterpreted by `Buffer's` internal \"fill\" method as the `start` to a fill operation. This flaw may be abused where `Buffer.alloc()` arguments are derived from user input to return uncleared memory blocks that may contain sensitive information.",
+                        "short": false
+                    }
+                ],
+                "fallback": "CVE-2018-7166"
+            }
+        ]
+    }
+]

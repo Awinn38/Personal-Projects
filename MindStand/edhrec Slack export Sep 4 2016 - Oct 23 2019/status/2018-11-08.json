@@ -1,0 +1,278 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nCommand 'gulp' returned non-zero exit status 1\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 923, in edhrec\n    make_typeahead()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 63, in make_typeahead\n    subprocess.check_call('gulp', cwd=os.path.dirname(os.path.realpath('__file__')))\n  File \"\/usr\/lib\/python3.4\/subprocess.py\", line 561, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command 'gulp' returned non-zero exit status 1\n",
+        "ts": "1541701689.008900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'<http:\/\/tappedout.net\/mtg-decks\/1-yukora>'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 777, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 727, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\nKeyError: '<http:\/\/tappedout.net\/mtg-decks\/1-yukora>'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nKeyError: '<http:\/\/tappedout.net\/mtg-decks\/1-yukora>'\n",
+        "ts": "1541701795.009000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'<http:\/\/www.mtggoldfish.com\/deck\/1451356>'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 777, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 727, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\nKeyError: '<http:\/\/www.mtggoldfish.com\/deck\/1451356>'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nKeyError: '<http:\/\/www.mtggoldfish.com\/deck\/1451356>'\n",
+        "ts": "1541701898.009100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'<http:\/\/www.mtggoldfish.com\/deck\/889408>'\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 777, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 727, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\nKeyError: '<http:\/\/www.mtggoldfish.com\/deck\/889408>'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nKeyError: '<http:\/\/www.mtggoldfish.com\/deck\/889408>'\n",
+        "ts": "1541701957.009200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nget_decks() takes 1 positional argument but 2 were given\nmultiprocessing.pool.RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 119, in worker\n    result = (True, func(*args, **kwds))\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 44, in mapstar\n    return list(map(*args))\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 777, in _make_commanders_p\n    make_decks_cmdr(cmdr, outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 727, in make_decks_cmdr\n    make_deck(deckurl, simscores=sims[deckurl], outof=outof, brawl=brawl, tiny=tiny)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 641, in make_deck\n    info = database.get_deck(url)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 738, in get_deck\n    decks = get_decks([url], get_cards)\nTypeError: get_decks() takes 1 positional argument but 2 were given\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 928, in edhrec\n    make_commanders()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 809, in make_commanders\n    p.map(_make_commanders_p, commanders)\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 260, in map\n    return self._map_async(func, iterable, mapstar, chunksize).get()\n  File \"\/usr\/lib\/python3.4\/multiprocessing\/pool.py\", line 599, in get\n    raise self._value\nTypeError: get_decks() takes 1 positional argument but 2 were given\n",
+        "ts": "1541702157.009300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/tribes\/allies.html has been updated!",
+        "ts": "1541703488.009400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nargument of type 'NoneType' is not iterable\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 862, in nightly\n    make_precons()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 409, in make_precons\n    cardlists = origin.get_cardlists(data, topcommanders=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 267, in get_cardlists\n    cardzzz = Card(a, is_commander=True)\n  File \"\/home\/ubuntu\/edhrec\/web\/classes.py\", line 31, in __init__\n    if self.name in cards.get_split():\nTypeError: argument of type 'NoneType' is not iterable\n",
+        "ts": "1541707186.009500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'list' object has no attribute 'difference'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 858, in nightly\n    make_transform_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 738, in make_transform_cards\n    make_card(card['front'])\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 473, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 65, in getcards\n    decks = get_decks(card, 'card')\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 208, in get_decks\n    return database.intersect(positives, negatives)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1277, in intersect\n    return okdecks.difference(baddecks)\nAttributeError: 'list' object has no attribute 'difference'\n",
+        "ts": "1541707665.009600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nunhashable type: 'list'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 859, in nightly\n    make_split_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 820, in make_split_cards\n    for card in origin.get_split_cards():\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 134, in get_split_cards\n    scards = set([c['names'] for c in all_split])\nTypeError: unhashable type: 'list'\n",
+        "ts": "1541708030.009700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nstring indices must be integers\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 859, in nightly\n    make_split_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 820, in make_split_cards\n    for card in origin.get_split_cards():\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 133, in get_split_cards\n    scards = set([tuple(c['names']) for c in cards.get_split()])\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 133, in &lt;listcomp&gt;\n    scards = set([tuple(c['names']) for c in cards.get_split()])\nTypeError: string indices must be integers\n",
+        "ts": "1541708565.009800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/commanders\/wubrg.html has been updated!",
+        "ts": "1541710688.009900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nunorderable types: datetime.date() &gt;= str()\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 857, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 701, in make_cards\n    make_card(card)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 473, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1641, in tally\n    num_decks = sum([age_counter[a] for a in age_counter if a &gt;= card_age])\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1641, in &lt;listcomp&gt;\n    num_decks = sum([age_counter[a] for a in age_counter if a &gt;= card_age])\nTypeError: unorderable types: datetime.date() &gt;= str()\n",
+        "ts": "1541712263.010000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'cards'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 857, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 701, in make_cards\n    make_card(card)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 473, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1553, in tally\n    notcards = precon.get_precon_dict(preconname)['cards']\nKeyError: 'cards'\n",
+        "ts": "1541713093.010100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nname 'pcommander' is not defined\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 857, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 701, in make_cards\n    make_card(card)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 473, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1555, in tally\n    deckdata = get_decks(deck_keys)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 815, in get_decks\n    return _get_decks_helper(urls) # + _get_decks_helper(urls, brawl=True) + _get_decks_helper(urls, tiny=True) BRAWL\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 788, in _get_decks_helper\n    'combos': combos.extract_combos(deckcards + [p for p in pcommander if p]),\nNameError: name 'pcommander' is not defined\n",
+        "ts": "1541713155.010200",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\nunorderable types: datetime.date() &gt;= str()\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 857, in nightly\n    make_cards()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 701, in make_cards\n    make_card(card)\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 473, in make_card\n    recentdecks, cardlists, averages, sampledeck = origin.getcards(card=name)\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 66, in getcards\n    data = database.tally(decks)\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1635, in tally\n    num_decks = sum([age_counter[a] for a in age_counter if a &gt;= card_age])\n  File \"\/home\/ubuntu\/edhrec\/core\/database.py\", line 1635, in &lt;listcomp&gt;\n    num_decks = sum([age_counter[a] for a in age_counter if a &gt;= card_age])\nTypeError: unorderable types: datetime.date() &gt;= str()\n",
+        "ts": "1541713200.010300",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/top\/g.html has been updated!",
+        "ts": "1541714287.010400",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nightly failed:\n'swarm'\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 767, in getthemes\n    plural = constants.THEMES[name]['plural']\nKeyError: 'swarm'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 845, in nightly\n    make_themes()\n  File \"\/home\/ubuntu\/edhrec\/web\/nightly.py\", line 328, in make_themes\n    themes = origin.getthemes()\n  File \"\/home\/ubuntu\/edhrec\/web\/origin.py\", line 769, in getthemes\n    plural = constants.THEMES[name]['name']\nKeyError: 'swarm'\n",
+        "ts": "1541715454.010500",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[GOOD] \/usr\/share\/nginx\/html\/sets\/bfz.html has been updated!",
+        "ts": "1541717887.010600",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/commanders\/omnath-locus-of-mana.html has not been updated in the past 30 hours",
+        "ts": "1541725204.010700",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/decks\/zedruu-the-greathearted.html has not been updated in the past 30 hours",
+        "ts": "1541725204.010800",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] \/usr\/share\/nginx\/html\/cards\/capsize.html has not been updated in the past 30 hours",
+        "ts": "1541725205.010900",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "[BAD] We now have 2 dynamic.py running. Before we had 5.",
+        "ts": "1541725205.011000",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```\n('62.210.167.3', 24323) - 09\/Nov\/2018:05:30:01\n('40.77.167.20', 4938) - 09\/Nov\/2018:05:29:45\n('40.77.167.40', 4917) - 09\/Nov\/2018:05:29:54\n('207.46.13.23', 4791) - 09\/Nov\/2018:05:29:59\n('40.77.167.42', 4687) - 09\/Nov\/2018:05:29:08\n('37.9.87.143', 2360) - 09\/Nov\/2018:05:22:15\n('77.88.47.5', 2063) - 09\/Nov\/2018:05:28:50\n('88.99.250.15', 2062) - 09\/Nov\/2018:05:25:32\n('66.249.79.150', 1819) - 09\/Nov\/2018:05:29:40\n('72.231.150.19', 1488) - 08\/Nov\/2018:18:11:54\n('216.244.66.232', 1274) - 09\/Nov\/2018:05:02:41\n('66.249.79.148', 1265) - 09\/Nov\/2018:05:28:40\n('66.249.79.156', 1197) - 09\/Nov\/2018:05:26:48\n('66.249.79.146', 1180) - 09\/Nov\/2018:05:25:43\n('66.249.79.140', 1081) - 09\/Nov\/2018:04:36:59\n('100.43.90.124', 973) - 09\/Nov\/2018:05:21:16\n('66.249.69.31', 910) - 08\/Nov\/2018:16:59:58\n('106.120.173.150', 880) - 08\/Nov\/2018:22:13:22\n('52.53.173.88', 862) - 09\/Nov\/2018:05:28:40\n('66.249.79.141', 850) - 09\/Nov\/2018:04:18:02\n('178.154.244.151', 817) - 08\/Nov\/2018:10:43:45\n('66.249.79.135', 812) - 09\/Nov\/2018:04:25:25\n('66.249.69.14', 769) - 08\/Nov\/2018:17:01:02\n('37.9.87.183', 752) - 08\/Nov\/2018:16:45:32\n('148.64.56.67', 748) - 09\/Nov\/2018:05:24:34\n\n```",
+        "ts": "1541741401.011100",
+        "username": "edhrecbot",
+        "icons": {
+            "emoji": ":robot_face:",
+            "image_64": "https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f916.png"
+        },
+        "bot_id": "B2867AJ5C"
+    }
+]

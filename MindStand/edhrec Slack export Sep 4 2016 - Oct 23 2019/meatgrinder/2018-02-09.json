@@ -1,0 +1,157 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F96A7LBA4",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "user": "U286Q175Y",
+        "display_as_bot": false,
+        "upload_reply_to": "D2D0369F-62FA-4730-B840-D0271665C2E9",
+        "ts": "1518213740.000382"
+    },
+    {
+        "type": "message",
+        "text": "I cant seem to figure out whats causing it",
+        "user": "U286Q175Y",
+        "ts": "1518213745.000514",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I think it migjt be the “data provided by”. Thise seem to be hugging the right really right",
+        "user": "U286Q175Y",
+        "ts": "1518213821.000246",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hmm it probably is something in the footer",
+        "user": "U28TLDP0R",
+        "ts": "1518213975.000372",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I have an idea or a feature. Well something ive been wanting to do for a while but thought about it more. \n\nOverall plan is to help with “deck discovery” — the ability to find and look at specific decks directly on edhrec. \n\nThe main new interface is a deck table. A deck table is a few columns: number of creatures, enchantments, what theme its marked as, budget, etc. just a simple table thats sortable. However, when you click on the deck it expands out into a compact multi-column list of cArd links like the ones we have on the front page now. Organized by type. Only one row can be expanded at a time. \n\nWhat this widget would replace is the recent decks list on commander pages, which i assume would now just take the entire width of the page. We’d only have 10 showing, then youd have a “see more” button that would take you to a new one with all decks paginated by 100 decks, sorted by most recent first. This is a new page, one per commander. \n\nAs for something new, we can have an advanced deck search page where you can search on anything about the deck (theme, budget, number of enchantments). The search results would just be that same table.\n\nI think i can implement the api really easily. Itll take search params in the query string and then return a json with all the deck info and the cards in the deck categorized by type.\n\nHow hard would it be for you to build the ui given the api? How many days?\n\nShould i write this backend in api or dynamic?",
+        "user": "U286Q175Y",
+        "ts": "1518228436.000130",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "9ed606f95171",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/105434809396_9ed606f951714083aa56_72.png",
+            "first_name": "Donald",
+            "real_name": "Donald Miner",
+            "display_name": "don",
+            "team": "T286HM2F3",
+            "name": "don",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "if the api is done probably like 2 days or something",
+        "user": "U28TLDP0R",
+        "ts": "1518230298.000112",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "making a ui that's just tables and text can be done in like an hour",
+        "user": "U28TLDP0R",
+        "ts": "1518230328.000081",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "putting tables inside of tables is slightly more annoying, and I need to figure out the best way to mount a react div inside our non react website but it's not like other people haven't done that",
+        "user": "U28TLDP0R",
+        "ts": "1518230526.000050",
+        "team": "T286HM2F3",
+        "user_team": "T286HM2F3",
+        "source_team": "T286HM2F3",
+        "user_profile": {
+            "avatar_hash": "2a61603e280e",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2016-11-16\/104915990673_2a61603e280ecee0ab38_72.jpg",
+            "first_name": "David",
+            "real_name": "David Keatts",
+            "display_name": "keattz",
+            "team": "T286HM2F3",
+            "name": "keattz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]
